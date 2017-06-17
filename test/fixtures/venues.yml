@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  category: MyString
+  price: 1
+  price_plan: MyString
+  postcode: MyString
+  county: MyString
+  street_line_one: MyString
+  street_line_two: MyString
+  city: MyString
+  capacity_standing: 1
+  capacity_sitting: 1
+  size: 1
+  parking_spaces: 1
+  kitchens: 1
+  disabled_acess: false
+  outside_spaces: false
+  toilets: 1
+  tables: 1
+  chairs: 1
+  extra_info: MyText
+  external_catering_allowed: false
+  external_alcahool_allowed: false
+  inhouse_catering_provided: false
+  inhouse_alcahool_provided: false
+  storage: false
+  air_conditionind: false
+  wifi: false
+  projector: false
+
+two:
+  name: MyString
+  description: MyText
+  category: MyString
+  price: 1
+  price_plan: MyString
+  postcode: MyString
+  county: MyString
+  street_line_one: MyString
+  street_line_two: MyString
+  city: MyString
+  capacity_standing: 1
+  capacity_sitting: 1
+  size: 1
+  parking_spaces: 1
+  kitchens: 1
+  disabled_acess: false
+  outside_spaces: false
+  toilets: 1
+  tables: 1
+  chairs: 1
+  extra_info: MyText
+  external_catering_allowed: false
+  external_alcahool_allowed: false
+  inhouse_catering_provided: false
+  inhouse_alcahool_provided: false
+  storage: false
+  air_conditionind: false
+  wifi: false
+  projector: false
