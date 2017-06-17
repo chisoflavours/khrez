@@ -10,11 +10,11 @@ class VenuesController < ApplicationController
     end
     
     def new
-        @venue = Venue.new
+        @venue = current_admin.venues.build
     end
     
     def create
-        @venue = Venue.new(venue_params)
+        @venue = current_admin.venues.build(venue_params)
         
         if @venue.save
             redirect_to @venue
