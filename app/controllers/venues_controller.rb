@@ -27,9 +27,16 @@ class VenuesController < ApplicationController
     end
     
     def update
+        if @venue.update(venue_params)
+            redirect_to @venue
+        else
+            render 'edit'
+        end
     end
     
     def destroy
+        @venue.destroy
+        redirect_to root_path
     end
     
     private
