@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'page/termsandconditions'
 
   get 'page/listyourvenue'
-
+  
+  resources :venues
 
 end
