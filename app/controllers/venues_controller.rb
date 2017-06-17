@@ -4,7 +4,13 @@ class VenuesController < ApplicationController
     
     def index
         @venue = Venue.all.order("created_at DESC")
+        
+        if admin_signed_in?
+          @venue = Venue.where(admin_id: current_admin)
+        end
     end
+
+       
     
     def show
     end

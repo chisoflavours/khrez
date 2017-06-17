@@ -1,4 +1,12 @@
+- if admin_signed_in?
+
+  = link_to "New Venue", new_venue_path
+  %h1 My Venues
+
 - @venue.each do |venue|
   %h2= link_to venue.name,venue
 
-= link_to "New Venue", new_venue_path
+
+
+-if @venue.blank?
+  %h2 You have no venues

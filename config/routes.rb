@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   devise_for :admins
-  root 'page#index'
+
 
   get 'page/about'
 
@@ -10,6 +10,14 @@ Rails.application.routes.draw do
   get 'page/termsandconditions'
 
   get 'page/listyourvenue'
+  
+  
+   authenticated :admin do
+     root :to => 'venues#index', as: :authenticated_root
+   end
+   
+   root :to => 'page#index'
+   
   
   resources :venues
 
