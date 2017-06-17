@@ -25,3 +25,4 @@ end
 # Gems I have added
 
 gem 'haml', '~> 5.0', '>= 5.0.1'
+gem 'simple_form'
