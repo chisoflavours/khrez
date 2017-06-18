@@ -27,3 +27,4 @@ end
 gem 'haml', '~> 5.0', '>= 5.0.1'
 gem 'simple_form'
 gem 'devise'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'

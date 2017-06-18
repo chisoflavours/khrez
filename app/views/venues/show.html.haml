@@ -1,5 +1,17 @@
 %h1= @venue.name
 %p= @venue.description
 
-= link_to "Edit", edit_venue_path(@venue)
-= link_to "Delete", venue_path(@venue), method: :delete, data: { confirm: "Are you sure ?, you will lose everything !" }
+= image_tag @venue.thumbnail.url(:medium)
+
+%p.username
+		Shared by
+		= @venue.admin.name
+
+%p.username
+		Shared by
+		= @venue.admin.phone
+
+%p.username
+		Shared by
+		= @venue.admin.email		
+

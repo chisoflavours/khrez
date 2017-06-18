@@ -1,6 +1,8 @@
 class VenuesController < ApplicationController
     
     before_action :find_venue, only: [:show, :edit, :update, :destroy]
+    before_action :authenticate_admin!, only: [:new, :edit, :update, :destroy]
+    
     
     def index
         @venue = Venue.all.order("created_at DESC")
@@ -9,7 +11,10 @@ class VenuesController < ApplicationController
           @venue = Venue.where(admin_id: current_admin)
         end
     end
-
+    
+    def correct_admin
+        @venue = Venue.where(admin_id: current_admin)
+    end
        
     
     def show
@@ -56,7 +61,7 @@ class VenuesController < ApplicationController
         :street_line_one,:street_line_two,:city,:capacity_standing,:capacity_sitting,:size,:parking_spaces,
         :kitchens,:disabled_acess,:outside_spaces,:toilets,:tables,:chairs,:extra_info,:external_catering_allowed,
         :external_alcahool_allowed,:inhouse_catering_provided,:inhouse_alcahool_provided,:storage,:air_conditionind,
-        :wifi,:projector)
+        :wifi,:projector,:thumbnail)
     end
     
 end
