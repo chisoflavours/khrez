@@ -4,13 +4,42 @@
   <title>Workspace</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+       <% if notice %>
+         <p class="notice"><%= notice %></p>
+       <% end %>
        
+       <% if alert %>
+         <p class="alert"><%= alert %></p>
+       <% end %>
+       
+       
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <br>
+  <br>
+  <br>
+  <% unless admin_signed_in? %>
+    <a href="#"><%= link_to 'Admin Log In', new_admin_session_path %> </a>
+    <a href="#">Admin Signup</a>
+  <% end %>    
+  <% if admin_signed_in?%>
+    <h1 style="color:#ffffff;font-size:20px;padding: 34px 15px;" > Logged in as <br> 
+    <br> <%= current_admin.name %></h1>
+    <br>
+    <h1 style="color:#ffffff;font-size:20px;padding: 34px 15px;"><%= link_to('Logout', destroy_admin_session_path, method: :delete) %></h1>
+  <% end %>
+</div>
+
+ 
+<div class="topnav" id="myTopnav">
+  <a href="#home"><%= link_to 'Khrez', root_path %></a>
+   <span id="hammenu" onclick="openNav()">&#9776</span>
+</div>
+ 
 <%= yield %>
 
 </body>

@@ -1,3 +1,64 @@
-// Place all the styles related to the Page controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Hero Image on home page */
+
+.hero-image {
+  height: 75%;
+        
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: gray;
+    font-size:25px;
+
+    
+  #text2{
+     color:#ffd680;
+  }  
+  
+  #search{
+      background:#ffffff;
+      margin-top:50px;
+      border: 3px solid gray;
+      border-radius:10px;
+      padding:30px;
+      color:#ffd680;
+      text-transform:lowercase;
+      padding-left:40px;
+  }
+  .searchbutton{
+      padding:30px;
+      border-radius:10px;
+      background:gray;
+      border:0;
+      margin-left:40px;
+      color:#ffffff;
+  }
+  .searchbutton:hover{
+      background:#ffd680;
+  }
+}
+
+
+}
+
+#exloretext{
+    color:gray;
+    padding:100px;
+    font-size:3em;
+    #fullstop{
+        color:orange;
+    }
+}
+
+
+
+

@@ -1,4 +1,15 @@
-%h1 Khrez 
+.hero-image
+  .hero-text
+    %h1 Find Your Perfect Venue
+    #text2
+      %h2 As Easy As Possible
+    = form_tag(venues_path, :method => "get", :id => 'form') do
+      = text_field_tag  :search, params[:search], placeholder: "location ", :id => 'search', required: true
+      = submit_tag "Search", :name => nil, :class => "searchbutton"
 
-= link_to('Logout', destroy_admin_session_path, method: :delete) 
+
+%h1#exloretext
+  Explore
+  %span#fullstop .
+
 

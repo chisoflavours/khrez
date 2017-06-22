@@ -1,4 +1,4 @@
-= simple_form_for @venue do |f|
+= simple_form_for @venue, html: { multipart: true } do |f|
   = f.input :name
   = f.input :description
   = f.input :category
@@ -29,6 +29,6 @@
   = f.input :wifi
   = f.input :projector
   = f.file_field :thumbnail
-  
+  = f.file_field :logo
   = f.button :submit
   

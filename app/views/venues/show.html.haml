@@ -1,8 +1,15 @@
 %h1= @venue.name
 %p= @venue.description
 
-= image_tag @venue.thumbnail.url(:medium)
 
+= image_tag @venue.thumbnail.url(:medium),class: 'img'
+
+
+
+
+
+
+    
 %p.username
 		Shared by
 		= @venue.admin.name
@@ -15,3 +22,6 @@
 		Shared by
 		= @venue.admin.email		
 
+
+		
+= image_tag @venue.logo.url(:medium)

@@ -5,7 +5,11 @@ class VenuesController < ApplicationController
     
     
     def index
-        @venue = Venue.all.order("created_at DESC")
+        if params[:search]
+          @venue = Venue.search(params[:search]).order("created_at DESC")
+        else
+          @venue = Venue.all.order("created_at DESC")
+        end
         
         if admin_signed_in?
           @venue = Venue.where(admin_id: current_admin)
@@ -61,7 +65,7 @@ class VenuesController < ApplicationController
         :street_line_one,:street_line_two,:city,:capacity_standing,:capacity_sitting,:size,:parking_spaces,
         :kitchens,:disabled_acess,:outside_spaces,:toilets,:tables,:chairs,:extra_info,:external_catering_allowed,
         :external_alcahool_allowed,:inhouse_catering_provided,:inhouse_alcahool_provided,:storage,:air_conditionind,
-        :wifi,:projector,:thumbnail)
+        :wifi,:projector,:thumbnail,:logo )
     end
     
 end
