@@ -5,7 +5,17 @@
   %br
   %br
   %br
-  
+- unless admin_signed_in?  
+  = form_tag(venues_path, :method => "get", :id => 'form',:class => "margin") do
+    = text_field_tag  :search, params[:search], placeholder: "location ", :id => 'search', required: true
+    = submit_tag "Search", :name => nil, :class => "searchbutton"
+%br
+%br
+%br
+%br
+%br
+%br
+
 - @venue.each do |venue|
   = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
   %h2= link_to venue.name,venue, target: :_blank

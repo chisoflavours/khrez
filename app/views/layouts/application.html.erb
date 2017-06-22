@@ -5,18 +5,27 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <%= csrf_meta_tags %>
 </head>
 <body>
        <% if notice %>
-         <p class="notice"><%= notice %></p>
+       <div class="alert">
+         <span class="closebtn">&times;</span>  
+           <strong><%= notice %></strong> 
+       </div>
        <% end %>
        
        <% if alert %>
-         <p class="alert"><%= alert %></p>
+       <div class="alert">
+         <span class="closebtn">&times;</span>  
+         <strong><%= alert %></strong>
+       </div>   
        <% end %>
        
-       
+
+
+
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <br>
@@ -39,8 +48,24 @@
   <a href="#home"><%= link_to 'Khrez', root_path %></a>
    <span id="hammenu" onclick="openNav()">&#9776</span>
 </div>
- 
+
+
+  
 <%= yield %>
 
 </body>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+</script>
+
 </html>
