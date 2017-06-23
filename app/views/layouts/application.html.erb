@@ -32,8 +32,8 @@
   <br>
   <br>
   <% unless admin_signed_in? %>
-    <a href="#"><%= link_to 'Admin Log In', new_admin_session_path %> </a>
-    <a href="#">Admin Signup</a>
+    <a href="#"><%= link_to 'Venue Log In', new_admin_session_path %> </a>
+    <a href="#"><%= link_to 'List Your Venue', page_listyourvenue_path %></a>
   <% end %>    
   <% if admin_signed_in?%>
     <h1 style="color:#ffffff;font-size:20px;padding: 34px 15px;" > Logged in as <br> 

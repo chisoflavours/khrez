@@ -13,3 +13,77 @@
 #two{
     color:#ffd680;
 }
+
+
+
+* { box-sizing: border-box; }
+
+
+
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 100%;
+  margin-bottom:70px;
+}
+
+@media screen and (min-width: 600px) {
+
+.grid-sizer,
+.grid-item {
+  width: 35%;
+  margin-bottom:70px;
+  margin-left:100px;
+}
+
+
+
+}
+
+.grid-item {
+  float: left;
+  position: relative;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.venuetext{
+    color:gray;
+    text-decoration:none;
+    font-weight:700;
+    text-align:center;
+    font-size:25px;
+    text-transform:uppercase;
+    text-decoration:none;
+}
+
+.venuetext:hover{
+    text-decoration:underline;
+}
+
+.venuecat{
+  color:orange;
+  text-transform:lowercase;
+  font-size:20px;
+  text-decoration:none;
+}
+
+.venuecit{
+  color:black;
+  font-size:15px;
+  text-transform:uppercase;
+  text-decoration:none;
+}
+

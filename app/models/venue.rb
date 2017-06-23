@@ -6,7 +6,7 @@ class Venue < ActiveRecord::Base
     end
 
     
-    has_attached_file :thumbnail, styles: { medium: "700x500", venueimage: "500x700" }
+    has_attached_file :thumbnail, styles: { medium: "600x400#", venueimage: "500x700" }
     validates_attachment_content_type :thumbnail, content_type: /\Aimage\/.*\z/
     
     

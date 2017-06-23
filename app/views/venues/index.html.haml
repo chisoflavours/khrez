@@ -16,12 +16,31 @@
 %br
 %br
 
-- @venue.each do |venue|
-  = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
-  %h2= link_to venue.name,venue, target: :_blank
-  -if admin_signed_in?
-    = link_to 'Delete', venue, method: :delete, data: { confirm: 'Are you sure, you will loose everything !' } 
-    = link_to 'Edit', edit_venue_path(venue), target: :_blank
+
+
+.grid
+  .grid-sizer
+  - @venue.each do |venue|
+    .grid-item
+      = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
+      %br/
+      %br/
+      = link_to venue.name, venue, :class => 'venuetext', target: :_blank
+      %br/
+      %br/
+      = link_to venue.category, venue, :class => 'venuecat', target: :_blank
+      %br/
+      %br/
+      = link_to venue.city, venue, :class => 'venuecit', target: :_blank
+      %br/
+      -if admin_signed_in?
+        %br/
+        = link_to 'Delete', venue, method: :delete, data: { confirm: 'Are you sure, you will loose everything !' } 
+        %br/
+        %br/
+        = link_to 'Edit', edit_venue_path(venue), target: :_blank
+        %br/
+        %br/
 
 
 
