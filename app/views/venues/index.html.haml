@@ -16,8 +16,6 @@
 %br
 %br
 
-
-
 .grid
   .grid-sizer
   - @venue.each do |venue|
@@ -35,10 +33,12 @@
       %br/
       -if admin_signed_in?
         %br/
-        = link_to 'Delete', venue, method: :delete, data: { confirm: 'Are you sure, you will loose everything !' } 
         %br/
         %br/
-        = link_to 'Edit', edit_venue_path(venue), target: :_blank
+        = link_to 'Delete', venue, method: :delete, data: { confirm: 'Are you sure, you will loose everything !' }, :class => 'venuecit'
+        %br/
+        %br/
+        = link_to 'Edit', edit_venue_path(venue), target: :_blank, :class => 'venuecit'
         %br/
         %br/
 
@@ -52,4 +52,4 @@
   %h4#eror
     There are no venues containing the term 
     %p#two #{params[:search]}
-  
+
