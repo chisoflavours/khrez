@@ -49,6 +49,15 @@
 
 }
 
+@media (max-width: 600px) {
+
+.grid-sizer,
+.grid-item {
+  text-align:center;
+}
+  
+} 
+
 .grid-item {
   float: left;
   position: relative;

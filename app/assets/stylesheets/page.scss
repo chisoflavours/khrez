@@ -1,4 +1,4 @@
-
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
 
 body, html {
     height: 100%;
@@ -30,12 +30,14 @@ body, html {
   #text2{
      
   }  
-  
+}
+
+
+
 
 }
 
 
-}
 
 #exloretext{
     color:gray;
@@ -45,6 +47,23 @@ body, html {
     #fullstop{
         color:#ffd680;
     }
+}
+
+@media (max-width: 600px) {
+#exloretext{
+    display:none;
+}
+
+.hero-image{
+    background:#ffffff;
+}
+#text2{
+    color:#ffd680;
+}
+
+#footer{
+    display:none;
+}
 }
 
 #footer{
