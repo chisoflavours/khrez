@@ -8,12 +8,13 @@ body, html {
 /* Hero Image on home page */
 
 .hero-image {
-  background-image: url("matt-hoffman-277877.jpg");
-  height: 65%;
+  background-image: url("breather-168754.jpg");
+  height: 59%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
         
   .hero-text {
     text-align: left;
@@ -21,8 +22,9 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size:25px;
+    color: #696969;
+    font-size:22px;
+
 
     
   #text2{
@@ -45,4 +47,44 @@ body, html {
     }
 }
 
+#footer{
+    background:#ffffff;
+    border-top: 1px solid gray;
+    padding:50px;
+    margin-top:30px;
+    ul{
+        list-style-type:none;
+    }
+    li{
+        display:inline-block;
+        margin-left:20px;
+        font-size:20px;
+    }
+    .tex{
+        color:gray;
+        text-decoration:none;
+    }
+    .tex:hover{
+        color:#ffd680;
+    }
+    #socialbar{
+        float:right;
+    }
+    
+.fa {
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color:gray;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color:#ffd680;
+}
+
+}
 
