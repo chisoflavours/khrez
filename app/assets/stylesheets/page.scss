@@ -8,7 +8,12 @@ body, html {
 /* Hero Image on home page */
 
 .hero-image {
-  height: 75%;
+  background-image: url("matt-hoffman-277877.jpg");
+  height: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
         
   .hero-text {
     text-align: left;
@@ -16,12 +21,12 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: gray;
+    color: #ffffff;
     font-size:25px;
 
     
   #text2{
-     color:#ffd680;
+     
   }  
   
 
@@ -39,7 +44,5 @@ body, html {
         color:#ffd680;
     }
 }
-
-
 
 
