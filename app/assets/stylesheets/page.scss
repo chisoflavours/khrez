@@ -8,7 +8,7 @@ body, html {
 /* Hero Image on home page */
 
 .hero-image {
-  background-image: url("breather-168754.jpg");
+  background-image: image-url("breather-168754.jpg");
   height: 59%;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ body, html {
     li{
         display:inline-block;
         margin-left:20px;
-        font-size:20px;
+        font-size:17px;
     }
     .tex{
         color:gray;
