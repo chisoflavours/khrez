@@ -4,7 +4,9 @@
         <li><%= link_to 'About', page_about_path,:class => 'tex' %></li>
         <li><%= link_to 'Privacy Policy', page_privacypolicy_path,:class => 'tex' %></li>
         <li><%= link_to 'Terms & Conditions', page_termsandconditions_path,:class => 'tex' %></li>
-        <li><%= link_to 'List Your Venue', page_listyourvenue_path,:class => 'tex' %></li>
+        <% unless admin_signed_in? %>
+          <li><%= link_to 'List Your Venue', page_listyourvenue_path,:class => 'tex' %></li>
+        <%end%>
         
         <div id="socialbar">
           <li><a href="#" class="fa fa-facebook" ></a></li>

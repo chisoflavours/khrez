@@ -1,0 +1,153 @@
+/* Variables */
+
+$maincolour:#d6dce0;
+$secondcolour:#ffd680;
+
+.colour{
+  color:$maincolour;
+}
+
+.center{
+  text-align:center;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+
+
+
+.button {
+	outline: none;
+	background: transparent;
+	color:$maincolour;
+	text-decoration:none;
+	border: 1px solid $maincolour;
+	padding: .7em 1.5em;
+	border-radius: 1.5em;
+	&:hover {
+		border: 1px solid $secondcolour;
+		color: $secondcolour;
+
+	}
+}
+
+.button2 {
+	outline: none;
+	background: transparent;
+	color:#ffffff;
+	text-decoration:none;
+	border: 1px solid #ffffff;
+	padding: .7em 1.5em;
+	border-radius: 1.5em;
+	&:hover {
+		border: 1px solid #000000;
+		color: #000000;
+
+	}
+}
+
+.wrapper{
+  	width: 40%;
+	margin: 0 auto;
+	margin-top:100px;
+}
+
+.alert {
+  padding: 20px;
+  background-color:  #4CAF50;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  .closebtn:hover {
+    color: black;
+  }
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+}
+
+
+
+/* Needs Organising */
+
+.field{
+  text-align:center;
+}
+
+.link{
+  color:gray;
+  text-decoration:none;
+}
+
+.link:hover{
+  color:#ffd680;
+}
+
+
+
+
+
+  #search{
+      background:#ffffff;
+      margin-top:50px;
+      border: 3px solid #ffffff;
+      border-radius:10px;
+      padding:30px;
+      color:#ffd680;
+      padding-left:40px;
+  }
+  .searchbutton{
+      padding:30px;
+      border-radius:10px;
+      background:gray;
+      border:0;
+      margin-left:40px;
+      color:#ffffff;
+  }
+  .searchbutton:hover{
+      background:#ffd680;
+  }
+  
+  .margin{
+    text-align:center;
+  }
+  
+  #myBtn{
+    float:right;
+    padding: 38px 1px;
+  }
+ 
+ 
+  
+@media (max-width: 600px) {
+  #search{
+      border: 3px solid gray;
+  }
+  .searchbutton{
+    margin-top:30px;
+    position:absolute;
+    right:0%;
+    margin-left:0;
+
+
+  }
+  
+}  

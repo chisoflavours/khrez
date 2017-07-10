@@ -1,2 +1,44 @@
-<h1>Page#listyourvenue</h1>
-<p>Find me in app/views/page/listyourvenue.html.erb</p>
+= render 'nav'
+ 
+.hero
+  .text
+    %h1 List your venue
+    %br/
+    %br/
+    = link_to 'Start Now', new_admin_registration_path, :class => 'button2'
+
+.wrapper
+  %h1.colour How it works 
+  
+  %br/
+  
+  %p#gray 1. Sign Up for your free account
+  %p#gray 2. Fill in your venues details
+  %p#gray 3. See all the bookings come in !
+  
+  %h1.colour It's as easy as that !
+  
+  %h1.colour We sort out everything else for you such as ...
+  
+  %br/
+  
+  %p#gray 1. Listing your venue on our website
+  %p#gray 2. Advertising your venue on social media
+  %p#gray 3. Makeing sure potential customers can find your venue easily
+  
+  %h1.colour Payments
+  %br/
+  
+  %p#gray We will give you 3 months free but after that you will be charged for using khrez
+  
+  %br/
+  %br/
+  %br/
+  %br/
+  
+  = link_to 'Start Now', new_admin_registration_path, :class => 'button'
+  
+  %br/
+  %br/
+  
+= render 'footer'  

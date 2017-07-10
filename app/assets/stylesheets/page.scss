@@ -40,31 +40,15 @@ body, html {
 
 
 #exloretext{
-    color:gray;
-    padding:100px;
-    margin-top:90px;
-    font-size:3em;
+    color:#d6dce0;
+    margin-top:130px;
+    font-size:2.5em;
     #fullstop{
         color:#ffd680;
     }
 }
 
-@media (max-width: 768px) {
-#exloretext{
-    text-align:center;
-}
 
-.hero-image{
-    background:#ffffff;
-}
-#text2{
-    color:#ffd680;
-}
-
-#footer{
-    display:none;
-}
-}
 
 #footer{
     background:#ffffff;
@@ -107,3 +91,24 @@ body, html {
 
 }
 
+.hero {
+  background:#d6dce0;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  .text{
+      color:#ffffff;
+     text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+}
+
+#gray{
+    color:gray;
+}
