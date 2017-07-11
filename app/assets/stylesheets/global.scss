@@ -11,6 +11,20 @@ $secondcolour:#ffd680;
   text-align:center;
 }
 
+.uppercase{
+  text-transform:uppercase;
+}
+
+.hr{
+  width:10px;
+  border:10px solid red;
+}
+
+.p{
+  text-transform:uppercase;
+  color:red;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     margin:0;
@@ -55,10 +69,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper{
-  	width: 40%;
+  width: 40%;
 	margin: 0 auto;
 	margin-top:100px;
 }
+
+
 
 .alert {
   padding: 20px;
@@ -88,9 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Needs Organising */
 
-.field{
-  text-align:center;
-}
+
 
 .link{
   color:gray;
@@ -113,6 +127,7 @@ h1, h2, h3, h4, h5, h6 {
       padding:30px;
       color:#ffd680;
       padding-left:40px;
+      margin-left:9px;
   }
   .searchbutton{
       padding:30px;
@@ -131,23 +146,65 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   #myBtn{
-    float:right;
-    padding: 38px 1px;
+
   }
  
  
   
-@media (max-width: 600px) {
-  #search{
-      border: 3px solid gray;
-  }
-  .searchbutton{
-    margin-top:30px;
-    position:absolute;
-    right:0%;
-    margin-left:0;
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
 
-  }
-  
-}  
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.field{
+  text-align:center;
+}
+
+.in{
+  outline: none;
+	background: transparent;
+	color:$maincolour;
+	text-decoration:none;
+	border: 1px solid $maincolour;
+	padding: .7em 1.5em;
+	border-radius: 1.5em;
+	&:hover {
+		border: 1px solid $secondcolour;
+		color: $secondcolour;
+
+	}
+}

@@ -1,35 +1,104 @@
 = simple_form_for @venue, html: { multipart: true } do |f|
-  = f.input :name
-  = f.input :description
-  = f.input :category
-  = f.input :price
-  = f.input :price_plan
-  = f.input :postcode
-  = f.input :county
-  = f.input :street_line_one
-  = f.input :street_line_two
-  = f.input :city
-  = f.input :capacity_standing
-  = f.input :capacity_sitting
-  = f.input :size
-  = f.input :parking_spaces
-  = f.input :kitchens
-  = f.input :disabled_acess
-  = f.input :outside_spaces
-  = f.input :toilets
-  = f.input :tables 
-  = f.input :chairs
-  = f.input :extra_info
-  = f.input :external_catering_allowed
-  = f.input :external_alcahool_allowed
-  = f.input :inhouse_catering_provided
-  = f.input :inhouse_alcahool_provided
-  = f.input :storage
-  = f.input :air_conditionind
-  = f.input :wifi
-  = f.input :projector
-  = f.file_field :thumbnail
-  = f.file_field :logo
-  
-  = f.button :submit
-  
+  = f.input :name, input_html: { class: 'in' }, label: false, placeholder: "Name"
+  %br/
+  %br/
+  = f.input :description, required: true, input_html: { class: 'in' }, label: false, placeholder: "Description"
+  %br/
+  %br/
+  = f.input :category, required: true, input_html: { class: 'in' }, placeholder: "Category", label: false
+  %br/
+  %br/
+  = f.input :price, required: true , input_html: { class: 'in' }, label: false, placeholder: "Price"
+  %br/
+  %br/
+  = f.input :price_plan, required: true , input_html: { class: 'in' }, label: false, placeholder: "Price Plan"
+  %br/
+  %br/
+  = f.input :postcode, required: true, input_html: { class: 'in' }, label: false, placeholder: "Postcode"
+  %br/
+  %br/
+  = f.input :county, required: true, input_html: { class: 'in' }, label: false, placeholder: "County"
+  %br/
+  %br/
+  = f.input :street_line_one, required: true, input_html: { class: 'in' }, label: false, placeholder: "Street Line 1"
+  %br/
+  %br/
+  = f.input :street_line_two, required: true, input_html: { class: 'in' }, label: false, placeholder: "Street Line 2"
+  %br/
+  %br/
+  = f.input :city, required: true, input_html: { class: 'in' }, label: false, placeholder: "City"
+  %br/
+  %br/
+  = f.input :capacity_standing, required: true, input_html: { class: 'in' }, label: false, placeholder: "Capacity Standing"
+  %br/
+  %br/
+  = f.input :capacity_sitting, required: true, input_html: { class: 'in' }, label: false, placeholder: "Capacity Sitting"
+  %br/
+  %br/
+  = f.input :size, required: true, input_html: { class: 'in' }, label: false, placeholder: "Size sqm"
+  %br/
+  %br/
+  = f.input :parking_spaces, required: true, input_html: { class: 'in' }, label: false, placeholder: "Parking Spaces"
+  %br/
+  %br/
+  = f.input :kitchens, required: true , input_html: { class: 'in' }, label: false, placeholder: "Kitchens"
+  %br/
+  %br/
+  = f.input :disabled_acess , input_html: { class: 'ib' }, label: false, label: 'Disabled Acess'
+  %br/
+  %br/
+  = f.input :outside_spaces , input_html: { class: 'ib' }, label: false, label: 'Outside Space'
+  %br/
+  %br/
+  = f.input :toilets, required: true , input_html: { class: 'in' }, label: false, placeholder: "Toilets"
+  %br/
+  %br/
+  = f.input :tables, required: true , input_html: { class: 'in' }, label: false, placeholder: "Tables"
+  %br/
+  %br/
+  = f.input :chairs, required: true , input_html: { class: 'in' }, label: false, placeholder: "Chairs"
+  %br/
+  %br/
+  = f.input :extra_info, input_html: { class: 'in' }, label: false, placeholder: "Extra Infomation"
+  %br/
+  %br/
+  = f.input :external_catering_allowed, label: false, label: 'External Catering', input_html: { class: 'ib' }
+  %br/
+  %br/
+  = f.input :external_alcahool_allowed, label: false, label: 'External Alcohol', input_html: { class: 'ib' }
+  %br/
+  %br/
+  = f.input :inhouse_catering_provided, label: false, label: 'Catering Provided', input_html: { class: 'ib' }
+  %br/
+  %br/
+  = f.input :inhouse_alcahool_provided, label: false, label: 'Alcohol Provided', input_html: { class: 'ib' }
+  %br/
+  %br/
+  = f.input :storage, label: false, label: 'Storage', input_html: { class: 'ib' }
+  %br/
+  %br/
+  = f.input :air_conditionind, label: false, label: 'Air conditioning', input_html: { class: 'ib' }
+  %br/
+  %br/
+  = f.input :wifi, label: false, label: 'Wifi', input_html: { class: 'ib' }
+  %br/
+  %br/
+  = f.input :projector, label: false, label: 'Projector', input_html: { class: 'ib' }
+  %br/
+  %br/
+  %h1.colour Venue Image
+  %br/
+  = f.file_field :thumbnail, :class => 'button', required: true 
+  %h1.colour Company Logo
+  %br/
+  = f.file_field :logo, :class => 'button', required: true 
+  %br/
+  %br/
+  %br/
+  = f.button :submit, :class => 'button'
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/

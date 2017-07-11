@@ -6,11 +6,11 @@
 <br>
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.input :email, required: false %>
+    <%= f.input :email, required: false , input_html: { class: 'in' }, label: false, placeholder: "Email"%>
   </div>  
   <br>
   <div class="field">
-    <%= f.input :password, required: false %>
+    <%= f.input :password, required: false , input_html: { class: 'in' }, label: false, placeholder: "Password"%>
   </div>  
 <br>
 <br>

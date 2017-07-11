@@ -1,3 +1,6 @@
+$maincolour:#d6dce0;
+$secondcolour:#ffd680;
+
 .h1{
     text-align:center;
     color:gray;
@@ -97,3 +100,54 @@
   text-decoration:none;
 }
 
+
+
+
+
+
+/* clear fix */
+.photo:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.photo-sizer,
+.photo-item {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+
+.photo-sizer,
+.photo-item {
+  width: 100%;
+  margin-left:100px;
+  margin-right:100px;
+}
+
+
+
+
+
+}
+
+.photo-item {
+  float: right;
+  position: relative;
+   
+}
+
+.photo-item img {
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+
+
+.ib{
+  margin-right:30px;
+}
