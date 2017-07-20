@@ -22,6 +22,7 @@ class VenuesController < ApplicationController
        
     
     def show
+
     end
     
     def new

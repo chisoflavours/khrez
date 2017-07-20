@@ -15,7 +15,6 @@
         = image_tag @venue.thumbnail.url(:medium)
   %br/
   %br/
-  
 
 
 
@@ -51,8 +50,7 @@
           = @venue.admin.name
         %br/
         %br/
-        
-        = image_tag @venue.logo.url(:medium)  
+
       %br/
       %br/
       %br/
@@ -115,9 +113,91 @@
   - else 
     No outside space
     
-
+  %p
+  - if @venue.kitchens == 0
+    No kitchens
+  - else
+    = @venue.kitchens
+    kitchens
+  
+  %p
+    - if @venue.toilets == 0
+      No toilets
+    - else
+      = @venue.toilets
+      toilets
+      
+  %p
+    - if @venue.tables == 0
+      No tables
+    - else
+      = @venue.tables
+      tables
+  
+  %p
+    - if @venue.chairs == 0
+      No chairs
+    - else
+      = @venue.chairs
+      chairs    
+  %p
+    - if @venue.external_catering_allowed == true
+      External Catering allowed
+    - else 
+      No external catering allowed
+      
+  %p
+    - if @venue.external_alcahool_allowed == true
+      External alcahol allowed
+    - else 
+      No external alcahol allowed
+      
+  %p
+    - if @venue.inhouse_catering_provided == true
+      Catering provided
+    - else 
+      No catering provided
+  
+  %p
+    - if @venue.inhouse_alcahool_provided == true
+      Alcahol provided
+    - else 
+      No alcahol provided    
+    
+  %p
+    - if @venue.storage == true
+      Storage
+    - else 
+      No Storage
+      
+  %p
+    - if @venue.air_conditionind == true
+      Air conditioning
+    - else 
+      No air conditioning
+      
+  %p
+    - if @venue.wifi == true
+      Wifi
+    - else 
+      No wifi
+      
+  %p
+    - if @venue.outside_spaces == true
+      Projector
+    - else 
+      No projector
+  
+  %h1.colour
+    Created 
+    = time_ago_in_words(@venue.created_at)
+    ago
+  
   %br/
   %br/
+  
+  
+= render 'page/footer'
 :javascript
   // Get the modal
   var modal = document.getElementById('myModal');
