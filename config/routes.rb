@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'page/listyourvenue'
   
+  get 'page/all'
+  
   # root :to => 'page#soon'
   
    authenticated :admin do

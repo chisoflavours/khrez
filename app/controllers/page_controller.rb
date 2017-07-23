@@ -14,4 +14,8 @@ class PageController < ApplicationController
 
   def listyourvenue
   end
+  
+  def all
+    @admin = Admin.all.order("created_at DESC")
+  end
 end
