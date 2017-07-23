@@ -22,7 +22,8 @@ class VenuesController < ApplicationController
        
     
     def show
-
+         @venue = Venue.find(params[:id])
+         @venues = Venue.limit(2).order("created_at DESC")
     end
     
     def new

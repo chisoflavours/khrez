@@ -59,6 +59,11 @@ $secondcolour:#ffd680;
 .grid-item {
   text-align:center;
 }
+
+#myBtns{
+  margin-left:0px;
+  margin-top:10px;
+}
   
 } 
 
@@ -126,6 +131,8 @@ $secondcolour:#ffd680;
   width: 100%;
   margin-left:100px;
   margin-right:100px;
+  
+  
 }
 
 
@@ -151,3 +158,34 @@ $secondcolour:#ffd680;
 .ib{
   margin-right:30px;
 }
+
+
+
+.tablink {
+    background-color: #D3D3D3;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 24px 16px;
+    font-size: 20px;
+    width: 33.3333333333%;
+}
+
+.tablink:hover {
+    background-color: gray;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 150px;
+    text-align: center;
+}
+
+#London {background-color:#ffd680;}
+#Paris {background-color:#ffd680;}
+#Tokyo {background-color:#ffd680;}
+;

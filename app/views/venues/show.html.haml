@@ -1,12 +1,14 @@
 = render 'page/nav'
 
 
+
 %br/
 
 .wrapper
-  %h1.colour= @venue.name
-  %p.uppercase= @venue.description
-  %p.uppercase= @venue.category
+  %h1= @venue.name
+  %p.uppercase.colour= @venue.description
+  %br/
+  %br/
   
   %br/
   .photo
@@ -23,14 +25,11 @@
   %br/
   %br/
 
-
-  
-  %br/
-  %br/
-
   
   / Trigger/Open The Modal
-  %button#myBtn.button  Contact Venue
+  %br
+  %br
+  %button#myBtn.button  Contact Venue 
   %br/
   %br/
   / The Modal
@@ -56,8 +55,14 @@
       %br/
   %br/
   %br/
-      
-  %h2.colour Price
+
+%br 
+%br
+%br
+%br
+
+#London.tabcontent
+  %h1 Price
   %p
   £ 
   = @venue.price 
@@ -65,7 +70,8 @@
   
   %br/
   %br/
-  %h2.colour Location
+#Paris.tabcontent
+  %h1 Location
   %p
   = @venue.city
   %br/
@@ -81,7 +87,9 @@
   %br/
   = @venue.street_line_two
   %br/
-  %h2.colour Capacity
+#Tokyo.tabcontent
+
+  %h1 Capacity
   %p 
   = @venue.capacity_standing
   people standing
@@ -96,107 +104,167 @@
   
   %br/
   %br/
-  %h2.colour Amenities
-  %p
-  = @venue.parking_spaces
-  parking spaces
+
+%button#defaultOpen.tablink{:onclick => "openCity('London', this, 'gray')"} Price
+%button.tablink{:onclick => "openCity('Paris', this, 'gray')"} Location
+%button.tablink{:onclick => "openCity('Tokyo', this, 'gray')"} Capacity
+
+
+%br
+%br
+
+.wrapper
+
+
+  %br
+  %br
+  %h1.colour.center Features
+  %br
+  %h2
+    = @venue.parking_spaces
+    parking spaces
   
-  %p
-  - if @venue.disabled_acess == true
-    Disabled access
-  -else
-    No disabled access
+  %h2
+    - if @venue.disabled_acess == true
+      Disabled access
+    -else
+      No disabled access
   
-  %p
-  - if @venue.outside_spaces == true
-    Outside space
-  - else 
-    No outside space
+  %h2
+    - if @venue.outside_spaces == true
+      Outside space
+    - else 
+      No outside space
     
-  %p
-  - if @venue.kitchens == 0
-    No kitchens
-  - else
-    = @venue.kitchens
-    kitchens
+  %h2
+    - if @venue.kitchens == 0
+      No kitchens
+    - else
+      = @venue.kitchens
+      kitchens
   
-  %p
+  %h2
     - if @venue.toilets == 0
       No toilets
     - else
       = @venue.toilets
       toilets
       
-  %p
+  %h2
     - if @venue.tables == 0
       No tables
     - else
       = @venue.tables
       tables
   
-  %p
+  %h2
     - if @venue.chairs == 0
       No chairs
     - else
       = @venue.chairs
       chairs    
-  %p
+  %h2
     - if @venue.external_catering_allowed == true
       External Catering allowed
     - else 
       No external catering allowed
       
-  %p
+  %h2
     - if @venue.external_alcahool_allowed == true
       External alcahol allowed
     - else 
       No external alcahol allowed
       
-  %p
+  %h2
     - if @venue.inhouse_catering_provided == true
       Catering provided
     - else 
       No catering provided
   
-  %p
+  %h2
     - if @venue.inhouse_alcahool_provided == true
       Alcahol provided
     - else 
       No alcahol provided    
     
-  %p
+  %h2
     - if @venue.storage == true
       Storage
     - else 
       No Storage
       
-  %p
+  %h2
     - if @venue.air_conditionind == true
       Air conditioning
     - else 
       No air conditioning
       
-  %p
+  %h2
     - if @venue.wifi == true
       Wifi
     - else 
       No wifi
       
-  %p
+  %h2
     - if @venue.outside_spaces == true
-      Projector
+      Outside space
     - else 
-      No projector
-  
-  %h1.colour
-    Created 
+      No outside space
+  %h2
+    - if @venue.projector == true
+      Projector provided
+    - else 
+      No projector provided
+  %br
+  %br
+  %h1.colour.center Extra Info
+  %br
+  %h3.center
+    = @venue.extra_info
+    %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %h2.colour.center
+    Added 
     = time_ago_in_words(@venue.created_at)
     ago
   
   %br/
   %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %h1.colour.center More Venues
+  %br/
+  %br/
+.grid
+  .grid-sizer
+  - @venues.each do |venue|
   
-  
+    .grid-item
+      = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
+      %br/
+      %br/
+      = link_to venue.name, venue, :class => 'venuetext', target: :_blank
+      %br/
+      %br/
+      = link_to venue.category, venue, :class => 'venuecat', target: :_blank
+      %br/
+      %br/
+      = link_to venue.city, venue, :class => 'venuecit', target: :_blank
+      %br/
+
+
 = render 'page/footer'
 :javascript
   // Get the modal
@@ -224,3 +292,22 @@
           modal.style.display = "none";
       }
   }
+  
+  // Tabs
+  
+  function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();

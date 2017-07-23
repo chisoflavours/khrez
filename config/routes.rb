@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  
-  devise_for :admins
 
+  devise_for :admins, controllers: { registrations: "registrations" }
 
   get 'page/about'
 
@@ -12,6 +11,8 @@ Rails.application.routes.draw do
   get 'page/listyourvenue'
   
   get 'page/all'
+  
+  get 'page/aftersignup'
   
   # root :to => 'page#soon'
   
