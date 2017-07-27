@@ -5,7 +5,7 @@
   = f.input :description, required: true, input_html: { class: 'in' }, label: false, placeholder: "Description"
   %br/
   %br/
-  = f.input :category, required: true, input_html: { class: 'in' }, placeholder: "Category", label: false
+  = f.input :category, required: true, input_html: { class: 'in' }, prompt: "Category", label: false, collection: [ "Hall", "Bar", "Meeting Room", "Reception", "Kids Party", "Party", "Exhibition", "Performance Venue", "Wedding Venue", "Private Room", "Conference Room", "Other"]
   %br/
   %br/
   = f.input :price, required: true , input_html: { class: 'in' }, label: false, placeholder: "Price"
