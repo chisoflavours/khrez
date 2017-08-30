@@ -19,33 +19,30 @@
   Explore
   %span#fullstop .
 
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
 
-.grid
-  .grid-sizer
+#posts
   - @venue.each do |venue|
-    .grid-item
-      = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
-      %br/
-      %br/
-      = link_to venue.name, venue, :class => 'venuetext', target: :_blank
-      %br/
-      %br/
-      = link_to venue.category, venue, :class => 'venuecat', target: :_blank
-      %br/
-      %br/
-      = link_to venue.city, venue, :class => 'venuecit', target: :_blank
-      %br/
-      -if admin_signed_in?
-        %br/
-        = link_to 'Delete', venue, method: :delete, data: { confirm: 'Are you sure, you will loose everything !' } 
+    .post
+      .post_image
+        = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
+      .post_content
+        = link_to venue.name, venue, :class => 'venuetext', target: :_blank
         %br/
         %br/
-        = link_to 'Edit', edit_venue_path(venue), target: :_blank
+        = link_to venue.category, venue, :class => 'venuecat', target: :_blank
         %br/
         %br/
-        %br/
-        %br/
+        = link_to venue.city, venue, :class => 'venuecit', target: :_blank
 
-
-
-= render 'page/footer' 

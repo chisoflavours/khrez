@@ -2,13 +2,13 @@ class VenuesController < ApplicationController
     
     before_action :find_venue, only: [:show, :edit, :update, :destroy]
     before_action :authenticate_admin!, only: [:new, :edit, :update, :destroy]
-    
+    before_action :check_ownership, only: [:edit, :update,:destroy]
     
     def index
         if params[:search]
-          @venue = Venue.search(params[:search]).order("created_at DESC")
+          @venue = Venue.search(params[:search]).order("RANDOM()")
         else
-          @venue = Venue.all.order("created_at DESC")
+          @venue = Venue.all.order("RANDOM()")
         end
         
         if admin_signed_in?
@@ -23,7 +23,7 @@ class VenuesController < ApplicationController
     
     def show
          @venue = Venue.find(params[:id])
-         @venues = Venue.limit(2).order("created_at DESC")
+         @venues = Venue.limit(3).order("RANDOM()")
     end
     
     def new
@@ -57,6 +57,10 @@ class VenuesController < ApplicationController
     end
     
     private
+    
+    def check_ownership
+      redirect_to root_path, notice: 'Not Authorized' unless @venue.admin_id == current_admin.id
+    end
     
     def find_venue
         @venue = Venue.find(params[:id])

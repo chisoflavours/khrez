@@ -5,5 +5,6 @@ class Admin < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
          
   has_many :venues
+  validates :phone,  presence: true
   
 end

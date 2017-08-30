@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1200px) {
+  #posts{
+      width:100%;
+      margin-right:0;
+      margin:0;
+      overflow:hidden;
+      float:left;
+      text-align:center;
+      .post{
+          width:100%;
+          margin-left:0;
+          .post_content{
+            padding-left:20px;
+            max-width:100%;
+            text-align:center;
+            margin-top:70px;
+          }
+      }
+  }
+  
+  .hero-image {
+  background-image: image-url("breather-163391.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+        
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 43%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: gray;
+    font-size:30px;
+    letter-spacing:1px;
+    
+
+
+    
+  #text2{
+     color:#ffffff;
+  }  
+  
+  
+}
+
+
+
+
+}
+
+    #search{
+      background:#ffffff;
+      margin-top:50px;
+      border: 3px solid #ffffff;
+      border-radius:400px;
+      padding:50px;
+      color:#ffd680;
+      padding-left:60px;
+      margin-left:9px;
+  }
+  
+    .searchbutton{
+      padding:50px;
+      border-radius:100px;
+      background:gray;
+      border:0;
+      margin-top:50px;
+      color:#ffffff;
+  }
+
+.topnav{
+  a{
+    font-size:35px;
+  }
+  #hammenu{
+    font-size:35px;   
+  }
+
+}
+
+  .sidenav a{
+      font-size:30px;
+      margin-left:10px;
+  }
+  
+}

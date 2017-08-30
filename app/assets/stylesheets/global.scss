@@ -144,10 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   .margin{
     text-align:center;
   }
-  
-  #myBtn{
 
-  }
  
  
   
@@ -209,6 +206,27 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.tickbox{
+  margin-right:10px;
+}
+
+.ins{
+  outline: none;
+	background: transparent;
+	color:$maincolour;
+	text-decoration:none;
+	border:0;
+	padding: .7em 1.5em;
+	border-radius: 1.5em;
+	&:hover {
+		border:0;
+		color: $secondcolour;
+
+	}
+}
+
 .gray{
   color:#708090;
 }
+
+

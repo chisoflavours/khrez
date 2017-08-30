@@ -19,63 +19,7 @@ $secondcolour:#ffd680;
 
 
 
-* { box-sizing: border-box; }
 
-
-
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- .grid-item ---- */
-
-.grid-sizer,
-.grid-item {
-  width: 100%;
-  margin-bottom:70px;
-}
-
-@media screen and (min-width: 600px) {
-
-.grid-sizer,
-.grid-item {
-  width: 30%;
-  margin-bottom:70px;
-  margin-left:100px;
-  margin-right:50px;
-}
-
-
-
-}
-
-@media (max-width: 600px) {
-
-.grid-sizer,
-.grid-item {
-  text-align:center;
-}
-
-#myBtns{
-  margin-left:0px;
-  margin-top:10px;
-}
-  
-} 
-
-.grid-item {
-  float: left;
-  position: relative;
-}
-
-.grid-item img {
-  display: block;
-  max-width: 100%;
-}
 
 .venuetext{
     color:gray;
@@ -188,4 +132,75 @@ $secondcolour:#ffd680;
 #London {background-color:#ffd680;}
 #Paris {background-color:#ffd680;}
 #Tokyo {background-color:#ffd680;}
-;
+
+#posts {
+    width:90%;
+    float:right;
+    padding-top:70px;
+    margin-right:30px;
+	.post {
+		background: transparent;
+		width: 25%;
+		float: left;
+		margin: 1rem 2.5%;
+		border: 0px solid #E4E4E4;
+		margin-bottom:100px;
+		.post_image {;
+			img {
+				width: 93%;
+				height: 67%;
+
+				
+			}
+		}
+		.post_content {
+			margin-top:40px;
+		    .username {
+			  float: left;
+			  color:#ffffff;
+			  margin-bottom:20px;
+			  margin-top:5px;
+			  a{
+			  	color:gray;
+			  	text-decoration:none;
+			  	&:hover{
+			  		color:#333233;;
+			  	}
+			  }
+			  .name{
+			    color:#ffffff;
+			    &:hover{
+			        color:lightgray;
+			    }
+			  }
+			}
+			h2 {
+				margin: 0;
+				font-weight: 100;
+				margin-top:0rem;
+				font-size: 2.25rem;
+				a {
+					text-decoration: none;
+					color: #ffffff;
+					&:hover {
+						color: #E9E9E9;
+					}
+				}
+			}
+			.data {
+				padding: .75rem 5%;
+				color: #969696;
+				.username, .buttons {
+					margin: 0;
+					font-size: .8rem;
+				}
+				.buttons {
+					float: right;
+					span {
+						margin-left: .5rem;
+					}
+				}
+			}
+		}
+	}
+}

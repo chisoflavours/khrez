@@ -6,6 +6,7 @@
 
 .wrapper
   %h1= @venue.name
+  %br/
   %p.uppercase.colour= @venue.description
   %br/
   %br/
@@ -247,25 +248,21 @@
   %h1.colour.center More Venues
   %br/
   %br/
-.grid
-  .grid-sizer
+
+#posts
   - @venues.each do |venue|
-  
-    .grid-item
-      = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
-      %br/
-      %br/
-      = link_to venue.name, venue, :class => 'venuetext', target: :_blank
-      %br/
-      %br/
-      = link_to venue.category, venue, :class => 'venuecat', target: :_blank
-      %br/
-      %br/
-      = link_to venue.city, venue, :class => 'venuecit', target: :_blank
-      %br/
+    .post
+      .post_image
+        = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
+      .post_content
+        = link_to venue.name, venue, :class => 'venuetext', target: :_blank
+        %br/
+        %br/
+        = link_to venue.category, venue, :class => 'venuecat', target: :_blank
+        %br/
+        %br/
+        = link_to venue.city, venue, :class => 'venuecit', target: :_blank
 
-
-= render 'page/footer'
 :javascript
   // Get the modal
   var modal = document.getElementById('myModal');

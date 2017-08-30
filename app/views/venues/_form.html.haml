@@ -5,9 +5,6 @@
   = f.input :description, required: true, input_html: { class: 'in' }, label: false, placeholder: "Description"
   %br/
   %br/
-  = f.input :category, required: true, input_html: { class: 'in' }, prompt: "Category", label: false, collection: [ "Hall", "Bar", "Meeting Room", "Reception", "Kids Party", "Party", "Exhibition", "Performance Venue", "Wedding Venue", "Private Room", "Conference Room", "Other"]
-  %br/
-  %br/
   = f.input :price, required: true , input_html: { class: 'in' }, label: false, placeholder: "Price"
   %br/
   %br/
@@ -86,9 +83,14 @@
   = f.input :projector, label: false, label: 'Projector', input_html: { class: 'ib' }
   %br/
   %br/
+  %br/
+  = f.input :category, required: true, input_html: { class: 'ins' }, prompt: "Category", label: false, collection: [ "Hall", "Bar", "Meeting Room", "Reception", "Kids Party", "Party", "Exhibition", "Performance Venue", "Wedding Venue", "Private Room", "Conference Room", "Other"]
+  %br/
+  %br/
   %h1.colour Venue Image
   %br/
-  = f.file_field :thumbnail, :class => 'button', required: true 
+  .button
+    = f.input :thumbnail, as: :file, input_html: { hidden: true,class: 'button' }, label: 'Upload Venue Image'
   %br/
   %br/
   %br/
