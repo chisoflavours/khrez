@@ -14,13 +14,13 @@ Rails.application.routes.draw do
   
   get 'page/aftersignup'
   
-  # root :to => 'page#soon'
+  root :to => 'page#soon'
   
    authenticated :admin do
      root :to => 'venues#index', as: :authenticated_root
    end
    
-   root :to => 'page#index'
+   # root :to => 'page#index'
    
    get 'page/index'
   
