@@ -4,7 +4,8 @@
 - unless admin_signed_in?  
   = form_tag(venues_path, :method => "get", :id => 'form',:class => "margin") do
     = text_field_tag  :search, params[:search], placeholder: "location ", :id => 'search', required: true
-    = submit_tag "Search", :name => nil, :class => "searchbutton"
+    .index
+      = submit_tag "Search", :name => nil, :class => "searchbutton"
   %br
   %br
   %br
@@ -32,7 +33,6 @@
         %br/
         %br/
         = link_to venue.city, venue, :class => 'venuecit', target: :_blank
-
 
 
 

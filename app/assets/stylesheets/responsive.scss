@@ -10,7 +10,7 @@
           width:100%;
           margin-left:0;
           .post_content{
-            padding-left:20px;
+            padding-left:0;
             max-width:100%;
             text-align:center;
             margin-top:70px;
@@ -26,15 +26,17 @@
   background-size: cover;
   position: relative;
   background-attachment: fixed;
-        
+  .topnav a{
+    color:#ffffff;
+  }  
   .hero-text {
     text-align: left;
     position: absolute;
-    top: 43%;
-    left: 40%;
+    top: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: gray;
-    font-size:20px;
+    font-size:12px;
     letter-spacing:1px;
     
 
@@ -57,19 +59,22 @@
       margin-top:50px;
       border: 3px solid #ffffff;
       border-radius:400px;
-      padding:50px;
+      padding:20px;
       color:#ffd680;
-      padding-left:60px;
-      margin-left:9px;
+      width:75%;
+      margin-left:0;
+      text-align:center;
   }
   
     .searchbutton{
-      padding:50px;
+      padding:20px;
       border-radius:100px;
       background:gray;
       border:0;
-      margin-top:50px;
+      margin-top:30px;
       color:#ffffff;
+      width:100%;
+      margin-left:0;
   }
 
 .topnav{
@@ -86,5 +91,82 @@
       font-size:30px;
       margin-left:10px;
   }
-  
+
+#exloretext{
+    color:gray;
+    padding-top:230px;
+    position:absolute;
+    text-align:left;
+    font-size:3.2em;
+    top:90%;
+    left:0%;
+    margin-left:10px;
+    #fullstop{
+        color:#ffd680;
+    }
+}
+
+.sidenav a{
+  font-size:20px;
+}
+
+#footer{
+    background:#ffffff;
+    padding:0;
+    padding-bottom:20px;
+    #socialbar{
+      display:none;
+    }
+}
+
+.hero-image{
+  #hammenu {
+    color: #ffffff;
+  }
+}
+
+#hide{
+  display:none;
+}
+
+.index{
+	.searchbutton{
+		width:80%;
+	}
+}
+
+.wrapper{
+  width:70%;
+}
+
+.wrapperven{
+  width:90%;
+}
+
+.wrapperven{
+  width: 80%;
+  margin: 0 auto;
+  margin-top:100px;
+  .desc{
+  	max-width:50%;
+  	color:#708090;
+  }
+  img{
+  	height:30vh;
+  	width:100%;
+  }
+}
+
+.tablink {
+    background-color: #D3D3D3;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 24px 16px;
+    font-size: 12px;
+    width: 25%;
+}
+
 }

@@ -10,8 +10,6 @@ Rails.application.routes.draw do
 
   get 'page/listyourvenue'
   
-  get 'page/all'
-  
   get 'page/aftersignup'
   
   # root :to => 'page#soon'
@@ -24,6 +22,8 @@ Rails.application.routes.draw do
    
    get 'page/index'
   
-  resources :venues
+  resources :venues do
+      resources :comments
+  end
 
 end

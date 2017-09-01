@@ -114,7 +114,7 @@ $secondcolour:#ffd680;
     cursor: pointer;
     padding: 24px 16px;
     font-size: 20px;
-    width: 33.3333333333%;
+    width: 25%;
 }
 
 .tablink:hover {
@@ -125,13 +125,14 @@ $secondcolour:#ffd680;
 .tabcontent {
     color: white;
     display: none;
-    padding: 150px;
+    padding: 50px;
     text-align: center;
 }
 
 #London {background-color:#ffd680;}
 #Paris {background-color:#ffd680;}
 #Tokyo {background-color:#ffd680;}
+#Lagos {background-color:#ffd680;}
 
 #posts {
     width:90%;
@@ -203,4 +204,23 @@ $secondcolour:#ffd680;
 			}
 		}
 	}
+}
+
+.wrapperven{
+  width: 80%;
+  margin: 0 auto;
+  margin-top:100px;
+  .desc{
+  	width:100%;
+  	color:#708090;
+  }
+  img{
+  	height:80vh;
+  }
+
+
+}
+
+.comment{
+  text-align:center;
 }

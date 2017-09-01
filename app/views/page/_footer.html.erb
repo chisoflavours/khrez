@@ -1,12 +1,13 @@
 <div id="footer">
     <ul>
-        <li style="color:#fff567">©khrez ltd</li>
-        <!-- <li><%= link_to 'About', page_about_path,:class => 'tex' %></li> -->
-        <!-- <li><%= link_to 'Privacy Policy', page_privacypolicy_path,:class => 'tex' %></li> -->
-        <!-- <li><%= link_to 'Terms & Conditions', page_termsandconditions_path,:class => 'tex' %></li> -->
-        <% unless admin_signed_in? %>
-          <li><%= link_to 'List Your Venue', page_listyourvenue_path,:class => 'tex' %></li>
-        <%end%>
+        <div id="hide">
+          <li style="color:#fff567">©khrez ltd</li>
+        </div>
+        <br>
+        <li><%= link_to 'About', page_about_path,:class => 'tex',:id => 'hide' %></li>
+        <li><%= link_to 'Privacy Policy', page_privacypolicy_path,:class => 'tex',:id => 'hide' %></li>
+        <li><%= link_to 'Terms & Conditions', page_termsandconditions_path,:class => 'tex',:id => 'hide' %></li>
+        <li><%= link_to 'List Your Venue', page_listyourvenue_path,:class => 'tex',:id => 'hide' %></li>
         
         <div id="socialbar">
           <li><a href="#" class="fa fa-facebook" ></a></li>

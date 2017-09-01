@@ -5,17 +5,22 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: transparent;
+  background-color: gray;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px; }
+  padding-top: 60px; 
+ 
+}
+
 
 .sidenav a {
   text-decoration: none;
   font-size: 25px;
-  color: gray;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
+  text-align: center;
+  
   margin-top: 30px; }
   .sidenav a .sidenav a:hover {
     color: gray; }
@@ -50,8 +55,6 @@
   display: none; }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none; }
 
   .topnav a.icon {
     float: right;

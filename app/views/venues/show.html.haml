@@ -1,36 +1,22 @@
 = render 'page/nav'
 
-
-
-%br/
-
-.wrapper
+.wrapperven
+  - if admin_signed_in?
+    - if @venue.admin_id == current_admin.id
+      = link_to "Edit", edit_venue_path(@venue), :class => 'button'
+      = link_to "Delete", venue_path(@venue), method: :delete, data: { confirm: "Are you sure ?" }, :class => 'button'
   %h1= @venue.name
-  %br/
-  %p.uppercase.colour= @venue.description
-  %br/
-  %br/
-  
-  %br/
-  .photo
-    .photo-sizer
-      .photo-item
-        = image_tag @venue.thumbnail.url(:medium)
+  %p.colour
+  £ 
+  = @venue.price 
+  = @venue.price_plan
   %br/
   %br/
-
-
-
-
-
-  %br/
-  %br/
-
   
   / Trigger/Open The Modal
   %br
-  %br
   %button#myBtn.button  Contact Venue 
+  %br/
   %br/
   %br/
   / The Modal
@@ -50,25 +36,23 @@
           = @venue.admin.name
         %br/
         %br/
-
-      %br/
-      %br/
-      %br/
+        %br/
+  %br/
+  .photo
+    .photo-sizer
+      .photo-item
+        = image_tag @venue.thumbnail.url(:medium)
+  %br/
+  %br/
   %br/
   %br/
 
-%br 
-%br
-%br
-%br
+
+
 
 #London.tabcontent
-  %h1 Price
-  %p
-  £ 
-  = @venue.price 
-  = @venue.price_plan
-  
+  %h1 Description
+  %p.desc= @venue.description
   %br/
   %br/
 #Paris.tabcontent
@@ -106,10 +90,19 @@
   %br/
   %br/
 
-%button#defaultOpen.tablink{:onclick => "openCity('London', this, 'gray')"} Price
-%button.tablink{:onclick => "openCity('Paris', this, 'gray')"} Location
-%button.tablink{:onclick => "openCity('Tokyo', this, 'gray')"} Capacity
+#Lagos.tabcontent
+  %h1 Extra Info
+  %p
+    = @venue.extra_info
+    - if @venue.extra_info.blank?
+      None
+  %br/
+  %br/
 
+%button#defaultOpen.tablink{:onclick => "openCity('Paris', this, 'gray')"} Location
+%button.tablink{:onclick => "openCity('Tokyo', this, 'gray')"} Capacity
+%button.tablink{:onclick => "openCity('London', this, 'gray')"} Description
+%button.tablink{:onclick => "openCity('Lagos', this, 'gray')"} Info
 
 %br
 %br
@@ -218,36 +211,30 @@
       No projector provided
   %br
   %br
-  %h1.colour.center Extra Info
-  %br
-  %h3.center.gray
-    = @venue.extra_info
-    %br/
+
   %br/
   %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %h2.colour.center
+  %h2.center.colour
     Added 
     = time_ago_in_words(@venue.created_at)
     ago
+
+  %br/
+  %br/
+  .comment
   
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
+    %h2.colour= pluralize(@venue.comments.count, "Review")
+    %br/
+    = render 'comments/form' 
+    %br/
+    - @comments.each do |comment|
+      %h3.colour= comment.content
+      %hr
+
   %br/
   %br/
   %h1.colour.center More Venues
-  %br/
-  %br/
+
 
 #posts
   - @venues.each do |venue|
@@ -262,7 +249,9 @@
         %br/
         %br/
         = link_to venue.city, venue, :class => 'venuecit', target: :_blank
-
+%br/
+%br/
+= render 'page/footer'
 :javascript
   // Get the modal
   var modal = document.getElementById('myModal');

@@ -24,6 +24,7 @@ class VenuesController < ApplicationController
     def show
          @venue = Venue.find(params[:id])
          @venues = Venue.limit(3).order("RANDOM()")
+         @comments = Comment.where(venue_id: @venue)
     end
     
     def new
