@@ -32,8 +32,24 @@
   %p#gray We will give you 3 months free but after that you will be charged for using khrez
   
   %br/
+
+  / PayPal Logo
+  %table{:align => "left", :border => "0", :cellpadding => "10", :cellspacing => "0"}
+    %tr
+      %td{:align => "left"}
+    %tr
+      %td{:align => "left"}
+        %a{:href => "https://www.paypal.com/uk/webapps/mpp/paypal-popup", :onclick => "javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;", :title => "How PayPal Works"}
+          %img{:alt => "Payments by PayPal", :border => "0", :src => "https://www.paypalobjects.com/webstatic/mktg/logo/bdg_payments_by_pp_2line.png"}/
   %br/
   %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+
+
   
   = link_to 'Start Now', new_admin_registration_path, :class => 'button'
   
@@ -41,3 +57,6 @@
   %br/
   
 = render 'footer'  
+
+
+
