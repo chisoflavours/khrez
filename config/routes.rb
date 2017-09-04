@@ -21,7 +21,7 @@ Rails.application.routes.draw do
    root :to => 'page#index'
    
    get 'page/index'
-  
+   get 'page/afterpay'
   resources :venues do
       resources :comments
   end

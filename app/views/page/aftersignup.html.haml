@@ -3,8 +3,38 @@
 
 .wrapper
   %hr
+  %br/
   %h1.colour.center Get started with Khrez
-  ‘
-  %br
   %br
   %hr
+  %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
+    %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
+    %input{:name => "hosted_button_id", :type => "hidden", :value => "5A6J4LNWRJQQW"}/
+    %table
+      %tr
+        %td
+          %br/
+          %br/
+          %br/
+          %br/
+          %br/
+          %h1.colour Payment Options
+          %br/
+      %tr
+        %td
+          %select.subsc{:name => "os0"}
+            %option{:value => "Yearly Plan"} Yearly Plan : £600.00 
+            %option{:value => "Monthly Plan"} Monthly Plan : £60.00 
+    %input{:name => "currency_code", :type => "hidden", :value => "GBP"}/
+    %br/
+    %br/
+    %input.button{:alt => "Pay", :border => "0", :name => "submit", :src => "", :type => "image"}/
+    %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_GB/i/scr/pixel.gif", :width => "1"}/
+
+
+
+
+
+
+
+
