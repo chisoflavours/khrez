@@ -124,15 +124,25 @@ h1, h2, h3, h4, h5, h6 {
       background:#ffffff;
       margin-top:50px;
       border: 3px solid #ffffff;
-      border-radius:10px;
+      border-radius:5px;
       padding:30px;
       color:#ffd680;
       padding-left:40px;
       margin-left:9px;
   }
+  #cat{
+      background:#ffffff;
+      margin-top:50px;
+      border: 3px solid #ffffff;
+      border-radius:5px;
+      color:gray;
+      margin-left:10px; 
+      height:90px;
+      width:190px;
+  }
   .searchbutton{
       padding:30px;
-      border-radius:10px;
+      border-radius:5px;
       background:gray;
       border:0;
       margin-left:40px;

@@ -5,10 +5,9 @@ class VenuesController < ApplicationController
     before_action :check_ownership, only: [:edit, :update,:destroy]
     
     def index
-        if params[:search]
-          @venue = Venue.search(params[:search]).order("RANDOM()")
-        else
-          @venue = Venue.all.order("RANDOM()")
+        
+        if params[:city] && params[:category]
+          @venue = Venue.search(params[:city], params[:category])
         end
         
         if admin_signed_in?

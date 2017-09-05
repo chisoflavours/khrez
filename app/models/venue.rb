@@ -2,8 +2,9 @@ class Venue < ActiveRecord::Base
     belongs_to :admin
     has_many :comments
     
-    def self.search(search)
-        where("city LIKE ? OR county LIKE ? OR category LIKE ? ", "%#{search}%", "%#{search}%","%#{search}%") 
+    def self.search(city, category)
+
+        where("city like ?", "%#{city}%").where("category like ?", "%#{category}%")
     end
 
     
