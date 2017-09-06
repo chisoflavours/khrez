@@ -135,3 +135,22 @@ body, html {
 	font-size:30px;
 }
 
+#content{
+    h1{
+        text-align:center;
+        color:#ffd680;
+        text-transform:uppercase;
+        text-decoration:underline;
+        font-size:50px;
+    }
+    .content{
+        padding-top:50px;
+        color:#708090;
+        width:80%;
+        margin:0 auto;
+    }
+    #footer{
+      position:fixed;
+      bottom:0;
+    }
+}
