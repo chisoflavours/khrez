@@ -1,6 +1,6 @@
 class PageController < ApplicationController
   def index
-    @venue = Venue.limit(16).order("RANDOM()")
+    @venue = Venue.limit(30).order("RANDOM()")
   end
   
   def about
