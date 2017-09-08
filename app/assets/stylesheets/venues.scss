@@ -125,7 +125,7 @@ $secondcolour:#ffd680;
 .tabcontent {
     color: white;
     display: none;
-    padding: 50px;
+    padding: 100px;
     text-align: center;
 }
 
@@ -207,15 +207,14 @@ $secondcolour:#ffd680;
 }
 
 .wrapperven{
-  width: 80%;
-  margin: 0 auto;
+  width: 50%;
   margin-top:100px;
   .desc{
   	width:100%;
   	color:#708090;
   }
   img{
-  	height:80vh;
+  	height:60vh;
   }
 
 
@@ -230,3 +229,12 @@ $secondcolour:#ffd680;
 		width:20%;
 	}
 }
+
+.features{
+  text-align:center;
+}
+
+.underline{
+	text-decoration:underline;
+}
+

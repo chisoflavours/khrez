@@ -98,7 +98,7 @@ body, html {
 }
 
 .hero {
-  background-image: image-url("shardayyy-photography-113795.jpg");
+  background-image: image-url("jeremy-wong-304240.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -152,5 +152,32 @@ body, html {
     #footer{
       position:fixed;
       bottom:0;
+    }
+}
+
+.content{
+    h1{
+        color:#ffd680;
+        text-align:center;
+        text-transform:uppercase;
+    }
+}
+
+.floating-box {
+    float: left;
+    width: 190px;
+    height: 75px;
+    margin-left: 250px;
+    
+    h1{
+      color:#ffd680; 
+    }
+    p{
+        color:gray;
+        text-align:left;
+    }
+    i{
+        color:#ffd680;
+        font-size:30px;
     }
 }

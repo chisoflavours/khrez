@@ -7,10 +7,11 @@
       = link_to "Delete", venue_path(@venue), method: :delete, data: { confirm: "Are you sure ?" }, :class => 'button'
   %h1= @venue.name
   %p.colour
-  £ 
-  = @venue.price 
-  = @venue.price_plan
-  %br/
+  = @venue.city 
+  %p.colour
+    Added 
+    = time_ago_in_words(@venue.created_at)
+    ago
   %br/
   
   / Trigger/Open The Modal
@@ -112,112 +113,110 @@
 
   %br
   %br
-  %h1.colour.center Features
+  %h1.colour.center.underline Features
   %br
-  %h2.gray
-    = @venue.parking_spaces
-    parking spaces
+  .features
+    %h2.gray
+      = @venue.parking_spaces
+      parking spaces
   
-  %h2.gray
-    - if @venue.disabled_acess == true
-      Disabled access
-    -else
-      No disabled access
+    %h2.gray
+      - if @venue.disabled_acess == true
+        Disabled access
+      -else
+        No disabled access
   
-  %h2.gray
-    - if @venue.outside_spaces == true
-      Outside space
-    - else 
-      No outside space
+    %h2.gray
+      - if @venue.outside_spaces == true
+        Outside space
+      - else 
+        No outside space
     
-  %h2.gray
-    - if @venue.kitchens == 0
-      No kitchens
-    - else
-      = @venue.kitchens
-      kitchens
+    %h2.gray
+      - if @venue.kitchens == 0
+        No kitchens
+      - else
+        = @venue.kitchens
+        kitchens
   
-  %h2.gray
-    - if @venue.toilets == 0
-      No toilets
-    - else
-      = @venue.toilets
-      toilets
+    %h2.gray
+      - if @venue.toilets == 0
+        No toilets
+      - else
+        = @venue.toilets
+        toilets
       
-  %h2.gray
-    - if @venue.tables == 0
-      No tables
-    - else
-      = @venue.tables
-      tables
+    %h2.gray
+      - if @venue.tables == 0
+        No tables
+      - else
+        = @venue.tables
+        tables
   
-  %h2.gray
-    - if @venue.chairs == 0
-      No chairs
-    - else
-      = @venue.chairs
-      chairs    
-  %h2.gray
-    - if @venue.external_catering_allowed == true
-      External Catering allowed
-    - else 
-      No external catering allowed
+    %h2.gray
+      - if @venue.chairs == 0
+        No chairs
+      - else
+        = @venue.chairs
+        chairs    
+    %h2.gray
+      - if @venue.external_catering_allowed == true
+        External Catering allowed
+      - else 
+        No external catering allowed
       
-  %h2.gray
-    - if @venue.external_alcahool_allowed == true
-      External alcahol allowed
-    - else 
-      No external alcahol allowed
+    %h2.gray
+      - if @venue.external_alcahool_allowed == true
+        External alcahol allowed
+      - else 
+        No external alcahol allowed
       
-  %h2.gray
-    - if @venue.inhouse_catering_provided == true
-      Catering provided
-    - else 
-      No catering provided
+    %h2.gray
+      - if @venue.inhouse_catering_provided == true
+        Catering provided
+      - else 
+        No catering provided
   
-  %h2.gray
-    - if @venue.inhouse_alcahool_provided == true
-      Alcahol provided
-    - else 
-      No alcahol provided    
+    %h2.gray
+      - if @venue.inhouse_alcahool_provided == true
+        Alcahol provided
+      - else 
+        No alcahol provided    
     
-  %h2.gray
-    - if @venue.storage == true
-      Storage
-    - else 
-      No Storage
+    %h2.gray
+      - if @venue.storage == true
+        Storage
+      - else 
+        No Storage
       
-  %h2.gray
-    - if @venue.air_conditionind == true
-      Air conditioning
-    - else 
-      No air conditioning
+    %h2.gray
+      - if @venue.air_conditionind == true
+        Air conditioning
+      - else 
+        No air conditioning
       
-  %h2.gray
-    - if @venue.wifi == true
-      Wifi
-    - else 
-      No wifi
+    %h2.gray
+      - if @venue.wifi == true
+        Wifi
+      - else 
+        No wifi
       
-  %h2.gray
-    - if @venue.outside_spaces == true
-      Outside space
-    - else 
-      No outside space
-  %h2.gray
-    - if @venue.projector == true
-      Projector provided
-    - else 
-      No projector provided
+    %h2.gray
+      - if @venue.outside_spaces == true
+        Outside space
+      - else 
+        No outside space
+    %h2.gray
+      - if @venue.projector == true
+        Projector provided
+      - else 
+        No projector provided
   %br
   %br
 
   %br/
   %br/
-  %h2.center.colour
-    Added 
-    = time_ago_in_words(@venue.created_at)
-    ago
+
 
   %br/
   %br/
