@@ -5,13 +5,13 @@
 <br>
 <br>
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">  
-    <%= f.input :phone, autofocus: true, input_html: { class: 'in' }, label: false, placeholder: "Phone Number" , required: true%>
-  </div>
+  <div class="field">
+    <%= f.input :code, required: true , input_html: { class: 'in' }, label: false, placeholder: "Code"%>
+  </div> 
   <br>
   <div class="field">
     <%= f.input :email, required: true , input_html: { class: 'in' }, label: false, placeholder: "Email"%>
-  </div>  
+  </div> 
   <br>
   <div class="field">
     <%= f.input :password, required: true , input_html: { class: 'in' }, label: false, placeholder: "Password"%>
