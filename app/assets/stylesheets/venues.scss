@@ -238,3 +238,19 @@ $secondcolour:#ffd680;
 	text-decoration:underline;
 }
 
+.paginate{
+	color:#ffd680;
+	text-align:center;
+	text-decoration:none;
+	a{
+		color:#ffd680;
+		text-decoration:none;
+		&:hover{
+			color:gray;
+		}
+	}
+}
+
+.next_page{
+	color:#ffd680;
+}

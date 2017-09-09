@@ -7,7 +7,9 @@ class VenuesController < ApplicationController
     def index
         
         if params[:city] && params[:category]
-          @venue = Venue.search(params[:city], params[:category])
+          @venue = Venue.search(params[:city], params[:category]).paginate(:page => params[:page], :per_page => 9)
+        else
+          @venue = Venue.all
         end
         
         if admin_signed_in?

@@ -4,7 +4,7 @@
 - unless admin_signed_in?  
   = form_tag(venues_path, :method => "get", :id => 'form',:class => "margin") do
     = text_field_tag (:city), params[:city], placeholder: "location ", required: true, :id => 'search'
-    = select_tag((:category), options_for_select([["Hall","hall"],["Bar","bar"],["Meeting Room","meeting room"]],params[:category].to_i), prompt: "Venue Type", :id => 'cat')
+    = select_tag((:category), options_for_select([["Hall","hall"],["Bar","bar"],["Meeting Room","meeting room"],["Reception","reception"],["Kids Party","kids party"],["Exhibition","exhibition"],["Performance Venue","Performance Venue"],["Wedding Venue","Wedding Venue"],["Private Room","private room"],["Conference Room","conference room"]],params[:category].to_i), prompt: "Venue Type", :id => 'cat')
     .index
       %br/
       = submit_tag "Search", :name => nil, :class => "searchbutton"
@@ -39,8 +39,45 @@
         %br/
         = link_to venue.city, venue, :class => 'venuecit', target: :_blank
 
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
 
-
+- unless admin_signed_in?
+  = will_paginate @venue, class:'paginate'
 
 
         

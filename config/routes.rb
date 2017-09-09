@@ -20,6 +20,7 @@ Rails.application.routes.draw do
      root :to => 'venues#index', as: :authenticated_root
    end
    
+   get "page/:page" => "venues#index"
    
    root :to => 'page#index'
    
