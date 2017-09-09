@@ -1,0 +1,39 @@
+<%= render 'page/nav'%>
+
+<h2 id="login">Sign Up</h2>
+
+<br>
+<br>
+<br>
+
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.input :email, required: true , input_html: { class: 'in' }, label: false, placeholder: "Email" %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.input :name, required: true, required: true , input_html: { class: 'in' }, label: false, placeholder: "Full Name" %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.input :number, required: true , input_html: { class: 'in' }, label: false, placeholder: "Phone Number" %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.input :password , required: true , input_html: { class: 'in' }, label: false, placeholder: "Password" %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.input :password_confirmation , required: true , input_html: { class: 'in' }, label: false, placeholder: "Password Confirmation" %>
+  </div>
+  <br>
+  <br>
+  <div class="field">
+    <%= f.button :submit, "Sign up" ,:class => 'button'%>
+  </div>
+<% end %>
+<br>
+<br>
+<div class="field">
+  <%= render "users/shared/links" %>
+</div>

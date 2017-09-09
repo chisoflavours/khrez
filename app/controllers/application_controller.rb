@@ -13,6 +13,11 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update, keys: [:phone])
     devise_parameter_sanitizer.permit(:sign_up, keys: [:code])
     devise_parameter_sanitizer.permit(:account_update, keys: [:code])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:number])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:number])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:name])
+    
   end
   
   
