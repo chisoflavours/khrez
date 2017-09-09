@@ -1,4 +1,7 @@
 class PageController < ApplicationController
+  
+  before_action :authenticate_chisom!, only: [:dashboard]
+  
   def index
     @venue = Venue.limit(30).order("RANDOM()")
   end
