@@ -7,29 +7,11 @@
   %h1.colour.center Get started with Khrez
   %br
   %hr
-  %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
-    %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
-    %input{:name => "hosted_button_id", :type => "hidden", :value => "5A6J4LNWRJQQW"}/
-    %table
-      %tr
-        %td
-          %br/
-          %br/
-          %br/
-          %br/
-          %br/
-          %h1.colour Payment Options
-          %br/
-      %tr
-        %td
-          %select.subsc{:name => "os0"}
-            %option{:value => "Yearly Plan"} Yearly Plan : £600.00 
-            %option{:value => "Monthly Plan"} Monthly Plan : £60.00 
-    %input{:name => "currency_code", :type => "hidden", :value => "GBP"}/
-    %br/
-    %br/
-    %input.button{:alt => "Pay", :border => "0", :name => "submit", :src => "", :type => "image"}/
-    %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypalobjects.com/en_GB/i/scr/pixel.gif", :width => "1"}/
+  %br/
+  %br/
+  %h1.colour2 Thank you for signing up to khrez !
+  %br/
+  %h3.colour Within 24 hours we will send you a invoice and once you have paid you will recieve your sign in code to start recieveing bookings .
 
 
   %br/
@@ -42,7 +24,20 @@
         %a{:href => "https://www.paypal.com/uk/webapps/mpp/paypal-popup", :onclick => "javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;", :title => "How PayPal Works"}
           %img{:alt => "PayPal Acceptance Mark", :border => "0", :src => "https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png"}/
   / PayPal Logo
-
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br
+  %br/
+  %br/
+  %br/
+  %br
+  
+  %h3= link_to('Back', destroy_admin_session_path, method: :delete,class:'link')
 
 
 
