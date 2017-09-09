@@ -39,6 +39,12 @@
         %br/
         = link_to venue.city, venue, :class => 'venuecit', target: :_blank
 
+.wrapper          
+  - unless admin_signed_in?
+    - if @venue.blank?
+      %h4#eror
+        There are no venues 
+        
 %br/
 %br/
 %br/
@@ -81,11 +87,7 @@
 
 
         
-.wrapper          
-  - unless admin_signed_in?
-    - if @venue.blank?
-      %h4#eror
-        There are no venues 
+
 
       
 
