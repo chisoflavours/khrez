@@ -106,7 +106,7 @@ $secondcolour:#ffd680;
 
 
 .tablink {
-    background-color: #D3D3D3;
+    background-color: gray ;
     color: white;
     float: left;
     border: none;
@@ -118,7 +118,7 @@ $secondcolour:#ffd680;
 }
 
 .tablink:hover {
-    background-color: gray;
+    background-color: #D3D3D3;
 }
 
 /* Style the tab content */
@@ -232,6 +232,12 @@ $secondcolour:#ffd680;
 
 .features{
   text-align:center;
+
+  i{
+  	color:#ffd680;
+  	font-size:30px;
+  	font-weight:700;
+  }
 }
 
 .underline{

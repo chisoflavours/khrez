@@ -5,9 +5,10 @@
     - if @venue.admin_id == current_admin.id
       = link_to "Edit", edit_venue_path(@venue), :class => 'button'
       = link_to "Delete", venue_path(@venue), method: :delete, data: { confirm: "Are you sure ?" }, :class => 'button'
-  %h1= @venue.name
-  %p.colour
-  = @venue.city 
+  %h1.colour2
+    = @venue.name
+  %p.colour2
+    = @venue.city 
   %p.colour
     Added 
     = time_ago_in_words(@venue.created_at)
@@ -115,97 +116,123 @@
   %br
   %h1.colour.center.underline Features
   %br
+  %br/
   .features
+    %i.fa.fa-car{"aria-hidden" => "true"}
     %h2.gray
       = @venue.parking_spaces
-      parking spaces
-  
+      Parking spaces
+    %br/  
+    %i.fa.fa-wheelchair{"aria-hidden" => "true"}
     %h2.gray
       - if @venue.disabled_acess == true
         Disabled access
       -else
         No disabled access
-  
+    %br/
+    %i.fa.fa-globe{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.outside_spaces == true
         Outside space
       - else 
         No outside space
-    
+    %br/
+    %i.fa.fa-cutlery{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.kitchens == 0
         No kitchens
       - else
         = @venue.kitchens
         kitchens
-  
+    %br/
+    %i.fa.fa-tint{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.toilets == 0
         No toilets
       - else
         = @venue.toilets
         toilets
-      
+    %br/
+    %i.fa.fa-table{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.tables == 0
         No tables
       - else
         = @venue.tables
         tables
-  
+    %br/
+    %i.fa.fa-stop{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.chairs == 0
         No chairs
       - else
         = @venue.chairs
-        chairs    
+        chairs  
+    %br/
+    %i.fa.fa-lemon-o{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.external_catering_allowed == true
         External Catering allowed
       - else 
         No external catering allowed
-      
+    %br/
+    %i.fa.fa-beer{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.external_alcahool_allowed == true
         External alcahol allowed
       - else 
         No external alcahol allowed
-      
+    %br/
+    %i.fa.fa-lemon-o{"aria-hidden" => "true"}
+    %br/
+    
     %h2.gray
       - if @venue.inhouse_catering_provided == true
         Catering provided
       - else 
         No catering provided
-  
+    %br/
+    %i.fa.fa-beer{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.inhouse_alcahool_provided == true
         Alcahol provided
       - else 
         No alcahol provided    
-    
+    %br/
+    %i.fa.fa-archive{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.storage == true
         Storage
       - else 
         No Storage
-      
+    %br/
+    %i.fa.fa-bolt{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.air_conditionind == true
         Air conditioning
       - else 
         No air conditioning
-      
+    %br/
+    %i.fa.fa-wifi{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.wifi == true
         Wifi
       - else 
         No wifi
-      
-    %h2.gray
-      - if @venue.outside_spaces == true
-        Outside space
-      - else 
-        No outside space
+    %br/
+    %i.fa.fa-television{"aria-hidden" => "true"}
+    %br/
     %h2.gray
       - if @venue.projector == true
         Projector provided
@@ -229,9 +256,15 @@
     - @comments.each do |comment|
       %h3.colour= comment.content
       %hr
-
+  
   %br/
   %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  
   %h1.colour.center More Venues
 
 

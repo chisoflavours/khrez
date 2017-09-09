@@ -1,7 +1,8 @@
 class CommentsController < ApplicationController
 
   before_action :find_comment, only: [:destroy]
-    
+  before_action :authenticate_user!, only: [:create]
+  
   def create
     @venue = Venue.find(params[:venue_id])
     @comment = Comment.create(params[:comment].permit(:content))
