@@ -18,13 +18,13 @@
   <% end %>    
   <% end %>
   <% if admin_signed_in?%>
-    <a style="color:#ffffff;" > Hello <br> <%= current_admin.name %></h1>
+    <a style="color:gray;" > Hello <br> <%= current_admin.name %></h1>
     <br>
     <h1 style="color:#ffffff;"><%= link_to('Logout', destroy_admin_session_path, method: :delete) %></h1>
   <% end %>
     
   <% if user_signed_in?%>
-    <a style="color:#ffffff;" > Hello <br> <%= current_user.name %></a>
+    <a style="color:gray;" > Hello <br> <%= current_user.name %></a>
     <br>
     <a style="color:#ffffff;" > <%= link_to 'Account', edit_user_registration_path  %> </a>
     <br>
