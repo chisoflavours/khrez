@@ -12,7 +12,9 @@
     <hr>
     <br>
     <a href="#"><%= link_to 'Venue Log In', new_admin_session_path %> </a>
+    <div id="hide">
     <a href="#"><%= link_to 'List Your Venue', page_listyourvenue_path %></a>
+    </div>
   <% end %>    
   <% end %>
   <% if admin_signed_in?%>
