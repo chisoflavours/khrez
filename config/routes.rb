@@ -21,7 +21,7 @@ Rails.application.routes.draw do
    end
    
    get "page/:page" => "venues#index"
-   
+   get "page/sitemap"
    root :to => 'page#index'
    
    get 'page/index'
