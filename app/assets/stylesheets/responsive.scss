@@ -27,9 +27,6 @@
   position: relative;
   background-attachment: fixed;
   
-  .topnav a{
-    color:#ffffff;
-  }  
   .hero-text {
     text-align: center;
     position: absolute;
@@ -48,9 +45,20 @@
   
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: absolute; /* Set the navbar to fixed position */
 
+}
 
+#logo{
+  color:gray;
+}
 
+.icon{
+  color:gray;
+}
 }
 
     #search{
@@ -88,20 +96,6 @@
       margin-left:0;
   }
 
-.topnav{
-  a{
-    font-size:35px;
-  }
-  #hammenu{
-    font-size:35px;   
-  }
-
-}
-
-  .sidenav a{
-      font-size:30px;
-      margin-left:10px;
-  }
 
 #exloretext{
     color:gray;
@@ -113,28 +107,17 @@
     left:0%;
     margin-left:10px;
     #fullstop{
-        color:#ffd680;
+        color:#00CED1;
     }
 }
 
-.sidenav a{
-  font-size:20px;
-}
+
 
 #footer{
-    background:#ffffff;
-    padding:0;
-    padding-bottom:20px;
-    #socialbar{
-      display:none;
-    }
+  display:none;
 }
 
-.hero-image{
-  #hammenu {
-    color: #ffffff;
-  }
-}
+
 
 #hide{
   display:none;
@@ -181,5 +164,29 @@
 }
 
 
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 25px;
+}
 
+.topnav {
+  overflow: hidden;
+  background-color: #00CED1;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1;
+}
+
+#logo{
+  color:#ffffff;
+}
+#down{
+  padding-top:70px;
+}
 }
