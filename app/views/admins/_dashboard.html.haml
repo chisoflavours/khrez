@@ -1,6 +1,20 @@
-.wrapperven
+
+%br/
+%br/
+%br/
+%br/
+.wrapper
   = link_to "New Venue", new_venue_path, :class => 'button' 
-  = link_to "Edit Profile", edit_admin_registration_path, :class => 'button'
-  %h1.colour My Venues
   %br/
-  
+  %br/
+  %br/
+  %br/
+  = link_to "Edit Profile", edit_admin_registration_path, :class => 'button'
+  %br/
+  %br/
+  %br/
+  %h1.colour 
+    = current_admin.name
+    's
+    Venues
+  %hr.hr
