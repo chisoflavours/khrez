@@ -10,7 +10,7 @@ body, html {
 
 .hero-image {
   background-image: image-url("breather-163391.jpg");
-  height: 75%;
+  height: 85%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: gray;
-    font-size:22px;
+    font-size:18px;
 
 
     
@@ -219,3 +219,61 @@ body, html {
     }
 }
 
+
+/* After Signup Page Price Table */
+
+
+
+.columns {
+
+    padding: 8px;
+
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width:50%;
+    
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.buttonprice {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}

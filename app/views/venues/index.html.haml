@@ -1,6 +1,12 @@
 
 = render 'page/nav'
-
+%br
+%br
+%br
+%br
+%br
+%br
+%br
 - unless admin_signed_in?  
   = form_tag(venues_path, :method => "get", :id => 'form',:class => "margin") do
     = text_field_tag (:city), params[:city], placeholder: "location ", required: true, :id => 'search'

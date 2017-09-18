@@ -1,44 +1,20 @@
-%br
-%br
-
-.wrapper
-  %hr
-  %br/
-  %h1.colour.center Get started with Khrez
-  %br
-  %hr
-  %br/
-  %br/
-  %h1.colour2 Thank you for signing up to khrez !
-  %br/
-  %h3.colour Within 24 hours we will send you a invoice and once you have paid you will recieve your sign in code to start recieveing bookings .
-
-
-  %br/
-  / PayPal Logo
-  %table{:align => "left", :border => "0", :cellpadding => "10", :cellspacing => "0"}
-    %tr
-      %td{:align => "left"}
-    %tr
-      %td{:align => "left"}
-        %a{:href => "https://www.paypal.com/uk/webapps/mpp/paypal-popup", :onclick => "javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;", :title => "How PayPal Works"}
-          %img{:alt => "PayPal Acceptance Mark", :border => "0", :src => "https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png"}/
-  / PayPal Logo
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %br
-  %br/
-  %br/
-  %br/
-  %br
-  
-  %h3= link_to('Back', destroy_admin_session_path, method: :delete,class:'link')
-
-
-
-
+.columns
+  %ul.price
+    %li.header Basic
+    %li.grey $ 9.99 / year
+    %li 10GB Storage
+    %li 10 Emails
+    %li 10 Domains
+    %li 1GB Bandwidth
+    %li.grey
+      %a.buttonprice{:href => "#"} Sign Up
+.columns
+  %ul.price
+    %li.header{:style => "background-color:#4CAF50"} Pro
+    %li.grey $ 24.99 / year
+    %li 25GB Storage
+    %li 25 Emails
+    %li 25 Domains
+    %li 2GB Bandwidth
+    %li.grey
+      %a.buttonprice{:href => "#"} Sign Up
