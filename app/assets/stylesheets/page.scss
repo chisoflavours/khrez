@@ -10,7 +10,7 @@ body, html {
 
 .hero-image {
   background-image: image-url("breather-163391.jpg");
-  height: 85%;
+  height: 75%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: gray;
-    font-size:18px;
+    font-size:22px;
 
 
     
@@ -227,6 +227,11 @@ body, html {
 .columns {
 
     padding: 8px;
+    .grey{
+        color:#00CED1;
+        text-transform:uppercase;
+        font-size:25px;
+    }
 
 }
 
@@ -237,7 +242,10 @@ body, html {
     padding: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    width:50%;
+    width:30%;
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
     
 }
 
@@ -253,27 +261,32 @@ body, html {
 
 .price li {
     border-bottom: 1px solid #eee;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
-.price .grey {
+.price {
     background-color: #eee;
     font-size: 20px;
 }
 
 .buttonprice {
-    background-color: #4CAF50;
+    background-color: #000000;
     border: none;
     color: white;
-    padding: 10px 25px;
+    padding: 20px 35px;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
+    border-radius:400px;
+    &:hover{
+        background:#00CED1;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
-    .columns {
+    .price {
         width: 100%;
     }
 }
