@@ -182,3 +182,161 @@
 }
 
 }
+
+@media only screen and (max-width: 1200px) {
+#posts {
+    width:90%;
+    float:right;
+    padding-top:70px;
+
+	.post {
+		background: transparent;
+		width: 40%;
+		margin: 1rem ;
+		border: 0px solid #E4E4E4;
+		margin-bottom:100px;
+		.post_image {;
+			img {
+				width: 93%;
+				height: 67%;
+
+				
+			}
+		}
+		.post_content {
+			margin-top:40px;
+		    .username {
+			  float: left;
+			  color:#ffffff;
+			  margin-bottom:20px;
+			  margin-top:5px;
+			  a{
+			  	color:gray;
+			  	text-decoration:none;
+			  	&:hover{
+			  		color:#333233;;
+			  	}
+			  }
+			  .name{
+			    color:#ffffff;
+			    &:hover{
+			        color:lightgray;
+			    }
+			  }
+			}
+			h2 {
+				margin: 0;
+				font-weight: 100;
+				margin-top:0rem;
+				font-size: 2.25rem;
+				a {
+					text-decoration: none;
+					color: #ffffff;
+					&:hover {
+						color: #E9E9E9;
+					}
+				}
+			}
+			.data {
+				padding: .75rem 5%;
+				color: #969696;
+				.username, .buttons {
+					margin: 0;
+					font-size: .8rem;
+				}
+				.buttons {
+					float: right;
+					span {
+						margin-left: .5rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+#exloretext{
+    color:gray;
+    padding-top:230px;
+    position:absolute;
+    text-align:left;
+    font-size:3.2em;
+    top:90%;
+    left:10%;
+    #fullstop{
+        color:#00CED1;
+    }
+}
+
+
+  .hero-image {
+  background-image: image-url("breather-163391.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gray;
+    font-size:20px;
+    letter-spacing:1px;
+    width:75%;
+  
+  #text2{
+     color:#ffffff;
+  }  
+  
+  
+}
+
+
+
+.icon{
+  color:gray;
+}
+}
+
+    #search{
+      background:#ffffff;
+      margin-top:50px;
+      border: 3px solid #ffffff;
+      border-radius:400px;
+      padding:20px;
+      color:#00CED1;
+      width:90%;
+      margin-left:0;
+      text-align:center;
+  }
+  
+    #cat{
+      background:#ffffff;
+      margin-top:10px;
+      border: 3px solid #ffffff;
+      border-radius:400px;
+      color:gray;
+      margin-left:0px; 
+      height:70px;
+      width:100%;
+      text-indent: 40%;
+      
+  }
+  
+    .searchbutton{
+      padding:20px;
+      border-radius:100px;
+      background:gray;
+      border:0;
+      margin-top:30px;
+      color:#ffffff;
+      width:100%;
+      margin-left:0;
+  }
+  
+}
