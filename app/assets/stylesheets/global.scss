@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5, h6 {
       color:#00CED1;
       padding-left:40px;
       margin-left:9px;
+      -webkit-appearance: none;
   }
   #cat{
       background:#ffffff;
@@ -143,8 +144,10 @@ h1, h2, h3, h4, h5, h6 {
       color:gray;
       margin-left:10px; 
       height:90px;
-      width:190px;
+      width:210px;
       outline:none;
+      -webkit-appearance: none;
+      text-indent: 20px;
 
   }
   .searchbutton{
@@ -154,6 +157,7 @@ h1, h2, h3, h4, h5, h6 {
       border:0;
       margin-left:40px;
       color:#ffffff;
+      -webkit-appearance: none;
       
   }
   .searchbutton:hover{
