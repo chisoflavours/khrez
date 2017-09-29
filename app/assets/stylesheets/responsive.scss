@@ -183,7 +183,7 @@
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
 #posts {
     width:90%;
     float:right;
