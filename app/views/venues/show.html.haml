@@ -249,21 +249,22 @@
 
   %br/
   %br/
-  .comment
+  .hide
+    .comment
   
-    %h2.colour= pluralize(@venue.comments.count, "Review")
-    %br/
-    = render 'comments/form' 
-    %br/
-    - @comments.each do |comment|
-      %h3.colour= comment.content
-      %hr
+      %h2.colour= pluralize(@venue.comments.count, "Review")
+      %br/
+      = render 'comments/form' 
+      %br/
+      - @comments.each do |comment|
+        %h3.colour= comment.content
+        %hr
   
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
+    %br/
+    %br/
+    %br/
+    %br/
+  %hr
   %br/
   %br/
   
