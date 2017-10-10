@@ -7,9 +7,18 @@
     %h1 Find Your Perfect Venue
     #text2
       %h2 As Easy As Possible
+      %br/
+      %p Khrez is the fastest and easiest way to find your 
+      %p perfect venue for any event / meeting you 
+      %p may be hosting .
+  .search
     = form_tag(venues_path, :method => "get", :id => 'form') do
       = text_field_tag (:city), params[:city], placeholder: "location ", required: true, :id => 'search'
+      %br/
       = select_tag((:category), options_for_select([["Hall","hall"],["Bar","bar"],["Meeting Room","meeting room"],["Reception","reception"],["Kids Party","kids party"],["Exhibition","exhibition"],["Performance Venue","Performance Venue"],["Wedding Venue","Wedding Venue"],["Private Room","private room"],["Conference Room","conference room"]],params[:category].to_i), prompt: "Venue Type", :id => 'cat')
+      %br/
+      %br/
+      %br/
       = submit_tag "Search", :name => nil, :class => "searchbutton"
 
 %br/
@@ -20,6 +29,8 @@
   Explore
   %span#fullstop .
 
+%br/
+%br/
 %br/
 %br/
 %br/

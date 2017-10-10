@@ -2,8 +2,8 @@
   <a id="logo" href="http://www.khrez.co.uk/">K</a>
   <% unless admin_signed_in? %>
   <% unless user_signed_in? %>
-    <a id="down"><%= link_to 'Venue Log In', new_admin_session_path %> </a>
-    <a href="#"><%= link_to 'List Your Venue', page_listyourvenue_path %></a>
+    <a id="down"><%= link_to 'Log In', new_admin_session_path,:class => "login" %> </a>
+    <a href="#"><%= link_to 'List Your Venue', page_listyourvenue_path,:class => "colour" %></a>
   <% end %>    
   <% end %>
   <% if admin_signed_in?%>

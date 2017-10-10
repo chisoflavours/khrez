@@ -128,23 +128,23 @@ h1, h2, h3, h4, h5, h6 {
   #search{
       background:#ffffff;
       margin-top:50px;
-      border: 3px solid #ffffff;
+      border: 3px solid gray;
       border-radius:5px;
       padding:30px;
       color:#00CED1;
-      padding-left:40px;
-      margin-left:9px;
+      padding-left:50px;
+      margin-left:0;
       -webkit-appearance: none;
   }
   #cat{
       background:#ffffff;
       margin-top:50px;
-      border: 3px solid #ffffff;
+      border: 3px solid gray;
       border-radius:5px;
       color:gray;
-      margin-left:10px; 
-      height:90px;
-      width:210px;
+      margin-left:0; 
+      padding:30px;
+      width:250px;
       outline:none;
       -webkit-appearance: none;
       text-indent: 20px;
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
       border-radius:5px;
       background:gray;
       border:0;
-      margin-left:40px;
+      margin-left:0;
       color:#ffffff;
       -webkit-appearance: none;
       
