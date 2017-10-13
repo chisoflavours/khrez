@@ -2,15 +2,14 @@
 
 .hero-image
   = render 'page/nav'
-  
   .hero-text
     %h1 Find Your Perfect Venue
+    %h2.two As Easy As Possible
     #text2
-      %h2 As Easy As Possible
       %br/
       %p Khrez is the fastest and easiest way to find your 
       %p perfect venue for any event / meeting you 
-      %p may be hosting .
+      %p may be hosting 
   .search
     = form_tag(venues_path, :method => "get", :id => 'form') do
       = text_field_tag (:city), params[:city], placeholder: "location ", required: true, :id => 'search'
@@ -33,26 +32,20 @@
 %br/
 %br/
 %br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-
-#posts
-  - @venue.each do |venue|
-    .post
-      .post_image
-        = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
-      .post_content
-        = link_to venue.name, venue, :class => 'venuetext', target: :_blank
-        %br/
-        %br/
-        = link_to venue.category, venue, :class => 'venuecat', target: :_blank
-        %br/
-        %br/
-        = link_to venue.city, venue, :class => 'venuecit', target: :_blank
+.top
+  #posts
+    - @venue.each do |venue|
+      .post
+        .post_image
+          = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
+        .post_content
+          = link_to venue.name, venue, :class => 'venuetext', target: :_blank
+          %br/
+          %br/
+          = link_to venue.category, venue, :class => 'venuecat', target: :_blank
+          %br/
+          %br/
+          = link_to venue.city, venue, :class => 'venuecit', target: :_blank
 
 = render 'page/footer'
 

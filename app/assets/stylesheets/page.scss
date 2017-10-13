@@ -24,8 +24,8 @@ body, html {
 /* Hero Image on home page */
 
 .hero-image {
-  background:white;
-  height: 70%;
+  
+  height: 65%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,14 +47,12 @@ body, html {
     top: 55%;
     left: 23%;
     transform: translate(-50%, -50%);
-    color: #37444D;
+    color: #00CED1;
     font-size:22px;
     font-weight: lighter;
     p{
         color:#828A90;
     }
-
-
 }
 
 .topnav {
@@ -65,15 +63,17 @@ body, html {
   width: 100%; /* Full width */
   z-index:1;
 }
+
+
+}
+
     .search{
       position: absolute;
       top: 55%;
       left: 70%;
       transform: translate(-50%, -50%);
     }
-
-}
-
+    
   .topnav a{
       color:#00CED1;
       &:hover{
@@ -87,7 +87,7 @@ body, html {
     position:absolute;
     text-align:left;
     font-size:3.2em;
-    top:70%;
+    top:55%;
     left:10%;
     #fullstop{
         color:#00CED1;
