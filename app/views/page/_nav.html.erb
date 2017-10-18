@@ -7,7 +7,7 @@
   <% end %>    
   <% end %>
   <% if admin_signed_in?%>
-    <%= link_to('Logout', destroy_admin_session_path, method: :delete, :style => "color:#ffffff" ) %>
+    <%= link_to('Logout', destroy_admin_session_path, method: :delete, :style => "color:gray" ) %>
   <% end %>
     
     <a href="javascript:void(0);" style="font-size:35px;padding: 15px 30px;color:gray" class="icon" onclick="myFunction()" id="hammenu">&#9776;</a>
