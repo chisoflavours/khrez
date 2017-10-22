@@ -225,9 +225,10 @@ h1, h2, h3, h4, h5, h6 {
 	background: transparent;
 	color:$maincolour;
 	text-decoration:none;
-	border: 1px solid $maincolour;
-	padding: .7em 1.5em;
-	border-radius: 1.5em;
+	border: 2px solid gray;
+	padding: 40px;
+	border-radius:10px;
+	width:70%;
 	&:hover {
 		border: 1px solid $secondcolour;
 		color: $secondcolour;
@@ -245,14 +246,15 @@ h1, h2, h3, h4, h5, h6 {
 	color:$maincolour;
 	text-decoration:none;
 	border:0;
-	padding: .7em 1.5em;
-	border-radius: 1.5em;
+	padding: 1em 1.5em;
+	border-radius: 0;
 	&:hover {
 		border:0;
 		color: $secondcolour;
 
 	}
 }
+
 
 .gray{
   color:#708090;

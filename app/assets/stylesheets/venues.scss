@@ -1,5 +1,5 @@
 $maincolour:#d6dce0;
-$secondcolour:#ffd680;
+$secondcolour:#00CED1;
 
 .h1{
     text-align:center;
@@ -259,4 +259,76 @@ $secondcolour:#ffd680;
 
 .next_page{
 	color:#ffd680;
+}
+
+#regForm{
+
+.width{
+	width:20%;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 50%;
+  min-width: 300px;
+}
+h1 {
+  text-align: center;  
+}
+input {
+  padding: 40px;
+  width: 70%;
+  font-size: 17px;
+  border: 2px solid gray;
+  &:hover {
+    border: 1px solid $secondcolour;
+	color: $secondcolour;
+  }
+}
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+button {
+  background-color: $secondcolour;
+  color: #ffffff;
+  border: none;
+  padding: 20px 25px;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius:5px;
+}
+button:hover {
+  opacity: 0.8;
+}
+#prevBtn {
+  background-color: $maincolour;
+  margin-right:20px;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.step.active {
+  opacity: 1;
+}
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: $secondcolour;
+}
 }

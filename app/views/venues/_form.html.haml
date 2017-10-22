@@ -1,97 +1,216 @@
 = simple_form_for @venue, html: { multipart: true } do |f|
-  = f.input :name, input_html: { class: 'in' }, label: false, placeholder: "Name"
-  %br/
-  %br/
-  = f.input :description, required: true, input_html: { class: 'in' }, label: false, placeholder: "Description"
-  %br/
-  %br/
-  = f.input :postcode, required: true, input_html: { class: 'in' }, label: false, placeholder: "Postcode"
-  %br/
-  %br/
-  = f.input :county, required: true, input_html: { class: 'in' }, label: false, placeholder: "County"
-  %br/
-  %br/
-  = f.input :street_line_one, required: true, input_html: { class: 'in' }, label: false, placeholder: "Street Line 1"
-  %br/
-  %br/
-  = f.input :street_line_two, required: true, input_html: { class: 'in' }, label: false, placeholder: "Street Line 2"
-  %br/
-  %br/
-  = f.input :city, required: true, input_html: { class: 'in' }, label: false, placeholder: "City"
-  %br/
-  %br/
-  = f.input :capacity_standing, required: true, input_html: { class: 'in' }, label: false, placeholder: "Capacity Standing"
-  %br/
-  %br/
-  = f.input :capacity_sitting, required: true, input_html: { class: 'in' }, label: false, placeholder: "Capacity Sitting"
-  %br/
-  %br/
-  = f.input :size, required: true, input_html: { class: 'in' }, label: false, placeholder: "Size sqm"
-  %br/
-  %br/
-  = f.input :parking_spaces, required: true, input_html: { class: 'in' }, label: false, placeholder: "Parking Spaces"
-  %br/
-  %br/
-  = f.input :kitchens, required: true , input_html: { class: 'in' }, label: false, placeholder: "Kitchens"
-  %br/
-  %br/
-  = f.input :disabled_acess , input_html: { class: 'ib' }, label: false, label: 'Disabled Acess'
-  %br/
-  %br/
-  = f.input :outside_spaces , input_html: { class: 'ib' }, label: false, label: 'Outside Space'
-  %br/
-  %br/
-  = f.input :toilets, required: true , input_html: { class: 'in' }, label: false, placeholder: "Toilets"
-  %br/
-  %br/
-  = f.input :tables, required: true , input_html: { class: 'in' }, label: false, placeholder: "Tables"
-  %br/
-  %br/
-  = f.input :chairs, required: true , input_html: { class: 'in' }, label: false, placeholder: "Chairs"
-  %br/
-  %br/
-  = f.input :extra_info, input_html: { class: 'in' }, label: false, placeholder: "Extra Infomation"
-  %br/
-  %br/
-  = f.input :external_catering_allowed, label: false, label: 'External Catering', input_html: { class: 'ib' }
-  %br/
-  %br/
-  = f.input :external_alcahool_allowed, label: false, label: 'External Alcohol', input_html: { class: 'ib' }
-  %br/
-  %br/
-  = f.input :inhouse_catering_provided, label: false, label: 'Catering Provided', input_html: { class: 'ib' }
-  %br/
-  %br/
-  = f.input :inhouse_alcahool_provided, label: false, label: 'Alcohol Provided', input_html: { class: 'ib' }
-  %br/
-  %br/
-  = f.input :storage, label: false, label: 'Storage', input_html: { class: 'ib' }
-  %br/
-  %br/
-  = f.input :air_conditionind, label: false, label: 'Air conditioning', input_html: { class: 'ib' }
-  %br/
-  %br/
-  = f.input :wifi, label: false, label: 'Wifi', input_html: { class: 'ib' }
-  %br/
-  %br/
-  = f.input :projector, label: false, label: 'Projector', input_html: { class: 'ib' }
-  %br/
-  %br/
-  %br/
-  = f.input :category, required: true, input_html: { class: 'ins' }, prompt: "Category", label: false, collection: [ "Hall", "Bar", "Meeting Room", "Reception", "Kids Party", "Party", "Exhibition", "Performance Venue", "Wedding Venue", "Private Room", "Conference Room", "Other"]
-  %br/
-  %br/
-  %h1.colour Venue Image
-  %br/
-  .button
-    = f.input :thumbnail, as: :file, input_html: { hidden: true,class: 'button' }, label: 'Upload Venue Image'
-  %br/
-  %br/
-  %br/
-  = f.button :submit, :class => 'button'
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
+
+  #regForm
+    .tab
+      %h3.colour2 Name
+      %p
+        = f.input :name, input_html: { class: 'in' }, label: false, placeholder: "Name"
+      %br/
+      %h3.colour2 Description
+      %p
+        = f.input :description, required: true, input_html: { class: 'in' }, label: false, placeholder: "Description"
+    .tab
+      %h3.colour2 Postcode
+      %p
+        = f.input :postcode, required: true, input_html: { class: 'in' }, label: false, placeholder: "Postcode"
+      %br/
+      %h3.colour2 County
+      %p
+        = f.input :county, required: true, input_html: { class: 'in' }, label: false, placeholder: "County"
+      %br/
+      %h3.colour2 Street Line 1
+      %p
+        = f.input :street_line_one, required: true, input_html: { class: 'in' }, label: false, placeholder: "Street Line 1"
+      %br/
+      %h3.colour2 Street Line 2
+      %p
+        = f.input :street_line_two, required: true, input_html: { class: 'in' }, label: false, placeholder: "Street Line 2"
+      %br/
+      %h3.colour2 City
+      %p
+        = f.input :city, required: true, input_html: { class: 'in' }, label: false, placeholder: "City"
+    .tab
+      %h3.colour2 Capacity Standing
+      %p
+        = f.input :capacity_standing, required: true, input_html: { class: 'in' }, label: false, placeholder: "Capacity Standing"
+      %br/
+      %h3.colour2 Capacity Sitting
+      %p
+        = f.input :capacity_sitting, required: true, input_html: { class: 'in' }, label: false, placeholder: "Capacity Sitting"
+      %br/
+      %h3.colour2 Venue Size
+      %p
+        = f.input :size, required: true, input_html: { class: 'in' }, label: false, placeholder: "Size sqm"
+    .tab
+      %h3.colour2 Parking Spaces
+      %p
+        = f.input :parking_spaces, required: true, input_html: { class: 'in' }, label: false, placeholder: "Parking Spaces"
+      %br/
+      %h3.colour2 Kitchens
+      %p
+        = f.input :kitchens, required: true , input_html: { class: 'in' }, label: false, placeholder: "Kitchens"
+      %br/
+      %h3.colour2 Toilets
+      %p
+        = f.input :toilets, required: true , input_html: { class: 'in' }, label: false, placeholder: "Toilets"
+      %br/
+      %h3.colour2 Tables
+      %p
+        = f.input :tables, required: true , input_html: { class: 'in' }, label: false, placeholder: "Tables"
+      %br/
+      %h3.colour2 Chairs
+      %p
+        = f.input :chairs, required: true , input_html: { class: 'in' }, label: false, placeholder: "Chairs"
+      %br/
+      %h3.colour2 Extra Infomation
+      %p
+        = f.input :extra_info, input_html: { class: 'in' }, label: false, placeholder: "Extra Infomation"
+    .tab
+      %h3.colour2 External Catering
+      %p
+        = f.input :external_catering_allowed, label: false, input_html: { class: 'ib' }
+      %br/
+      %h3.colour2 External Alcohol
+      %p
+        = f.input :external_alcahool_allowed, label: false, input_html: { class: 'ib' }
+      %br/
+      %h3.colour2 Catering Provided
+      %p
+        = f.input :inhouse_catering_provided, label: false, input_html: { class: 'ib'} 
+      %br/
+      %h3.colour2 Alcohol Provided
+      %p
+        = f.input :inhouse_alcahool_provided, label: false, input_html: { class: 'ib' } 
+      %br/
+      %h3.colour2 Storage
+      %p
+        = f.input :storage, label: false, input_html: { class: 'ib' }
+      %br/
+      %h3.colour2 Air Conditioning
+      %p
+        = f.input :air_conditionind, label: false, input_html: { class: 'ib' }
+      %br/
+      %h3.colour2 Wifi
+      %p
+        = f.input :wifi, label: false, input_html: { class: 'ib' }
+      %br/
+      %h3.colour2 Projector
+      %p
+        = f.input :projector, label: false, input_html: { class: 'ib' } 
+      %br/
+      %h3.colour2 Disabled Acess
+      %p
+        = f.input :disabled_acess , input_html: { class: 'ib' }, label: false
+      %br/
+      %h3.colour2 Outside Spaces
+      %p
+        = f.input :outside_spaces , input_html: { class: 'ib' }, label: false
+      %br/
+    .tab
+      %h3.colour2 Category
+      %br/
+      %p
+        = f.input :category, required: true, input_html: { class: 'ins' }, prompt: "Category", label: false, collection: [ "Hall", "Bar", "Meeting Room", "Reception", "Kids Party", "Party", "Exhibition", "Performance Venue", "Wedding Venue", "Private Room", "Conference Room", "Other"]
+      %br/
+      %h3.colour2 Venue Image
+      %p
+        .button
+          = f.input :thumbnail, as: :file, input_html: { hidden: true,class: 'button',id:'venimgbtn' }, label: 'Upload Venue Image'
+      %p.width
+        %br/
+        %br/
+        %br/
+        = f.button :submit, :class => 'button' 
+ 
+  
+    %div{:style => "overflow:auto;"}
+      %div{:style => "float:right;"}
+        %button#prevBtn{:onclick => "nextPrev(-1)", :type => "button"} Previous
+        %button#nextBtn{:onclick => "nextPrev(1)", :type => "button"} Next
+    / Circles which indicates the steps of the form:
+    %div{:style => "text-align:center;margin-top:40px;"}
+      %span.step
+      %span.step
+      %span.step
+      %span.step
+      %span.step
+      %span.step
+
+%br/
+%br/
+%br/
+%br/
+:javascript
+
+
+  var currentTab = 0; // Current tab is set to be the first tab (0)
+  showTab(currentTab); // Display the crurrent tab
+
+  function showTab(n) {
+    // This function will display the specified tab of the form...
+    var x = document.getElementsByClassName("tab");
+    x[n].style.display = "block";
+    //... and fix the Previous/Next buttons:
+    if (n == 0) {
+      document.getElementById("prevBtn").style.display = "none";
+    } else {
+      document.getElementById("prevBtn").style.display = "inline";
+    }
+    if (n == (x.length - 1)) {
+      document.getElementById("nextBtn").innerHTML = "Press create venue above";
+    } else {
+      document.getElementById("nextBtn").innerHTML = "Next";
+    }
+    //... and run a function that will display the correct step indicator:
+    fixStepIndicator(n)
+  }
+
+  function nextPrev(n) {
+    // This function will figure out which tab to display
+    var x = document.getElementsByClassName("tab");
+    // Exit the function if any field in the current tab is invalid:
+    // Hide the current tab:
+    x[currentTab].style.display = "none";
+    // Increase or decrease the current tab by 1:
+    currentTab = currentTab + n;
+    // if you have reached the end of the form...
+    if (currentTab >= x.length) {
+      // ... the form gets submitted:
+      document.getElementById("regForm").submit();
+      return false;
+    }
+    // Otherwise, display the correct tab:
+    showTab(currentTab);
+  }
+
+  function validateForm() {
+    // This function deals with validation of the form fields
+    var x, y, i, valid = true;
+    x = document.getElementsByClassName("tab");
+    y = x[currentTab].getElementsByTagName("input");
+    // A loop that checks every input field in the current tab:
+    for (i = 0; i < y.length; i++) {
+      // If a field is empty...
+      if (y[i].value == "") {
+        // add an "invalid" class to the field:
+        y[i].className += " invalid";
+        // and set the current valid status to false
+        valid = false;
+      }
+    }
+    // If the valid status is true, mark the step as finished and valid:
+    if (valid) {
+      document.getElementsByClassName("step")[currentTab].className += " finish";
+    }
+    return valid; // return the valid status
+  }
+
+  function fixStepIndicator(n) {
+    // This function removes the "active" class of all steps...
+    var i, x = document.getElementsByClassName("step");
+    for (i = 0; i < x.length; i++) {
+      x[i].className = x[i].className.replace(" active", "");
+    }
+    //... and adds the "active" class on the current step:
+    x[n].className += " active";
+  }
