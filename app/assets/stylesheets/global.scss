@@ -220,15 +220,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align:center;
 }
 
+
+
 .in{
   outline: none;
 	background: transparent;
 	color:$maincolour;
 	text-decoration:none;
-	border: 2px solid gray;
-	padding: 40px;
-	border-radius:10px;
-	width:70%;
+  border: 1px solid $maincolour;
+  padding: .7em 1.5em;
+  border-radius: 1.5em;
 	&:hover {
 		border: 1px solid $secondcolour;
 		color: $secondcolour;

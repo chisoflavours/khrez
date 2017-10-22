@@ -270,13 +270,28 @@ $secondcolour:#00CED1;
 #regForm {
   background-color: #ffffff;
   margin: 100px auto;
-  font-family: Raleway;
   padding: 40px;
   width: 50%;
   min-width: 300px;
 }
 h1 {
   text-align: center;  
+}
+
+.in{
+  outline: none;
+	background: transparent;
+	color:$maincolour;
+	text-decoration:none;
+	border: 2px solid gray;
+	padding: 40px;
+	border-radius:10px;
+	width:70%;
+	&:hover {
+		border: 1px solid $secondcolour;
+		color: $secondcolour;
+
+	}
 }
 input {
   padding: 40px;
