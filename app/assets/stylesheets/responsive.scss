@@ -3,7 +3,18 @@ $secondcolour:#00CED1;
 
 
 @media only screen and (max-width: 600px) {
-  
+  .login {
+  outline: none;
+	text-decoration:none;
+	border: 1px solid #ffffff;
+	border-radius: .5em;
+	width:70px;
+	&:hover {
+		border: 0;
+		color: #008080;
+  }
+}
+
       .search2{
       position: absolute;
       top: 81%;
@@ -98,29 +109,18 @@ $secondcolour:#00CED1;
   overflow: hidden;
   background-color: #ffffff;
   width: 100%; /* Full width */
+  height:100vh;
 }
 
   .topnav a{
       color:gray;
-      font-size:20px;
+      font-size:25px;
       &:hover{
           color:#008080;
       }
   } 
   
-  .login {
-	outline: none;
-	text-decoration:none;
-	border: 1px solid #ffffff;
-	border-radius: .5em;
-	width:70px;
-	color:red;
-	&:hover {
-		border: 1px solid #008080;
-		color: #008080;
 
-	}
-}
 
 }
 
@@ -487,11 +487,52 @@ $secondcolour:#00CED1;
 
 
 .hero-image{
-  height:90%;
+  height:100%;
+}
+
+.search{
+  top:70%;
+}
+
+.modal-content {
+    height:60%;
+}
+
+#search{
+  width:70%;
 }
 
 
   
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a{
+  color:gray;
+  font-size:20px;
+
+
+  &:hover{
+    color:#008080;
+  }
+} 
+
+.login {
+  outline: none;
+	text-decoration:none;
+	border: 1px solid #ffffff;
+	border-radius: .5em;
+	width:70px;
+	&:hover {
+		border: 1px solid #008080;
+		color: #008080;
+  }
+}
+
+
+
 }
 
 @media only screen and (max-width: 1451px) {
