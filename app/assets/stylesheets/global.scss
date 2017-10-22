@@ -155,8 +155,8 @@ h1, h2, h3, h4, h5, h6 {
       padding-left:90px;
       padding-right:90px;
       background:transparent;
-      border:3px solid #ffffff;
-      color:#ffffff;
+      border:3px solid $secondcolour;
+      color:$secondcolour;
       -webkit-appearance: none;
       font-size:20px;
       margin-top:50px;
@@ -164,7 +164,6 @@ h1, h2, h3, h4, h5, h6 {
       transition: padding 1s;
   }
   .searchbutton:hover{
-      background:#008B8B;
       padding-left:110px;
       padding-right:110px;
   }

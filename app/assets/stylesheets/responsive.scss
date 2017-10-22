@@ -54,7 +54,9 @@ $secondcolour:#00CED1;
 }
 
 .hero-image {
-  
+  .none{
+    display:none;
+  }
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -123,7 +125,7 @@ $secondcolour:#00CED1;
 }
 
 .top{
-  margin-top:100px;
+  margin-top:150px;
 }
 #exloretext{
     color:gray;
@@ -131,7 +133,7 @@ $secondcolour:#00CED1;
     position:absolute;
     text-align:left;
     font-size:3.2em;
-    top:90%;
+    top:80%;
     left:0%;
     margin-left:10px;
     #fullstop{
@@ -490,4 +492,10 @@ $secondcolour:#00CED1;
 
 
   
+}
+
+@media only screen and (max-width: 1451px) {
+  .none{
+    display:none;
+  }
 }
