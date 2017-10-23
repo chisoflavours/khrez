@@ -124,11 +124,13 @@
  
   
     %div{:style => "overflow:auto;"}
-      %div{:style => "float:right;"}
+      %br/
+      %br/
+      %div{:style => "float:left;"}
         %button#prevBtn{:onclick => "nextPrev(-1)", :type => "button"} Previous
         %button#nextBtn{:onclick => "nextPrev(1)", :type => "button"} Next
     / Circles which indicates the steps of the form:
-    %div{:style => "text-align:center;margin-top:40px;"}
+    %div{:style => "text-align:center;margin-top:60px;"}
       %span.step
       %span.step
       %span.step
@@ -157,7 +159,11 @@
       document.getElementById("prevBtn").style.display = "inline";
     }
     if (n == (x.length - 1)) {
-      document.getElementById("nextBtn").innerHTML = "Press create venue above";
+      document.getElementById("nextBtn").innerHTML = "";
+      document.getElementById("nextBtn").style.background = "#ffffff";
+      document.getElementById("prevBtn").innerHTML = "";
+      document.getElementById("prevBtn").style.background = "#ffffff";
+
     } else {
       document.getElementById("nextBtn").innerHTML = "Next";
     }

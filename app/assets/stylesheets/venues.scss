@@ -283,8 +283,8 @@ h1 {
 	background: transparent;
 	color:$maincolour;
 	text-decoration:none;
-	border: 2px solid gray;
-	padding: 40px;
+	border: 1px solid gray;
+	padding: 30px;
 	border-radius:10px;
 	width:70%;
 	&:hover {
@@ -292,21 +292,19 @@ h1 {
 		color: $secondcolour;
 
 	}
+
 }
 input {
-  padding: 40px;
-  width: 70%;
-  font-size: 17px;
-  border: 2px solid gray;
-  &:hover {
-    border: 1px solid $secondcolour;
-	color: $secondcolour;
+  padding: 25px;
+  width:200px;
+  border-color:$secondcolour;
+  color:$secondcolour;
+  &:hover{
+    border-color:gray;
+    color:gray;
   }
 }
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-  background-color: #ffdddd;
-}
+
 /* Hide all steps by default: */
 .tab {
   display: none;
@@ -325,7 +323,7 @@ button:hover {
 }
 #prevBtn {
   background-color: $maincolour;
-  margin-right:20px;
+  margin-right:40px;
 }
 
 /* Make circles that indicate the steps of the form: */
@@ -333,7 +331,7 @@ button:hover {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbbbbb;
+  background-color: $secondcolour;
   border: none;  
   border-radius: 50%;
   display: inline-block;
