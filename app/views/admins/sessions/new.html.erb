@@ -15,11 +15,6 @@
     <%= f.input :password, required: true , input_html: { class: 'in' }, label: false, placeholder: "Password"%>
   </div>  
   <br>
-  <br>
-  <div class="field">
-    <%= f.input :remember_me, input_html: { class: 'tickbox' }, as: :boolean if devise_mapping.rememberable? %>
-  </div>  
-  <br>
 <br>
  <div class="field">
   <div class="form-actions">
