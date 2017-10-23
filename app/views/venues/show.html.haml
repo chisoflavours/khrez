@@ -16,31 +16,6 @@
     = time_ago_in_words(@venue.created_at)
     ago
   %br/
-  
-  / Trigger/Open The Modal
-  %br
-  %button#myBtn.button  Contact Venue 
-  %br/
-  %br/
-  %br/
-  / The Modal
-  #myModal.modal
-    / Modal content
-    .modal-content
-      %span.close ×
-      .wrapper
-        %h3.colour 
-          Contact Number :
-          = @venue.admin.phone
-        %h3.colour 
-          Contact Email :
-          = @venue.admin.email
-        %h3.colour
-          This venue is listed by  :
-          = @venue.admin.name
-        %br/
-        %br/
-        %br/
   %br/
   .photo
     .photo-sizer
@@ -286,33 +261,15 @@
         = link_to venue.city, venue, :class => 'venuecit', target: :_blank
 %br/
 %br/
+
+= link_to @venue.admin do
+  .contactbtn
+    %h4 Contact Venue
+
+
 = render 'page/footer'
 :javascript
-  // Get the modal
-  var modal = document.getElementById('myModal');
-  
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks the button, open the modal 
-  btn.onclick = function() {
-      modal.style.display = "block";
-  }
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
+
   
   // Tabs
   

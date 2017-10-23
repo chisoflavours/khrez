@@ -1,0 +1,13 @@
+= render 'page/nav'
+
+%br/
+%br/
+%br/
+%br/
+
+.adminlist
+  - @admins.each do |admin|
+    .wrapper
+      %ul
+        %l1
+        %h1.adminame= link_to admin.name, admin, :class => 'adminame' 

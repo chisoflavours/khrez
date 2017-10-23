@@ -1,3 +1,6 @@
+$maincolour:#d6dce0;
+$secondcolour:#00CED1;
+
 #login{
     color:gray;
     text-align:center;
@@ -5,3 +8,46 @@
     margin-top:200px;
 }
 
+.admincontact{
+    margin-top:120px;
+    h2{
+        color:#708090;
+    }
+    .topbar{
+        background:$secondcolour;
+        width:100%;
+        overflow:hidden;
+        height:400px;
+        img{
+            border-radius:400px;
+            width:170px;
+            height:170px;
+            position:relative;
+            left:45%;
+            top:5vh;
+        }
+        .name{
+            color:#ffffff;
+            position:relative;
+            left:45%;
+            top:15%;
+        }
+        .name2{
+          color:#ffffff;
+          position:relative;
+          left:46%;
+          top:45%;
+        }
+    }
+}
+
+.adminlist{
+    text-align:center;
+    .adminame{
+      text-decoration:none;
+      color:$secondcolour;
+      &:hover{
+          color:gray;
+      }
+    }
+}

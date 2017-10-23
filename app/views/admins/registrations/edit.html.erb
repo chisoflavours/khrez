@@ -20,13 +20,17 @@
     <br>
     <%= f.input :phone,label: false, placeholder: "Phone Number", input_html: { class: 'in' } %>
     <br>
-    
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
     <% end %>
     <%= f.input :password, autocomplete: "off",label: false, placeholder: "Password", input_html: { class: 'in' } %>
     <br>
     <%= f.input :password_confirmation, required: false ,label: false, placeholder: "Password Conformation", input_html: { class: 'in' }%>
+    <br>
+    <br>
+    <div class="button">
+    <%= f.input :avatar, as: :file, input_html: { hidden: true,class: 'button',id:'venimgbtn' }, label: 'Upload Logo' %>
+    </div>
     <br>
     <br>
     <br>

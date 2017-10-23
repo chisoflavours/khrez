@@ -1,0 +1,17 @@
+= render 'page/nav'
+
+.admincontact
+  .topbar
+    - unless @admin.avatar.blank?
+      = image_tag @admin.avatar.url(:medium)
+      %h1.name= @admin.name
+    - if @admin.avatar.blank?
+      %h1.name2= @admin.name
+  .wrapper
+    %h1.colour Contact Details :
+    %br/
+    %h2= @admin.email
+    %h2= @admin.phone
+
+
+= render 'page/footer'

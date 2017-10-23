@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   devise_for :users
   devise_for :chisoms
   devise_for :admins, controllers: { registrations: "registrations" }
-
+  resources :admins
+  
   get 'page/about'
 
   get 'page/privacypolicy'
