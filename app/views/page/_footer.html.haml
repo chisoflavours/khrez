@@ -1,0 +1,29 @@
+.footer_container
+  .footer
+    .copywright
+      %p © Khrez Ltd
+    #footer_links
+      %ul
+        %li#title Company
+        %br/
+        %li
+          = link_to 'About Us', page_about_path,:id => 'hide' 
+        %li
+          = link_to 'Privacy Policy', page_privacypolicy_path,:id => 'hide' 
+        %li
+          = link_to 'Terms & Conditions', page_termsandconditions_path,:id => 'hide'
+        %li
+          %a{:href => "mailto:info@khrez.co.uk?Subject=Khrez%20contact", :target => "_top"} Contact
+    #footer_links_social
+      %ul
+        %li#title Social
+        %br/
+        %li
+          %a{:href => "#", :target => "_blank"} Facebook
+        %li
+          %a{:href => "https://twitter.com/KhrezVenues?lang=en-gb", :target => "_blank"} Twitter 
+        %li
+          %a{:href => "https://www.instagram.com/khrezvenues/?hl=en", :target => "_blank"} Instagram
+        %li 
+          %a{:href => "https://medium.com/@khrez", :target => "_blank"} Blog
+

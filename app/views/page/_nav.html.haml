@@ -1,0 +1,12 @@
+#myTopnav.topnav
+  %a#logo{:href => "http://www.khrez.co.uk/"} K
+  - unless admin_signed_in?
+    - unless user_signed_in?
+      %a#down
+        = link_to 'Log In', new_admin_session_path,:class => "login"
+      %a{:href => "#"}= link_to 'List Your Venue', page_listyourvenue_path,:class => "colour"
+  - if admin_signed_in?
+    %a#down= link_to('Logout', destroy_admin_session_path, method: :delete)
+    %a= link_to "New Venue", new_venue_path 
+    %a= link_to "Edit Profile", edit_admin_registration_path
+  %a#hammenu.icon{:href => "javascript:void(0);", :onclick => "myFunction()", :style => "font-size:35px;padding: 15px 30px;color:#00CED1"} ☰
