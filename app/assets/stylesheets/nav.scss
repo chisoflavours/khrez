@@ -54,7 +54,10 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: fixed;
+    height:100vh;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -67,6 +70,7 @@
     text-align: left;
     color: gray;
     margin-top: 20px;
+    margin-left:20px;
 
   }
 

@@ -1,3 +1,5 @@
+
+
 <div class="topnav" id="myTopnav">
   <a id="logo" href="http://www.khrez.co.uk/">K</a>
   <% unless admin_signed_in? %>
@@ -9,6 +11,5 @@
   <% if admin_signed_in?%>
     <a id="down"><%= link_to('Logout', destroy_admin_session_path, method: :delete) %></a>
   <% end %>
-    
     <a href="javascript:void(0);" style="font-size:35px;padding: 15px 30px;color:#00CED1" class="icon" onclick="myFunction()" id="hammenu">&#9776;</a>
 </div>

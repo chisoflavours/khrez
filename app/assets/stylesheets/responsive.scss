@@ -4,6 +4,11 @@ $secondcolour:#00CED1;
 
 @media only screen and (max-width: 600px) {
 
+#logo{
+  margin-left: 20px;
+}
+
+
 .contactbtn {
   padding:5px;
    &:hover{
@@ -151,8 +156,6 @@ $secondcolour:#00CED1;
   .topnav {
   overflow: hidden;
   background-color: #ffffff;
-  width: 100%; /* Full width */
-  height:100vh;
 }
 
   .topnav a{
@@ -552,15 +555,7 @@ $secondcolour:#00CED1;
   background-color: #ffffff;
 }
 
-.topnav a{
-  color:gray;
-  font-size:20px;
 
-
-  &:hover{
-    color:#008080;
-  }
-} 
 
 .login {
   outline: none;

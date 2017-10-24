@@ -262,9 +262,10 @@
 %br/
 %br/
 
-= link_to @venue.admin do
-  .contactbtn
-    %h4 Contact Venue
+- unless admin_signed_in?
+  = link_to @venue.admin do
+    .contactbtn
+      %h4 Contact Venue
 
 
 = render 'page/footer'
