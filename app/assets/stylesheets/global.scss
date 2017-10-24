@@ -132,17 +132,18 @@ h1, h2, h3, h4, h5, h6 {
 
   #search{
       background:#ffffff;
+      outline: none;
       margin-top:50px;
       border:1px solid gray;
       border-radius:5px;
       padding:40px;
-      color:#00CED1;
+      color:gray;
       width:84%;
       margin-right:20px;
-      -webkit-appearance: none;
   }
   #cat{
       background:#ffffff;
+      outline: none;
       margin-top:20px;
       border:1px solid gray;
       border-radius:5px;
@@ -168,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-transition: padding 2s; /* For Safari 3.1 to 6.0 */
       transition: padding 1s;
   }
+  :focus {outline:none;}
   .searchbutton:hover{
       padding-left:110px;
       padding-right:110px;
@@ -232,16 +234,23 @@ h1, h2, h3, h4, h5, h6 {
 	background: transparent;
 	color:$maincolour;
 	text-decoration:none;
-  border: 1px solid $maincolour;
-  padding: .7em 1.5em;
-  border-radius: 1.5em;
+  border:0;
+  width:20%;
+  border-radius:0;
+  padding:10px;
 	&:hover {
-		border: 1px solid $secondcolour;
 		color: $secondcolour;
 
 	}
 }
 
+.hr_login{
+  width:20%;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
 .tickbox{
   margin-right:10px;
 }

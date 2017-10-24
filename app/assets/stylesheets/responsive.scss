@@ -4,6 +4,34 @@ $secondcolour:#00CED1;
 
 @media only screen and (max-width: 600px) {
 
+.avatarbtn{
+.field{
+  .button{
+    width:50%;
+    margin:0 auto;
+  }
+}
+}
+
+.in{
+  outline: none;
+	background: transparent;
+	color:$maincolour;
+	text-decoration:none;
+  border:0;
+  width:70%;
+  border-radius:0;
+  padding:10px;
+	&:hover {
+		color: $secondcolour;
+
+	}
+}
+
+.hr_login{
+  width:70%;
+}
+
 #logo{
   margin-left: 20px;
 }
@@ -415,7 +443,24 @@ $secondcolour:#00CED1;
 
 
 
+.in{
+  outline: none;
+	background: transparent;
+	color:$maincolour;
+	text-decoration:none;
+  border:0;
+  width:50%;
+  border-radius:0;
+  padding:10px;
+	&:hover {
+		color: $secondcolour;
 
+	}
+}
+
+.hr_login{
+  width:50%;
+}
 
 
 
@@ -569,7 +614,16 @@ $secondcolour:#00CED1;
   }
 }
 
+#down{
+  margin-top:100px;
+}
 
+.login {
+	&:hover {
+		border: 0;
+		color: #008080;
+  }
+}
 
 }
 
@@ -577,4 +631,24 @@ $secondcolour:#00CED1;
   .none{
     display:none;
   }
+  
+  .in{
+  outline: none;
+	background: transparent;
+	color:$maincolour;
+	text-decoration:none;
+  border:0;
+  width:70%;
+  border-radius:0;
+  padding:10px;
+	&:hover {
+		color: $secondcolour;
+
+	}
+}
+
+.hr_login{
+  width:70%;
+}
+
 }
