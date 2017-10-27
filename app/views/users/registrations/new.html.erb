@@ -9,25 +9,37 @@
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.input :email, required: true , input_html: { class: 'in' }, label: false, placeholder: "Email" %>
+    <hr class="hr_login">
   </div>
   <br>
   <div class="field">
     <%= f.input :name, required: true, required: true , input_html: { class: 'in' }, label: false, placeholder: "Full Name" %>
+    <hr class="hr_login">
   </div>
   <br>
   <div class="field">
     <%= f.input :number, required: true , input_html: { class: 'in' }, label: false, placeholder: "Phone Number" %>
+    <hr class="hr_login">
   </div>
   <br>
   <div class="field">
     <%= f.input :password , required: true , input_html: { class: 'in' }, label: false, placeholder: "Password" %>
+    <hr class="hr_login">
   </div>
   <br>
   <div class="field">
     <%= f.input :password_confirmation , required: true , input_html: { class: 'in' }, label: false, placeholder: "Password Confirmation" %>
+    <hr class="hr_login">
   </div>
   <br>
   <br>
+<br>
+<div class="center">
+<p class="colour"> By signing up you agree to our </p>
+<p class="colour">T&C and privacy policy</p>
+<br>
+</div>
+<br>
   <div class="field">
     <%= f.button :submit, "Sign up" ,:class => 'button'%>
   </div>
@@ -40,8 +52,10 @@
 <div class="field">
   <%= render "users/shared/links" %>
 </div>
-
 <br>
-<br>
-<br>
-<br>
+<div class="not_mobile">
+<div class="field">
+  <%= link_to 'Venue Sign Up', new_admin_registration_path, :class => 'link' %>
+</div>
+</div>
+<%= render "page/footer" %>

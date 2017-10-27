@@ -1,0 +1,41 @@
+%a#logo2{:href => "http://www.khrez.co.uk/"} K
+
+#sidenav
+  %a= link_to "New Venue", new_venue_path
+  %br/
+  %br/
+  %br/
+  %br/
+  %a= link_to "Edit Profile", edit_admin_registration_path
+  %br/
+  %br/
+  %br/
+  %br/
+  %a{:href => "http://khrez.co.uk/venues/1/bookings/"} Booking Requests 
+  %br/
+  %br/
+  %br/
+  %br/
+  %a= link_to('Logout', destroy_admin_session_path, method: :delete)
+
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%h1.colourname 
+  = current_admin.name
+  's
+  Venues
+
+#posts2
+  - @venue.each do |venue|
+    .post2
+      .post_image2
+        = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
+      .post_content2
+        %br/
+        = link_to venue.name, venue, :class => 'venuetext', target: :_blank

@@ -7,10 +7,12 @@
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.input :email, required: true , input_html: { class: 'in' }, label: false, placeholder: "Email"%>
+    <hr class="hr_login">
   </div> 
   <br>
   <div class="field">
     <%= f.input :password, required: true , input_html: { class: 'in' }, label: false, placeholder: "Password"%>
+    <hr class="hr_login">
   </div> 
   <br>
   <div class="field">
@@ -29,3 +31,10 @@
 <div class="field">
   <%= render "users/shared/links" %>
 </div>
+<br>
+<div class="not_mobile">
+<div class="field">
+  <%= link_to 'Venue Log In', new_admin_session_path, :class => 'link' %>
+</div>
+</div>
+<%= render "page/footer" %>

@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   # root :to => 'page#soon'
   
    authenticated :admin do
-     root :to => 'venues#index', as: :authenticated_root
+     root :to => 'venues#dashboard', as: :authenticated_root
    end
    
    get "page/:page" => "venues#index"
@@ -27,8 +27,11 @@ Rails.application.routes.draw do
    get 'page/index'
    get 'page/afterpay'
    get 'page/dashboard'
+   get 'bookings/message'
   resources :venues do
       resources :comments
+      resources :bookings
   end
+  
 
 end

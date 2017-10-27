@@ -2,20 +2,25 @@
 %br/
 %br/
 %br/
-.wrapperven
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+
+= render 'bookings/form'
+.wrappershow
   - if admin_signed_in?
     - if @venue.admin_id == current_admin.id
       = link_to "Edit", edit_venue_path(@venue), :class => 'button'
       = link_to "Delete", venue_path(@venue), method: :delete, data: { confirm: "Are you sure ?" }, :class => 'button'
-  %h1.colour2
-    = @venue.name
-  %p.colour2
-    = @venue.city 
-  %p.colour
-    Added 
-    = time_ago_in_words(@venue.created_at)
-    ago
-  %br/
   %br/
   .photo
     .photo-sizer
@@ -24,209 +29,208 @@
   %br/
   %br/
   %br/
-  %br/
+  %h1#name.colour
+    = @venue.name
+  %h3.colour2
+    = @venue.city
 
-
-
-
-#London.tabcontent
-  %h1 Description
-  %p.desc= @venue.description
   %br/
   %br/
-#Paris.tabcontent
-  %h1 Location
-  %p
-  = @venue.city
   %br/
-  %br/
-  = @venue.postcode 
-  %br/
-  %br/
-  = @venue.county
-  %br/
-  %br/
-  = @venue.street_line_one
-  %br/
-  %br/
-  = @venue.street_line_two
-  %br/
-#Tokyo.tabcontent
-
-  %h1 Capacity
-  %p 
-  = @venue.capacity_standing
-  people standing
   
-  %p
-  = @venue.capacity_sitting
-  people sitting
-  
-  %p
-  = @venue.size
-  sqm
-  
-  %br/
-  %br/
 
-#Lagos.tabcontent
-  %h1 Extra Info
-  %p
-    = @venue.extra_info
+
+
+  #Paris.tabcontent
+    %h1 Location
+    %p
+    = @venue.city
+    %br/
+    %br/
+    = @venue.postcode 
+    %br/
+    %br/
+    = @venue.county
+    %br/
+    %br/
+    = @venue.street_line_one
+    %br/
+    %br/
+    = @venue.street_line_two
+    %br/
+  #Tokyo.tabcontent
+  
+    %h1 Capacity
+    %p 
+    = @venue.capacity_standing
+    people standing
+    
+    %p
+    = @venue.capacity_sitting
+    people sitting
+    
+    %p
+    = @venue.size
+    sqm
+    
+    %br/
+    %br/
+
+
+  
+  %button#defaultOpen.tablink{:onclick => "openCity('Paris', this, 'gray')"} Location
+  %button.tablink{:onclick => "openCity('Tokyo', this, 'gray')"} Capacity
+  
+  %br
+  %br
+  
+  .wrapper
+    %h1 Description
+    %p.desc= @venue.description
+    %br/
+    %br/
+    %h1 Extra Info
+    %p
+      = @venue.extra_info
     - if @venue.extra_info.blank?
       None
-  %br/
-  %br/
-
-%button#defaultOpen.tablink{:onclick => "openCity('Paris', this, 'gray')"} Location
-%button.tablink{:onclick => "openCity('Tokyo', this, 'gray')"} Capacity
-%button.tablink{:onclick => "openCity('London', this, 'gray')"} Description
-%button.tablink{:onclick => "openCity('Lagos', this, 'gray')"} Info
-
-%br
-%br
-
-.wrapper
-
-
-  %br
-  %br
-  %h1.colour.center.underline Features
-  %br
-  %br/
-  .features
-    %i.fa.fa-car{"aria-hidden" => "true"}
-    %h2.gray
-      = @venue.parking_spaces
-      Parking spaces
-    %br/  
-    %i.fa.fa-wheelchair{"aria-hidden" => "true"}
-    %h2.gray
-      - if @venue.disabled_acess == true
-        Disabled access
-      -else
-        No disabled access
     %br/
-    %i.fa.fa-globe{"aria-hidden" => "true"}
     %br/
-    %h2.gray
-      - if @venue.outside_spaces == true
-        Outside space
-      - else 
-        No outside space
+    %br
+    %br
+    %h1.colour.center.underline Features
+    %br
     %br/
-    %i.fa.fa-cutlery{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.kitchens == 0
-        No kitchens
-      - else
-        = @venue.kitchens
-        kitchens
-    %br/
-    %i.fa.fa-tint{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.toilets == 0
-        No toilets
-      - else
-        = @venue.toilets
-        toilets
-    %br/
-    %i.fa.fa-table{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.tables == 0
-        No tables
-      - else
-        = @venue.tables
-        tables
-    %br/
-    %i.fa.fa-stop{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.chairs == 0
-        No chairs
-      - else
-        = @venue.chairs
-        chairs  
-    %br/
-    %i.fa.fa-lemon-o{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.external_catering_allowed == true
-        External Catering allowed
-      - else 
-        No external catering allowed
-    %br/
-    %i.fa.fa-beer{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.external_alcahool_allowed == true
-        External alcahol allowed
-      - else 
-        No external alcahol allowed
-    %br/
-    %i.fa.fa-lemon-o{"aria-hidden" => "true"}
-    %br/
-    
-    %h2.gray
-      - if @venue.inhouse_catering_provided == true
-        Catering provided
-      - else 
-        No catering provided
-    %br/
-    %i.fa.fa-beer{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.inhouse_alcahool_provided == true
-        Alcahol provided
-      - else 
-        No alcahol provided    
-    %br/
-    %i.fa.fa-archive{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.storage == true
-        Storage
-      - else 
-        No Storage
-    %br/
-    %i.fa.fa-bolt{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.air_conditionind == true
-        Air conditioning
-      - else 
-        No air conditioning
-    %br/
-    %i.fa.fa-wifi{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.wifi == true
-        Wifi
-      - else 
-        No wifi
-    %br/
-    %i.fa.fa-television{"aria-hidden" => "true"}
-    %br/
-    %h2.gray
-      - if @venue.projector == true
-        Projector provided
-      - else 
-        No projector provided
-  %br
-  %br
-
-  %br/
-  %br/
-
-
-  %br/
-  %br/
-  .hide
-    .comment
+    .features
+      %i.fa.fa-car{"aria-hidden" => "true"}
+      %h2.gray
+        = @venue.parking_spaces
+        Parking spaces
+      %br/  
+      %i.fa.fa-wheelchair{"aria-hidden" => "true"}
+      %h2.gray
+        - if @venue.disabled_acess == true
+          Disabled access
+        -else
+          No disabled access
+      %br/
+      %i.fa.fa-globe{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.outside_spaces == true
+          Outside space
+        - else 
+          No outside space
+      %br/
+      %i.fa.fa-cutlery{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.kitchens == 0
+          No kitchens
+        - else
+          = @venue.kitchens
+          kitchens
+      %br/
+      %i.fa.fa-tint{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.toilets == 0
+          No toilets
+        - else
+          = @venue.toilets
+          toilets
+      %br/
+      %i.fa.fa-table{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.tables == 0
+          No tables
+        - else
+          = @venue.tables
+          tables
+      %br/
+      %i.fa.fa-stop{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.chairs == 0
+          No chairs
+        - else
+          = @venue.chairs
+          chairs  
+      %br/
+      %i.fa.fa-lemon-o{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.external_catering_allowed == true
+          External Catering allowed
+        - else 
+          No external catering allowed
+      %br/
+      %i.fa.fa-beer{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.external_alcahool_allowed == true
+          External alcahol allowed
+        - else 
+          No external alcahol allowed
+      %br/
+      %i.fa.fa-lemon-o{"aria-hidden" => "true"}
+      %br/
+      
+      %h2.gray
+        - if @venue.inhouse_catering_provided == true
+          Catering provided
+        - else 
+          No catering provided
+      %br/
+      %i.fa.fa-beer{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.inhouse_alcahool_provided == true
+          Alcahol provided
+        - else 
+          No alcahol provided    
+      %br/
+      %i.fa.fa-archive{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.storage == true
+          Storage
+        - else 
+          No Storage
+      %br/
+      %i.fa.fa-bolt{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.air_conditionind == true
+          Air conditioning
+        - else 
+          No air conditioning
+      %br/
+      %i.fa.fa-wifi{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.wifi == true
+          Wifi
+        - else 
+          No wifi
+      %br/
+      %i.fa.fa-television{"aria-hidden" => "true"}
+      %br/
+      %h2.gray
+        - if @venue.projector == true
+          Projector provided
+        - else 
+          No projector provided
+    %br
+    %br
   
+    %br/
+    %br/
+  
+    %br/
+    %br/
+    .comment
       %h2.colour= pluralize(@venue.comments.count, "Review")
       %br/
       = render 'comments/form' 
@@ -234,38 +238,12 @@
       - @comments.each do |comment|
         %h3.colour= comment.content
         %hr
-  
-    %br/
-    %br/
-    %br/
-    %br/
-  %hr
-  %br/
-  %br/
-  
-  %h1.colour.center More Venues
 
-
-#posts
-  - @venues.each do |venue|
-    .post
-      .post_image
-        = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
-      .post_content
-        = link_to venue.name, venue, :class => 'venuetext', target: :_blank
-        %br/
-        %br/
-        = link_to venue.category, venue, :class => 'venuecat', target: :_blank
-        %br/
-        %br/
-        = link_to venue.city, venue, :class => 'venuecit', target: :_blank
-%br/
-%br/
-
-- unless admin_signed_in?
-  = link_to @venue.admin do
-    .contactbtn
-      %h4 Contact Venue
+  .hide
+    - unless admin_signed_in?
+      = link_to @venue.admin do
+        .contactbtn
+          %h4 Contact Venue
 
 
 = render 'page/footer'
@@ -285,7 +263,7 @@
         tablinks[i].style.backgroundColor = "";
     }
     document.getElementById(cityName).style.display = "block";
-    elmnt.style.backgroundColor = color;
+
 
   }
   // Get the element with id="defaultOpen" and click on it

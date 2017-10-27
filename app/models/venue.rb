@@ -1,6 +1,7 @@
 class Venue < ActiveRecord::Base
     belongs_to :admin
     has_many :comments
+    has_many :bookings
     
     def self.search(city, category)
 

@@ -12,9 +12,11 @@ class VenuesController < ApplicationController
           @venue = Venue.all
         end
         
-        if admin_signed_in?
-          @venue = Venue.where(admin_id: current_admin)
-        end
+    end
+    
+    def dashboard
+        @venue = Venue.where(admin_id: current_admin)
+        @booking = Booking.where(venue_id: @venue)
     end
     
     def correct_admin
@@ -26,6 +28,7 @@ class VenuesController < ApplicationController
          @venue = Venue.find(params[:id])
          @venues = Venue.limit(3).order("RANDOM()")
          @comments = Comment.where(venue_id: @venue)
+         @booking = Booking.where(venue_id: @venue)
     end
     
     def new

@@ -8,12 +8,14 @@
 
 -if admin_signed_in?
  
-  = render 'admins/dashboard'
   - if @venue.blank?
     %br/
     %br/
     %h4#eror
-      You have no venues
+      You have no venues, why not 
+      %br/
+      %br/
+      create one ?
 
 #posts
   - @venue.each do |venue|
@@ -72,8 +74,7 @@
 %br/
 %br/
 
-- unless admin_signed_in?
-  = will_paginate @venue, class:'paginate'
+
 
 
         

@@ -1,0 +1,78 @@
+$maincolour:#d6dce0;
+$secondcolour:#00CED1;
+.booking_table{
+    li{
+        list-style-type:none;
+        text-align:center;
+        color:gray;
+        font-size:20px;
+    }
+    hr{
+        width:50%;
+    }
+}
+
+.booking_form{
+    position:fixed;
+    float:right;
+    right:5%;
+    top:29%;
+    border:1px solid lightgray;
+    padding:50px;
+    border-radius:10px;
+    background:#ffffff;
+    .in{
+        color:gray;
+    }
+}
+
+#guest_count{
+    width:80px;
+}
+
+.admincontact2{
+    margin-top:50px;
+    h2{
+        color:#708090;
+    }
+    .topbar2{
+        background:$secondcolour;
+        width:100%;
+        overflow:hidden;
+        height:400px;
+        img{
+            border-radius:400px;
+            width:170px;
+            height:170px;
+            position:relative;
+            left:45%;
+            top:5vh;
+        }
+        .name{
+            color:#ffffff;
+            position:relative;
+            left:45%;
+            top:15%;
+        }
+        .name2{
+          color:#ffffff;
+          position:relative;
+          left:37%;
+          top:35%;
+          font-size:45px;
+        }
+    }
+}
+
+.floating-box2 {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border-radius:10px;
+    border: 3px solid gray;  
+    padding:30px;
+    .text{
+        color:gray;
+    }
+}

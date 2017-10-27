@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guests: 1
+  time: 2017-10-25 10:55:33
+  date: 2017-10-25
+  venue_id: 
+  user_id: 
+  admin_id: 
+
+two:
+  guests: 1
+  time: 2017-10-25 10:55:33
+  date: 2017-10-25
+  venue_id: 
+  user_id: 
+  admin_id: 

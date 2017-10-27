@@ -1,78 +1,214 @@
-= render 'nav'
- 
-.hero
-  .text
-    %h1 List your venue
-    %h3 The easy way
+.top_image
+  = render 'page/nav'
+  .top_image_text
+    %h1 
+      List your venue 
+      %br>/
+      the smartest way with 
+      %br>/
+      khrez
     %br/
-    %br/
-    = link_to 'Start Now', new_admin_registration_path, :class => 'button2'
+    = link_to "Get Started", new_admin_registration_path, class: 'get_started_button'
+  .top_image_img
+    = image_tag("idea.png", :alt => "Idea Img", :id => 'ideaimg')
+  .top_image_symbol
+    &darr;
 
+.content_grid
+  .line
+  .circle1
+  .circle2
+  .circle3
+  .circle4
+  = image_tag("piggy-bank.png", :alt => "Pig Illustration", :id => 'pigillustration')
+  .content_text
+    .content_text_1
+      %h1
+        No Nasty
+        %br>/
+        Commissions
+      %p
+        Nobody likes commission per booking thats 
+        %br>/
+        why we only charge you a straight
+        %br>/
+        monthly fee, this is one of the things 
+        %br>/
+        that we do to make your business 
+        %br>/
+        run smoother 
+    = image_tag("chat.png", :alt => "Chat Illustration", :id => 'chatillustration')
+    .content_text_2
+      %h1
+        Easy Communication
+        %br>/
+        With Customers
+      %p
+        As soon as your recieve a booking request
+        %br>/
+        from a customer simply just accept or 
+        %br>/
+        reject your booking requests as they 
+        %br>/
+        come in !
+    = image_tag("twitter.png", :alt => "Twitter Illustration", :id => 'twitterillustration')
+    .content_text_3
+      %h1
+        Get
+        %br>/
+        Free Promotion
+      %p
+        We will advertise your venue across
+        %br>/
+        our various social media platforms
+        %br>/
+        for no extra cost
+    = image_tag("support.png", :alt => "Support Illustration", :id => 'supportillustration')
+    .content_text_4
+      %h1
+        First Class
+        %br>/
+        Support
+      %p
+        We will advertise your venue across
+        %br>/
+        our various social media platforms
+        %br>/
+        for no extra cost
 %br/
 %br/
 %br/
 %br/
 %br/
-
-.wrapper
-  .content
-    %h1 Why list your venue 
-    %h1 with khrez ?
-  
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  
-  .floating-box 
-    %i.fa.fa-ban{"aria-hidden" => "true"}
-    %h1 No nasty commissions
-    %br/
-    %p Nobody likes commissions per venue so thats why 
-    %p we only charge you a straight monthy fee 
-    %p easy !
-    %hr
-  .floating-box 
-    %i.fa.fa-home{"aria-hidden" => "true"}
-    %h1 Unlimited venues !
-    %br/
-    %p Have you got more than one venue ? 
-    %p Don't worry we've got you covered 
-    %hr
-  .floating-box 
-    %i.fa.fa-check{"aria-hidden" => "true"}
-    %h1 Easy bookings
-    %p Simply Accept or Reject any booking requests that you recieve
-    %hr
-  .floating-box 
-    %i.fa.fa-plus{"aria-hidden" => "true"}
-    %h1 Extra Bookings
-    %p Instantly see the increase in traffic to your venues 
-    %hr
-  .floating-box 
-    %i.fa.fa-money{"aria-hidden" => "true"}
-    %h1 Free Promotion
-    %p We will advertise your venue 
-    %p across our social media profiles for no extra cost
-    %hr
-  .floating-box 
-    %i.fa.fa-phone{"aria-hidden" => "true"}
-    %h1 Friendly Support
-    %p Whenever you need help our team in 
-    %p always on hand to help you with any of your proplems
-
-
-  
-= render 'footer'  
-
-
-/ Global Site Tag (gtag.js) - Google Analytics
-%script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-106207758-1"}
-:javascript
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-106207758-1');
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+.call_to_action
+  %h1 Get 3 months free . Get started today
+  = link_to "Get Started", new_admin_registration_path, class: 'get_started_button'
+  = image_tag("idea.png", :alt => "Idea Img", :id => 'ideaimg2')
+= render 'page/footer'

@@ -135,33 +135,34 @@ $secondcolour:#00CED1;
 
 
 .tablink {
-    background-color: gray ;
-    color: white;
+    background-color: #ffffff ;
+    color: gray;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 24px 16px;
+    padding: 50px 16px;
     font-size: 20px;
-    width: 25%;
+    width: 50%;
 }
 
 .tablink:hover {
-    background-color: #D3D3D3;
+    color: $secondcolour;
 }
 
 /* Style the tab content */
 .tabcontent {
-    color: white;
+    color: gray;
     display: none;
     padding: 100px;
     text-align: center;
+    border:1px solid gray;
+    border-radius:5px;
 }
 
-#London {background-color:#FFDAB9;}
-#Paris {background-color:#FFDAB9;}
-#Tokyo {background-color:#FFDAB9;}
-#Lagos {background-color:#FFDAB9;}
+#London {background-color:white;}
+#Paris {background-color:white;}
+
 
 #posts {
     width:90%;
@@ -235,19 +236,7 @@ $secondcolour:#00CED1;
 	}
 }
 
-.wrapperven{
-  width: 50%;
-  margin-top:300px;
-  .desc{
-  	width:100%;
-  	color:#708090;
-  }
-  img{
-  	height:60vh;
-  }
 
-
-}
 
 .comment{
   text-align:center;
@@ -351,3 +340,23 @@ button:hover {
   background-color: $secondcolour;
 }
 }
+
+
+
+
+p{
+  margin-left:10px;
+}
+
+.wrappershow{
+  width:60%;
+  position:relative;
+  left:50px;
+  img{
+    border-radius:5px;
+  }
+  #name{
+    font-size:40px;
+  }
+}
+

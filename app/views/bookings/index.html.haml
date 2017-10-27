@@ -1,0 +1,44 @@
+= render 'page/nav'
+%br/
+%br/
+%br/
+.admincontact2
+  .topbar2
+    %h2.name2 All Booking Requests
+  
+.wrapper
+  .field
+
+  - @booking.each do |booking|
+    .floating-box2
+      %br/
+      .text
+        Time:
+        = booking.time
+        
+      %br/
+      .text
+        Guests:
+        = booking.guests
+      %br/
+      .text
+        Date:
+        = booking.date
+      %br/
+      .text
+        Name:
+        = booking.user.name
+      %br/
+      .text
+        Number:
+        = booking.user.number
+      %br/
+      .text
+        Email:
+        = booking.user.email
+      %br/
+      %br/
+
+
+
+= render 'page/footer' 
