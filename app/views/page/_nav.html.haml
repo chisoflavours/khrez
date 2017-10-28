@@ -1,5 +1,5 @@
 #myTopnav.topnav
-  %a#logo{:href => "http://www.khrez.co.uk/"} K
+  = link_to 'K', root_path, id: 'logo'
   - unless admin_signed_in?
     - unless user_signed_in?
       %a#down

@@ -21,3 +21,9 @@
 
 en:
   hello: "Hello world"
+
+
+en:
+  time:
+    formats:
+      default: '%H:%M'

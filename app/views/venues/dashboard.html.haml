@@ -11,7 +11,7 @@
   %br/
   %br/
   %br/
-  %a{:href => "http://khrez.co.uk/venues/1/bookings/"} Booking Requests 
+  %a= link_to 'Booking Requests', venue_bookings_path(@venue)
   %br/
   %br/
   %br/
@@ -30,6 +30,10 @@
   = current_admin.name
   's
   Venues
+  
+.wrapper
+  - if @venue.blank?
+    %h2.colour2 You have no venues
 
 #posts2
   - @venue.each do |venue|

@@ -15,7 +15,7 @@ class BookingsController < ApplicationController
     end
     
   def index
-    @booking = Booking.where(admin_id: current_admin)
+    @booking = Booking.where(admin_id: current_admin).order('created_at DESC')
   end
   
 
