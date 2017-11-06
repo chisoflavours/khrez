@@ -4,7 +4,6 @@ class Venue < ActiveRecord::Base
     has_many :bookings
     
     def self.search(city, category)
-
         where("city like ?", "%#{city}%").where("category like ?", "%#{category}%")
     end
 

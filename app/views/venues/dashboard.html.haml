@@ -1,45 +1,46 @@
-%a#logo2{:href => "http://www.khrez.co.uk/"} K
-
-#sidenav
-  %a= link_to "New Venue", new_venue_path
-  %br/
-  %br/
-  %br/
-  %br/
-  %a= link_to "Edit Profile", edit_admin_registration_path
-  %br/
-  %br/
-  %br/
-  %br/
-  %a= link_to 'Booking Requests', venue_bookings_path(@venue)
-  %br/
-  %br/
-  %br/
-  %br/
-  %a= link_to('Logout', destroy_admin_session_path, method: :delete)
-
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%h1.colourname 
-  = current_admin.name
-  's
-  Venues
+.mobile_only
+  = render 'page/nav'
+.dashboard
+  %h1.colourname 
+    Hello,
+    = current_admin.name
+  #sidenav
+    %a= link_to "New Venue", new_venue_path
+    %br/
+    %br/
+    %br/
+    %br/
+    %a= link_to "Edit Profile", edit_admin_registration_path
+    %br/
+    %br/
+    %br/
+    %br/
+    %a= link_to 'Booking Requests', venue_bookings_path(@venue)
+    %br/
+    %br/
+    %br/
+    %br/
+    %a= link_to('Logout', destroy_admin_session_path, method: :delete)
   
-.wrapper
-  - if @venue.blank?
-    %h2.colour2 You have no venues
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
 
-#posts2
-  - @venue.each do |venue|
-    .post2
-      .post_image2
-        = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
-      .post_content2
-        %br/
-        = link_to venue.name, venue, :class => 'venuetext', target: :_blank
+    
+  .wrapper
+    - if @venue.blank?
+      %h2.colour2.center You have no venues
+  
+  #posts2
+    - @venue.each do |venue|
+      .post2
+        .post_image2
+          = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
+        .post_content2
+          %br/
+          = link_to venue.name, venue, :class => 'venuetext', target: :_blank

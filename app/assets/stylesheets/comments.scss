@@ -1,0 +1,21 @@
+$maincolour:#d6dce0;
+$secondcolour:#00CED1;
+
+.input5{
+  outline: none;
+  background: transparent;
+  color:$maincolour;
+  text-decoration:none;
+  width:30%;
+  margin:0 auto;
+  border-radius:400px;
+  padding:20px;
+  text-align:center;
+  padding-top:40px;
+ 
+	&:hover {
+		color: $secondcolour;
+
+	}
+}
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171025105533) do
+ActiveRecord::Schema.define(version: 20171028140455) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(version: 20171025105533) do
     t.integer  "venue_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
 
   add_index "comments", ["venue_id"], name: "index_comments_on_venue_id"
@@ -141,6 +142,10 @@ ActiveRecord::Schema.define(version: 20171025105533) do
     t.string   "logo_content_type"
     t.integer  "logo_file_size"
     t.datetime "logo_updated_at"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
   end
 
 end

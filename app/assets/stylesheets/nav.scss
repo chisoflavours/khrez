@@ -1,11 +1,12 @@
-
-
 #logo{
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Roboto', sans-serif;
   color: #00CED1;
   float: left;
   font-size: 35px;
   margin-left: 30px;
+  &:hover{
+    color:#424C5B;
+  }
 }
 
 
@@ -62,7 +63,7 @@
     float: none;
     display: block;
     text-align: left;
-    color: gray;
+    color: #424C5B;
     margin-top: 20px;
     margin-left:20px;
     font-size:20px;

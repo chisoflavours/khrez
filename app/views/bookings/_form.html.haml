@@ -1,6 +1,6 @@
 = simple_form_for([@venue, @venue.bookings.build]) do |f|
   .booking_form
-    %h1.colour Booking Request
+    %h1 Booking Request
     %br/
     = f.input :guests, input_html: { class: 'in', id:'guest_count' }, label: false, placeholder: "Guests"
     %br/
@@ -9,4 +9,4 @@
     = f.input :date, input_html: { class: 'in', id:'guest_count' }, label: false, placeholder: "Date"
     %br/
     %br/
-    = f.button :submit,"Request",class:'button'
+    = f.button :submit,"Send",class:'button_submit'

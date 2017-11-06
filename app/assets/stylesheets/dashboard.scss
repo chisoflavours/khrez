@@ -1,56 +1,63 @@
 $maincolour:#d6dce0;
 $secondcolour:#00CED1;
 
+
 #sidenav{
-	height:100%;
+	height:100vh;
 	position:fixed;
-	width:300px;
+	width:280px;
 	background:#ffffff;
-	border-left:3px solid #708090;
-	overflow:hidden;
-	right:0;
+	left:0;
 	a{
 		position:relative;
 		top:30%;
-		left:55px;
-		font-size:23px;
+		left:53px;
+		font-size:20px;
 		text-decoration:none;
-		color:#708090;
+		color:#A4B4BB;
+		padding:0;
+		transition:padding .4s;
 		&:hover{
-			border-left:2px solid #708090;
-			padding:10px;
+			border-left:3px solid $secondcolour;
+			padding:20px;
 		}
 	}
 }
 
 
-
-
 #logo2{
   font-family: 'Architects Daughter', cursive;
-  color: #00CED1;
-  float: left;
-  font-size: 35px;
-  margin-left: 30px;
+  color: $secondcolour;
+  position:relative;
+  left:50%;
+  font-size: 40px;
+  margin-right: 50px;
   padding:30px;
-  padding-top:45px;
+  top:70px;
   text-decoration:none;
+  transition:color .5s;
+  
   &:hover{
       color:#008080;
   }
 }
 
 .colourname{
-	text-align:left;
-	color:gray;
-	padding:70px;
-	padding-left:180px;
+	color:#708090;
+	position:relative;
+	top:65px;
+	float:right;
+	right:5%;
+	font-size:1.2em;
+	transition:color .5s;
+	&:hover{
+		color:$secondcolour;
+	}
 }
 
 #posts2 {
-    width:80%;
-    float:left;
-    padding-left:150px;
+    width:70%;
+    float:right;
 	.post2 {
 		background: transparent;
 		width: 30%;
@@ -67,7 +74,7 @@ $secondcolour:#00CED1;
 			}
 		}
 		.post_content2 {
-			margin-top:50px;
+			margin-top:30px;
 		    .username {
 			  float: left;
 			  color:#ffffff;
@@ -90,3 +97,4 @@ $secondcolour:#00CED1;
 	}
 }
 }
+
