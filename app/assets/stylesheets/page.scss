@@ -1,17 +1,139 @@
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $maincolour:#d6dce0;
 $secondcolour:#00CED1;
+
+.occasion_wrapper{
+  position:absolute;
+  top:130vh;
+  left:10%;
+  .occasion-box {
+      display: inline-block;
+      width: 450px;
+      height: 320px;
+      margin-right: 30px;
+      margin-top: 80px;
+      box-shadow: 0 8px 50px -1px lightgray;
+      img{
+        width:100%;
+        height:100%;
+      }
+      h1{
+        padding-top:50px;
+        padding-bottom:50px;
+        text-transform:uppercase;
+        text-align:center;
+        font-size:25px;
+        color:#424C5B;
+        
+      }
+  }
+}
 .explore_text{
   h1{
     color:#424C5B;
     position:absolute;
-    left:10.5%;
-    font-size:45px;
+    left:10%;
+    font-size:50px;
+    font-weight:100;
+    top:243vh;
   }
   hr{
     width:50px;
     position:absolute;
-    left:10.5%;
+    left:10%;
+    top:264%;
+    float:left;
+    border:3px solid $secondcolour;
+    
+  }
+  .box{
+    box-shadow: 0 8px 50px -1px lightgray;
+    background:#ffffff;
+    position:absolute;
+    width:35%;
+    top:275%;
+    border-radius:5px;
+    left:10%;
+    height:450px;
+    p{
+      position:relative;
+      left:19%;
+      top:25%;
+      line-height:40px;
+      color:lightgray;
+      font-size:27px;
+    }
+  }
+  .box2{
+    box-shadow: 0 8px 50px -1px lightgray;
+    background:#ffffff;
+    position:absolute;
+    width:35%;
+    top:275%;
+    border-radius:5px;
+    left:55%;
+    height:450px;
+    p{
+      position:relative;
+      left:28%;
+      top:25%;
+      line-height:40px;
+      color:lightgray;
+      font-size:27px;
+    }
+  }
+  .box3{
+    box-shadow: 0 8px 50px -1px lightgray;
+    background:#ffffff;
+    position:absolute;
+    width:35%;
+    top:325%;
+    border-radius:5px;
+    left:55%;
+    height:450px;
+    p{
+      position:relative;
+      left:25%;
+      top:25%;
+      line-height:40px;
+      color:lightgray;
+      font-size:27px;
+    }
+  }
+  .box4{
+    box-shadow: 0 8px 50px -1px lightgray;
+    background:#ffffff;
+    position:absolute;
+    width:35%;
+    top:325%;
+    border-radius:5px;
+    left:10%;
+    height:450px;
+    p{
+      position:relative;
+      left:19%;
+      top:25%;
+      line-height:40px;
+      color:lightgray;
+      font-size:27px;
+    }
+  }
+}
+
+.explore_text2{
+  h1{
+    color:#424C5B;
+    position:absolute;
+    left:10%;
+    font-size:50px;
+    font-weight:100;
+    top:110%;
+  }
+  hr{
+    width:50px;
+    position:absolute;
+    left:10%;
+    top:126%;
     float:left;
     border:3px solid $secondcolour;
     
@@ -254,7 +376,7 @@ body, html {
 
 
 .footer_container{
-  min-height:150%;
+  min-height:300%;
   position:relative;
   .footer{
     position:absolute;
