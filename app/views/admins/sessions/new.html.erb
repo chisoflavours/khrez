@@ -1,12 +1,18 @@
 <%= render "page/nav" %>
-
-<h2 id="login">Log in</h2>
+<div class="topheader">
+  <h1>Venue Log In</h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
   <br>
   <div class="field">
-    <%= f.input :email, required: true , input_html: { class: 'in' }, label: false, placeholder: "Email", autofocus: true %>
+    <%= f.input :email, required: true , input_html: { class: 'in' }, label: false, placeholder: "Email" %>
     <hr class="hr_login">
   </div> 
   <br>
@@ -15,7 +21,7 @@
     <hr class="hr_login">
   </div>  
   <br>
-<br>
+  <br>
  <div class="field">
   <div class="form-actions">
     <%= f.button :submit, "Log in" ,:class => 'button'%>
@@ -24,7 +30,7 @@
 <br>
 <br>
 <% end %>
-
+<br>
 <div class="field">
 <%= render "admins/shared/links" %>
 </div>

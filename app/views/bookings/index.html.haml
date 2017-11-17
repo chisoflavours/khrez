@@ -1,16 +1,12 @@
 = render 'page/nav'
-%br/
-%br/
-%br/
-.admincontact2
-  .topbar2
-    %h2.name2 All Booking Requests
+.topheader
+  %h1 Booking Requests
   
 .wrapper
   .field
 
   - @booking.each do |booking|
-    .floating-box2
+    .booking_grid
       %br/
       .text
         Time:

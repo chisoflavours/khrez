@@ -1,13 +1,10 @@
 = render 'page/nav'
-
-%br/
-%br/
-%br/
-%br/
-
+.topheader
+  %h1 All Venue Owners
 .adminlist
   - @admins.each do |admin|
     .wrapper
       %ul
         %l1
-        %h1.adminame= link_to admin.name, admin, :class => 'adminame' 
+        %h1= link_to admin.ownername, admin, :class => 'adminame' 
+= render 'page/footer'

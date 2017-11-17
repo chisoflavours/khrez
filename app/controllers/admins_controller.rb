@@ -5,6 +5,7 @@ class AdminsController < ApplicationController
     
   def index
     @admins = Admin.all
+    @venue = Venue.where(admin_id: current_admin)
   end
   
   def show

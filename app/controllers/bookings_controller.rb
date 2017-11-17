@@ -18,5 +18,9 @@ class BookingsController < ApplicationController
     @booking = Booking.where(admin_id: current_admin).order('created_at DESC')
   end
   
+  def show
+    @booking = Booking.find(params[:id])
+    @booking = @venue.booking.find(params[:id])
+  end
 
 end

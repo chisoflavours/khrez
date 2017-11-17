@@ -1,6 +1,10 @@
 <%= render 'page/nav'%>
-
-<h2 id="login">Log in</h2>
+<div class="topheader">
+  <h1>Welcome Back</h1>
+</div>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -15,9 +19,11 @@
     <hr class="hr_login">
   </div> 
   <br>
+  <br>
   <div class="field">
     <%= f.input :remember_me, input_html: { class: 'tickbox' }, as: :boolean if devise_mapping.rememberable? %>
   </div> 
+  <br>
   <br>
   <br>
   <div class="field">
@@ -28,6 +34,7 @@
 <% end %>
 <br>
 <br>
+<br>
 <div class="field">
   <%= render "users/shared/links" %>
 </div>
@@ -35,4 +42,7 @@
 <div class="field">
   <%= link_to 'Venue Log In', new_admin_session_path, :class => 'link' %>
 </div>
+<br>
+<br>
+<br>
 <%= render "page/footer" %>

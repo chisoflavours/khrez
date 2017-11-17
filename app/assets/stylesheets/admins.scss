@@ -1,53 +1,24 @@
-$maincolour:#d6dce0;
+// Variables
+$maincolour:#424C5B;
 $secondcolour:#00CED1;
 
-#login{
-    color:gray;
+// Admin & User - Edit And New Page
+#h2_margin_top{
+    color:$maincolour;
     text-align:center;
-    font-size:30px;
     margin-top:200px;
 }
 
-.admincontact{
-    margin-top:120px;
-    h2{
-        color:#708090;
-    }
-    .topbar{
-        background:$secondcolour;
-        width:100%;
-        overflow:hidden;
-        height:400px;
-        img{
-            border-radius:400px;
-            width:170px;
-            height:170px;
-            position:relative;
-            left:45%;
-            top:5vh;
-        }
-        .name{
-            color:#ffffff;
-            position:relative;
-            left:45%;
-            top:15%;
-        }
-        .name2{
-          color:#ffffff;
-          position:relative;
-          left:46%;
-          top:45%;
-        }
-    }
-}
-
+// Admin Index Page 
 .adminlist{
     text-align:center;
+    padding-top:8em;
     .adminame{
       text-decoration:none;
-      color:$secondcolour;
+      color:$maincolour;
       &:hover{
-          color:gray;
+          color:$secondcolour;
       }
     }
 }
+

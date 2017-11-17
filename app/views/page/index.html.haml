@@ -1,103 +1,39 @@
 = render 'page/nav'
 .hero-image
-  = image_tag("breather-176228.jpg", :alt => "Chisom", class:'top_hero_image')
+  = image_tag("Home Page/hero.jpg", :alt => "Chisom", class:'top_hero_image')
   .wrap
     .search
       = form_tag(venues_path, :method => "get", :id => 'search_form') do
-        = text_field_tag (:city), params[:city], placeholder: "location ", required: true, :class => 'searchTerm'
-        .searchline
         = select_tag((:category), options_for_select([["Hall","hall"],["Bar","bar"],["Meeting Room","meeting room"],["Reception","reception"],["Kids Party","kids party"],["Exhibition","exhibition"],["Performance Venue","Performance Venue"],["Wedding Venue","Wedding Venue"],["Private Room","private room"],["Conference Room","conference room"]],params[:category].to_i), prompt: "Venue Type", class:"searchTerm2")
+        .searchline
+        = text_field_tag (:city), params[:city], placeholder: "location ", required: true, :class => 'searchTerm', autocomplete: 'off'
         = submit_tag "Search", :class => "searchButton"
   .hero-text
     %h1 Find Your Perfect Venue
     %h2.two As Easy As Possible
 
-.explore_text2
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
+.explore_text
   %h1 
+    Explore
+    %br>/
     Our
     %br>/
-    Occasions
-  %hr
+    Venues
 
-.occasion_wrapper
-  .occasion-box 
-    = image_tag("breather-163392.jpg", :alt => "Chisom")
-    %h1 Meeting Rooms
-  .occasion-box 
-    = image_tag("priscilla-du-preez-229302.jpg", :alt => "Chisom")
-    %h1 Kids Party Venues
-  .occasion-box 
-    = image_tag("al-nik-383735.jpg", :alt => "Chisom")
-    %h1 Conference Rooms
-  .occasion-box 
-    = image_tag("jade-masri-323340.jpg", :alt => "Chisom")
-    %h1 Party Venues
-  .occasion-box 
-    = image_tag("tom-pumford-225323 (1).jpg", :alt => "Chisom")
-    %h1 Wedding Venues
-  .occasion-box 
-    = image_tag("nils-stahl-188467.jpg", :alt => "Chisom")
-    %h1 Private Dining Venues
-
-
-.explore_text
-  %br/
-  %br/
-  %br/
-  %br/
-  %br/
-  %h1 
-    How
-    %br>/
-    It
-    %br>/
-    Works
-  %hr
-  .box
-    %p 
-      Our mission at khrez is
-      %br/
-      to make it as easy as possible 
-      %br/
-      to find your ideal venue
-      %br/
-      for any event you are hosting
-  .box2
-    %p 
-      We have made it as 
-      %br/
-      simple as possible to 
-      %br/
-      get in contact and book
-      %br/
-      your perfect venue
-  .box3
-    %p 
-      Quickly browse through all
-      %br/
-      of our venues available for 
-      %br/
-      hire with our easy
-      %br/
-      to use search system
-  .box4
-    %p 
-      Whether you are looking for a
-      %br/
-      grand performance theater or 
-      %br/
-      a small 2 person meeting 
-      %br/
-      room we have you sorted
-
-
-
-= render 'page/footer'
+  #posts
+    - @venue.each do |venue|
+      .post
+        .post_image
+          = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
+        .post_content
+          = link_to venue.name, venue, :class => 'venuetext', target: :_blank
+          %br/
+          %br/
+          = link_to venue.category, venue, :class => 'venuecat', target: :_blank
+          %br/
+          %br/
+          = link_to venue.city, venue, :class => 'venuecity', target: :_blank
+= render 'page/footer2'
 
 / Global Site Tag (gtag.js) - Google Analytics
 %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-106207758-1"}

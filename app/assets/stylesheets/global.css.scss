@@ -1,0 +1,174 @@
+// Variables
+$maincolour:#424C5B;
+$secondcolour:#00CED1;
+
+body, html{
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  height:100%;
+}
+
+// Global Styes
+.colour2{
+  color:$secondcolour; 
+}
+
+.colour{
+  color:$maincolour;
+}
+
+.center{
+  text-align:center;
+}
+
+.uppercase{
+  text-transform:uppercase;
+}
+
+.hr{
+  border:2px solid gray;
+  width:30%;
+  float:left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:100;
+}
+
+
+.topheader{
+  background:$secondcolour;
+  width:100%;
+  overflow:hidden;
+  height:400px;
+  h1{
+    color:#ffffff;
+    padding: 220px 0;
+    text-align: center;
+  }
+}
+
+.button {
+	outline: none;
+	background: $maincolour;
+	color:#ffffff;
+	text-decoration:none;
+	padding: 1.3em 3em;
+	border:0;
+	border-radius: 10em;
+	transition: 0.3s;
+	&:hover {
+		background:$secondcolour;
+		color:#ffffff;
+	}
+}
+
+.wrapper{
+  width: 80%;
+	margin: 0 auto;
+	margin-top:100px;
+}
+
+.alert {
+  padding: 20px;
+  background-color:  #4CAF50;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  z-index:1;
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    position:absolute;
+    right:70px;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      color:$maincolour;
+    }
+  }
+
+}
+
+.link{
+  color:$maincolour;
+  text-decoration:none;
+  font-weight:100;
+  &:hover{
+    color:$secondcolour;
+  }
+}
+
+.margin{
+  text-align:center;
+}
+
+.field{
+  .name{
+    border:0;
+  }
+  text-align:center;
+}
+
+.in{
+  outline: none;
+	background: transparent;
+	color:$maincolour;
+	text-decoration:none;
+  border:0;
+  width:50vw;
+  border-radius:0;
+  padding:10px;
+	&:hover {
+		color: $secondcolour;
+  }
+}
+
+.hr_login{
+  width:50vw;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+
+.tickbox{
+  margin-right:10px;
+}
+
+.ins{
+  outline: none;
+	background: transparent;
+	color:$maincolour;
+	text-decoration:none;
+	border:0;
+	padding: 1em 1.5em;
+	border-radius: 0;
+	&:hover {
+		border:0;
+		color: $secondcolour;
+
+	}
+}
+
+.hide{
+  display:none;
+}
+
+.avatarbtn{
+  .field{
+    .button{
+      width:10%;
+      margin:0 auto;
+    }
+  }
+}

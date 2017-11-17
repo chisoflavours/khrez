@@ -1,9 +1,9 @@
 .mobile_only
   = render 'page/nav'
 .dashboard
-  %h1.colourname 
+  %h1.admin_name 
     Hello,
-    = current_admin.name
+    = current_admin.ownername
   #sidenav
     %a= link_to "New Venue", new_venue_path
     %br/
@@ -36,11 +36,16 @@
     - if @venue.blank?
       %h2.colour2.center You have no venues
   
-  #posts2
+  #posts
     - @venue.each do |venue|
-      .post2
-        .post_image2
+      .post
+        .post_image
           = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
-        .post_content2
-          %br/
+        .post_content
           = link_to venue.name, venue, :class => 'venuetext', target: :_blank
+          %br/
+          %br/
+          = link_to venue.category, venue, :class => 'venuecat', target: :_blank
+          %br/
+          %br/
+          = link_to venue.city, venue, :class => 'venuecity', target: :_blank

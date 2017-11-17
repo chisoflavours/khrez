@@ -1,97 +1,62 @@
-$maincolour:#d6dce0;
+// Variables
+$maincolour:#424C5B;
 $secondcolour:#00CED1;
-.booking_table{
-    li{
-        list-style-type:none;
-        text-align:center;
-        color:gray;
-        font-size:20px;
-    }
-    hr{
-        width:50%;
-    }
-}
 
+
+// Booking Form
 .button_submit {
-	outline: none;
-	background: transparent;
-	color:#708090;
-	text-decoration:none;
-	border: 1.5px solid #708090;
-	padding: .7em 1.5em;
-	border-radius: 1.5em;
-	&:hover {
-		border: 1px solid $secondcolour;
-		color: $secondcolour;
-
-	}
+  outline: none;
+  background: $secondcolour;
+  color:#ffffff;
+  border:0;
+  text-decoration:none;
+  border-radius:5px;
+  padding:23px;
+  font-size:18px;
+  width:100%;
+  font-weight:500;
+  letter-spacing:.5px;
+  &:hover {
+    background: #708090;
+  }
 }
 
 .booking_form{
-    position:fixed;
-    float:right;
-    right:5%;
-    top:20%;
-    border:4px solid #708090;
-    padding:50px;
-    border-radius:10px;
-    background:#ffffff;
-    .in{
-        color:#708090;
-    }
-    h1{
-        color:#708090;
-        font-weight:700;
-    }
+  position:absolute;
+  box-shadow: 0 8px 50px -1px lightgray;
+  float:right;
+  right:5%;
+  top:110%;
+  padding:60px;
+  border-radius:5px;
+  background:#ffffff;
+  .in{
+    color:gray;
+  }
+  h2{
+    color:$maincolour;
+    font-weight:700;
+    text-align:center;
+  }
+  #form_input_width{
+    width:100px;
+  }
 }
 
-#guest_count{
-    width:80px;
-}
-
-.admincontact2{
-    margin-top:50px;
-    width:100%;
-    h2{
-        color:#708090;
-    }
-    .topbar2{
-        background:$secondcolour;
-        width:100%;
-        overflow:hidden;
-        height:400px;
-        img{
-            border-radius:400px;
-            width:170px;
-            height:170px;
-            position:relative;
-            left:45%;
-            top:5vh;
-        }
-        .name{
-            color:#ffffff;
-            position:relative;
-            left:45%;
-            top:15%;
-        }
-        .name2{
-          color:#ffffff;
-          padding: 140px 0;
-          text-align: center;
-          font-size:45px;
-        }
-    }
-}
-
-.floating-box2 {
+// Booking Requests - Admin Page
+.booking_grid {
     display: inline-block;
     width: 250px;
     height: 250px;
-    margin: 20px;
+    margin: 70px;
     border-radius:10px;
-    border: 3px solid gray;  
-    padding:30px;
+    box-shadow: 0 8px 50px -1px lightgray;
+    background:#ffffff;
+    padding:50px;
+    &:hover{
+      box-shadow: 5px 10px 50px -1px lightgray; 
+    }
     .text{
-        color:gray;
+      color:gray;
     }
 }

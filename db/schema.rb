@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171028140455) do
+ActiveRecord::Schema.define(version: 20171111195726) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20171028140455) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.string   "code"
+    t.string   "ownername"
   end
 
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true

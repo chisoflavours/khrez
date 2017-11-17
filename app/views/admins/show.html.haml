@@ -1,17 +1,21 @@
 = render 'page/nav'
 
-.admincontact
-  .topbar
-    - unless @admin.avatar.blank?
-      = image_tag @admin.avatar.url(:medium)
-      %h1.name= @admin.name
-    - if @admin.avatar.blank?
-      %h1.name2= @admin.name
-  .wrapper
-    %h1.colour Contact Details :
-    %br/
-    %h2= @admin.email
-    %h2= @admin.phone
+.topheader
+  %h1= @admin.ownername
+#posts
+  - @venue.each do |venue|
+    .post
+      .post_image
+        = link_to ( image_tag venue.thumbnail.url(:medium)), venue, target: :_blank
+      .post_content
+        = link_to venue.name, venue, :class => 'venuetext', target: :_blank
+        %br/
+        %br/
+        = link_to venue.category, venue, :class => 'venuecat', target: :_blank
+        %br/
+        %br/
+        = link_to venue.city, venue, :class => 'venuecity', target: :_blank
+        
 
 
-= render 'page/footer'
+= render 'page/footer2'

@@ -4,9 +4,6 @@
  *= require jquery-ui
  */
 
-@import 'normalize.css';
-@import 'global.scss';
-@import 'responsive.scss';
-
-$maincolour:#d6dce0;
-$secondcolour:#ffd680;
+@import 'normalize';
+@import 'responsive.css.scss';
+@import 'global.css.scss';

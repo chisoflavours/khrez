@@ -1,20 +1,23 @@
 <%= render "page/nav" %>
-<h2 id="login">Sign up</h2>
-
+<div class="topheader">
+  <h1>Venue Sign Up</h1>
+</div>
 <br>
 <br>
 <br>
-
+<br>
+<br>
+<br>
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
   <div class="field">
-    <%= f.input :email, required: true, autofocus: true, input_html: { class: 'in' }, label: false, placeholder: "Email" %>
+    <%= f.input :email, required: true, input_html: { class: 'in' }, label: false, placeholder: "Email" %>
     <hr class="hr_login">
   </div>
   <br>
   <div class="field">  
-    <%= f.input :name, required: true, autofocus: true, input_html: { class: 'in' }, label: false, placeholder: "Name" %>
+    <%= f.input :ownername, required: true, autofocus: true, input_html: { class: 'in' }, label: false, placeholder: "Name" %>
     <hr class="hr_login">
   </div> 
   <br>
@@ -54,9 +57,11 @@
 <br>
 
 <% end %>
-
+<br>
 <div class="field">
 <%= render "admins/shared/links" %>
 </div>
-
+<br>
+<br>
+<br>
 <%= render "page/footer" %>

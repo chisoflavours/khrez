@@ -1,6 +1,7 @@
 = render 'page/nav'
-.venue_wrapper
+.venue_image
   = image_tag @venue.thumbnail.url(:medium)
+.venue_wrapper
   .venue_wrapper_top_content
     %br/
     %br/
@@ -208,26 +209,89 @@
         - if @venue.extra_info.blank?
           None
       %br/
-    %hr
     %br/
     %br/
     %br/
-    
-    .comment
-      %h2.colour2= pluralize(@venue.comments.count, "Review")
-      %br/
-      = render 'comments/form' 
-      %br/
-      - @comments.each do |comment|
-        %h3.colour= comment.content
-        %hr.top
-    %br/
-    %br/
-    %br/
+    .hide
+      .comment
+        %h2.colour2= pluralize(@venue.comments.count, "Review")
+        %br/
+        = render 'comments/form' 
+        %br/
+        - @comments.each do |comment|
+          %h3.colour= comment.content
+          %hr.top
     %br/
     %br/
     %br/
     %br/
+    %br/
+    %br/
+    %br/
+
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
 = render 'bookings/form'
 :javascript
   var acc = document.getElementsByClassName("accordion");

@@ -1,4 +1,4 @@
-#myTopnav.topnav
+#mainTopnav.topnav
   = link_to 'K', root_path, id: 'logo'
   - unless admin_signed_in?
     - unless user_signed_in?
@@ -16,4 +16,4 @@
     %a#down= link_to('Logout', destroy_user_session_path, method: :delete)
     %a= link_to "Edit Profile", edit_user_registration_path
   
-  %a#hammenu.icon{:href => "javascript:void(0);", :onclick => "myFunction()", :style => "font-size:35px;padding: 15px 30px;color:#00CED1"} ☰
+  %a#hammenu.icon{:href => "javascript:void(0);", :onclick => "NavFunction()", :style => "font-size:35px;padding: 15px 30px;color:#00CED1"} ☰
