@@ -1,5 +1,7 @@
 #mainTopnav.topnav
-  = link_to 'K', root_path, id: 'logo'
+  #logo
+    = link_to root_path do
+      = image_tag("Logo.png", :alt => "Logo", id: 'logo')
   - unless admin_signed_in?
     - unless user_signed_in?
       %a#down{:href => "#"}= link_to 'List Your Venue', page_listyourvenue_path,:class => "colour",id: "tablet_hide"
