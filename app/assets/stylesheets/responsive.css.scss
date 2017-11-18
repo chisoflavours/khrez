@@ -12,6 +12,26 @@ $secondcolour:#00CED1;
   
 
 }
+@media only screen and (min-width: 1655px){
+    #venueForm {
+    button {
+      background-color: $maincolour;
+      outline: none;
+      color: #ffffff;
+      border: none;
+      padding: 25px 65px;
+      padding-right:60px;
+      padding-left:60px;
+      font-size: 17px;
+      cursor: pointer;
+      border-radius:50px;
+      margin-left:10px;
+      text-align:center;
+      width:10vw;
+    }
+  }
+}
+
 @media only screen and (min-width: 1023px){
   .mobile_only{
     display:none;
@@ -176,9 +196,7 @@ $secondcolour:#00CED1;
 #logo2{
   display:none;
 }
-.booking_form{
-  display:none;
-}
+
 .accordion_wrapper{
   margin-top:170em;
 }
@@ -240,45 +258,23 @@ $secondcolour:#00CED1;
   display:none;
 }
 .top_image{
-    height:100%;
-    width:100%;
-    background:$secondcolour;
+    height:70%;
+    width:100vw;
     overflow:hidden;
-    .topnav{
-        background:transparent;
-        a{
-            color:#ffffff;
-            &:hover{
-              color:#008080;
-            }
-        }
-    }
-    .login{
-        border-color:#ffffff;
-        &:hover{
-            border-color:#008080;
-        }
-    }
-    #logo{
-        color:#ffffff;
-        &:hover{
-            color:#008080;
-        }
-    }
     .top_image_text{
         color:#ffffff;
         position:absolute;
-        top:25%;
-        right:15%;
-        font-size:20px;
+        top:28%;
+        left:15%;
+        font-size:14px;
         .get_started_button{
 	      outline: none;
 	      background: #ffffff;
-	      color:#818181;
+	      color:$maincolour;
 	      text-decoration:none;
-	      padding: 1.3em 2.5em;
-	      font-size:20px;
-	      border-radius: 2em;
+	      padding: .9em 1.2em;
+	      font-size:15px;
+	      border-radius: .2em;
 	      &:hover {
 		    background:#008080;
 		    color:#ffffff;
@@ -300,12 +296,34 @@ $secondcolour:#00CED1;
 }
 
 .content_grid{
+  #messageillustration{
+    height:100px;
+    width:100px;
+    position:absolute;
+    left:35%;
+    top:90%;
+  }
+  #twitterillustration{
+    height:100px;
+    width:100px;
+    position:absolute;
+    left:35%;
+    top:160%;
+  }
+  #supportillustration{
+    height:100px;
+    width:100px;
+    position:absolute;
+    left:35%;
+    top:230%;
+  }
   .line {
     border-left: 4px solid gray;
     height: 230%;
     position: absolute;
     left: 50%;
     margin-left: -3px;
+    display:none;
     top: 100%;
   }
   .circle1{
@@ -316,6 +334,7 @@ $secondcolour:#00CED1;
       position:absolute;
       left:49.2%;
       top:130%;
+      display:none;
   }
   .circle2{
       background:$secondcolour;
@@ -324,6 +343,7 @@ $secondcolour:#00CED1;
       width:30px;
       position:absolute;
       left:49.2%;
+      display:none;
       top:185%;
   }
   .circle3{
@@ -331,6 +351,7 @@ $secondcolour:#00CED1;
       border-radius:400px;
       height:30px;
       width:30px;
+      display:none;
       position:absolute;
       left:49.2%;
       top:240%;
@@ -341,37 +362,11 @@ $secondcolour:#00CED1;
       height:30px;
       width:30px;
       position:absolute;
+      display:none;
       left:49.2%;
       top:295%;
   }
-    #pigillustration{
-        height:200px;
-        width:200px;
-        position:absolute;
-        left:10%;
-        top:120%;
-    }
-    #chatillustration{
-        height:200px;
-        width:200px;
-        position:absolute;
-        right:10%;
-        top:175%;
-    }
-    #twitterillustration{
-        height:200px;
-        width:200px;
-        position:absolute;
-        left:10%;
-        top:227%;
-    }
-    #supportillustration{
-        height:200px;
-        width:200px;
-        position:absolute;
-        right:10%;
-        top:285%;
-    }
+
     .content_text{
         .content_text_1{
           position:absolute;
@@ -393,53 +388,55 @@ $secondcolour:#00CED1;
         .content_text_2{
           position:absolute;
           left:10%;
-          top:175%;
+          top:115%;
           h1{
             color:#4D565A;
             font-weight:100;
             margin:0;
-            font-size:60px;
+            font-size:30px;
           }
           p{
             color:#99A9B2;
             margin:0;
             margin-top:20px;
-            font-size:23px;
+            font-size:15px;
           }
         }
         .content_text_3{
           position:absolute;
-          right:10%;
-          top:230%;
+          left:10%;
+          top:185%;
           h1{
             color:#4D565A;
             font-weight:100;
             margin:0;
-            font-size:60px;
+            font-size:30px;
           }
           p{
             color:#99A9B2;
             margin:0;
             margin-top:20px;
-            font-size:23px;
+            font-size:15px;
           }
         }
         .content_text_4{
           position:absolute;
           left:10%;
-          top:285%;
+          top:260%;
+          padding-bottom:150px;
           h1{
             color:#4D565A;
             font-weight:100;
             margin:0;
-            font-size:60px;
+            font-size:30px;
           }
           p{
             color:#99A9B2;
             margin:0;
             margin-top:20px;
-            font-size:23px;
+            font-size:15px;
           }
+          
         }
     }
 }
@@ -576,7 +573,6 @@ $secondcolour:#00CED1;
   font-size:13px;
   left:0;
   position:relative;
-  border-top:.5px solid #d6dce0;
   text-align:left;
   padding:10px;
   padding-top:0px;
@@ -586,6 +582,7 @@ $secondcolour:#00CED1;
   width:100%;
   text-indent:1.5em;
   padding:10px;
+  border-bottom:.5px solid #d6dce0;
   position:relative;
   font-size:13px;
   left:0;
@@ -794,15 +791,14 @@ $secondcolour:#00CED1;
 
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
 
-
+#tablet_hide{
+  display:none;
+}
 
 #down{
   padding-top:100px;
 }
 
-.booking_form{
-  display:none;
-}
 
 .not_mobile{
   display:none;
@@ -884,10 +880,6 @@ $secondcolour:#00CED1;
 
 
 
-.booking_form{
-  display:none;
-}
-
 .not_mobile{
   display:none;
 } 
@@ -952,9 +944,7 @@ $secondcolour:#00CED1;
   }
 }
 
-.booking_form{
-  display:none;
-}
+
 
 .not_mobile{
   display:none;

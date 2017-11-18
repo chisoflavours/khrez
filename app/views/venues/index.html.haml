@@ -1,10 +1,8 @@
 
 = render 'page/nav'
-%br
-%br
-%br
-
-%h1.wrapper.colour2 Venue Results
+.topheader
+  %h1 
+    Reasults for #{params[:city]} #{params[:category]}
 
 #posts
   - @venue.each do |venue|
@@ -23,9 +21,12 @@
 .wrapper          
   - unless admin_signed_in?
     - if @venue.blank?
-      %h4#eror
-        There are no venues 
-        
+      %h3.center.colour
+        There are no venues containing the terms
+        %br/
+      %h3.center.colour2
+        #{params[:city]} #{params[:category]}
+
 %br/
 %br/
 %br/

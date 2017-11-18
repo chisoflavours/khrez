@@ -2,7 +2,7 @@
   .booking_form
     %h2 Booking Request
     %br/
-    = f.input :guests, input_html: { class: 'in', id:'form_input_width' }, label: false, placeholder: "Guests : "
+    = f.input :guests, input_html: { class: 'in', id:'form_input_width', min: '1' }, label: false, placeholder: "Guests : "
     %br/
     = f.input :time, input_html: { class: 'in' }, label: false, placeholder: "Time"
     %br/

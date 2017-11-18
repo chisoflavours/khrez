@@ -147,7 +147,7 @@ button:hover {
 .venue_wrapper{
   width: 60%;
   position:absolute;
-  left:5%;
+  left:2%;
   margin-top:2em;
   .venue_wrapper_top_content{
     a{
@@ -200,6 +200,9 @@ button:hover {
     }
   }
   .info_area{
+    top:335%;
+    width:100%;
+    position:absolute;
     hr{
       width:40%;
       border:.7px solid #708090;
@@ -214,7 +217,9 @@ button:hover {
 }
 
 .accordion_wrapper{
-  margin-top:65em;
+  top:290%;
+  width:100%;
+  position:absolute;
   #top1{
     border-radius:5px 5px 0px 0px ;
   }
@@ -229,6 +234,7 @@ button:hover {
       width: 100%;
       border:0;
       text-align: left;
+      border-radius:0;
       outline: none;
       font-size: 17px;
       transition: 0.4s;

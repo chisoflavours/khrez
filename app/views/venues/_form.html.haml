@@ -14,7 +14,7 @@
         %h3.colour2 Description
         %br/
         %p
-        = f.input :description, required: true, input_html: { class: 'in' }, label: false, placeholder: "Description"
+        = f.input :description, required: true, input_html: { class: 'in' }, label: false, placeholder: "Description", maxlength: 600
         %hr.hr_login
     .tab
       .field
@@ -112,7 +112,7 @@
         %h3.colour2 Extra Infomation
         %br/
         %p
-          = f.input :extra_info, input_html: { class: 'in' }, label: false, placeholder: "Extra Infomation"
+          = f.input :extra_info, input_html: { class: 'in' }, label: false, placeholder: "Extra Infomation", maxlength: 200
           %hr.hr_login
     .tab
       .field

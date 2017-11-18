@@ -27,11 +27,13 @@ $secondcolour:#00CED1;
   float:right;
   right:5%;
   top:110%;
+  width:18%;
   padding:60px;
   border-radius:5px;
   background:#ffffff;
   .in{
     color:gray;
+     width:20%;
   }
   h2{
     color:$maincolour;
@@ -48,7 +50,7 @@ $secondcolour:#00CED1;
     display: inline-block;
     width: 250px;
     height: 250px;
-    margin: 70px;
+    margin: 10px;
     border-radius:10px;
     box-shadow: 0 8px 50px -1px lightgray;
     background:#ffffff;

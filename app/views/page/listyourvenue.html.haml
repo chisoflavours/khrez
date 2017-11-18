@@ -1,5 +1,5 @@
+= render 'page/nav'
 .top_image
-  = render 'page/nav'
   .top_image_text
     %h1 
       List your venue 
@@ -9,10 +9,6 @@
       khrez
     %br/
     = link_to "Get Started", new_admin_registration_path, class: 'get_started_button'
-  .top_image_img
-    = image_tag("List Your Venue/idea.png", :alt => "Idea Img", :id => 'ideaimg')
-  .top_image_symbol
-    &darr;
 
 .content_grid
   .line

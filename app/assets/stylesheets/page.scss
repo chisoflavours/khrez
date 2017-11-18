@@ -285,9 +285,9 @@ $secondcolour:#00CED1;
     .top_image_text{
       color:#ffffff;
       position:absolute;
-      top:21%;
-      right:20%;
-      font-size:30px;
+      top:24%;
+      left:10%;
+      font-size:1.5vw;
       .get_started_button{
 	       outline: none;
 	       background: #ffffff;
@@ -300,22 +300,6 @@ $secondcolour:#00CED1;
 		       opacity:0.9;
          }
       }
-    }
-    .top_image_img{
-      #ideaimg{
-        position:absolute;
-        left:18%;
-        top:23%;
-        height:350px;
-        width:350px;
-      }
-    }
-    .top_image_symbol{
-        color:#ffffff;
-        position:absolute;
-        bottom:10%;
-        left:50%;
-        font-size:50px;
     }
 }
 
@@ -334,7 +318,7 @@ $secondcolour:#00CED1;
     height:25px;
     width:25px;
     position:absolute;
-    left:49.3%;
+    left:49.2%;
     top:103%;
   }
   .circle3{
