@@ -2,7 +2,7 @@
 = render 'page/nav'
 .topheader
   %h1 
-    Reasults for #{params[:city]} #{params[:category]}
+    #{params[:category]}'s in #{params[:city]} 
 
 #posts
   - @venue.each do |venue|
