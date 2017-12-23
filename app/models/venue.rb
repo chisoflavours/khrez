@@ -2,6 +2,7 @@ class Venue < ActiveRecord::Base
     belongs_to :admin
     has_many :comments
     has_many :bookings
+    has_many :chats
     
     def self.search(city, category)
         where("city like ?", "%#{city}%").where("category like ?", "%#{category}%")

@@ -1,40 +1,136 @@
 // Variables
 $maincolour:#424C5B;
-$secondcolour:#00CED1;
+$secondcolour:#B0E0E6;
 
 // Dashboard Sidebar
 #sidenav{
 	height:100vh;
 	position:fixed;
-	width:20%;
+	width:14%;
+	bottom:0;
 	background:#ffffff;
+	-webkit-box-shadow: 0 8px 50px -1px lightgray;
+    box-shadow: 0 8px 50px -1px lightgray;
 	left:0;
 	a{
 		position:relative;
-		top:30%;
-		left:53px;
-		font-size:20px;
+		left:15px;
+		font-size:.93vw;
 		text-decoration:none;
+		top:-3px;
 		color:#A4B4BB;
 		padding:0;
 		transition:padding .4s;
 		&:hover{
-			border-left:3px solid $secondcolour;
-			padding:20px;
+			color:$secondcolour;
 		}
+	}
+	#logo{
+		color:$secondcolour;
+		font-size:30px;
+		margin-left:0;
+		margin-top:25px;
+	    left:35px;
+		&:hover{
+			border-left:0;
+			padding:0;
+			color:#A4B4BB;
+		}
+	}
+	.group{
+	  position:relative;
+	  top:15%;
+	  font-size:27px;
+	  left:15px;
+	  .fa.fa-th-large{
+	    color:#A4B4BB;
+	  }
+	}
+	.group2{
+	  position:relative;
+	  top:20%;
+	  font-size:27px;
+	  left:15px;
+	  .fa.fa-building{
+	    color:#A4B4BB;
+	  }
+	}
+	.group3{
+	  position:relative;
+	  top:30%;
+	  font-size:27px;
+	  left:35px;
+	  .fa.fa-pencil{
+	    color:#A4B4BB;
+	  }
+	}
+	.group4{
+	  position:relative;
+	  top:35%;
+	  font-size:27px;
+	  left:35px;
+	  a{
+	  	left:20px;
+	  }
+	  .fa.fa-bookmark{
+	    color:#A4B4BB;
+	  }
+	}
+	.group5{
+	  position:relative;
+	  top:72%;
+	  font-size:27px;
+	  left:35px;
+	  a{
+	  	left:20px;
+	  }
+	  .fa.fa-sign-out{
+	    color:#A4B4BB;
+	  }
+	}
+	.group6{
+	  position:relative;
+	  top:25%;
+	  font-size:27px;
+	  left:35px;
+	  a{
+	  	left:15px;
+	  }
+	  .fa.fa-plus{
+	    color:#A4B4BB;
+	  }
 	}
 }
 
 .admin_name{
 	color:$maincolour;
 	position:relative;
-	top:65px;
+	top:80px;
 	float:right;
-	right:5%;
+	right:50%;
 	font-size:1.2em;
 	transition:color .5s;
 	&:hover{
 		color:$secondcolour;
+	}
+	#logo{
+		text-decoration:none;
+	}
+}
+
+.admin_name2{
+	color:$maincolour;
+	position:relative;
+	top:43px;
+	float:right;
+	right:1%;
+	font-size:1.1em;
+	transition:color .5s;
+	&:hover{
+		color:$secondcolour;
+	}
+	#logo{
+		text-decoration:none;
 	}
 }
 
@@ -74,8 +170,43 @@ $secondcolour:#00CED1;
 
 .dashboard{
 	#posts{
-		width:75%;
+		width:100%;
 		padding-top:0px;
 		margin-right:0px;
+		left:10%;
+		position:relative;
+	}
+	.top_nav{
+		img{
+		  position:relative;
+	      top:40px;
+	      right:5%;
+	      float:right;
+	      width:50px;
+	      height:50px;
+	      border-radius:50%;
+	      transition:opacity .5s;
+	      &:hover{
+	      	opacity:0.8;
+	      }
+		}
+	}
+	.title_banner{
+		position:relative;
+		overflow:hidden;
+	    top:150px;
+	    width:200px;
+	    left:20%;
+		h1{
+			font-size:35px;
+			color:$maincolour;
+		}
+		hr{
+			width:40px;
+			float:left;
+			margin-top:-10px;
+			border:2px solid $maincolour;
+		}
 	}
 }
+

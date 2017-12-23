@@ -25,5 +25,6 @@ class PageController < ApplicationController
   def dashboard
     @admin = Admin.all.order("created_at DESC")
   end
+
   
 end

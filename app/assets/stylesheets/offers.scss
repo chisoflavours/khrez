@@ -1,0 +1,71 @@
+// Variables
+$maincolour:#424C5B;
+$secondcolour:#B0E0E6;
+
+.offer{
+    width: 60%;
+    margin:0 auto;
+    .area{
+        background:#ffffff;
+        padding:35px;
+        border:1.5px solid #A9A9A9;
+        border-radius:5px;
+    }
+    .main_area{
+        width:77%;
+        border:1.5px solid #A9A9A9;
+        border-radius:5px;
+        background:#ffffff;
+        padding:4em;
+        padding-left:5em;
+        padding-top:5em;
+        &::placeholder {
+         color: $maincolour;
+         font-size:1em;
+        }
+    
+        &:focus{
+          outline:none;
+          border-color:$maincolour;
+        }
+    }
+    
+    .number_area{
+        font-size:1em;
+        border:0;
+        &::placeholder {
+         color: $maincolour;
+        }
+        
+        &:focus{
+          outline:none;
+          color:$maincolour;
+        }
+    
+    }
+    
+    .time_area{
+        border:0;
+        color:$maincolour;
+        font-size:1em;
+        &:focus{
+          outline:none;
+          color:$maincolour;
+        }
+    }
+    
+    label{
+      color:$maincolour;
+      font-size:1em;
+      padding:40px;
+    }
+    
+    
+    .offer_hr{
+        border:.5px solid lightgray;
+        &:focus{
+          outline:none;
+          color:$maincolour;
+        }
+    }
+}

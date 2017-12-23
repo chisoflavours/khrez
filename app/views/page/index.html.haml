@@ -1,16 +1,20 @@
-= render 'page/nav'
 .hero-image
-  = image_tag("Home Page/hero.jpg", :alt => "Chisom", class:'top_hero_image')
+  = render 'page/nav'
+
   .wrap
     .search
       = form_tag(venues_path, :method => "get", :id => 'search_form') do
-        = select_tag((:category), options_for_select([["Hall","hall"],["Bar","bar"],["Meeting Room","meeting room"],["Reception","reception"],["Kids Party","kids party"],["Exhibition","exhibition"],["Performance Venue","Performance Venue"],["Wedding Venue","Wedding Venue"],["Private Room","private room"],["Conference Room","conference room"]],params[:category].to_i), prompt: "Venue Type", class:"searchTerm2")
+        = select_tag((:category), options_for_select([["Hall","hall"],["Bar","bar"],["Meeting Room","meeting room"],["Reception","reception"],["Kids Party","kids party"],["Exhibition","exhibition"],["Performance Venue","Performance Venue"],["Wedding Venue","Wedding Venue"],["Private Room","private room"],["Conference Room","conference room"]],params[:category].to_i), prompt: "Occasion", class:"searchTerm2")
         .searchline
-        = text_field_tag (:city), params[:city], placeholder: "location ", required: true, :class => 'searchTerm', autocomplete: 'off'
-        = submit_tag "Search", :class => "searchButton"
+        = text_field_tag (:city), params[:city], placeholder: "Location ", required: true, :class => 'searchTerm', autocomplete: 'off'
+        = button_tag '<i class="fa fa-search"></i>'.html_safe, :type => "submit", :class => "searchButton"
+   
+          
+
+
   .hero-text
     %h1 Find Your Perfect Venue
-    %h2.two As Easy As Possible
+    %h2 As Easy As Possible
 
 .explore_text
   %h1 
@@ -18,7 +22,7 @@
     %br>/
     Our
     %br>/
-    Venues
+    Venues .
 
   #posts
     - @venue.each do |venue|
@@ -28,12 +32,8 @@
         .post_content
           = link_to venue.name, venue, :class => 'venuetext', target: :_blank
           %br/
-          %br/
-          = link_to venue.category, venue, :class => 'venuecat', target: :_blank
-          %br/
-          %br/
           = link_to venue.city, venue, :class => 'venuecity', target: :_blank
-= render 'page/footer2'
+
 
 / Global Site Tag (gtag.js) - Google Analytics
 %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-106207758-1"}

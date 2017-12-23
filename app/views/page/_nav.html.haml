@@ -1,19 +1,115 @@
 #mainTopnav.topnav
-  = link_to 'K', root_path, id: 'logo'
+  = link_to 'khrez.', root_path, id: 'logo'
+  - unless admin_signed_in?
+    %i.fa.fa-search#SearchModalBtn{"aria-hidden" => "true"}
+  
+  - if admin_signed_in?
+    #just_hide
+      %i.fa.fa-search#SearchModalBtn{"aria-hidden" => "true"}
+    
   - unless admin_signed_in?
     - unless user_signed_in?
-      %a#down{:href => "#"}= link_to 'List Your Venue', page_listyourvenue_path,:class => "colour",id: "tablet_hide"
-      %a{:href => "#"}= link_to 'Log In', new_user_session_path,:class => "colour"
+      %a#down{:href => "#"}= link_to 'Log In', new_user_session_path,:class => "colour"
       %a= link_to 'Sign Up', new_user_registration_path
-  - if admin_signed_in?
-    %a#down
-      %a= link_to "New Venue", new_venue_path
-    %a= link_to "Edit Profile", edit_admin_registration_path
-    %a= link_to('Logout', destroy_admin_session_path, method: :delete)
+      %a{:href => "#"}= link_to 'List Your Venue', page_listyourvenue_path,:class => "colour"
 
+  - if admin_signed_in?
+ 
+    %p.on{:onclick => "on()"}
+      Hello
+      = current_admin.ownername
+    .dash
+      %a= link_to "New Venue", new_venue_path
+      - unless current_admin.venues.count == 0
+        %a= link_to "My Venues", venues_path
+        %a= link_to "Booking Requests", venue_bookings_path(:venue_id => '1')
+    #overlay{:onclick => "off()"}
+      .list
+        %p= link_to "Edit Profile", edit_admin_registration_path
+        %p= link_to('Logout', destroy_admin_session_path, method: :delete)
+    
+    %a#down= link_to "Edit Profile", edit_admin_registration_path,:class => "colour", id: 'just_hide'
+    - unless current_admin.venues.count == 0
+      %a= link_to "My Venues", venues_path,:class => "colour", id: 'just_hide'
+    %a= link_to('Logout', destroy_admin_session_path, method: :delete,:class => "colour", id: 'just_hide')
+    
 
   - if user_signed_in?
-    %a#down= link_to('Logout', destroy_user_session_path, method: :delete)
-    %a= link_to "Edit Profile", edit_user_registration_path
   
-  %a#hammenu.icon{:href => "javascript:void(0);", :onclick => "NavFunction()", :style => "font-size:35px;padding: 15px 30px;color:#00CED1"} ☰
+    %p.on{:onclick => "on()"}
+      Hello
+      = current_user.name
+    .dash
+      %a= link_to "Help & Support", root_path
+      - unless current_user.bookings.count == 0
+        %a= link_to "Booking Requests", venue_bookings_path(:venue_id => '1')
+      
+    #overlay{:onclick => "off()"}
+      .list
+        %p= link_to "Edit Profile", edit_user_registration_path
+        %p= link_to('Logout', destroy_user_session_path, method: :delete)
+      
+
+    %a#down= link_to "Edit Profile", edit_user_registration_path,:class => "colour", id: 'just_hide'
+    - unless current_user.bookings.count == 0
+      %a= link_to "Booking Requests", venue_bookings_path(:venue_id => '1'),:class => "colour", id: 'just_hide'
+    %a= link_to('Logout', destroy_user_session_path, method: :delete,:class => "colour", id: 'just_hide')
+
+  
+  %a#hammenu.icon{:href => "javascript:void(0);", :onclick => "NavFunction()", :style => "font-size:25px;padding: 15px 0px;margin-right:.1em"} ☰
+
+#OpenSearchModal.Searchmodal
+  / Modal content
+  .Searchmodal-content
+    %span.Searchclose ×
+    .search_banner
+      .title_banner
+        %h1 Search
+        %hr
+        .search_wrap
+          .search_div
+            = form_tag(venues_path, :method => "get", :id => 'div_search_form') do
+              = text_field_tag (:city), params[:city], placeholder: "location ", required: true, :class => 'div_searchTerm', autocomplete: 'off'
+              %br/
+              %br/
+              = select_tag((:category), options_for_select([["Hall","hall"],["Bar","bar"],["Meeting Room","meeting room"],["Reception","reception"],["Kids Party","kids party"],["Exhibition","exhibition"],["Performance Venue","Performance Venue"],["Wedding Venue","Wedding Venue"],["Private Room","private room"],["Conference Room","conference room"]],params[:category].to_i), prompt: "Venue Type", class:"div_searchTerm2", required: true)
+              %br/
+              %br/
+              = submit_tag "Search", :class => "button"
+
+:javascript
+
+  // Search modal
+  // Get the modal
+  var Searchmodal = document.getElementById('OpenSearchModal');
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("SearchModalBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("Searchclose")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+      Searchmodal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      Searchmodal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == Searchmodal) {
+          Searchmodal.style.display = "none";
+      }
+  }
+  
+  function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+
+  function off() {
+      document.getElementById("overlay").style.display = "none";
+  }

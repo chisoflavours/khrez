@@ -1,8 +1,8 @@
 = simple_form_for([@venue, @venue.comments.build]) do |f|
-  = f.input :content, input_html: { class: 'comment_input'}, label: false, placeholder: "Add Review"
+  = f.input :content, input_html: { class: 'comment_input'}, label: false, placeholder: "Add Review", maxlength: 250
   %br/
   %br/
-  = f.button :submit,"Submit",class: 'button'
+  = f.button :button,"Submit",class: 'button'
   %br/
   %br/
   %br/

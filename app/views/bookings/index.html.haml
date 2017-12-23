@@ -3,38 +3,21 @@
   %h1 Booking Requests
   
 .wrapper
-  .field
+  %div{:style => "overflow-x:auto;"}
+    %table
+      %tr
+        %th Name
+        %th Date
+        %th Sent Date
+      - @booking.each do |booking|
+        %tr
+          - if admin_signed_in?
+            %td= link_to booking.user.name, venue_booking_path(@venue, booking)
+          - elsif user_signed_in?
+            %td= link_to booking.admin.ownername, venue_booking_path(@venue, booking)
+          %td= link_to booking.date.strftime("%d/%m/%y"), venue_booking_path(@venue, booking)
+          %td= link_to booking.created_at.strftime("%d/%m/%y"), venue_booking_path(@venue, booking)
 
-  - @booking.each do |booking|
-    .booking_grid
-      %br/
-      .text
-        Time:
-        = l booking.time
-        
-      %br/
-      .text
-        Guests:
-        = booking.guests
-      %br/
-      .text
-        Date:
-        = booking.date
-      %br/
-      .text
-        Name:
-        = booking.user.name
-      %br/
-      .text
-        Number:
-        = booking.user.number
-      %br/
-      .text
-        Email:
-        = booking.user.email
-      %br/
-      %br/
+          
 
-
-
-= render 'page/footer' 
+= render 'page/footer'

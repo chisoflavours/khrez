@@ -10,18 +10,15 @@
 <br>
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.input :email, required: true , input_html: { class: 'in' }, label: false, placeholder: "Email"%>
-    <hr class="hr_login">
+    <h3 class="colour">Email</h3>
+    <br>
+    <%= f.input :email, required: true , input_html: { class: 'in' }, label: false, placeholder: "Hi@gmail.com"%>
   </div> 
   <br>
   <div class="field">
-    <%= f.input :password, required: true , input_html: { class: 'in' }, label: false, placeholder: "Password"%>
-    <hr class="hr_login">
-  </div> 
-  <br>
-  <br>
-  <div class="field">
-    <%= f.input :remember_me, input_html: { class: 'tickbox' }, as: :boolean if devise_mapping.rememberable? %>
+    <h3 class="colour">Password</h3>
+    <br>
+    <%= f.input :password, required: true , input_html: { class: 'in' }, label: false, placeholder: "Password 123"%>
   </div> 
   <br>
   <br>

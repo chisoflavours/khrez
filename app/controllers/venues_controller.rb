@@ -7,15 +7,15 @@ class VenuesController < ApplicationController
     def index
         
         if params[:city] && params[:category]
-          @venue = Venue.search(params[:city], params[:category]).paginate(:page => params[:page], :per_page => 9)
+          @venue = Venue.search(params[:city], params[:category])
         else
-          @venue = Venue.all
+          @venue = Venue.where(admin_id: current_admin).order("created_at DESC")
         end
         
     end
     
     def dashboard
-        @venue = Venue.where(admin_id: current_admin)
+        @venue = Venue.where(admin_id: current_admin).order("created_at DESC")
         @booking = Booking.where(venue_id: @venue)
     end
     
@@ -58,7 +58,7 @@ class VenuesController < ApplicationController
     
     def destroy
         @venue.destroy
-        redirect_to root_path
+        redirect_to root_path, notice: 'Venue Deleted'
     end
     
     private
@@ -76,7 +76,7 @@ class VenuesController < ApplicationController
         :street_line_one,:street_line_two,:city,:capacity_standing,:capacity_sitting,:size,:parking_spaces,
         :kitchens,:disabled_acess,:outside_spaces,:toilets,:tables,:chairs,:extra_info,:external_catering_allowed,
         :external_alcahool_allowed,:inhouse_catering_provided,:inhouse_alcahool_provided,:storage,:air_conditionind,
-        :wifi,:projector,:thumbnail,:logo )
+        :wifi,:projector,:thumbnail,:logo ,:verified)
     end
     
 end

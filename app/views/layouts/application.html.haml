@@ -7,44 +7,33 @@
     %link{:href => "https://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet"}/
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %meta{:charset => "UTF-8"}/
-    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Josefin+Sans:300", :rel => "stylesheet"}/
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:content => "765d8dd3d0ea47aa91c67c3488370968", :name => "p:domain_verify"}/
-    %meta{:content => "Find your perfect venue as easy as possible", :name => "description"}/
+    %meta{:content => "Find your perfect venue the easy way", :name => "description"}/
     %meta{:content => "Venue hire,Hall for hire,Halls,Veue booker,Party Venues", :name => "keywords"}/
     %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
     %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     %link{:href => "https://fonts.googleapis.com/css?family=Fredoka+One", :rel => "stylesheet"}/
     %link{:href => "https://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet"}/
     %link{:href => "https://fonts.googleapis.com/css?family=Roboto", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Roboto:300", :rel => "stylesheet"}/
+
     = favicon_link_tag 'favicon.ico'
-    %link{:href => "favicon.ico", :rel => "apple-touch-icon"}/
-    %meta{:content => "website", :property => "og:type"}/
-    %meta{:content => "http://khrez.co.uk", :property => "og:url"}/
-    %meta{:content => "Khrez", :property => "og:title"}/
-    %meta{:content => "Home Page/hero.jpg", :property => "og:image"}/
-    %meta{:content => "Find your perfect venue as easy as possible meta tag test", :property => "og:description"}/
-    %meta{:content => "Khrez", :property => "og:site_name"}/
-    %meta{:content => "en_UK", :property => "og:locale"}/
-    
-    %meta{:content => "summary", :name => "twitter:card"}/
-    %meta{:content => "@KhrezVenues", :name => "twitter:site"}/
-    %meta{:content => "@KhrezVenues", :name => "twitter:creator"}/
-    %meta{:content => "http://khrez.co.uk", :name => "twitter:url"}/
-    %meta{:content => "Khrez meta twitter test", :name => "twitter:title"}/
-    %meta{:content => "Find your perfect venue as easy as possible", :name => "twitter:description"}/
-    %meta{:content => "Home Page/hero.jpg", :name => "twitter:image"}/
     = csrf_meta_tags
+    
   %body
-    - if notice
-      .alert
-        %span.closebtn ×
-        %strong= notice
-    - if alert
-      .alert
-        %span.closebtn ×
-        %strong= alert
+
+    //- if notice
+    //.alert
+    //%span.closebtn ×
+    //%strong= notice
+    //- if alert
+    //.alert
+    //%span.closebtn ×
+    //%strong= alert
     = yield
+    
   :javascript
     var close = document.getElementsByClassName("closebtn");
     var i;

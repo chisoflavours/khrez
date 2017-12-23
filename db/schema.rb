@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171111195726) do
+ActiveRecord::Schema.define(version: 20171220174224) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -48,11 +48,28 @@ ActiveRecord::Schema.define(version: 20171111195726) do
     t.integer  "admin_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.time     "bookings"
+    t.time     "finish"
   end
 
   add_index "bookings", ["admin_id"], name: "index_bookings_on_admin_id"
   add_index "bookings", ["user_id"], name: "index_bookings_on_user_id"
   add_index "bookings", ["venue_id"], name: "index_bookings_on_venue_id"
+
+  create_table "chats", force: :cascade do |t|
+    t.text     "content"
+    t.integer  "user_id"
+    t.integer  "admin_id"
+    t.integer  "booking_id"
+    t.integer  "venue_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "chats", ["admin_id"], name: "index_chats_on_admin_id"
+  add_index "chats", ["booking_id"], name: "index_chats_on_booking_id"
+  add_index "chats", ["user_id"], name: "index_chats_on_user_id"
+  add_index "chats", ["venue_id"], name: "index_chats_on_venue_id"
 
   create_table "chisoms", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -81,6 +98,37 @@ ActiveRecord::Schema.define(version: 20171111195726) do
   end
 
   add_index "comments", ["venue_id"], name: "index_comments_on_venue_id"
+
+  create_table "finals", force: :cascade do |t|
+    t.integer  "admin_id"
+    t.integer  "user_id"
+    t.integer  "booking_id"
+    t.integer  "full_money"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "finals", ["admin_id"], name: "index_finals_on_admin_id"
+  add_index "finals", ["booking_id"], name: "index_finals_on_booking_id"
+  add_index "finals", ["user_id"], name: "index_finals_on_user_id"
+
+  create_table "offers", force: :cascade do |t|
+    t.integer  "admin_id"
+    t.integer  "booking_id"
+    t.integer  "user_id"
+    t.integer  "deposit_price"
+    t.time     "time_start"
+    t.time     "time_end"
+    t.date     "deposit_date"
+    t.integer  "deposit_guests"
+    t.text     "deposit_tandc"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "offers", ["admin_id"], name: "index_offers_on_admin_id"
+  add_index "offers", ["booking_id"], name: "index_offers_on_booking_id"
+  add_index "offers", ["user_id"], name: "index_offers_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -147,6 +195,7 @@ ActiveRecord::Schema.define(version: 20171111195726) do
     t.string   "picture_content_type"
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
+    t.boolean  "verified"
   end
 
 end

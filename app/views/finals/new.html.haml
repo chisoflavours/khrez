@@ -1,0 +1,21 @@
+= render 'page/nav'
+.topheader
+  %h1 Request Payment
+  
+.wrapper
+  .offer
+    = simple_form_for([@booking, @booking.finals.build]) do |f|
+      .area
+        = f.input :full_money, input_html: { class: 'number_area', min:'1' }, label: "Payment Amount", placeholder: "£300"
+      %br/
+      %br/
+      %br/
+      .field
+        = f.button :button, "Submit",class:'button'
+      %br/
+      %br/
+      %br/
+      %br/
+      .field
+        %a= link_to 'Back', :back, class:'link'
+= render 'page/footer'

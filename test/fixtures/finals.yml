@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  admin_id: 
+  user_id: 
+  booking_id: 
+  full_money: 1
+
+two:
+  admin_id: 
+  user_id: 
+  booking_id: 
+  full_money: 1

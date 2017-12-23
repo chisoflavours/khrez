@@ -1,9 +1,15 @@
-
 = render 'page/nav'
-.topheader
-  %h1 
-    #{params[:category]}'s in #{params[:city]} 
 
+- if admin_signed_in?
+  .topheader
+    %h1 My Venues
+- unless admin_signed_in?
+  .topheader2
+    %h1
+      = @venue.count 
+      reasults for
+      #{params[:city]} #{params[:category]}
+    %hr.hr_short
 #posts
   - @venue.each do |venue|
     .post
@@ -12,57 +18,11 @@
       .post_content
         = link_to venue.name, venue, :class => 'venuetext', target: :_blank
         %br/
-        %br/
-        = link_to venue.category, venue, :class => 'venuecat', target: :_blank
-        %br/
-        %br/
         = link_to venue.city, venue, :class => 'venuecity', target: :_blank
 
-.wrapper          
-  - unless admin_signed_in?
-    - if @venue.blank?
-      %h3.center.colour
-        There are no venues containing the terms
-        %br/
-      %h3.center.colour2
-        #{params[:city]} #{params[:category]}
 
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
+
+
 
 
 
@@ -72,5 +32,5 @@
 
       
 
-= render 'page/footer2'
+
 

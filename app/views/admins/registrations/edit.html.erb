@@ -1,6 +1,6 @@
 <%= render 'page/nav' %>
 <div class="topheader">
-  <h1>Edit Profile</h1>
+  <h1>Profile</h1>
 </div>
 <br>
 <br>
@@ -13,50 +13,44 @@
   <%= f.error_notification %>
 
     <div class="field">
-      <%= f.input :email,label: false, placeholder: "Email", input_html: { class: 'in' } %>
-      <hr class="hr_login">
+      <h3 class="colour">Email</h3>
+      <br>
+      <%= f.input :email,label: false, placeholder: "hi@gmail.com", input_html: { class: 'in' } %>
     </div>
     <br>
     <div class="field">
-    <%= f.input :ownername,label: false, placeholder: "Name", input_html: { class: 'in' } %>
-    <hr class="hr_login">
+    <h3 class="colour">Name</h3>
+    <br>
+    <%= f.input :ownername,label: false, placeholder: "Venue Ltd", input_html: { class: 'in' } %>
     </div>
     <br>
     <div class="field">
-    <%= f.input :phone,label: false, placeholder: "Phone Number", input_html: { class: 'in' } %>
-    <hr class="hr_login">
+    <h3 class="colour">Phone Number</h3>
+    <br>
+    <%= f.input :phone,label: false, placeholder: "123456789", input_html: { class: 'in' } %>
     </div>
     <br>
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
     <% end %>
     <div class="field">
-    <%= f.input :password, autocomplete: "off",label: false, placeholder: "Password", input_html: { class: 'in' } %>
-    <hr class="hr_login">
+    <h3 class="colour">Change Password</h3>
+    <br>
+    <%= f.input :password, autocomplete: "off",label: false, placeholder: "Password 123", input_html: { class: 'in' } %>
     </div>
     <br>
     <div class="field">
-    <%= f.input :password_confirmation, required: false ,label: false, placeholder: "Password Conformation", input_html: { class: 'in' }%>
-    <hr class="hr_login">
-    </div>
+    <h3 class="colour">Password Conformation</h3>
     <br>
-    <br>
-    <div class="hide">
-    <div class="avatarbtn">
-    <div class="field">
-    <div class="button">
-    
-    <%= f.input :avatar, as: :file, input_html: { hidden: true,class: 'button',id:'venimgbtn' }, label: 'Upload Logo' %>
-    </div>
-    </div>
-    </div>
+    <%= f.input :password_confirmation, required: false ,label: false, placeholder: "Password 123", input_html: { class: 'in' }%>
     </div>
     <br>
     <br>
     <br>
     <div class="field">
-    <%= f.input :current_password,label: false, placeholder: "Current Password", input_html: { class: 'in' }, required: true %>
-    <hr class="hr_login">
+    <h3 class="colour">Current Password </h3>
+    <br>
+    <%= f.input :current_password,label: false, placeholder: "Password 123", input_html: { class: 'in' }, required: true %>
     </div>
     <br>
 

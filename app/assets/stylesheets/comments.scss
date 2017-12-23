@@ -1,23 +1,37 @@
 // Variables
 $maincolour:#424C5B;
-$secondcolour:#00CED1;
+$secondcolour:#B0E0E6;
 
 // Comments Form
 .comment_input{
-  outline: none;
-  background: transparent;
-  color:$maincolour;
-  text-decoration:none;
-  width:30%;
-  margin:0 auto;
-  border-radius:400px;
-  padding:20px;
-  text-align:center;
-  padding-top:40px;
- 
-	&:hover {
-		color: $secondcolour;
+        width:85%;
+        border:.8px solid $maincolour;
+        border-radius:5px;
+        padding:4em;
+        padding-top:5em;
+        &::placeholder {
+         color: $maincolour;
+         font-size:1em;
+        }
+    
+        &:focus{
+          outline:none;
+          color:$maincolour;
+        }
+}
 
-	}
+.comment{
+  h3{
+      max-width:80%;
+      line-height:1.6em;
+      padding:40px;
+      font-size:1.1em;
+  }
+ .bottom{
+   margin-top:-5.5em;
+   color:lightgray;
+   font-size:1em;
+   padding:40px;
+ }
 }
 

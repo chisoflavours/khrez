@@ -1,241 +1,239 @@
 = render 'page/nav'
-.venue_image
-  = image_tag @venue.thumbnail.url(:medium)
 .venue_wrapper
-  .venue_wrapper_top_content
-    %br/
-    %br/
-    = link_to @venue.name, @venue.admin
-    %h2#city= @venue.city
-  %br/
-  %br/
-  %br/
-  .hr_area
-    %hr.top
-    %br/
-    %br/
-    %h3 About this venue
-    %br/
-    %p.description= @venue.description
-    %br/
-    %br/
-    %br/
-    %hr.top
-    %br/
-    %br/
-    %br/
-    %br/
-  .content_section
-    %h1.colour.center Amenities
-    .ameneties_container
-      .ameneties-grid
+  .venue_image
+    = image_tag @venue.thumbnail.url(:medium)
+  %h1.venue_name= @venue.name
+  %h2#city= @venue.city
+  - if @venue.verified == true
+    .contact_nav
+      .secTwo
+        %i.fa.fa-check{"aria-hidden" => "true"}
+        %p.venue_check Verified
+
+  .tab-frame
+    %hr
+    .l
+      %br/
+      %br/
+      %input#tab1{:checked => "checked", :name => "tab", :type => "radio"}/
+      %a{:href => "#C1"} Overview
+      %input#tab2{:name => "tab", :type => "radio"}/
+      %a{:href => "#C2"} Amenities
+      %input#tab3{:name => "tab", :type => "radio"}/
+      %a{:href => "#C3"} Location
+      %input#tab4{:name => "tab", :type => "radio"}/
+      %a{:href => "#C4"} Catering
+      %input#tab5{:name => "tab", :type => "radio"}/
+      %a{:href => "#C5"} Capacity
+      %input#tab6{:name => "tab", :type => "radio"}/
+      %a{:href => "#C6"} Reviews
+      %input#tab7{:name => "tab", :type => "radio"}/
+      %a{:href => "#C7"} Book
+      %br/ 
+      %br/
+      %br/
+    %hr
+    .tab#C1
+      %h2.title About
+      %p.description= @venue.description
+ 
+      %h2.title Extra info 
+      %p.description= @venue.extra_info
+      - if @venue.extra_info.blank?
+        %p.description No extra infomation
+        
+    %hr/
+    .tab#C2
+      .inline
         %i.fa.fa-television{"aria-hidden" => "true"}
-        %br/
-        %h2.gray
-          - if @venue.projector == true
-            Projector provided
-          - else 
-            No projector provided
-
-      .ameneties-grid
+      .inline
+        - if @venue.projector == true
+          %h2.title Projector 
+        - else 
+          %h2.title#strike Projector
+      %br/
+      .inline
         %i.fa.fa-wifi{"aria-hidden" => "true"}
-        %br/
-        %h2.gray
-          - if @venue.wifi == true
-            Wifi
-          - else 
-            No wifi
-
-      .ameneties-grid
+      .inline
+        - if @venue.wifi == true
+          %h2.title Wifi 
+        - else 
+          %h2.title#strike Wifi
+      %br/
+      .inline
         %i.fa.fa-bolt{"aria-hidden" => "true"}
-        %br/
-        %h2.gray
-          - if @venue.air_conditionind == true
-            Air conditioning
-          - else 
-            No air conditioning
-
-      .ameneties-grid
+      .inline
+        - if @venue.air_conditionind == true
+          %h2.title Air conditioning 
+        - else 
+          %h2.title#strike Air conditioning
+      %br/
+      .inline
         %i.fa.fa-archive{"aria-hidden" => "true"}
-        %br/
-        %h2.gray
-          - if @venue.storage == true
-            Storage
-          - else 
-            No Storage
-
-      .ameneties-grid
+      .inline
+        - if @venue.storage == true
+          %h2.title Storage 
+        - else 
+          %h2.title#strike Storage
+      %br/
+      .inline
         %i.fa.fa-stop{"aria-hidden" => "true"}
-        %br/
-        %h2.gray
-          - if @venue.chairs == 0
-            No chairs
-          - else
+      .inline
+        - if @venue.chairs == 0
+          %h2.title#strike Chairs
+        - else
+          %h2.title
             = @venue.chairs
-            chairs  
-
-      .ameneties-grid
+            chairs
+      %br/
+      .inline
         %i.fa.fa-table{"aria-hidden" => "true"}
-        %br/
-        %h2.gray
-          - if @venue.tables == 0
-            No tables
-          - else
+      .inline
+        - if @venue.tables == 0
+          %h2.title#strike Tables
+        - else 
+          %h2.title
             = @venue.tables
             tables
-
-      .ameneties-grid
+  
+      %br/
+      .inline
         %i.fa.fa-tint{"aria-hidden" => "true"}
-        %br/
-        %h2.gray
-          - if @venue.toilets == 0
-            No toilets
-          - else
+      .inline
+        - if @venue.toilets == 0
+          %h2.title#strike Toilets
+        - else
+          %h2.title
             = @venue.toilets
             toilets
-      
-      .ameneties-grid
+          
+      %br/
+      .inline
         %i.fa.fa-cutlery{"aria-hidden" => "true"}
-        %br/
-        %h2.gray
-          - if @venue.kitchens == 0
-            No kitchens
-          - else
+      .inline
+        - if @venue.kitchens == 0
+          %h2.title#strike Kitchen
+        - else
+          %h2.title
             = @venue.kitchens
             kitchens
-
-      .ameneties-grid
+      
+      %br/
+      .inline
         %i.fa.fa-globe{"aria-hidden" => "true"}
-        %br/
-        %h2.gray
-          - if @venue.outside_spaces == true
-            Outside space
-          - else 
-            No outside space
-
-      .ameneties-grid
+      .inline
+        - if @venue.outside_spaces == true
+          %h2.title Outside space 
+        - else 
+          %h2.title#strike Outside space
+          
+      %br/
+      .inline
         %i.fa.fa-wheelchair{"aria-hidden" => "true"}
-        %h2.gray
-          - if @venue.disabled_acess == true
-            Disabled access
-          -else
-            No disabled access
-
-      .ameneties-grid
+      .inline
+        - if @venue.disabled_acess == true
+          %h2.title Disabled access 
+        - else 
+          %h2.title#strike Disabled access
+          
+      %br/
+      .inline
         %i.fa.fa-car{"aria-hidden" => "true"}
-        %h2.gray
-          = @venue.parking_spaces
-          Parking spaces
-
-  .accordion_wrapper
-    %button.accordion#top1 Location
-    .panel
-      %p
-        = @venue.city
-        %br/
-        %br/
-        = @venue.postcode 
-        %br/
-        %br/
-        = @venue.county
-        %br/
-        %br/
-        = @venue.street_line_one
-        %br/
-        %br/
-        = @venue.street_line_two
-        %br/
-        %br/
-        %br/
-        %br/
-        %br/
-    %button.accordion Catering
-    .panel
-      %p 
-        - if @venue.inhouse_alcahool_provided == true
-          Alcahol provided
-        - else 
-          No alcahol provided
-        %br/
-        %br/
-        - if @venue.inhouse_catering_provided == true
-          Catering provided
-        - else 
-          No catering provided
-        %br/
-        %br/
-        - if @venue.external_alcahool_allowed == true
-          External alcahol allowed
-        - else 
-          No external alcahol allowed
-        %br/
-        %br/
-        - if @venue.external_catering_allowed == true
-          External Catering allowed
-        - else 
-          No external catering allowed
-        %br/
-        %br/
-        %br/
-        %br/
-
-
-
-
-    %button.accordion#bottom1 Capacity
-    .panel
-      %p 
+      .inline
+        - if @venue.parking_spaces == 0
+          %h2.title#strike Parking 
+        - else
+          %h2.title
+            = @venue.parking_spaces 
+            parking spaces
+    %hr/
+    .tab#C3
+      %h2.title City
+      %p.description= @venue.city
+      
+      %h2.title Postcode
+      %p.description= @venue.postcode 
+      
+      %h2.title County
+      %p.description= @venue.county
+      
+      %h2.title Street line 1
+      %p.description= @venue.street_line_one
+      
+      - if @venue.street_line_two.blank?
+        .hide
+      - else
+        %h1.title Street line 2
+        %p.description= @venue.street_line_two
+        
+    %hr/
+    .tab#C4
+      %h2.title Internal
+      - if @venue.inhouse_alcahool_provided == true
+        %h2.description Alcahol provided
+      - else 
+        %h2.description#strike Alcahol provided
+      
+      - if @venue.inhouse_catering_provided == true
+        %h2.title Catering provided
+      - else 
+        %h2.description#strike Catering provided
+      
+      %h2.title External
+      - if @venue.external_alcahool_allowed == true
+        %h2.description External alcahol allowed
+      - else 
+        %h2.description#strike External alcahol allowed
+        
+      - if @venue.external_catering_allowed == true
+        %h2.description External Catering allowed
+      - else 
+        %h2.description#strike External catering allowed
+        
+    %hr/
+    .tab#C5
+      %h2.title Standing
+      %p.description
         = @venue.capacity_standing
         people standing
-    
-      %p
+      
+      %h2.title Sitting
+      %p.description
         = @venue.capacity_sitting
         people sitting
-    
-      %p
+        
+      %h2.title Size
+      %p.description
         = @venue.size
         sqm
-
-  %br/
-  %br/
-  %br/
-  %br/
-  .info_area
-    %hr
-      %br/
-      %h3.colour.center Extra Info
-      %h4.center.colour
-        = @venue.extra_info
-        - if @venue.extra_info.blank?
-          None
-      %br/
-    %br/
-    %br/
-    %br/
-    .hide
+        
+    %hr/
+    .tab#C6
       .comment
-        %h2.colour2= pluralize(@venue.comments.count, "Review")
+        %h2.title= pluralize(@venue.comments.count, "Review")
         %br/
-        = render 'comments/form' 
+        - if user_signed_in?
+          = render 'comments/form' 
         %br/
         - @comments.each do |comment|
+          
           %h3.colour= comment.content
-          %hr.top
+          %p.bottom= comment.user.name
+          %hr
+        
+          
+    %hr/
+    #moveDown
+      .tab#C7
+        %h2.title Booking
+        %p.description Complete the form below to request a booking or a viewing for this venue.
+        = render 'bookings/form'
 
-- unless admin_signed_in?
-  = render 'bookings/form'
-:javascript
-  var acc = document.getElementsByClassName("accordion");
-  var i;
   
-  for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight){
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      } 
-    }
-  }
+  
+- if admin_signed_in?
+  .booking_action
+    = link_to "Edit venue", edit_venue_path(@venue), class: 'link'
+    = link_to "Delete venue", venue_path(@venue), method: :delete, data: { confirm: "Are you sure?" }, class: 'margin-link-left'
+
+

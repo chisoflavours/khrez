@@ -1,91 +1,93 @@
-= render 'page/nav'
-.top_image
-  .top_image_text
-    %h1 
-      List your venue 
-      %br>/
-      the smartest way with 
-      %br>/
-      khrez
+
+.list_venue
+  = render 'page/nav'
+  .list_venue_text
+    %h1 Get Bookings Forever
+    %h2.two Easier and faster
+  .button_section
+    = link_to 'Get Early Aceess', new_admin_registration_path, class:'button'
     %br/
-    = link_to "Get Started", new_admin_registration_path, class: 'get_started_button'
+    %br/
+    %p No credit card required
 
-.content_grid
-  .line
-  .circle1
-  .circle2
-  .circle3
-  .circle4
-  .content_text
-    = image_tag("List Your Venue/message.png", :alt => "Chat Illustration", :id => 'messageillustration')
-    .content_text_2
-      %h1
-        Easy Communication
-        %br>/
-        With Customers
-      %p
-        As soon as your recieve a booking request
-        %br>/
-        from a customer simply just accept or 
-        %br>/
-        reject your booking requests as they 
-        %br>/
-        come in !
-    = image_tag("List Your Venue/twitter.png", :alt => "Twitter Illustration", :id => 'twitterillustration')
-    .content_text_3
-      %h1
-        Get
-        %br>/
-        Free Promotion
-      %p
-        We will advertise your venue across
-        %br>/
-        our various social media platforms
-        %br>/
-        for no extra cost
-    = image_tag("List Your Venue/headphones.png", :alt => "Support Illustration", :id => 'supportillustration')
-    .content_text_4
-      %h1
-        First Class
-        %br>/
-        Support
-      %p
-        We will advertise your venue across
-        %br>/
-        our various social media platforms
-        %br>/
-        for no extra cost
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
+.LYV
 
+  %h2.top
+    Khrez helps you get an increase in bookings for your 
+    %br/
+    venue. While making the process simple so you can focus 
+    %br/
+    on running your business.
+
+.wrapper
+  .field
+    %button.button{:onclick => "on()"} Watch Video
+  %br/
+  %br/
+  %br/
+  %br/
+  %br/
+  
+  #content
+    %hr/
+    %br/
+    %br/
+    = image_tag("List Your Venue/roof.png", :alt => "roof", class: 'icon')
+    %br/
+    %h1 Everything under one roof.
+    %p 
+      We know how difficult it is to to manage venues, that's why
+      %br/
+      we provide you with great tools to be able to do everything 
+      %br/
+      from  taking bookings to collecting payments .
+    
+    %br/
+    %br/
+    %hr/
+    %br/
+    %br/
+    = image_tag("List Your Venue/twitter.png", :alt => "twitter", class: 'icon')
+    %br/
+    %h1 Free promotion for your venues.
+    %p
+      To help with the bookings you receive, we give your venue promotion 
+      %br/
+      on our various social channels .
+    
+    %br/
+    %br/
+    %hr/
+    %br/
+    %br/
+    = image_tag("List Your Venue/discuss-issue.png", :alt => "support", class: 'icon')
+    %br/
+    %h1 We provide first class support.
+    %p
+      Just in case you have any problems we have made it easy 
+      %br/
+      to call or message us to get a solution to your problems .
+    %br/
+    %br/
+    %hr/
+    
+    #overlay{:onclick => "off()"}
+      %iframe{:allow => "encrypted-media",:frameborder => "0", :gesture => "media", :height => "315", :src => "https://www.youtube.com/embed/GW0l_GUPCmY", :width => "560", class:'video'}
+
+.call_to_action
+  %h1 Like what you see ? Get started today
+  %br/
+  %br/
+  .button_section
+    = link_to 'Get Early Aceess', new_admin_registration_path, class:'button'
 = render 'page/footer'
+
+:javascript
+
+  function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }

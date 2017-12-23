@@ -1,6 +1,6 @@
 // Variables
 $maincolour:#424C5B;
-$secondcolour:#00CED1;
+$secondcolour:#B0E0E6;
 
 
 // Booking Form
@@ -22,26 +22,10 @@ $secondcolour:#00CED1;
 }
 
 .booking_form{
-  position:absolute;
-  box-shadow: 0 8px 50px -1px lightgray;
-  float:right;
-  right:5%;
-  top:110%;
-  width:18%;
-  padding:60px;
-  border-radius:5px;
-  background:#ffffff;
-  .in{
-    color:gray;
-     width:20%;
-  }
-  h2{
+  .input{
+    border:0;
+    background:transparent;
     color:$maincolour;
-    font-weight:700;
-    text-align:center;
-  }
-  #form_input_width{
-    width:100px;
   }
 }
 
@@ -60,5 +44,95 @@ $secondcolour:#00CED1;
     }
     .text{
       color:gray;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    margin:0 auto;
+    border:0;
+}
+
+th, td {
+    text-align: left;
+    padding: 40px;
+}
+
+td{
+  border-top:.8px solid lightgray;
+  a{
+    text-decoration:none;
+    color:#A9A9A9;
+    font-size:1em;
+    transition:0.3s;
+    &:hover{
+      color:$maincolour;
+    }
+  }
+}
+
+th{
+  color:$secondcolour;
+  letter-spacing:.5px;
+  font-weight:100;
+}
+
+.accordion_section{
+  box-shadow: 0 8px 50px -1px lightgray;
+  z-index: 10;
+  margin-top:5em;
+  border-left:5px solid $secondcolour;
+  .divider{
+    border:.3px solid lightgray;
+  }
+}
+    
+.accordion {
+    background-color: #ffffff;
+    color: #A9A9A9;
+    cursor: pointer;
+    padding:3em;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    transition: 0.3s;
+    &:hover{
+      color:$secondcolour;
+    }
+}
+
+.accordion:after {
+    content: '\002B';
+    color: $maincolour;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    width: 80%;
+    margin:0 auto;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    hr{
+      border:.3px solid lightgray;
+    }
+    p{
+      font-size:1em;
+      padding:40px;
+      color:$maincolour;
+      line-height:1.6em;
+    }
+    #not_allowed{
+      cursor: not-allowed;
     }
 }

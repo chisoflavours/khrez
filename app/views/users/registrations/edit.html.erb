@@ -1,6 +1,6 @@
 <%= render 'page/nav'%>
 <div class="topheader">
-  <h1>Edit Profile</h1>
+  <h1>Profile</h1>
 </div>
 <br>
 <br>
@@ -14,39 +14,46 @@
 
   <div class="form-inputs">
     <div class="field">
-      <%= f.input :email, required: true, input_html: { class: 'in' }, label: false, placeholder: "Email" %>
-      <hr class="hr_login">
+      <h3 class="colour">Email</h3>
+      <br>
+      <%= f.input :email, required: true, input_html: { class: 'in' }, label: false, placeholder: "hi@gmail.com" %>
+      
     </div>
     <br>
     <div class="field">
-      <%= f.input :name, autocomplete: "off", required: false , input_html: { class: 'in' }, label: false, placeholder: "Full Name"%>
-      <hr class="hr_login">
+      <h3 class="colour">Name</h3>
+      <br>
+      <%= f.input :name, autocomplete: "off", required: false , input_html: { class: 'in' }, label: false, placeholder: "Logan A"%>
     </div>
     <br>
     <div class="field">
-      <%= f.input :number, autocomplete: "off", required: false , input_html: { class: 'in' }, label: false, placeholder: "Phone Number"%>
-      <hr class="hr_login">
+      <h3 class="colour">Number</h3>
+      <br>
+      <%= f.input :number, autocomplete: "off", required: false , input_html: { class: 'in' }, label: false, placeholder: "123456789"%>
     </div>
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
     <% end %>
     <br>
     <div class="field">
-    <%= f.input :password, autocomplete: "off", required: false , input_html: { class: 'in' }, label: false, placeholder: "Change Password"%>
-    <hr class="hr_login">
+    <h3 class="colour">Change Password</h3>
+    <br>
+    <%= f.input :password, autocomplete: "off", required: false , input_html: { class: 'in' }, label: false, placeholder: "Password 123"%>
     </div>
     <br>
     <div class="field">
-    <%= f.input :password_confirmation, required: false , input_html: { class: 'in' }, label: false, placeholder: "Password Confirmation" %>
-    <hr class="hr_login">
+    <h3 class="colour">Password Confirmation</h3>
+    <br>
+    <%= f.input :password_confirmation, required: false , input_html: { class: 'in' }, label: false, placeholder: "Password 123" %>
     </div>
     <br>
     <br>
     <br>
     <br>
     <div class="field">
-    <%= f.input :current_password, required: false , input_html: { class: 'in' }, label: false, placeholder: "Current Password" %>
-    <hr class="hr_login">
+    <h3 class="colour">Current Password</h3>
+    <br>
+    <%= f.input :current_password, required: false , input_html: { class: 'in' }, label: false, placeholder: "Password 123" %>
     </div>
     
   </div>
@@ -70,3 +77,5 @@
 <br>
 <br>
 <br>
+
+<%= render 'page/footer' %>

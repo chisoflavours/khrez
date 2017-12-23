@@ -1,0 +1,39 @@
+= render 'page/nav'
+.topheader
+  %h1 Request Deposit
+.wrapper
+  .offer
+    = simple_form_for([@booking, @booking.offers.build]) do |f|
+      .area
+        = f.input :deposit_price, input_html: { class: 'number_area', min:'1' }, label: false, label: "Deposit Amount", placeholder: "£100"
+      %br/
+      %br/
+      .area
+        = f.input :time_start, input_html: { class: 'time_area'}, label: "Event Start Time"
+      %br/
+      %br/
+      .area
+        = f.input :time_end, input_html: { class: 'time_area'}, label: "Event End Time: "
+      %br/
+      %br/
+      .area
+        = f.input :deposit_date, input_html: { class: 'time_area'}, label: "Event Date:"
+      %br/
+      %br/
+      .area
+        = f.input :deposit_guests, input_html: { class: 'number_area', min:'1' }, label: false, label: "Number of guests", placeholder: "70"
+      %br/
+      %br/
+      = f.input :deposit_tandc, input_html: { class: 'main_area' }, label: false, placeholder: "Terms & Conditions"
+      %br/
+      %br/
+      %br/
+      .field
+        = f.button :button,"Submit",class:'button'
+      %br/
+      %br/
+      %br/
+      %br/
+      .field
+        %a= link_to 'Back', :back, class:'link'
+= render 'page/footer'

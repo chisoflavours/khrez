@@ -12,23 +12,27 @@
   <%= f.error_notification %>
 
   <div class="field">
-    <%= f.input :email, required: true, input_html: { class: 'in' }, label: false, placeholder: "Email" %>
-    <hr class="hr_login">
+    <h3 class="colour">Email</h3>
+    <br>
+    <%= f.input :email, required: true, input_html: { class: 'in' }, label: false, placeholder: "hi@gmail.com" %>
   </div>
   <br>
-  <div class="field">  
-    <%= f.input :ownername, required: true, autofocus: true, input_html: { class: 'in' }, label: false, placeholder: "Name" %>
-    <hr class="hr_login">
-  </div> 
+  <div class="field">
+    <h3 class="colour">Name</h3>
+    <br>
+    <%= f.input :ownername, required: true, input_html: { class: 'in' }, label: false, placeholder: "Venues Ltd" %>
+  </div>
   <br>
     <div class="field">
-    <%= f.input :password, required: true, input_html: { class: 'in' }, label: false, placeholder: "Password" %>
-    <hr class="hr_login">
+    <h3 class="colour">Password</h3>
+    <br>
+    <%= f.input :password, required: true, input_html: { class: 'in' }, label: false, placeholder: "Password 123" %>
     </div>
     <br>
     <div class="field">
-    <%= f.input :password_confirmation, required: true, input_html: { class: 'in' }, label: false, placeholder: "Password Confirmation" %>
-    <hr class="hr_login">
+    <h3 class="colour">Password Confirmation</h3>
+    <br>
+    <%= f.input :password_confirmation, required: true, input_html: { class: 'in' }, label: false, placeholder: "Password 123" %>
     </div>
     <br>
   </div>
@@ -37,7 +41,7 @@
 <br>
 <div class="center">
 <p class="colour"> By signing up you agree to our </p>
-<p class="colour">T&C and privacy policy</p>
+<p class="pcolour"><%= link_to 'terms & condition', page_termsandconditions_path, class:'pcolour' %> and <%= link_to 'privacy policy', page_privacypolicy_path, class:'pcolour' %></p>
 <br>
 </div>
 <br>

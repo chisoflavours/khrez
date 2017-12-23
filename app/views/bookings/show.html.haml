@@ -1,0 +1,127 @@
+= render 'page/nav'
+
+.topheader
+  - if admin_signed_in?
+    %h1= @booking.user.name
+  - if user_signed_in?
+    %h1= @booking.admin.ownername
+
+.wrapper
+  - if @chats.count == 0
+    .field
+      %h3.colour Why not start a conversation ?
+  - else
+    .chat
+      .section
+        - @chats.each do |chat|
+          - if chat.admin_id 
+            %h1.header=chat.content
+            %h3.name=chat.admin.ownername
+          - elsif chat.user_id 
+            %h1.header=chat.content
+            %h3.name=chat.user.name
+          %hr.hr_chat
+
+  
+  .accordion_section
+    - unless @offers.count == 0
+      %button.accordion Deposit & Terms
+      .panel
+        - @offers.each do |offer|
+          %p
+            Deposit Amount : £ 
+            = offer.deposit_price
+          %hr
+          %p
+            Time (To) :
+            = offer.time_start.strftime("%I:%M %p")
+          %hr
+          %p
+            Time (From) :
+            = offer.time_end.strftime("%I:%M %p")
+          %hr
+          %p
+            Date : 
+            = offer.deposit_date.strftime("%d/%m/%y")
+          %hr
+          %p
+            Number Of Guests :
+            = offer.deposit_guests
+          %hr
+          %p
+            Terms And Conditions :
+            %br/
+            %br/
+            = offer.deposit_tandc
+          %hr/
+          .field
+            %p By signing up you accepting to the venues terms & conditions shown above
+          .field
+            - if user_signed_in?
+              = link_to 'Accept', root_path,:class => "button"
+            - elsif admin_signed_in?
+              = link_to 'Accept', @booking,:class => "button", :id => "not_allowed"
+            %br/
+            %br/
+            %br/
+            %br/
+            %br/
+      %hr.divider
+    - unless @finals.count == 0
+      %button.accordion Full Payment
+      .panel
+        - @finals.each do |final|
+          %p
+            Payment Due :
+            %br/
+            %br/
+            £
+            = final.full_money
+          %br/
+          %br/
+          .field
+            - if user_signed_in?
+              = link_to 'Pay', root_path,:class => "button"
+            - elsif admin_signed_in?
+              = link_to 'Pay', @booking,:class => "button", :id => "not_allowed"
+            %br/
+            %br/
+            %br/
+            %br/
+            %br/
+      
+  
+
+
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+
+.chat_bar
+  = render 'chats/form'
+
+:javascript
+  
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  

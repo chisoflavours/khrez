@@ -1,0 +1,8 @@
+= simple_form_for([@booking, @booking.chats.build]) do |f|
+  = f.input :content, input_html: { class: 'chatBar'}, label: false, placeholder: "Type a message"
+  - if admin_signed_in?
+    %i.fa.fa-credit-card-alt{"aria-hidden" => "true"}
+    = link_to 'Request Payment', new_booking_final_path(booking_id: @booking.id ), class:'payment'
+    %i.fa.fa-comments{"aria-hidden" => "true"}
+    = link_to 'Request Deposit', new_booking_offer_path(booking_id: @booking.id ), class:'deposit'
+  = f.button :button,"Send",class: 'chatButton'

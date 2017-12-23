@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
   def create
     @venue = Venue.find(params[:venue_id])
     @comment = Comment.create(params[:comment].permit(:content))
-    # @comment.admin_id = current_admin.id
+    @comment.user_id = current_user.id
     @comment.venue_id = @venue.id
         
     if @comment.save

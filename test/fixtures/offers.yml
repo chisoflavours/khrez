@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  admin_id: 
+  booking_id: 
+  user_id: 
+  deposit_price: 1
+  time_start: 2017-12-20 10:42:32
+  time_end: 2017-12-20 10:42:32
+  deposit_date: 2017-12-20
+  deposit_guests: 1
+  deposit_tandc: MyText
+
+two:
+  admin_id: 
+  booking_id: 
+  user_id: 
+  deposit_price: 1
+  time_start: 2017-12-20 10:42:32
+  time_end: 2017-12-20 10:42:32
+  deposit_date: 2017-12-20
+  deposit_guests: 1
+  deposit_tandc: MyText
