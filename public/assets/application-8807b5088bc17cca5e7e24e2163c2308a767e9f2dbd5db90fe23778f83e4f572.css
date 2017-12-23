@@ -1,0 +1,7350 @@
+/* line 6, /home/ubuntu/workspace/app/assets/stylesheets/admins.scss */
+#h2_margin_top {
+  color: #424C5B;
+  text-align: center;
+  margin-top: 200px;
+}
+
+/* line 13, /home/ubuntu/workspace/app/assets/stylesheets/admins.scss */
+.adminlist {
+  text-align: center;
+  padding-top: 8em;
+}
+/* line 16, /home/ubuntu/workspace/app/assets/stylesheets/admins.scss */
+.adminlist .adminame {
+  text-decoration: none;
+  color: #424C5B;
+}
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/admins.scss */
+.adminlist .adminame:hover {
+  color: #B0E0E6;
+}
+/* line 7, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.button_submit {
+  outline: none;
+  background: #B0E0E6;
+  color: #ffffff;
+  border: 0;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 23px;
+  font-size: 18px;
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.button_submit:hover {
+  background: #708090;
+}
+
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.booking_form .input {
+  border: 0;
+  background: transparent;
+  color: #424C5B;
+}
+
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.booking_grid {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 50px -1px lightgray;
+  background: #ffffff;
+  padding: 50px;
+}
+/* line 42, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.booking_grid:hover {
+  box-shadow: 5px 10px 50px -1px lightgray;
+}
+/* line 45, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.booking_grid .text {
+  color: gray;
+}
+
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  margin: 0 auto;
+  border: 0;
+}
+
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+th, td {
+  text-align: left;
+  padding: 40px;
+}
+
+/* line 63, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+td {
+  border-top: .8px solid lightgray;
+}
+/* line 65, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+td a {
+  text-decoration: none;
+  color: #A9A9A9;
+  font-size: 1em;
+  transition: 0.3s;
+}
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+td a:hover {
+  color: #424C5B;
+}
+
+/* line 76, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+th {
+  color: #B0E0E6;
+  letter-spacing: .5px;
+  font-weight: 100;
+}
+
+/* line 82, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.accordion_section {
+  box-shadow: 0 8px 50px -1px lightgray;
+  z-index: 10;
+  margin-top: 5em;
+  border-left: 5px solid #B0E0E6;
+}
+/* line 87, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.accordion_section .divider {
+  border: .3px solid lightgray;
+}
+
+/* line 92, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.accordion {
+  background-color: #ffffff;
+  color: #A9A9A9;
+  cursor: pointer;
+  padding: 3em;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1em;
+  transition: 0.3s;
+}
+/* line 103, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.accordion:hover {
+  color: #B0E0E6;
+}
+
+/* line 108, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.accordion:after {
+  content: '\002B';
+  color: #424C5B;
+  float: right;
+  margin-left: 5px;
+}
+
+/* line 115, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.active:after {
+  content: "\2212";
+}
+
+/* line 119, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.panel {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* line 126, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.panel hr {
+  border: .3px solid lightgray;
+}
+/* line 129, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.panel p {
+  font-size: 1em;
+  padding: 40px;
+  color: #424C5B;
+  line-height: 1.6em;
+}
+/* line 135, /home/ubuntu/workspace/app/assets/stylesheets/bookings.scss */
+.panel #not_allowed {
+  cursor: not-allowed;
+}
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.chat_bar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 8px 50px -1px lightgray;
+  z-index: 1;
+  padding: 1em;
+  background: #ffffff;
+}
+/* line 13, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.chat_bar .chatBar {
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  padding-bottom: 15px;
+  padding-top: 40px;
+  font-size: 1.1em;
+  padding-left: 2em;
+  border: 0;
+  background: #ffffff;
+}
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.chat_bar .chatBar::placeholder {
+  color: #A9A9A9;
+}
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.chat_bar .chatBar:focus {
+  outline: none;
+  color: #424C5B;
+}
+/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.chat_bar .chatButton {
+  float: right;
+  margin-top: -80px;
+  background: #ffffff;
+  border-radius: 5px;
+  width: 7em;
+  border: 1px solid #A9A9A9;
+  color: #A9A9A9;
+  padding: 1.3em;
+  margin-right: 4em;
+  transition: 0.3s;
+}
+/* line 43, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.chat_bar .chatButton:hover {
+  color: #424C5B;
+  border: 1px solid #424C5B;
+}
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.chat_bar .chatButton:focus {
+  outline: none;
+}
+
+/* line 53, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+#top_booking_bar {
+  background: #B0E0E6;
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+#top_booking_bar h2 {
+  color: #ffffff;
+  padding: 170px 0;
+  text-align: center;
+}
+
+/* line 67, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.wrapper .chat .hr_chat {
+  border: .5px solid lightgray;
+}
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.wrapper .chat .header {
+  color: #424C5B;
+  font-size: 1.2em;
+  max-width: 70%;
+  line-height: 1.6em;
+  padding: 40px;
+}
+/* line 77, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.wrapper .chat .name {
+  color: lightgray;
+  font-size: 1em;
+  margin-top: -5em;
+  padding: 40px;
+}
+
+/* line 86, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+i.fa.fa-comments {
+  float: right;
+  margin-top: -87px;
+  border-radius: 5px;
+  width: 7em;
+  color: #A9A9A9;
+  padding: 1.5em;
+  margin-right: 5.5em;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+/* line 98, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.deposit {
+  float: right;
+  margin-top: -85px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #A9A9A9;
+  padding: 1.5em;
+  margin-right: 14.5em;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+/* line 108, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.deposit:hover {
+  color: #424C5B;
+}
+
+/* line 113, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+i.fa.fa-credit-card-alt {
+  float: right;
+  margin-top: -87px;
+  border-radius: 5px;
+  width: 7em;
+  color: #A9A9A9;
+  padding: 1.5em;
+  margin-right: 18em;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+/* line 125, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.payment {
+  float: right;
+  margin-top: -85px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #A9A9A9;
+  padding: 1.5em;
+  margin-right: 28.5em;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+/* line 135, /home/ubuntu/workspace/app/assets/stylesheets/chats.scss */
+.payment:hover {
+  color: #424C5B;
+}
+/* line 6, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.comment_input {
+  width: 85%;
+  border: 0.8px solid #424C5B;
+  border-radius: 5px;
+  padding: 4em;
+  padding-top: 5em;
+}
+/* line 12, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.comment_input::placeholder {
+  color: #424C5B;
+  font-size: 1em;
+}
+/* line 17, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.comment_input:focus {
+  outline: none;
+  color: #424C5B;
+}
+
+/* line 24, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.comment h3 {
+  max-width: 80%;
+  line-height: 1.6em;
+  padding: 40px;
+  font-size: 1.1em;
+}
+/* line 30, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.comment .bottom {
+  margin-top: -5.5em;
+  color: lightgray;
+  font-size: 1em;
+  padding: 40px;
+}
+/* line 6, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav {
+  height: 100vh;
+  position: fixed;
+  width: 14%;
+  bottom: 0;
+  background: #ffffff;
+  -webkit-box-shadow: 0 8px 50px -1px lightgray;
+  box-shadow: 0 8px 50px -1px lightgray;
+  left: 0;
+}
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav a {
+  position: relative;
+  left: 15px;
+  font-size: .93vw;
+  text-decoration: none;
+  top: -3px;
+  color: #A4B4BB;
+  padding: 0;
+  transition: padding .4s;
+}
+/* line 24, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav a:hover {
+  color: #B0E0E6;
+}
+/* line 28, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav #logo {
+  color: #B0E0E6;
+  font-size: 30px;
+  margin-left: 0;
+  margin-top: 25px;
+  left: 35px;
+}
+/* line 34, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav #logo:hover {
+  border-left: 0;
+  padding: 0;
+  color: #A4B4BB;
+}
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group {
+  position: relative;
+  top: 15%;
+  font-size: 27px;
+  left: 15px;
+}
+/* line 45, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group .fa.fa-th-large {
+  color: #A4B4BB;
+}
+/* line 49, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group2 {
+  position: relative;
+  top: 20%;
+  font-size: 27px;
+  left: 15px;
+}
+/* line 54, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group2 .fa.fa-building {
+  color: #A4B4BB;
+}
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group3 {
+  position: relative;
+  top: 30%;
+  font-size: 27px;
+  left: 35px;
+}
+/* line 63, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group3 .fa.fa-pencil {
+  color: #A4B4BB;
+}
+/* line 67, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group4 {
+  position: relative;
+  top: 35%;
+  font-size: 27px;
+  left: 35px;
+}
+/* line 72, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group4 a {
+  left: 20px;
+}
+/* line 75, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group4 .fa.fa-bookmark {
+  color: #A4B4BB;
+}
+/* line 79, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group5 {
+  position: relative;
+  top: 72%;
+  font-size: 27px;
+  left: 35px;
+}
+/* line 84, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group5 a {
+  left: 20px;
+}
+/* line 87, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group5 .fa.fa-sign-out {
+  color: #A4B4BB;
+}
+/* line 91, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group6 {
+  position: relative;
+  top: 25%;
+  font-size: 27px;
+  left: 35px;
+}
+/* line 96, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group6 a {
+  left: 15px;
+}
+/* line 99, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#sidenav .group6 .fa.fa-plus {
+  color: #A4B4BB;
+}
+
+/* line 105, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.admin_name {
+  color: #424C5B;
+  position: relative;
+  top: 80px;
+  float: right;
+  right: 50%;
+  font-size: 1.2em;
+  transition: color .5s;
+}
+/* line 113, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.admin_name:hover {
+  color: #B0E0E6;
+}
+/* line 116, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.admin_name #logo {
+  text-decoration: none;
+}
+
+/* line 121, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.admin_name2 {
+  color: #424C5B;
+  position: relative;
+  top: 43px;
+  float: right;
+  right: 1%;
+  font-size: 1.1em;
+  transition: color .5s;
+}
+/* line 129, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.admin_name2:hover {
+  color: #B0E0E6;
+}
+/* line 132, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.admin_name2 #logo {
+  text-decoration: none;
+}
+
+/* line 137, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#posts_dashboard {
+  width: 70%;
+  float: right;
+}
+/* line 140, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#posts_dashboard .post_dashboard {
+  background: transparent;
+  width: 30%;
+  float: left;
+  margin: 1rem 2.5%;
+  border: 0px solid #E4E4E4;
+  margin-bottom: 100px;
+}
+/* line 148, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#posts_dashboard .post_dashboard .post_image_dashboard img {
+  width: 100%;
+  height: 100%;
+}
+/* line 153, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#posts_dashboard .post_dashboard .post_content_dashboard {
+  margin-top: 30px;
+}
+/* line 155, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#posts_dashboard .post_dashboard .post_content_dashboard .venuetext {
+  color: #424C5B;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 163, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+#posts_dashboard .post_dashboard .post_content_dashboard .venuetext:hover {
+  color: #B0E0E6;
+}
+
+/* line 172, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.dashboard #posts {
+  width: 100%;
+  padding-top: 0px;
+  margin-right: 0px;
+  left: 10%;
+  position: relative;
+}
+/* line 180, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.dashboard .top_nav img {
+  position: relative;
+  top: 40px;
+  right: 5%;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: opacity .5s;
+}
+/* line 189, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.dashboard .top_nav img:hover {
+  opacity: 0.8;
+}
+/* line 194, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.dashboard .title_banner {
+  position: relative;
+  overflow: hidden;
+  top: 150px;
+  width: 200px;
+  left: 20%;
+}
+/* line 200, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.dashboard .title_banner h1 {
+  font-size: 35px;
+  color: #424C5B;
+}
+/* line 204, /home/ubuntu/workspace/app/assets/stylesheets/dashboard.scss */
+.dashboard .title_banner hr {
+  width: 40px;
+  float: left;
+  margin-top: -10px;
+  border: 2px solid #424C5B;
+}
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+body, html {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+/* line 11, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.colour2 {
+  color: #B0E0E6;
+}
+
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.colour {
+  color: #424C5B;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.center {
+  text-align: center;
+}
+
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.hr {
+  border: 2px solid gray;
+  width: 30%;
+  float: left;
+}
+
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+/* line 38, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.topheader2 {
+  background: #F0FFFF;
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
+  width: 100%;
+  overflow: hidden;
+  height: 290px;
+}
+/* line 45, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.topheader2 h1 {
+  color: #A9A9A9;
+  padding: 180px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* line 53, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.topheader {
+  background: #F0FFFF;
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
+  width: 100%;
+  overflow: hidden;
+  height: 380px;
+}
+/* line 60, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.topheader h1 {
+  color: #A9A9A9;
+  padding: 210px 0;
+  text-align: center;
+}
+
+/* line 67, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.button {
+  outline: none;
+  background: transparent;
+  color: #424C5B;
+  text-decoration: none;
+  letter-spacing: .4px;
+  padding: 1.8em 5em;
+  border: 1px solid #424C5B;
+  border-radius: 400px;
+  transition: 0.3s;
+}
+/* line 77, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.button:hover {
+  opacity: 0.8;
+  border-color: #A9A9A9;
+  color: #A9A9A9;
+}
+/* line 82, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.button:focus {
+  outline: none;
+}
+
+/* line 87, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* line 93, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.alert {
+  padding: 30px;
+  background-color: #A9A9A9;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  position: fixed;
+  bottom: 4%;
+  padding-left: 4em;
+  border-radius: 400px;
+  left: 27%;
+  width: 40%;
+  z-index: 1;
+}
+/* line 108, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.alert .closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-right: 18px;
+  position: absolute;
+  right: 42px;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+/* line 123, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.link {
+  color: #424C5B;
+  text-decoration: none;
+  font-weight: 100;
+  transition: 0.3s;
+  font-size: 1.08em;
+}
+/* line 129, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.link:hover {
+  color: #A9A9A9;
+}
+
+/* line 134, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.margin {
+  text-align: center;
+}
+
+/* line 138, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.field {
+  text-align: center;
+}
+/* line 139, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.field .name {
+  border: 0;
+}
+
+/* line 144, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* line 152, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in {
+  outline: none;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1.5px solid #A9A9A9;
+  border-radius: 5px;
+  width: 35%;
+  padding: 2.08em;
+  margin-left: .5em;
+  transition: 0.3s;
+}
+/* line 162, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in::placeholder {
+  color: #A9A9A9;
+  font-size: 1em;
+}
+/* line 166, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in:focus {
+  color: #A9A9A9;
+  border-color: #424C5B;
+}
+/* line 169, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in:focus::placeholder {
+  color: #A9A9A9;
+}
+
+/* line 175, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in2 {
+  outline: none;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1.5px solid #A9A9A9;
+  border-radius: 5px;
+  width: 35%;
+  padding: 30px;
+  padding-top: 45px;
+  transition: 0.3s;
+}
+/* line 185, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in2::placeholder {
+  color: #A9A9A9;
+  font-size: 1em;
+}
+/* line 189, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in2:focus {
+  color: #A9A9A9;
+  border-color: #424C5B;
+}
+/* line 192, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in2:focus::placeholder {
+  color: #A9A9A9;
+}
+
+/* line 198, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.hr_login {
+  width: 60vw;
+  border: .5px solid lightgray;
+}
+
+/* line 204, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.tickbox {
+  margin-right: 10px;
+}
+
+/* line 208, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.ins {
+  outline: none;
+  background: transparent;
+  color: #424C5B;
+  text-decoration: none;
+  border: 0;
+  padding: 1em 1.5em;
+  border-radius: 0;
+}
+/* line 216, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.ins:hover {
+  border: 0;
+  color: #B0E0E6;
+}
+
+/* line 223, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.hide {
+  display: none;
+}
+
+/* line 229, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.avatarbtn .field .button {
+  width: 10%;
+  margin: 0 auto;
+}
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+#logo {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #424C5B;
+  float: left;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+/* line 13, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+#logo:hover {
+  color: #A9A9A9;
+}
+
+/* line 18, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 8px 50px -1px lightgray;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding-bottom: 18px;
+}
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #424C5B;
+  position: relative;
+  top: 28px;
+  float: right;
+  right: 9%;
+}
+/* line 37, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav #overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 10%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 2;
+  cursor: pointer;
+}
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav .list {
+  margin-top: -14px;
+  position: absaloute;
+  padding-right: 50px;
+}
+/* line 55, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav .on {
+  color: #424C5B;
+  position: relative;
+  top: 32px;
+  float: right;
+  right: 3%;
+  font-size: 17.5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* line 64, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav .on:hover {
+  color: #B0E0E6;
+}
+/* line 68, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav .dash {
+  color: #424C5B;
+  position: relative;
+  float: right;
+  right: 12%;
+}
+/* line 73, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav .dash a {
+  padding: 16px 8px;
+}
+/* line 77, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav i {
+  transition: 0.3s ease-out;
+  float: right;
+  display: block;
+  color: #424C5B;
+  margin-right: 30px;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-size: 17.5px;
+  margin-top: 35px;
+}
+/* line 88, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav i:hover {
+  color: #A9A9A9;
+}
+
+/* line 95, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav a {
+  float: right;
+  display: block;
+  color: #424C5B;
+  text-align: center;
+  padding: 16px 10px;
+  text-decoration: none;
+  font-size: 17.5px;
+  margin-top: 33px;
+  transition: 0.3s ease-out;
+}
+/* line 105, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav a:hover {
+  color: #A9A9A9;
+}
+
+/* line 111, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.topnav .icon {
+  display: none;
+}
+
+/* line 115, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.white {
+  color: #ffffff;
+}
+
+/* The Modal (background) */
+/* line 121, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.Searchmodal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+}
+
+/* Modal Content */
+/* line 133, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.Searchmodal-content {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+/* line 137, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.Searchmodal-content .search_wrap {
+  padding-top: 50px;
+}
+/* line 139, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.Searchmodal-content .search_wrap .div_searchTerm {
+  float: left;
+  border-bottom: 1px solid gray;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0;
+  height: 10vh;
+  width: 60vw;
+  max-width: 95%;
+  outline: none;
+  color: gray;
+  text-align: left;
+  border-radius: 0;
+  font-weight: 300;
+}
+/* line 155, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.Searchmodal-content .search_wrap .div_searchTerm2 {
+  float: left;
+  border: 0;
+  width: 57vw;
+  background: transparent;
+  font-size: 15px;
+  margin-top: 30px;
+  border-radius: 0;
+  padding: 0;
+  font-weight: 300;
+  border-bottom: 1px solid gray;
+  height: 10vh;
+  color: gray;
+  -webkit-appearance: none;
+  outline: none;
+  color: gray;
+}
+/* line 172, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.Searchmodal-content .search_wrap .button {
+  margin-top: 50px;
+}
+
+/* The Close Button */
+/* line 179, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.Searchclose {
+  color: #A9A9A9;
+  transition: 0.3s;
+  float: right;
+  font-size: 35px;
+  font-weight: lighter;
+  padding: 40px;
+  padding-top: 45px;
+  padding-right: 65px;
+}
+
+/* line 190, /home/ubuntu/workspace/app/assets/stylesheets/nav.css.scss */
+.Searchclose:hover,
+.Searchclose:focus {
+  color: #424C5B;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* line 13, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 26, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 34, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 48, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 61, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 71, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 80, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 91, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 104, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 114, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 124, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 133, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 143, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 154, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 162, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 171, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 180, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 188, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 192, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 203, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 212, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 221, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 229, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 241, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 257, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 267, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 278, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 289, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 301, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 312, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 323, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 337, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 346, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 355, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 365, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 375, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 384, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 394, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 407, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 416, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 427, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 435, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 446, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[hidden] {
+  display: none;
+}
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer {
+  width: 60%;
+  margin: 0 auto;
+}
+/* line 8, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .area {
+  background: #ffffff;
+  padding: 35px;
+  border: 1.5px solid #A9A9A9;
+  border-radius: 5px;
+}
+/* line 14, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .main_area {
+  width: 84%;
+  border: 1.5px solid #A9A9A9;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 4em;
+  padding-left: 5em;
+  padding-top: 5em;
+}
+/* line 22, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .main_area::placeholder {
+  color: #424C5B;
+  font-size: 1em;
+}
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .main_area:focus {
+  outline: none;
+  border-color: #424C5B;
+}
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .number_area {
+  font-size: 1em;
+  border: 0;
+}
+/* line 36, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .number_area::placeholder {
+  color: #424C5B;
+}
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .number_area:focus {
+  outline: none;
+  color: #424C5B;
+}
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .time_area {
+  border: 0;
+  color: #424C5B;
+  font-size: 1em;
+  background: #ffffff;
+}
+/* line 52, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .time_area:focus {
+  outline: none;
+  color: #424C5B;
+}
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer label {
+  color: #424C5B;
+  font-size: 1em;
+  padding: 40px;
+}
+/* line 65, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .offer_hr {
+  border: .5px solid lightgray;
+}
+/* line 67, /home/ubuntu/workspace/app/assets/stylesheets/offers.scss */
+.offer .offer_hr:focus {
+  outline: none;
+  color: #424C5B;
+}
+/* line 7, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.explore_text h1 {
+  color: #424C5B;
+  position: absolute;
+  left: 15%;
+  font-size: 2.6em;
+  top: 85%;
+}
+/* line 14, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.explore_text #posts {
+  margin-top: 22.5em;
+}
+
+/* line 20, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.search {
+  width: 60vw;
+  position: absolute;
+  box-shadow: 0 8px 50px -1px lightgray;
+  top: 59%;
+  left: 44.5%;
+  border-radius: 4px;
+  height: 15.5vh;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+}
+
+/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.searchline {
+  border-left: .8px solid #A9A9A9;
+  height: 8vh;
+  position: absolute;
+  left: 43%;
+  margin-left: -3px;
+  top: 23%;
+}
+
+/* line 41, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.searchTerm {
+  float: left;
+  border: 0;
+  position: absolute;
+  left: 35.5vw;
+  height: 100%;
+  background: transparent;
+  font-size: 1em;
+  padding: 0px;
+  -moz-appearance: window;
+  -webkit-appearance: none;
+  color: #424C5B;
+  outline: none;
+  letter-spacing: .8px;
+  font-weight: 500;
+}
+/* line 56, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.searchTerm::placeholder {
+  color: #424C5B;
+}
+
+/* line 62, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.searchTerm2 {
+  float: left;
+  border: 0;
+  position: absolute;
+  left: 9.5vw;
+  height: 100%;
+  background: transparent;
+  font-size: 1em;
+  padding: 0px;
+  -moz-appearance: window;
+  -webkit-appearance: none;
+  color: #424C5B;
+  outline: none;
+  letter-spacing: .8px;
+  font-weight: 500;
+}
+
+/* line 79, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.searchButton {
+  position: absolute;
+  width: 8vw;
+  right: 0;
+  border-radius: 0 4px 4px 0;
+  height: 100%;
+  background: #424C5B;
+  transition: 0.3s;
+  border: 0;
+  text-align: center;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 500;
+}
+/* line 92, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.searchButton:focus {
+  outline: none;
+}
+/* line 95, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.searchButton:hover {
+  opacity: 0.8;
+}
+
+/* line 101, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.search_page .searchButton {
+  position: absolute;
+  right: -10px;
+  width: 10vw;
+  height: 14.25vh;
+  border: 0;
+  background: #424C5B;
+  text-align: center;
+  color: #F3F6F9;
+  font-size: 15px;
+  -webkit-transition: width 1s;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+/* line 114, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.search_page .searchButton:hover {
+  width: 250px;
+  background: #3F4857;
+}
+
+/* line 123, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image {
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
+  height: 61%;
+  background: #F0FFFF;
+  overflow: hidden;
+}
+/* line 124, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .topnav {
+  background: transparent;
+  position: static;
+  box-shadow: 0 0px 0px 0px #424C5B;
+}
+/* line 128, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .topnav i {
+  color: #A9A9A9;
+}
+/* line 130, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .topnav i:hover {
+  color: #424C5B;
+}
+/* line 134, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .topnav #overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 10%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F0FFFF;
+  z-index: 2;
+  cursor: pointer;
+}
+/* line 147, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .topnav .on {
+  color: #A9A9A9;
+}
+/* line 149, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .topnav .on:hover {
+  color: #424C5B;
+}
+/* line 154, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image #logo {
+  color: #A9A9A9;
+}
+/* line 156, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image #logo:hover {
+  color: #424C5B;
+}
+/* line 160, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .topnav a {
+  color: #A9A9A9;
+}
+/* line 162, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .topnav a:hover {
+  color: #424C5B;
+}
+/* line 172, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .top_hero_image {
+  height: 100%;
+  width: 100%;
+  left: 60%;
+  position: relative;
+  float: right;
+}
+/* line 180, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .hero-text {
+  text-align: left;
+  position: absolute;
+  top: 37%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  color: #424C5B;
+  font-size: 1.3vw;
+}
+/* line 188, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.hero-image .hero-text h2 {
+  color: #A9A9A9;
+  letter-spacing: 1px;
+  font-size: 1.6vw;
+  margin-top: -10px;
+}
+
+/* line 199, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+#footer {
+  background: #ffffff;
+  padding: 40px;
+  padding-left: 0;
+}
+/* line 203, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+#footer #top_margin {
+  margin-top: 15px;
+}
+/* line 207, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+#footer ul {
+  list-style-type: none;
+}
+/* line 210, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+#footer li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 15px;
+}
+/* line 215, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+#footer .tex {
+  color: gray;
+  text-decoration: none;
+}
+/* line 219, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+#footer .tex:hover {
+  color: #00CED1;
+}
+
+/* line 227, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container {
+  min-height: 45%;
+  position: relative;
+  background: #ffffff;
+  border-top: .5px solid #A9A9A9;
+  margin-top: 50px;
+}
+/* line 233, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container .footer {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  /* Height of the footer */
+  margin-bottom: 250px;
+}
+/* line 241, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container .footer .copywright p {
+  color: #424C5B;
+  position: absolute;
+  font-weight: 100;
+  top: 115%;
+  left: 25%;
+  letter-spacing: 2px;
+  font-size: 1em;
+}
+/* line 251, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container .footer #footer_links {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+}
+/* line 255, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container .footer #footer_links a {
+  text-decoration: none;
+  color: #A9A9A9;
+  font-size: .95em;
+  transition: 0.3s;
+  letter-spacing: .4px;
+}
+/* line 263, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container .footer #footer_links li {
+  list-style-type: none;
+  margin-top: 18px;
+}
+/* line 267, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container .footer #footer_links #title {
+  color: #424C5B;
+  letter-spacing: 2px;
+  font-size: .8em;
+}
+/* line 274, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container .footer #footer_links_social {
+  position: absolute;
+  top: 60%;
+  left: 58%;
+}
+/* line 278, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container .footer #footer_links_social a {
+  text-decoration: none;
+  color: #A9A9A9;
+  font-size: .95em;
+  letter-spacing: .4px;
+  transition: 0.3s;
+}
+/* line 287, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container .footer #footer_links_social li {
+  list-style-type: none;
+  margin-top: 18px;
+}
+/* line 291, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.footer_container .footer #footer_links_social #title {
+  color: #424C5B;
+  letter-spacing: 2px;
+  font-size: .8em;
+}
+
+/* line 302, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+#content h1 {
+  text-align: center;
+  color: #424C5B;
+  font-size: 40px;
+}
+/* line 307, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+#content .content {
+  padding-top: 0px;
+  font-size: 20px;
+  font-weight: 100;
+  color: #424C5B;
+}
+/* line 312, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+#content .content p {
+  letter-spacing: 20px;
+}
+
+/* line 318, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.about_image {
+  height: 9em;
+  width: 9em;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* line 326, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.down {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 334, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.column {
+  float: left;
+  width: 70%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  position: relative;
+  left: 32%;
+}
+
+/* line 344, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.card img {
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+}
+/* line 349, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.card .container {
+  padding-top: 30px;
+}
+/* line 353, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.card .container::after, .card .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* line 365, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.LYV .top {
+  padding: 2.5em;
+  text-align: center;
+  color: #424C5B;
+  line-height: 2em;
+  padding-bottom: 0;
+}
+
+/* line 377, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.wrapper #content #overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 2;
+  cursor: pointer;
+}
+/* line 390, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.wrapper #content .video {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: red;
+}
+/* line 398, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.wrapper #content hr {
+  border: .3px solid lightgray;
+}
+/* line 401, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.wrapper #content .icon {
+  display: block;
+  margin: auto;
+  width: 50%;
+  width: 5em;
+  height: 5em;
+}
+/* line 408, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.wrapper #content h1 {
+  color: #424C5B;
+  font-size: 1.8em;
+}
+/* line 412, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.wrapper #content p {
+  text-align: center;
+  color: #424C5B;
+  font-size: 1.25em;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
+/* line 422, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.call_to_action {
+  border-top-left-radius: 100% 10%;
+  border-top-right-radius: 100% 10%;
+  width: 100%;
+  background: #F0FFFF;
+  height: 30em;
+  margin-top: 6em;
+  margin-bottom: -3.2em;
+}
+/* line 430, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.call_to_action h1 {
+  color: #424C5B;
+  text-align: center;
+  font-size: 1.9em;
+  position: relative;
+  top: 38%;
+}
+/* line 437, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.call_to_action .button_section {
+  text-align: center;
+  position: relative;
+  top: 42%;
+}
+/* line 441, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.call_to_action .button_section .button {
+  padding: 2em 3em;
+}
+
+/* line 448, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue {
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
+  height: 70%;
+  background: #F0FFFF;
+  width: 100%;
+}
+/* line 451, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue .topnav {
+  background: transparent;
+  position: static;
+  box-shadow: 0 0px 0px 0px #424C5B;
+}
+/* line 455, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue .topnav i {
+  color: #A9A9A9;
+}
+/* line 457, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue .topnav i:hover {
+  color: #424C5B;
+}
+/* line 462, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue #logo {
+  color: #A9A9A9;
+}
+/* line 464, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue #logo:hover {
+  color: #424C5B;
+}
+/* line 468, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue .topnav a {
+  color: #A9A9A9;
+}
+/* line 470, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue .topnav a:hover {
+  color: #424C5B;
+}
+/* line 478, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue .list_venue_text {
+  text-align: left;
+  position: absolute;
+  top: 37%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #424C5B;
+  font-size: 1.5vw;
+}
+/* line 487, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue .list_venue_text h2 {
+  color: #A9A9A9;
+  letter-spacing: 1px;
+  font-size: 1.8vw;
+  margin-top: -10px;
+}
+/* line 494, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue .button_section {
+  position: absolute;
+  top: 36%;
+  right: 20%;
+}
+/* line 498, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue .button_section p {
+  margin-top: 2.1em;
+  color: #ffffff;
+}
+/* line 502, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.list_venue .button_section .button {
+  padding: 2em 3em;
+}
+
+/* line 508, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.top_image {
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+/* line 513, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.top_image .top_hero_image {
+  height: 100%;
+  width: 100%;
+  left: 60%;
+  position: relative;
+  float: right;
+}
+/* line 521, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.top_image .button {
+  top: 130%;
+  position: absolute;
+  padding: 1.5em 4em;
+}
+/* line 526, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.top_image .top_image_text {
+  text-align: left;
+  position: absolute;
+  top: 39%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  color: #424C5B;
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+/* line 535, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.top_image .top_image_text h2 {
+  color: lightgray;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 1.8vw;
+}
+
+/* line 546, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .line {
+  border-left: 3px solid lightgray;
+  height: 170%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 80%;
+}
+/* line 554, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .circle2 {
+  background: #B0E0E6;
+  border-radius: 400px;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  left: 49.2%;
+  top: 103%;
+}
+/* line 563, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .circle3 {
+  background: #B0E0E6;
+  border-radius: 400px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 49.2%;
+  top: 153%;
+}
+/* line 572, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .circle4 {
+  background: #B0E0E6;
+  border-radius: 400px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 49.2%;
+  top: 210%;
+}
+/* line 581, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid #messageillustration {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 15%;
+  top: 95%;
+}
+/* line 588, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid #twitterillustration {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 15%;
+  top: 145%;
+}
+/* line 595, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid #supportillustration {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 15%;
+  top: 205%;
+}
+/* line 603, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .content_text .content_text_2 {
+  position: absolute;
+  left: 15%;
+  top: 95%;
+}
+/* line 607, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .content_text .content_text_2 h1 {
+  color: #4D565A;
+  font-weight: 100;
+  margin: 0;
+  font-size: 50px;
+}
+/* line 613, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .content_text .content_text_2 p {
+  color: #99A9B2;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 20px;
+}
+/* line 620, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .content_text .content_text_3 {
+  position: absolute;
+  right: 17%;
+  top: 145%;
+}
+/* line 624, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .content_text .content_text_3 h1 {
+  color: #4D565A;
+  font-weight: 100;
+  margin: 0;
+  font-size: 60px;
+}
+/* line 630, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .content_text .content_text_3 p {
+  color: #99A9B2;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 23px;
+}
+/* line 637, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .content_text .content_text_4 {
+  position: absolute;
+  left: 15%;
+  top: 205%;
+}
+/* line 641, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .content_text .content_text_4 h1 {
+  color: #4D565A;
+  font-weight: 100;
+  margin: 0;
+  font-size: 60px;
+}
+/* line 647, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.content_grid .content_text .content_text_4 p {
+  color: #99A9B2;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 23px;
+}
+
+/* line 657, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.pcolour {
+  color: #424C5B;
+  text-decoration: none;
+}
+/* line 661, /home/ubuntu/workspace/app/assets/stylesheets/page.scss */
+.pcolour a:hover {
+  color: #B0E0E6;
+}
+@media (max-width: 650px) {
+  /* line 8, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (min-width: 1655px) {
+  /* line 18, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #venueForm button {
+    padding: 25px 65px;
+    padding-right: 60px;
+    padding-left: 60px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+    width: 10vw;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  /* line 33, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .mobile_only {
+    display: none;
+  }
+
+  /* line 36, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #just_hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* line 41, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  /* line 42, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* line 49, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav.responsive {
+    position: fixed;
+    height: 100vh;
+  }
+  /* line 52, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav.responsive i {
+    margin-top: 36px;
+  }
+
+  /* line 58, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 50px;
+    top: 15px;
+  }
+
+  /* line 65, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    color: #424C5B;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  /* line 76, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #hammenu {
+    color: #424C5B;
+  }
+
+  /* line 80, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue #hammenu {
+    color: #ffffff;
+  }
+  /* line 83, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .topnav.responsive {
+    background: #ffffff;
+  }
+  /* line 85, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .topnav.responsive #hammenu {
+    color: #424C5B;
+  }
+  /* line 88, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .topnav.responsive #logo {
+    color: #424C5B;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 97, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .comment_input {
+    width: 60%;
+    padding: 3em;
+    padding-top: 4em;
+  }
+
+  /* line 106, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .chat_bar .chatBar {
+    width: 45%;
+    height: 100%;
+    padding: 0px;
+    padding-top: 25px;
+    padding-left: 8px;
+    border: 0;
+    background: #ffffff;
+  }
+  /* line 115, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .chat_bar .chatButton {
+    float: right;
+    margin-top: -55px;
+    border-radius: 5px;
+    padding: 0.9em;
+    width: 6em;
+    margin-right: 2.5em;
+  }
+
+  /* line 127, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper {
+    width: 90%;
+  }
+  /* line 130, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper .venue_image img {
+    width: 100%;
+    height: 35vh;
+  }
+  /* line 135, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper .contact_nav {
+    margin-top: 20px;
+    width: 0%;
+    float: left;
+  }
+  /* line 139, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper .contact_nav .secTwo {
+    position: absolute;
+    left: 5%;
+  }
+  /* line 145, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper .tab-frame {
+    margin-top: 5em;
+    position: absolute;
+    width: 90%;
+  }
+  /* line 152, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper .tab .description {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  /* Modal Content */
+  /* line 184, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchmodal-content {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 188, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchmodal-content .search_wrap {
+    padding-top: 50px;
+  }
+  /* line 190, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchmodal-content .search_wrap .div_searchTerm {
+    float: left;
+    border-bottom: 1px solid gray;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    height: 10vh;
+    width: 70vw;
+    max-width: 95%;
+    outline: none;
+    text-align: left;
+    font-weight: 300;
+  }
+  /* line 204, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchmodal-content .search_wrap .div_searchTerm2 {
+    float: left;
+    border: 0;
+    width: 67vw;
+    background: transparent;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 0;
+    font-weight: 300;
+    border-bottom: 1px solid gray;
+    height: 10vh;
+    color: gray;
+    -webkit-appearance: none;
+    outline: none;
+  }
+  /* line 219, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchmodal-content .search_wrap .button {
+    margin-top: 50px;
+    padding: 1.5em 3.5em;
+  }
+
+  /* line 226, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchclose {
+    transition: 0.3s;
+    float: right;
+    font-size: 35px;
+    font-weight: lighter;
+    padding: 40px;
+    padding-top: 30px;
+    padding-right: 35px;
+  }
+
+  /* line 236, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .search {
+    width: 80vw;
+    left: 50%;
+    margin-top: -4.5em;
+  }
+
+  /* line 244, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .searchButton {
+    width: 100%;
+    height: 80px;
+    -webkit-transition: width 0s;
+    right: 0;
+    position: relative;
+    -webkit-transition: width 0s;
+    text-align: center;
+    border: 0;
+    margin-left: 0;
+    left: 0;
+    color: #ffffff;
+  }
+  /* line 257, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .searchButton:hover {
+    width: 100%;
+    background: #424C5B;
+  }
+
+  /* line 262, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .searchTerm {
+    font-size: 13px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: 7em;
+    text-indent: 1.5em;
+    background: #ffffff;
+    left: 0;
+  }
+
+  /* line 272, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .searchTerm2 {
+    width: 100%;
+    border-bottom: .5px solid #d6dce0;
+    height: 7em;
+    position: relative;
+    font-size: 13px;
+    text-indent: 1.5em;
+    left: 0;
+    outline: none;
+    -webkit-appearance: none;
+  }
+
+  /* line 285, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .dashboard_nav .topnav a {
+    padding: 12px 20px;
+  }
+  /* line 288, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .dashboard_nav #logo {
+    padding: 16px 20px;
+  }
+
+  /* line 294, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .dashboard .title_banner {
+    position: relative;
+    top: 110px;
+    left: 10%;
+  }
+
+  /* line 301, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #venueForm #prevBtn {
+    margin-right: 0px;
+    padding: 25px 65px;
+    padding-right: 120px;
+    padding-left: 60px;
+  }
+  /* line 307, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #venueForm button {
+    padding: 25px 65px;
+    padding-right: 120px;
+    padding-left: 60px;
+  }
+  /* line 312, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #venueForm #nextBtn {
+    text-indent: 10px;
+  }
+
+  /* line 316, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding-bottom: 10px;
+  }
+  /* line 324, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav .searchico {
+    margin-top: 7px;
+    float: right;
+    margin-right: 50px;
+    color: #B0E0E6;
+  }
+  /* line 330, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav a i {
+    font-size: 25px;
+  }
+  /* line 332, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav .on {
+    display: none;
+  }
+  /* line 336, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav .dash {
+    display: none;
+  }
+  /* line 340, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav #overlay {
+    display: none;
+  }
+  /* line 344, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav i {
+    transition: 0.3s ease-out;
+    float: right;
+    display: block;
+    color: #424C5B;
+    margin-right: 30px;
+    text-align: center;
+    padding: 16px 9px;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 20px;
+    margin-top: 33px;
+  }
+  /* line 356, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav i:hover {
+    color: #A9A9A9;
+  }
+
+  /* line 364, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hr_login {
+    width: 100%;
+  }
+
+  /* line 368, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #prevBtn {
+    margin-bottom: 20px;
+  }
+
+  /* line 373, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .dashboard #posts {
+    width: 90%;
+    margin-right: 30px;
+  }
+
+  /* line 380, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts {
+    width: 90%;
+    float: right;
+    padding-top: 70px;
+    right: 0;
+    margin-right: 30px;
+  }
+  /* line 386, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post {
+    background: transparent;
+    box-shadow: 0 8px 50px -1px lightgray;
+    width: 100%;
+    float: left;
+    margin: 1rem 4%;
+    margin-bottom: 100px;
+    height: 25em;
+  }
+  /* line 394, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post:hover {
+    box-shadow: 0 10px 100px -1px lightgray;
+  }
+  /* line 398, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post .post_image img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: 50%;
+  }
+  /* line 404, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post .post_content {
+    padding-left: 30px;
+    padding-top: 60px;
+  }
+  /* line 407, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post .post_content .venuetext {
+    color: #424C5B;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+  }
+  /* line 416, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post .post_content .venuecat {
+    color: #B0E0E6;
+    font-size: 19px;
+    text-decoration: none;
+  }
+  /* line 422, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post .post_content .venuecity {
+    color: lightgray;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  /* line 431, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #down {
+    padding-top: 90px;
+  }
+
+  /* line 435, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .floating-box2 {
+    padding: 0;
+    border: 0;
+  }
+
+  /* line 442, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #sidenav {
+    display: none;
+  }
+
+  /* line 446, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #logo2 {
+    display: none;
+  }
+
+  /* line 450, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .accordion_wrapper {
+    margin-top: 170em;
+  }
+
+  /* line 454, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_section .ameneties_container {
+    position: absolute;
+    left: 20%;
+  }
+  /* line 457, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_section .ameneties_container .ameneties-grid {
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    padding-right: 0px;
+    margin: 0px;
+  }
+  /* line 463, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_section .ameneties_container .ameneties-grid i {
+    color: #00CED1;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  /* line 472, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .not_mobile {
+    display: none;
+  }
+
+  /* line 475, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image {
+    height: 70%;
+    width: 100vw;
+    overflow: hidden;
+  }
+  /* line 479, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image .top_image_text {
+    color: #ffffff;
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    font-size: 14px;
+  }
+  /* line 485, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image .top_image_text .get_started_button {
+    outline: none;
+    background: #ffffff;
+    color: #424C5B;
+    text-decoration: none;
+    padding: .9em 1.2em;
+    font-size: 15px;
+    border-radius: .2em;
+  }
+  /* line 493, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image .top_image_text .get_started_button:hover {
+    background: #008080;
+    color: #ffffff;
+  }
+  /* line 500, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image .top_image_img #ideaimg {
+    display: none;
+  }
+  /* line 504, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image .top_image_symbol {
+    color: #ffffff;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    font-size: 50px;
+  }
+
+  /* line 514, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid #messageillustration {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: 90%;
+  }
+  /* line 521, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid #twitterillustration {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: 160%;
+  }
+  /* line 528, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid #supportillustration {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: 230%;
+  }
+  /* line 535, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .line {
+    border-left: 4px solid gray;
+    height: 230%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    display: none;
+    top: 100%;
+  }
+  /* line 544, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .circle1 {
+    background: #B0E0E6;
+    border-radius: 400px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 49.2%;
+    top: 130%;
+    display: none;
+  }
+  /* line 554, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .circle2 {
+    background: #B0E0E6;
+    border-radius: 400px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 49.2%;
+    display: none;
+    top: 185%;
+  }
+  /* line 564, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .circle3 {
+    background: #B0E0E6;
+    border-radius: 400px;
+    height: 30px;
+    width: 30px;
+    display: none;
+    position: absolute;
+    left: 49.2%;
+    top: 240%;
+  }
+  /* line 574, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .circle4 {
+    background: #B0E0E6;
+    border-radius: 400px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    display: none;
+    left: 49.2%;
+    top: 295%;
+  }
+  /* line 586, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_1 {
+    position: absolute;
+    right: 10%;
+    top: 120%;
+  }
+  /* line 590, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_1 h1 {
+    color: #4D565A;
+    margin: 0;
+    font-size: 60px;
+    font-weight: 100;
+  }
+  /* line 596, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_1 p {
+    color: #99A9B2;
+    margin: 0;
+    margin-top: 30px;
+    font-size: 23px;
+  }
+  /* line 603, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_2 {
+    position: absolute;
+    left: 10%;
+    top: 115%;
+  }
+  /* line 607, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_2 h1 {
+    color: #4D565A;
+    font-weight: 100;
+    margin: 0;
+    font-size: 30px;
+  }
+  /* line 613, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_2 p {
+    color: #99A9B2;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 620, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_3 {
+    position: absolute;
+    left: 10%;
+    top: 185%;
+  }
+  /* line 624, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_3 h1 {
+    color: #4D565A;
+    font-weight: 100;
+    margin: 0;
+    font-size: 30px;
+  }
+  /* line 630, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_3 p {
+    color: #99A9B2;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 637, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_4 {
+    position: absolute;
+    left: 10%;
+    top: 260%;
+    padding-bottom: 150px;
+  }
+  /* line 642, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_4 h1 {
+    color: #4D565A;
+    font-weight: 100;
+    margin: 0;
+    font-size: 30px;
+  }
+  /* line 648, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_4 p {
+    color: #99A9B2;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  /* line 663, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .admin_banner {
+    height: 200px;
+    margin-bottom: 0;
+  }
+  /* line 666, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .admin_banner h1 {
+    font-size: 25px;
+    padding: 50px 0;
+  }
+
+  /* line 676, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .avatarbtn .field .button {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* line 685, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hr_login {
+    width: 70%;
+  }
+
+  /* line 689, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #logo {
+    margin-left: 20px;
+  }
+
+  /* line 694, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .contactbtn {
+    padding: 5px;
+  }
+  /* line 696, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .contactbtn:hover {
+    background: #B0E0E6;
+  }
+  /* line 699, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .contactbtn h4 {
+    position: relative;
+    left: 30%;
+    color: white;
+    font-size: 20px;
+  }
+
+  /* line 709, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .admincontact .topbar img {
+    border-radius: 400px;
+    width: 170px;
+    height: 170px;
+    position: relative;
+    left: 24%;
+    top: 10vh;
+  }
+  /* line 717, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .admincontact .topbar .name {
+    color: #ffffff;
+    position: relative;
+    left: 24%;
+    top: 20%;
+  }
+  /* line 723, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .admincontact .topbar .name2 {
+    color: #ffffff;
+    position: relative;
+    left: 40%;
+    top: 45%;
+  }
+
+  /* line 735, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapper #content .video {
+    display: none;
+  }
+  /* line 738, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapper #content p {
+    text-align: left;
+    color: #778899;
+    font-size: 1.18em;
+    line-height: 1.5em;
+  }
+
+  /* line 748, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .LYV .top {
+    padding-top: 0;
+    text-align: center;
+    color: #424C5B;
+    line-height: 2em;
+    padding-bottom: 0;
+    margin-top: 3em;
+  }
+
+  /* line 759, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue {
+    height: 85%;
+    width: 100%;
+  }
+  /* line 762, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .list_venue_text {
+    text-align: left;
+    top: 40%;
+    left: 46%;
+    font-size: .95em;
+    font-weight: 700;
+    line-height: 3em;
+    letter-spacing: .15em;
+  }
+  /* line 770, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .list_venue_text h2 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    margin-top: -15px;
+  }
+  /* line 777, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .button_section {
+    position: absolute;
+    top: 65%;
+    right: 25%;
+  }
+  /* line 781, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .button_section .button {
+    padding: 1.3em 2.2em;
+  }
+  /* line 784, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .button_section p {
+    margin-top: 1.5em;
+  }
+
+  /* line 792, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .call_to_action h1 {
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: .5em;
+    width: 70%;
+    margin: 0 auto;
+  }
+  /* line 800, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .call_to_action .button_section {
+    text-align: center;
+  }
+  /* line 802, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .call_to_action .button_section .button {
+    padding: 1.5em 2em;
+  }
+
+  /* line 809, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #searchReasults {
+    left: 5%;
+    max-width: 90%;
+  }
+
+  /* line 815, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .explore_text h1 {
+    color: #424C5B;
+    position: absolute;
+    left: 10.5%;
+    font-size: 35px;
+    top: 115%;
+  }
+
+  /* line 825, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .page_search .wrap {
+    top: 110%;
+    left: 38.8%;
+  }
+
+  /* line 833, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .searchline {
+    display: none;
+  }
+
+  /* line 836, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #login {
+    margin-top: 150px;
+  }
+
+  /* line 840, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .login {
+    outline: none;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: .5em;
+    width: 100px;
+  }
+  /* line 846, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .login:hover {
+    border: 0;
+    color: #008080;
+  }
+
+  /* line 854, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #footer li {
+    display: block;
+    margin-top: 8px;
+  }
+  /* line 858, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #footer #top_margin {
+    margin-top: 8px;
+  }
+
+  /* line 863, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .footer_container {
+    min-height: 80%;
+  }
+  /* line 865, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .footer_container .footer {
+    height: 200px;
+    border-top: 0;
+  }
+  /* line 869, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .footer_container .footer .copywright p {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 1.2em;
+  }
+  /* line 876, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .footer_container .footer #footer_links {
+    position: absolute;
+    top: 75%;
+    left: 0%;
+  }
+  /* line 881, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .footer_container .footer #footer_links_social {
+    position: absolute;
+    top: 75%;
+    left: 55%;
+  }
+
+  /* line 889, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #text2 {
+    display: none;
+  }
+
+  /* line 893, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background: #ffffff;
+    height: 120%;
+  }
+  /* line 894, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .none {
+    display: none;
+  }
+  /* line 905, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .topnav {
+    background: #ffffff;
+  }
+  /* line 907, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .topnav #logo {
+    color: #424C5B;
+  }
+  /* line 910, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .topnav i {
+    color: #424C5B;
+  }
+  /* line 915, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .hero-text {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    font-size: 4vw;
+    width: 80vw;
+  }
+  /* line 921, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .hero-text h2 {
+    font-size: 5.5vw;
+  }
+  /* line 925, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .top_hero_image {
+    display: none;
+  }
+
+  /* line 933, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top {
+    margin-top: 150px;
+  }
+
+  /* line 937, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .explore_text h1 {
+    left: 5%;
+  }
+  /* line 940, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .explore_text #posts {
+    margin-top: 100px;
+  }
+
+  /* line 944, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #logo {
+    margin-left: 5px;
+  }
+
+  /* line 949, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapper {
+    width: 70%;
+  }
+
+  /* line 953, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapperven {
+    width: 90%;
+  }
+
+  /* line 957, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapperven {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  /* line 961, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapperven .desc {
+    max-width: 50%;
+    color: #708090;
+  }
+  /* line 965, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapperven img {
+    height: 30vh;
+    width: 100%;
+  }
+
+  /* line 971, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .tablink {
+    background-color: gray;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 24px 16px;
+    font-size: 12px;
+    width: 25%;
+  }
+
+  /* line 987, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .column {
+    float: left;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    position: relative;
+    left: 0%;
+  }
+
+  /* line 997, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #content h1 {
+    text-align: left;
+    font-size: 40px;
+  }
+  /* line 1001, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #content .content {
+    padding-top: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #696969;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* line 1011, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .floating-box {
+    float: left;
+    width: 150px;
+    height: 75px;
+    margin: 50px;
+    margin-bottom: 300px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  /* line 1026, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #tablet_hide {
+    display: none;
+  }
+
+  /* line 1030, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #down {
+    padding-top: 50px;
+  }
+
+  /* line 1035, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .not_mobile {
+    display: none;
+  }
+
+  /* line 1042, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hr_login {
+    width: 50%;
+  }
+
+  /* line 1048, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .icon {
+    color: gray;
+  }
+
+  /* line 1056, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .photo img {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 1069, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .not_mobile {
+    display: none;
+  }
+
+  /* line 1078, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .photo-item img {
+    height: 30%;
+  }
+
+  /* line 1085, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .modal-content {
+    height: 60%;
+  }
+
+  /* line 1091, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+  /* line 1098, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .login {
+    outline: none;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: .5em;
+    width: 70px;
+  }
+  /* line 1104, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .login:hover {
+    border: 1px solid #008080;
+    color: #008080;
+  }
+
+  /* line 1110, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #down {
+    margin-top: 50px;
+  }
+
+  /* line 1115, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .login:hover {
+    border: 0;
+    color: #008080;
+  }
+}
+@media only screen and (max-width: 1451px) {
+  /* line 1129, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .not_mobile {
+    display: none;
+  }
+
+  /* line 1132, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .none {
+    display: none;
+  }
+
+  /* line 1139, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hr_login {
+    width: 70%;
+  }
+}
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.hr_short {
+  width: 30px;
+  border: 2px solid #424C5B;
+  margin-top: -.1em;
+  float: left;
+}
+
+/* line 11, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#searchReasults {
+  margin-top: 10em;
+  position: relative;
+  max-width: 70%;
+  left: 15%;
+  line-height: 2.5em;
+}
+
+/* line 20, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.search_banner .title_banner {
+  position: absolute;
+  padding-top: 110px;
+  max-width: 100vw;
+  left: 10%;
+}
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.search_banner .title_banner h1 {
+  font-size: 35px;
+  color: #424C5B;
+}
+/* line 29, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.search_banner .title_banner hr {
+  width: 40px;
+  float: left;
+  margin-top: -10px;
+  border: 2px solid #424C5B;
+}
+
+/* line 38, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.ib {
+  margin-right: 0px;
+}
+
+/* line 43, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#posts {
+  width: 86%;
+  float: right;
+  position: relative;
+  right: 1%;
+  padding-top: 3em;
+}
+/* line 49, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#posts .post {
+  background: #ffffff;
+  box-shadow: 0 8px 50px -1px lightgray;
+  width: 23%;
+  float: left;
+  margin: 1rem 3%;
+  margin-bottom: 5em;
+}
+/* line 59, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#posts .post .post_image img {
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+}
+/* line 64, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#posts .post .post_content {
+  padding-top: 3em;
+  padding-left: 2.3em;
+  height: 11vh;
+}
+/* line 68, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#posts .post .post_content .venuetext {
+  color: #424C5B;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: .5px;
+  text-align: center;
+  font-size: 1em;
+  text-decoration: none;
+}
+/* line 78, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#posts .post .post_content .venuecity {
+  color: #A9A9A9;
+  font-size: .95em;
+  letter-spacing: .5px;
+  font-weight: 100;
+  text-decoration: none;
+  position: relative;
+  top: .3em;
+}
+
+/* line 93, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.underline {
+  text-decoration: underline;
+}
+
+/* line 99, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm {
+  /* Hide all steps by default: */
+  /* Make circles that indicate the steps of the form: */
+  /* Mark the steps that are finished and valid: */
+}
+/* line 100, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm .width {
+  width: 300px;
+}
+/* line 104, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm #venueForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 50%;
+  min-width: 300px;
+}
+/* line 111, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm h1 {
+  text-align: center;
+}
+/* line 119, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm .tab {
+  display: none;
+}
+/* line 125, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm button {
+  background-color: transparent;
+  outline: none;
+  color: #424C5B;
+  border: 1px solid #424C5B;
+  letter-spacing: .8px;
+  font-weight: 500;
+  padding: 1.8em 4.5em;
+  padding-right: 95px;
+  padding-left: 60px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 400px;
+  margin-left: 10px;
+  text-align: center;
+  transition: 0.3s;
+  width: 10vw;
+}
+/* line 143, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm button:hover {
+  border-color: #A9A9A9;
+  color: #A9A9A9;
+}
+/* line 147, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm #prevBtn {
+  margin-right: 40px;
+  padding: 1.8em 4.5em;
+  padding-right: 120px;
+  padding-left: 60px;
+}
+/* line 155, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm .step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #424C5B;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  border: 0;
+}
+/* line 166, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm .step.active {
+  opacity: 1;
+}
+/* line 170, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+#venueForm .step.finish {
+  background-color: #B0E0E6;
+}
+
+/* line 176, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+/* line 181, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper #moveDown {
+  padding-bottom: 8em;
+}
+/* line 186, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .venue_image img {
+  width: 100%;
+  height: 70vh;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 8px 50px -1px lightgray;
+  box-shadow: 0 8px 50px -1px lightgray;
+}
+/* line 194, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .venue_name {
+  color: #424C5B;
+  font-size: 1.8em;
+  font-weight: 100;
+  margin-top: 1.5em;
+}
+/* line 200, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper #city {
+  color: lightgray;
+  margin-top: -10px;
+  font-size: 1.2em;
+}
+/* line 205, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .contact_nav {
+  float: right;
+  margin-top: -70px;
+  width: 25%;
+}
+/* line 209, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .contact_nav i {
+  font-size: 27px;
+  color: #B0E0E6;
+  position: absolute;
+}
+/* line 214, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .contact_nav .secTwo {
+  position: absolute;
+  right: 13%;
+}
+/* line 218, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .contact_nav .venue_category {
+  margin-top: 0px;
+  color: #B0E0E6;
+  font-size: 20px;
+  padding-left: 2em;
+}
+/* line 224, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .contact_nav .venue_check {
+  margin-top: 1px;
+  color: #B0E0E6;
+  font-size: 20px;
+  padding-left: 2em;
+}
+/* line 233, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .contact_nav p {
+  display: inline-block;
+}
+/* line 237, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab-frame input {
+  display: none;
+}
+/* line 241, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab-frame a {
+  display: inline-block;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: lightgray;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+/* line 251, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab-frame a:hover {
+  color: #B0E0E6;
+}
+/* line 256, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab-frame input:checked + a {
+  color: #B0E0E6;
+  cursor: default;
+  transition: 0.3s;
+}
+/* line 262, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab-frame {
+  margin-top: 3.5em;
+  position: absolute;
+  width: 75%;
+}
+/* line 266, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab-frame hr {
+  border: .5px solid lightgray;
+}
+/* line 270, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab-frame .tab {
+  clear: left;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+/* line 276, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab-frame .l {
+  overflow: auto;
+  white-space: nowrap;
+}
+/* line 281, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+.venue_wrapper .tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+.venue_wrapper .tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3),
+.venue_wrapper .tab-frame input:nth-of-type(4):checked ~ .tab:nth-of-type(4),
+.venue_wrapper .tab-frame input:nth-of-type(5):checked ~ .tab:nth-of-type(5),
+.venue_wrapper .tab-frame input:nth-of-type(6):checked ~ .tab:nth-of-type(6),
+.venue_wrapper .tab-frame input:nth-of-type(7):checked ~ .tab:nth-of-type(7) {
+  display: block;
+}
+/* line 293, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab {
+  padding: 40px;
+}
+/* line 295, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab .title {
+  color: #424C5B;
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+/* line 300, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab .description {
+  width: 55%;
+  max-width: 100%;
+  font-size: 1.1em;
+  line-height: 28px;
+  color: gray;
+}
+/* line 307, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab .inline {
+  display: inline-block;
+}
+/* line 310, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab i {
+  font-size: 1.7em;
+  margin-right: 1em;
+  color: #424C5B;
+  font-weight: 500;
+}
+/* line 316, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.venue_wrapper .tab #strike {
+  text-decoration: line-through;
+}
+
+/* line 328, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.booking_action {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid lightgray;
+  z-index: 1;
+  background: #ffffff;
+  padding: 25px;
+}
+/* line 336, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.booking_action img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+/* line 341, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.booking_action .name {
+  padding-left: 80px;
+  margin-top: -35px;
+  color: #424C5B;
+  text-decoration: none;
+  transition: 0.3s;
+}
+/* line 348, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.booking_action .name a {
+  text-decoration: none;
+  color: #424C5B;
+  transition: 0.3s;
+}
+/* line 352, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.booking_action .name a:hover {
+  color: #B0E0E6;
+}
+
+/* line 360, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.margin-link-left {
+  margin-left: 2em;
+  text-decoration: none;
+  color: #424C5B;
+}
+/* line 364, /home/ubuntu/workspace/app/assets/stylesheets/venues.scss */
+.margin-link-left:hover {
+  color: #B0E0E6;
+}
+/*
+
+
+
+ */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* line 12, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 60, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 79, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 90, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 103, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 113, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 123, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 132, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 142, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 153, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 161, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 170, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 179, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 187, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 191, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 202, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 211, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 220, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 228, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 240, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 256, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 266, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 277, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 288, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 300, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 311, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 322, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 336, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 345, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 354, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 364, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 374, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 383, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 393, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 406, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 415, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 426, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 434, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 445, /home/ubuntu/workspace/app/assets/stylesheets/normalize.css.scss */
+[hidden] {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  /* line 8, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (min-width: 1655px) {
+  /* line 18, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #venueForm button {
+    padding: 25px 65px;
+    padding-right: 60px;
+    padding-left: 60px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+    width: 10vw;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  /* line 33, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .mobile_only {
+    display: none;
+  }
+
+  /* line 36, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #just_hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* line 41, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  /* line 42, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* line 49, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav.responsive {
+    position: fixed;
+    height: 100vh;
+  }
+  /* line 52, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav.responsive i {
+    margin-top: 36px;
+  }
+
+  /* line 58, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 50px;
+    top: 15px;
+  }
+
+  /* line 65, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    color: #424C5B;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  /* line 76, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #hammenu {
+    color: #424C5B;
+  }
+
+  /* line 80, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue #hammenu {
+    color: #ffffff;
+  }
+  /* line 83, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .topnav.responsive {
+    background: #ffffff;
+  }
+  /* line 85, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .topnav.responsive #hammenu {
+    color: #424C5B;
+  }
+  /* line 88, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .topnav.responsive #logo {
+    color: #424C5B;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 97, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .comment_input {
+    width: 60%;
+    padding: 3em;
+    padding-top: 4em;
+  }
+
+  /* line 106, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .chat_bar .chatBar {
+    width: 45%;
+    height: 100%;
+    padding: 0px;
+    padding-top: 25px;
+    padding-left: 8px;
+    border: 0;
+    background: #ffffff;
+  }
+  /* line 115, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .chat_bar .chatButton {
+    float: right;
+    margin-top: -55px;
+    border-radius: 5px;
+    padding: 0.9em;
+    width: 6em;
+    margin-right: 2.5em;
+  }
+
+  /* line 127, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper {
+    width: 90%;
+  }
+  /* line 130, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper .venue_image img {
+    width: 100%;
+    height: 35vh;
+  }
+  /* line 135, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper .contact_nav {
+    margin-top: 20px;
+    width: 0%;
+    float: left;
+  }
+  /* line 139, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper .contact_nav .secTwo {
+    position: absolute;
+    left: 5%;
+  }
+  /* line 145, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper .tab-frame {
+    margin-top: 5em;
+    position: absolute;
+    width: 90%;
+  }
+  /* line 152, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .venue_wrapper .tab .description {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  /* Modal Content */
+  /* line 184, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchmodal-content {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 188, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchmodal-content .search_wrap {
+    padding-top: 50px;
+  }
+  /* line 190, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchmodal-content .search_wrap .div_searchTerm {
+    float: left;
+    border-bottom: 1px solid gray;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+    height: 10vh;
+    width: 70vw;
+    max-width: 95%;
+    outline: none;
+    text-align: left;
+    font-weight: 300;
+  }
+  /* line 204, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchmodal-content .search_wrap .div_searchTerm2 {
+    float: left;
+    border: 0;
+    width: 67vw;
+    background: transparent;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 0;
+    font-weight: 300;
+    border-bottom: 1px solid gray;
+    height: 10vh;
+    color: gray;
+    -webkit-appearance: none;
+    outline: none;
+  }
+  /* line 219, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchmodal-content .search_wrap .button {
+    margin-top: 50px;
+    padding: 1.5em 3.5em;
+  }
+
+  /* line 226, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .Searchclose {
+    transition: 0.3s;
+    float: right;
+    font-size: 35px;
+    font-weight: lighter;
+    padding: 40px;
+    padding-top: 30px;
+    padding-right: 35px;
+  }
+
+  /* line 236, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .search {
+    width: 80vw;
+    left: 50%;
+    margin-top: -4.5em;
+  }
+
+  /* line 244, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .searchButton {
+    width: 100%;
+    height: 80px;
+    -webkit-transition: width 0s;
+    right: 0;
+    position: relative;
+    -webkit-transition: width 0s;
+    text-align: center;
+    border: 0;
+    margin-left: 0;
+    left: 0;
+    color: #ffffff;
+  }
+  /* line 257, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .searchButton:hover {
+    width: 100%;
+    background: #424C5B;
+  }
+
+  /* line 262, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .searchTerm {
+    font-size: 13px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: 7em;
+    text-indent: 1.5em;
+    background: #ffffff;
+    left: 0;
+  }
+
+  /* line 272, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .searchTerm2 {
+    width: 100%;
+    border-bottom: .5px solid #d6dce0;
+    height: 7em;
+    position: relative;
+    font-size: 13px;
+    text-indent: 1.5em;
+    left: 0;
+    outline: none;
+    -webkit-appearance: none;
+  }
+
+  /* line 285, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .dashboard_nav .topnav a {
+    padding: 12px 20px;
+  }
+  /* line 288, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .dashboard_nav #logo {
+    padding: 16px 20px;
+  }
+
+  /* line 294, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .dashboard .title_banner {
+    position: relative;
+    top: 110px;
+    left: 10%;
+  }
+
+  /* line 301, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #venueForm #prevBtn {
+    margin-right: 0px;
+    padding: 25px 65px;
+    padding-right: 120px;
+    padding-left: 60px;
+  }
+  /* line 307, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #venueForm button {
+    padding: 25px 65px;
+    padding-right: 120px;
+    padding-left: 60px;
+  }
+  /* line 312, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #venueForm #nextBtn {
+    text-indent: 10px;
+  }
+
+  /* line 316, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding-bottom: 10px;
+  }
+  /* line 324, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav .searchico {
+    margin-top: 7px;
+    float: right;
+    margin-right: 50px;
+    color: #B0E0E6;
+  }
+  /* line 330, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav a i {
+    font-size: 25px;
+  }
+  /* line 332, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav .on {
+    display: none;
+  }
+  /* line 336, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav .dash {
+    display: none;
+  }
+  /* line 340, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav #overlay {
+    display: none;
+  }
+  /* line 344, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav i {
+    transition: 0.3s ease-out;
+    float: right;
+    display: block;
+    color: #424C5B;
+    margin-right: 30px;
+    text-align: center;
+    padding: 16px 9px;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 20px;
+    margin-top: 33px;
+  }
+  /* line 356, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav i:hover {
+    color: #A9A9A9;
+  }
+
+  /* line 364, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hr_login {
+    width: 100%;
+  }
+
+  /* line 368, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #prevBtn {
+    margin-bottom: 20px;
+  }
+
+  /* line 373, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .dashboard #posts {
+    width: 90%;
+    margin-right: 30px;
+  }
+
+  /* line 380, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts {
+    width: 90%;
+    float: right;
+    padding-top: 70px;
+    right: 0;
+    margin-right: 30px;
+  }
+  /* line 386, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post {
+    background: transparent;
+    box-shadow: 0 8px 50px -1px lightgray;
+    width: 100%;
+    float: left;
+    margin: 1rem 4%;
+    margin-bottom: 100px;
+    height: 25em;
+  }
+  /* line 394, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post:hover {
+    box-shadow: 0 10px 100px -1px lightgray;
+  }
+  /* line 398, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post .post_image img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: 50%;
+  }
+  /* line 404, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post .post_content {
+    padding-left: 30px;
+    padding-top: 60px;
+  }
+  /* line 407, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post .post_content .venuetext {
+    color: #424C5B;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+  }
+  /* line 416, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post .post_content .venuecat {
+    color: #B0E0E6;
+    font-size: 19px;
+    text-decoration: none;
+  }
+  /* line 422, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #posts .post .post_content .venuecity {
+    color: lightgray;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  /* line 431, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #down {
+    padding-top: 90px;
+  }
+
+  /* line 435, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .floating-box2 {
+    padding: 0;
+    border: 0;
+  }
+
+  /* line 442, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #sidenav {
+    display: none;
+  }
+
+  /* line 446, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #logo2 {
+    display: none;
+  }
+
+  /* line 450, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .accordion_wrapper {
+    margin-top: 170em;
+  }
+
+  /* line 454, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_section .ameneties_container {
+    position: absolute;
+    left: 20%;
+  }
+  /* line 457, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_section .ameneties_container .ameneties-grid {
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    padding-right: 0px;
+    margin: 0px;
+  }
+  /* line 463, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_section .ameneties_container .ameneties-grid i {
+    color: #00CED1;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  /* line 472, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .not_mobile {
+    display: none;
+  }
+
+  /* line 475, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image {
+    height: 70%;
+    width: 100vw;
+    overflow: hidden;
+  }
+  /* line 479, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image .top_image_text {
+    color: #ffffff;
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    font-size: 14px;
+  }
+  /* line 485, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image .top_image_text .get_started_button {
+    outline: none;
+    background: #ffffff;
+    color: #424C5B;
+    text-decoration: none;
+    padding: .9em 1.2em;
+    font-size: 15px;
+    border-radius: .2em;
+  }
+  /* line 493, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image .top_image_text .get_started_button:hover {
+    background: #008080;
+    color: #ffffff;
+  }
+  /* line 500, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image .top_image_img #ideaimg {
+    display: none;
+  }
+  /* line 504, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top_image .top_image_symbol {
+    color: #ffffff;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    font-size: 50px;
+  }
+
+  /* line 514, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid #messageillustration {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: 90%;
+  }
+  /* line 521, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid #twitterillustration {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: 160%;
+  }
+  /* line 528, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid #supportillustration {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: 230%;
+  }
+  /* line 535, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .line {
+    border-left: 4px solid gray;
+    height: 230%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    display: none;
+    top: 100%;
+  }
+  /* line 544, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .circle1 {
+    background: #B0E0E6;
+    border-radius: 400px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 49.2%;
+    top: 130%;
+    display: none;
+  }
+  /* line 554, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .circle2 {
+    background: #B0E0E6;
+    border-radius: 400px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 49.2%;
+    display: none;
+    top: 185%;
+  }
+  /* line 564, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .circle3 {
+    background: #B0E0E6;
+    border-radius: 400px;
+    height: 30px;
+    width: 30px;
+    display: none;
+    position: absolute;
+    left: 49.2%;
+    top: 240%;
+  }
+  /* line 574, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .circle4 {
+    background: #B0E0E6;
+    border-radius: 400px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    display: none;
+    left: 49.2%;
+    top: 295%;
+  }
+  /* line 586, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_1 {
+    position: absolute;
+    right: 10%;
+    top: 120%;
+  }
+  /* line 590, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_1 h1 {
+    color: #4D565A;
+    margin: 0;
+    font-size: 60px;
+    font-weight: 100;
+  }
+  /* line 596, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_1 p {
+    color: #99A9B2;
+    margin: 0;
+    margin-top: 30px;
+    font-size: 23px;
+  }
+  /* line 603, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_2 {
+    position: absolute;
+    left: 10%;
+    top: 115%;
+  }
+  /* line 607, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_2 h1 {
+    color: #4D565A;
+    font-weight: 100;
+    margin: 0;
+    font-size: 30px;
+  }
+  /* line 613, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_2 p {
+    color: #99A9B2;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 620, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_3 {
+    position: absolute;
+    left: 10%;
+    top: 185%;
+  }
+  /* line 624, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_3 h1 {
+    color: #4D565A;
+    font-weight: 100;
+    margin: 0;
+    font-size: 30px;
+  }
+  /* line 630, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_3 p {
+    color: #99A9B2;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  /* line 637, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_4 {
+    position: absolute;
+    left: 10%;
+    top: 260%;
+    padding-bottom: 150px;
+  }
+  /* line 642, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_4 h1 {
+    color: #4D565A;
+    font-weight: 100;
+    margin: 0;
+    font-size: 30px;
+  }
+  /* line 648, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .content_grid .content_text .content_text_4 p {
+    color: #99A9B2;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  /* line 663, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .admin_banner {
+    height: 200px;
+    margin-bottom: 0;
+  }
+  /* line 666, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .admin_banner h1 {
+    font-size: 25px;
+    padding: 50px 0;
+  }
+
+  /* line 676, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .avatarbtn .field .button {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* line 685, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hr_login {
+    width: 70%;
+  }
+
+  /* line 689, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #logo {
+    margin-left: 20px;
+  }
+
+  /* line 694, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .contactbtn {
+    padding: 5px;
+  }
+  /* line 696, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .contactbtn:hover {
+    background: #B0E0E6;
+  }
+  /* line 699, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .contactbtn h4 {
+    position: relative;
+    left: 30%;
+    color: white;
+    font-size: 20px;
+  }
+
+  /* line 709, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .admincontact .topbar img {
+    border-radius: 400px;
+    width: 170px;
+    height: 170px;
+    position: relative;
+    left: 24%;
+    top: 10vh;
+  }
+  /* line 717, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .admincontact .topbar .name {
+    color: #ffffff;
+    position: relative;
+    left: 24%;
+    top: 20%;
+  }
+  /* line 723, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .admincontact .topbar .name2 {
+    color: #ffffff;
+    position: relative;
+    left: 40%;
+    top: 45%;
+  }
+
+  /* line 735, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapper #content .video {
+    display: none;
+  }
+  /* line 738, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapper #content p {
+    text-align: left;
+    color: #778899;
+    font-size: 1.18em;
+    line-height: 1.5em;
+  }
+
+  /* line 748, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .LYV .top {
+    padding-top: 0;
+    text-align: center;
+    color: #424C5B;
+    line-height: 2em;
+    padding-bottom: 0;
+    margin-top: 3em;
+  }
+
+  /* line 759, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue {
+    height: 85%;
+    width: 100%;
+  }
+  /* line 762, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .list_venue_text {
+    text-align: left;
+    top: 40%;
+    left: 46%;
+    font-size: .95em;
+    font-weight: 700;
+    line-height: 3em;
+    letter-spacing: .15em;
+  }
+  /* line 770, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .list_venue_text h2 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    margin-top: -15px;
+  }
+  /* line 777, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .button_section {
+    position: absolute;
+    top: 65%;
+    right: 25%;
+  }
+  /* line 781, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .button_section .button {
+    padding: 1.3em 2.2em;
+  }
+  /* line 784, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .list_venue .button_section p {
+    margin-top: 1.5em;
+  }
+
+  /* line 792, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .call_to_action h1 {
+    text-align: center;
+    font-size: 1.4em;
+    padding-bottom: .5em;
+    width: 70%;
+    margin: 0 auto;
+  }
+  /* line 800, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .call_to_action .button_section {
+    text-align: center;
+  }
+  /* line 802, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .call_to_action .button_section .button {
+    padding: 1.5em 2em;
+  }
+
+  /* line 809, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #searchReasults {
+    left: 5%;
+    max-width: 90%;
+  }
+
+  /* line 815, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .explore_text h1 {
+    color: #424C5B;
+    position: absolute;
+    left: 10.5%;
+    font-size: 35px;
+    top: 115%;
+  }
+
+  /* line 825, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .page_search .wrap {
+    top: 110%;
+    left: 38.8%;
+  }
+
+  /* line 833, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .searchline {
+    display: none;
+  }
+
+  /* line 836, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #login {
+    margin-top: 150px;
+  }
+
+  /* line 840, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .login {
+    outline: none;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: .5em;
+    width: 100px;
+  }
+  /* line 846, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .login:hover {
+    border: 0;
+    color: #008080;
+  }
+
+  /* line 854, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #footer li {
+    display: block;
+    margin-top: 8px;
+  }
+  /* line 858, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #footer #top_margin {
+    margin-top: 8px;
+  }
+
+  /* line 863, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .footer_container {
+    min-height: 80%;
+  }
+  /* line 865, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .footer_container .footer {
+    height: 200px;
+    border-top: 0;
+  }
+  /* line 869, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .footer_container .footer .copywright p {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 1.2em;
+  }
+  /* line 876, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .footer_container .footer #footer_links {
+    position: absolute;
+    top: 75%;
+    left: 0%;
+  }
+  /* line 881, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .footer_container .footer #footer_links_social {
+    position: absolute;
+    top: 75%;
+    left: 55%;
+  }
+
+  /* line 889, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #text2 {
+    display: none;
+  }
+
+  /* line 893, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background: #ffffff;
+    height: 120%;
+  }
+  /* line 894, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .none {
+    display: none;
+  }
+  /* line 905, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .topnav {
+    background: #ffffff;
+  }
+  /* line 907, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .topnav #logo {
+    color: #424C5B;
+  }
+  /* line 910, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .topnav i {
+    color: #424C5B;
+  }
+  /* line 915, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .hero-text {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    font-size: 4vw;
+    width: 80vw;
+  }
+  /* line 921, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .hero-text h2 {
+    font-size: 5.5vw;
+  }
+  /* line 925, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hero-image .top_hero_image {
+    display: none;
+  }
+
+  /* line 933, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .top {
+    margin-top: 150px;
+  }
+
+  /* line 937, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .explore_text h1 {
+    left: 5%;
+  }
+  /* line 940, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .explore_text #posts {
+    margin-top: 100px;
+  }
+
+  /* line 944, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #logo {
+    margin-left: 5px;
+  }
+
+  /* line 949, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapper {
+    width: 70%;
+  }
+
+  /* line 953, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapperven {
+    width: 90%;
+  }
+
+  /* line 957, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapperven {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  /* line 961, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapperven .desc {
+    max-width: 50%;
+    color: #708090;
+  }
+  /* line 965, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .wrapperven img {
+    height: 30vh;
+    width: 100%;
+  }
+
+  /* line 971, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .tablink {
+    background-color: gray;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 24px 16px;
+    font-size: 12px;
+    width: 25%;
+  }
+
+  /* line 987, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .column {
+    float: left;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    position: relative;
+    left: 0%;
+  }
+
+  /* line 997, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #content h1 {
+    text-align: left;
+    font-size: 40px;
+  }
+  /* line 1001, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #content .content {
+    padding-top: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #696969;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* line 1011, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .floating-box {
+    float: left;
+    width: 150px;
+    height: 75px;
+    margin: 50px;
+    margin-bottom: 300px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  /* line 1026, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #tablet_hide {
+    display: none;
+  }
+
+  /* line 1030, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #down {
+    padding-top: 50px;
+  }
+
+  /* line 1035, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .not_mobile {
+    display: none;
+  }
+
+  /* line 1042, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hr_login {
+    width: 50%;
+  }
+
+  /* line 1048, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .icon {
+    color: gray;
+  }
+
+  /* line 1056, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .photo img {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* line 1069, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .not_mobile {
+    display: none;
+  }
+
+  /* line 1078, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .photo-item img {
+    height: 30%;
+  }
+
+  /* line 1085, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .modal-content {
+    height: 60%;
+  }
+
+  /* line 1091, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+  /* line 1098, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .login {
+    outline: none;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: .5em;
+    width: 70px;
+  }
+  /* line 1104, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .login:hover {
+    border: 1px solid #008080;
+    color: #008080;
+  }
+
+  /* line 1110, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  #down {
+    margin-top: 50px;
+  }
+
+  /* line 1115, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .login:hover {
+    border: 0;
+    color: #008080;
+  }
+}
+@media only screen and (max-width: 1451px) {
+  /* line 1129, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .not_mobile {
+    display: none;
+  }
+
+  /* line 1132, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .none {
+    display: none;
+  }
+
+  /* line 1139, /home/ubuntu/workspace/app/assets/stylesheets/responsive.css.scss */
+  .hr_login {
+    width: 70%;
+  }
+}
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+body, html {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+/* line 11, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.colour2 {
+  color: #B0E0E6;
+}
+
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.colour {
+  color: #424C5B;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.center {
+  text-align: center;
+}
+
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.hr {
+  border: 2px solid gray;
+  width: 30%;
+  float: left;
+}
+
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+/* line 38, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.topheader2 {
+  background: #F0FFFF;
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
+  width: 100%;
+  overflow: hidden;
+  height: 290px;
+}
+/* line 45, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.topheader2 h1 {
+  color: #A9A9A9;
+  padding: 180px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* line 53, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.topheader {
+  background: #F0FFFF;
+  border-bottom-left-radius: 100% 10%;
+  border-bottom-right-radius: 100% 10%;
+  width: 100%;
+  overflow: hidden;
+  height: 380px;
+}
+/* line 60, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.topheader h1 {
+  color: #A9A9A9;
+  padding: 210px 0;
+  text-align: center;
+}
+
+/* line 67, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.button {
+  outline: none;
+  background: transparent;
+  color: #424C5B;
+  text-decoration: none;
+  letter-spacing: .4px;
+  padding: 1.8em 5em;
+  border: 1px solid #424C5B;
+  border-radius: 400px;
+  transition: 0.3s;
+}
+/* line 77, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.button:hover {
+  opacity: 0.8;
+  border-color: #A9A9A9;
+  color: #A9A9A9;
+}
+/* line 82, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.button:focus {
+  outline: none;
+}
+
+/* line 87, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* line 93, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.alert {
+  padding: 30px;
+  background-color: #A9A9A9;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  position: fixed;
+  bottom: 4%;
+  padding-left: 4em;
+  border-radius: 400px;
+  left: 27%;
+  width: 40%;
+  z-index: 1;
+}
+/* line 108, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.alert .closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-right: 18px;
+  position: absolute;
+  right: 42px;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+/* line 123, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.link {
+  color: #424C5B;
+  text-decoration: none;
+  font-weight: 100;
+  transition: 0.3s;
+  font-size: 1.08em;
+}
+/* line 129, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.link:hover {
+  color: #A9A9A9;
+}
+
+/* line 134, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.margin {
+  text-align: center;
+}
+
+/* line 138, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.field {
+  text-align: center;
+}
+/* line 139, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.field .name {
+  border: 0;
+}
+
+/* line 144, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* line 152, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in {
+  outline: none;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1.5px solid #A9A9A9;
+  border-radius: 5px;
+  width: 35%;
+  padding: 2.08em;
+  margin-left: .5em;
+  transition: 0.3s;
+}
+/* line 162, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in::placeholder {
+  color: #A9A9A9;
+  font-size: 1em;
+}
+/* line 166, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in:focus {
+  color: #A9A9A9;
+  border-color: #424C5B;
+}
+/* line 169, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in:focus::placeholder {
+  color: #A9A9A9;
+}
+
+/* line 175, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in2 {
+  outline: none;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1.5px solid #A9A9A9;
+  border-radius: 5px;
+  width: 35%;
+  padding: 30px;
+  padding-top: 45px;
+  transition: 0.3s;
+}
+/* line 185, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in2::placeholder {
+  color: #A9A9A9;
+  font-size: 1em;
+}
+/* line 189, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in2:focus {
+  color: #A9A9A9;
+  border-color: #424C5B;
+}
+/* line 192, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.in2:focus::placeholder {
+  color: #A9A9A9;
+}
+
+/* line 198, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.hr_login {
+  width: 60vw;
+  border: .5px solid lightgray;
+}
+
+/* line 204, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.tickbox {
+  margin-right: 10px;
+}
+
+/* line 208, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.ins {
+  outline: none;
+  background: transparent;
+  color: #424C5B;
+  text-decoration: none;
+  border: 0;
+  padding: 1em 1.5em;
+  border-radius: 0;
+}
+/* line 216, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.ins:hover {
+  border: 0;
+  color: #B0E0E6;
+}
+
+/* line 223, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.hide {
+  display: none;
+}
+
+/* line 229, /home/ubuntu/workspace/app/assets/stylesheets/global.css.scss */
+.avatarbtn .field .button {
+  width: 10%;
+  margin: 0 auto;
+}
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/
+ */
+
+/*
+
+
+
+
+
+
+ */
+
+
+
+/* Component containers
+----------------------------------*/
+
+.ui-widget {
+	font-family: Arial,Helvetica,sans-serif/*{ffDefault}*/;
+	font-size: 1em/*{fsDefault}*/;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Arial,Helvetica,sans-serif/*{ffDefault}*/;
+	font-size: 1em;
+}
+.ui-widget.ui-widget-content {
+	border: 1px solid #c5c5c5/*{borderColorDefault}*/;
+}
+.ui-widget-content {
+	border: 1px solid #dddddd/*{borderColorContent}*/;
+	background: #ffffff/*{bgColorContent}*/ /*{bgImgUrlContent}*/ /*{bgContentXPos}*/ /*{bgContentYPos}*/ /*{bgContentRepeat}*/;
+	color: #333333/*{fcContent}*/;
+}
+.ui-widget-content a {
+	color: #333333/*{fcContent}*/;
+}
+.ui-widget-header {
+	border: 1px solid #dddddd/*{borderColorHeader}*/;
+	background: #e9e9e9/*{bgColorHeader}*/ /*{bgImgUrlHeader}*/ /*{bgHeaderXPos}*/ /*{bgHeaderYPos}*/ /*{bgHeaderRepeat}*/;
+	color: #333333/*{fcHeader}*/;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #333333/*{fcHeader}*/;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+	border: 1px solid #c5c5c5/*{borderColorDefault}*/;
+	background: #f6f6f6/*{bgColorDefault}*/ /*{bgImgUrlDefault}*/ /*{bgDefaultXPos}*/ /*{bgDefaultYPos}*/ /*{bgDefaultRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #454545/*{fcDefault}*/;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
+	color: #454545/*{fcDefault}*/;
+	text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+	border: 1px solid #cccccc/*{borderColorHover}*/;
+	background: #ededed/*{bgColorHover}*/ /*{bgImgUrlHover}*/ /*{bgHoverXPos}*/ /*{bgHoverYPos}*/ /*{bgHoverRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #2b2b2b/*{fcHover}*/;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited,
+a.ui-button:hover,
+a.ui-button:focus {
+	color: #2b2b2b/*{fcHover}*/;
+	text-decoration: none;
+}
+
+.ui-visual-focus {
+	box-shadow: 0 0 3px 1px rgb(94, 158, 214);
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 1px solid #003eff/*{borderColorActive}*/;
+	background: #007fff/*{bgColorActive}*/ /*{bgImgUrlActive}*/ /*{bgActiveXPos}*/ /*{bgActiveYPos}*/ /*{bgActiveRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #ffffff/*{fcActive}*/;
+}
+.ui-icon-background,
+.ui-state-active .ui-icon-background {
+	border: #003eff/*{borderColorActive}*/;
+	background-color: #ffffff/*{fcActive}*/;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #ffffff/*{fcActive}*/;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #dad55e/*{borderColorHighlight}*/;
+	background: #fffa90/*{bgColorHighlight}*/ /*{bgImgUrlHighlight}*/ /*{bgHighlightXPos}*/ /*{bgHighlightYPos}*/ /*{bgHighlightRepeat}*/;
+	color: #777620/*{fcHighlight}*/;
+}
+.ui-state-checked {
+	border: 1px solid #dad55e/*{borderColorHighlight}*/;
+	background: #fffa90/*{bgColorHighlight}*/;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+	color: #777620/*{fcHighlight}*/;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid #f1a899/*{borderColorError}*/;
+	background: #fddfdf/*{bgColorError}*/ /*{bgImgUrlError}*/ /*{bgErrorXPos}*/ /*{bgErrorYPos}*/ /*{bgErrorRepeat}*/;
+	color: #5f3f3f/*{fcError}*/;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+	color: #5f3f3f/*{fcError}*/;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+	color: #5f3f3f/*{fcError}*/;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70); /* support: IE8 */
+	font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35); /* support: IE8 */
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	width: 16px;
+	height: 16px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_444444_256x240-31d988765b4e6f56553c29588c500381dc3e6f0aa2980c8212202e5644aefd5d.png)/*{iconsContent}*/;
+}
+.ui-widget-header .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_444444_256x240-31d988765b4e6f56553c29588c500381dc3e6f0aa2980c8212202e5644aefd5d.png)/*{iconsHeader}*/;
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_555555_256x240-32175261daee76c82bb0edf0eea16a56421866fbc31e94f3c1d570aa114502f5.png)/*{iconsHover}*/;
+}
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_ffffff_256x240-350df1b7131037de20e83c5c0f3a41a770d2ac48b5762ea772b3f4a8a7b9d47a.png)/*{iconsActive}*/;
+}
+.ui-state-highlight .ui-icon,
+.ui-button .ui-state-highlight.ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_777620_256x240-0b020fc6e696d88d296e7bb1f61f1eb2ad827848e2c7382a4c3e0999e702dd9b.png)/*{iconsHighlight}*/;
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_cc0000_256x240-40985a64b4d5dd213fba27fcd862a1bd1b337a97674f6ff0b9ec20abcee4bc69.png)/*{iconsError}*/;
+}
+.ui-button .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_777777_256x240-faf32007ae120c302213557626e660dd10e711c5dd4f1113d35f26dc05b78d2f.png)/*{iconsDefault}*/;
+}
+
+/* positioning */
+.ui-icon-blank { background-position: 16px 16px; }
+.ui-icon-caret-1-n { background-position: 0 0; }
+.ui-icon-caret-1-ne { background-position: -16px 0; }
+.ui-icon-caret-1-e { background-position: -32px 0; }
+.ui-icon-caret-1-se { background-position: -48px 0; }
+.ui-icon-caret-1-s { background-position: -65px 0; }
+.ui-icon-caret-1-sw { background-position: -80px 0; }
+.ui-icon-caret-1-w { background-position: -96px 0; }
+.ui-icon-caret-1-nw { background-position: -112px 0; }
+.ui-icon-caret-2-n-s { background-position: -128px 0; }
+.ui-icon-caret-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -65px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -65px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 1px -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-on { background-position: -96px -144px; }
+.ui-icon-radio-off { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 3px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 3px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 3px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 3px/*{cornerRadius}*/;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+	background: #aaaaaa/*{bgColorOverlay}*/ /*{bgImgUrlOverlay}*/ /*{bgOverlayXPos}*/ /*{bgOverlayYPos}*/ /*{bgOverlayRepeat}*/;
+	opacity: .3/*{opacityOverlay}*/;
+	filter: Alpha(Opacity=30)/*{opacityFilterOverlay}*/; /* support: IE8 */
+}
+.ui-widget-shadow {
+	-webkit-box-shadow: 0/*{offsetLeftShadow}*/ 0/*{offsetTopShadow}*/ 5px/*{thicknessShadow}*/ #666666/*{bgColorShadow}*/;
+	box-shadow: 0/*{offsetLeftShadow}*/ 0/*{offsetTopShadow}*/ 5px/*{thicknessShadow}*/ #666666/*{bgColorShadow}*/;
+}
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+/*
+
+ */
+
+/* Layout helpers
+----------------------------------*/
+
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0); /* support: IE8 */
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+	pointer-events: none;
+}
+
+
+/* Icons
+----------------------------------*/
+.ui-icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -.25em;
+	position: relative;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+.ui-widget-icon-block {
+	left: 50%;
+	margin-left: -8px;
+	display: block;
+}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*!
+ * jQuery UI Accordion 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/accordion/#theming
+ */
+/*
+
+ */
+
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 2px 0 0 0;
+	padding: .5em .5em .5em .7em;
+	font-size: 100%;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+/*!
+ * jQuery UI Autocomplete 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/autocomplete/#theming
+ */
+/*
+
+ */
+
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+/*!
+ * jQuery UI Button 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/button/#theming
+ */
+/*
+
+ */
+
+.ui-button {
+	padding: .4em 1em;
+	display: inline-block;
+	position: relative;
+	line-height: normal;
+	margin-right: .1em;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Support: IE <= 11 */
+	overflow: visible;
+}
+
+.ui-button,
+.ui-button:link,
+.ui-button:visited,
+.ui-button:hover,
+.ui-button:active {
+	text-decoration: none;
+}
+
+/* to make room for the icon, a width needs to be set here */
+.ui-button-icon-only {
+	width: 2em;
+	box-sizing: border-box;
+	text-indent: -9999px;
+	white-space: nowrap;
+}
+
+/* no icon support for input elements */
+input.ui-button.ui-button-icon-only {
+	text-indent: 0;
+}
+
+/* button icon element(s) */
+.ui-button-icon-only .ui-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -8px;
+	margin-left: -8px;
+}
+
+.ui-button.ui-icon-notext .ui-icon {
+	padding: 0;
+	width: 2.1em;
+	height: 2.1em;
+	text-indent: -9999px;
+	white-space: nowrap;
+
+}
+
+input.ui-button.ui-icon-notext .ui-icon {
+	width: auto;
+	height: auto;
+	text-indent: 0;
+	white-space: normal;
+	padding: .4em 1em;
+}
+
+/* workarounds */
+/* Support: Firefox 5 - 40 */
+input.ui-button::-moz-focus-inner,
+button.ui-button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+/*!
+ * jQuery UI Checkboxradio 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/checkboxradio/#theming
+ */
+/*
+
+ */
+
+
+.ui-checkboxradio-label .ui-icon-background {
+	box-shadow: inset 1px 1px 1px #ccc;
+	border-radius: .12em;
+	border: none;
+}
+.ui-checkboxradio-radio-label .ui-icon-background {
+	width: 16px;
+	height: 16px;
+	border-radius: 1em;
+	overflow: visible;
+	border: none;
+}
+.ui-checkboxradio-radio-label.ui-checkboxradio-checked .ui-icon,
+.ui-checkboxradio-radio-label.ui-checkboxradio-checked:hover .ui-icon {
+	background-image: none;
+	width: 8px;
+	height: 8px;
+	border-width: 4px;
+	border-style: solid;
+}
+.ui-checkboxradio-disabled {
+	pointer-events: none;
+}
+/*!
+ * jQuery UI Controlgroup 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/controlgroup/#theming
+ */
+/*
+
+ */
+
+
+.ui-controlgroup {
+	vertical-align: middle;
+	display: inline-block;
+}
+.ui-controlgroup > .ui-controlgroup-item {
+	float: left;
+	margin-left: 0;
+	margin-right: 0;
+}
+.ui-controlgroup > .ui-controlgroup-item:focus,
+.ui-controlgroup > .ui-controlgroup-item.ui-visual-focus {
+	z-index: 9999;
+}
+.ui-controlgroup-vertical > .ui-controlgroup-item {
+	display: block;
+	float: none;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+}
+.ui-controlgroup-vertical .ui-controlgroup-item {
+	box-sizing: border-box;
+}
+.ui-controlgroup .ui-controlgroup-label {
+	padding: .4em 1em;
+}
+.ui-controlgroup .ui-controlgroup-label span {
+	font-size: 80%;
+}
+.ui-controlgroup-horizontal .ui-controlgroup-label + .ui-controlgroup-item {
+	border-left: none;
+}
+.ui-controlgroup-vertical .ui-controlgroup-label + .ui-controlgroup-item {
+	border-top: none;
+}
+.ui-controlgroup-horizontal .ui-controlgroup-label.ui-widget-content {
+	border-right: none;
+}
+.ui-controlgroup-vertical .ui-controlgroup-label.ui-widget-content {
+	border-bottom: none;
+}
+
+/* Spinner specific style fixes */
+.ui-controlgroup-vertical .ui-spinner-input {
+
+	/* Support: IE8 only, Android < 4.4 only */
+	width: 75%;
+	width: calc( 100% - 2.4em );
+}
+.ui-controlgroup-vertical .ui-spinner .ui-spinner-up {
+	border-top-style: solid;
+}
+
+/*!
+ * jQuery UI Datepicker 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/datepicker/#theming
+ */
+/*
+
+ */
+
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 45%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+
+/* Icons */
+.ui-datepicker .ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	left: .5em;
+	top: .3em;
+}
+/*!
+ * jQuery UI Dialog 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/dialog/#theming
+ */
+/*
+
+ */
+
+.ui-dialog {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .2em;
+	outline: 0;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+}
+.ui-dialog .ui-dialog-title {
+	float: left;
+	margin: .1em 0;
+	white-space: nowrap;
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 20px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 20px;
+}
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	overflow: auto;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: .5em;
+	padding: .3em 1em .5em .4em;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: right;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+.ui-dialog .ui-resizable-n {
+	height: 2px;
+	top: 0;
+}
+.ui-dialog .ui-resizable-e {
+	width: 2px;
+	right: 0;
+}
+.ui-dialog .ui-resizable-s {
+	height: 2px;
+	bottom: 0;
+}
+.ui-dialog .ui-resizable-w {
+	width: 2px;
+	left: 0;
+}
+.ui-dialog .ui-resizable-se,
+.ui-dialog .ui-resizable-sw,
+.ui-dialog .ui-resizable-ne,
+.ui-dialog .ui-resizable-nw {
+	width: 7px;
+	height: 7px;
+}
+.ui-dialog .ui-resizable-se {
+	right: 0;
+	bottom: 0;
+}
+.ui-dialog .ui-resizable-sw {
+	left: 0;
+	bottom: 0;
+}
+.ui-dialog .ui-resizable-ne {
+	right: 0;
+	top: 0;
+}
+.ui-dialog .ui-resizable-nw {
+	left: 0;
+	top: 0;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
+/*!
+ * jQuery UI Draggable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+/*
+
+ */
+
+.ui-draggable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+/*!
+ * jQuery UI Menu 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/menu/#theming
+ */
+/*
+
+ */
+
+.ui-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	outline: 0;
+}
+.ui-menu .ui-menu {
+	position: absolute;
+}
+.ui-menu .ui-menu-item {
+	margin: 0;
+	cursor: pointer;
+	/* support: IE10, see #8844 */
+	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+.ui-menu .ui-menu-item-wrapper {
+	position: relative;
+	padding: 3px 1em 3px .4em;
+}
+.ui-menu .ui-menu-divider {
+	margin: 5px 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 1px 0 0 0;
+}
+.ui-menu .ui-state-focus,
+.ui-menu .ui-state-active {
+	margin: -1px;
+}
+
+/* icon support */
+.ui-menu-icons {
+	position: relative;
+}
+.ui-menu-icons .ui-menu-item-wrapper {
+	padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: .2em;
+	margin: auto 0;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+	left: auto;
+	right: 0;
+}
+/*!
+ * jQuery UI Progressbar 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/progressbar/#theming
+ */
+/*
+
+ */
+
+.ui-progressbar {
+	height: 2em;
+	text-align: left;
+	overflow: hidden;
+}
+.ui-progressbar .ui-progressbar-value {
+	margin: -1px;
+	height: 100%;
+}
+.ui-progressbar .ui-progressbar-overlay {
+	background: url("data:image/gif;base64,R0lGODlhKAAoAIABAAAAAP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJAQABACwAAAAAKAAoAAACkYwNqXrdC52DS06a7MFZI+4FHBCKoDeWKXqymPqGqxvJrXZbMx7Ttc+w9XgU2FB3lOyQRWET2IFGiU9m1frDVpxZZc6bfHwv4c1YXP6k1Vdy292Fb6UkuvFtXpvWSzA+HycXJHUXiGYIiMg2R6W459gnWGfHNdjIqDWVqemH2ekpObkpOlppWUqZiqr6edqqWQAAIfkECQEAAQAsAAAAACgAKAAAApSMgZnGfaqcg1E2uuzDmmHUBR8Qil95hiPKqWn3aqtLsS18y7G1SzNeowWBENtQd+T1JktP05nzPTdJZlR6vUxNWWjV+vUWhWNkWFwxl9VpZRedYcflIOLafaa28XdsH/ynlcc1uPVDZxQIR0K25+cICCmoqCe5mGhZOfeYSUh5yJcJyrkZWWpaR8doJ2o4NYq62lAAACH5BAkBAAEALAAAAAAoACgAAAKVDI4Yy22ZnINRNqosw0Bv7i1gyHUkFj7oSaWlu3ovC8GxNso5fluz3qLVhBVeT/Lz7ZTHyxL5dDalQWPVOsQWtRnuwXaFTj9jVVh8pma9JjZ4zYSj5ZOyma7uuolffh+IR5aW97cHuBUXKGKXlKjn+DiHWMcYJah4N0lYCMlJOXipGRr5qdgoSTrqWSq6WFl2ypoaUAAAIfkECQEAAQAsAAAAACgAKAAAApaEb6HLgd/iO7FNWtcFWe+ufODGjRfoiJ2akShbueb0wtI50zm02pbvwfWEMWBQ1zKGlLIhskiEPm9R6vRXxV4ZzWT2yHOGpWMyorblKlNp8HmHEb/lCXjcW7bmtXP8Xt229OVWR1fod2eWqNfHuMjXCPkIGNileOiImVmCOEmoSfn3yXlJWmoHGhqp6ilYuWYpmTqKUgAAIfkECQEAAQAsAAAAACgAKAAAApiEH6kb58biQ3FNWtMFWW3eNVcojuFGfqnZqSebuS06w5V80/X02pKe8zFwP6EFWOT1lDFk8rGERh1TTNOocQ61Hm4Xm2VexUHpzjymViHrFbiELsefVrn6XKfnt2Q9G/+Xdie499XHd2g4h7ioOGhXGJboGAnXSBnoBwKYyfioubZJ2Hn0RuRZaflZOil56Zp6iioKSXpUAAAh+QQJAQABACwAAAAAKAAoAAACkoQRqRvnxuI7kU1a1UU5bd5tnSeOZXhmn5lWK3qNTWvRdQxP8qvaC+/yaYQzXO7BMvaUEmJRd3TsiMAgswmNYrSgZdYrTX6tSHGZO73ezuAw2uxuQ+BbeZfMxsexY35+/Qe4J1inV0g4x3WHuMhIl2jXOKT2Q+VU5fgoSUI52VfZyfkJGkha6jmY+aaYdirq+lQAACH5BAkBAAEALAAAAAAoACgAAAKWBIKpYe0L3YNKToqswUlvznigd4wiR4KhZrKt9Upqip61i9E3vMvxRdHlbEFiEXfk9YARYxOZZD6VQ2pUunBmtRXo1Lf8hMVVcNl8JafV38aM2/Fu5V16Bn63r6xt97j09+MXSFi4BniGFae3hzbH9+hYBzkpuUh5aZmHuanZOZgIuvbGiNeomCnaxxap2upaCZsq+1kAACH5BAkBAAEALAAAAAAoACgAAAKXjI8By5zf4kOxTVrXNVlv1X0d8IGZGKLnNpYtm8Lr9cqVeuOSvfOW79D9aDHizNhDJidFZhNydEahOaDH6nomtJjp1tutKoNWkvA6JqfRVLHU/QUfau9l2x7G54d1fl995xcIGAdXqMfBNadoYrhH+Mg2KBlpVpbluCiXmMnZ2Sh4GBqJ+ckIOqqJ6LmKSllZmsoq6wpQAAAh+QQJAQABACwAAAAAKAAoAAAClYx/oLvoxuJDkU1a1YUZbJ59nSd2ZXhWqbRa2/gF8Gu2DY3iqs7yrq+xBYEkYvFSM8aSSObE+ZgRl1BHFZNr7pRCavZ5BW2142hY3AN/zWtsmf12p9XxxFl2lpLn1rseztfXZjdIWIf2s5dItwjYKBgo9yg5pHgzJXTEeGlZuenpyPmpGQoKOWkYmSpaSnqKileI2FAAACH5BAkBAAEALAAAAAAoACgAAAKVjB+gu+jG4kORTVrVhRlsnn2dJ3ZleFaptFrb+CXmO9OozeL5VfP99HvAWhpiUdcwkpBH3825AwYdU8xTqlLGhtCosArKMpvfa1mMRae9VvWZfeB2XfPkeLmm18lUcBj+p5dnN8jXZ3YIGEhYuOUn45aoCDkp16hl5IjYJvjWKcnoGQpqyPlpOhr3aElaqrq56Bq7VAAAOw==");
+	height: 100%;
+	filter: alpha(opacity=25); /* support: IE8 */
+	opacity: 0.25;
+}
+.ui-progressbar-indeterminate .ui-progressbar-value {
+	background-image: none;
+}
+/*!
+ * jQuery UI Resizable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+/*
+
+ */
+
+.ui-resizable {
+	position: relative;
+}
+.ui-resizable-handle {
+	position: absolute;
+	font-size: 0.1px;
+	display: block;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+	display: none;
+}
+.ui-resizable-n {
+	cursor: n-resize;
+	height: 7px;
+	width: 100%;
+	top: -5px;
+	left: 0;
+}
+.ui-resizable-s {
+	cursor: s-resize;
+	height: 7px;
+	width: 100%;
+	bottom: -5px;
+	left: 0;
+}
+.ui-resizable-e {
+	cursor: e-resize;
+	width: 7px;
+	right: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-w {
+	cursor: w-resize;
+	width: 7px;
+	left: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-se {
+	cursor: se-resize;
+	width: 12px;
+	height: 12px;
+	right: 1px;
+	bottom: 1px;
+}
+.ui-resizable-sw {
+	cursor: sw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	bottom: -5px;
+}
+.ui-resizable-nw {
+	cursor: nw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	top: -5px;
+}
+.ui-resizable-ne {
+	cursor: ne-resize;
+	width: 9px;
+	height: 9px;
+	right: -5px;
+	top: -5px;
+}
+/*!
+ * jQuery UI Selectable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+/*
+
+ */
+
+.ui-selectable {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-selectable-helper {
+	position: absolute;
+	z-index: 100;
+	border: 1px dotted black;
+}
+/*!
+ * jQuery UI Selectmenu 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/selectmenu/#theming
+ */
+/*
+
+ */
+
+.ui-selectmenu-menu {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.ui-selectmenu-menu .ui-menu {
+	overflow: auto;
+	overflow-x: hidden;
+	padding-bottom: 1px;
+}
+.ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1.5;
+	padding: 2px 0.4em;
+	margin: 0.5em 0 0 0;
+	height: auto;
+	border: 0;
+}
+.ui-selectmenu-open {
+	display: block;
+}
+.ui-selectmenu-text {
+	display: block;
+	margin-right: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ui-selectmenu-button.ui-button {
+	text-align: left;
+	white-space: nowrap;
+	width: 14em;
+}
+.ui-selectmenu-icon.ui-icon {
+	float: right;
+	margin-top: 0;
+}
+/*!
+ * jQuery UI Sortable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+/*
+
+ */
+
+.ui-sortable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+/*!
+ * jQuery UI Slider 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/slider/#theming
+ */
+/*
+
+ */
+
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+/*!
+ * jQuery UI Spinner 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/spinner/#theming
+ */
+/*
+
+ */
+
+.ui-spinner {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 0;
+	vertical-align: middle;
+}
+.ui-spinner-input {
+	border: none;
+	background: none;
+	color: inherit;
+	padding: .222em 0;
+	margin: .2em 0;
+	vertical-align: middle;
+	margin-left: .4em;
+	margin-right: 2em;
+}
+.ui-spinner-button {
+	width: 1.6em;
+	height: 50%;
+	font-size: .5em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	cursor: default;
+	display: block;
+	overflow: hidden;
+	right: 0;
+}
+/* more specificity required here to override default borders */
+.ui-spinner a.ui-spinner-button {
+	border-top-style: none;
+	border-bottom-style: none;
+	border-right-style: none;
+}
+.ui-spinner-up {
+	top: 0;
+}
+.ui-spinner-down {
+	bottom: 0;
+}
+/*!
+ * jQuery UI Tabs 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/tabs/#theming
+ */
+/*
+
+ */
+
+.ui-tabs {
+	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .2em;
+}
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: .2em .2em 0;
+}
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px .2em 0 0;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+	cursor: text;
+}
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+	cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 1em 1.4em;
+	background: none;
+}
+/*!
+ * jQuery UI Tooltip 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/tooltip/#theming
+ */
+/*
+
+ */
+
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+}
+body .ui-tooltip {
+	border-width: 2px;
+}
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+/*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+/*
+
+
+ */
+

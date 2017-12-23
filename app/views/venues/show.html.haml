@@ -221,13 +221,13 @@
           %p.bottom= comment.user.name
           %hr
         
-          
-    %hr/
-    #moveDown
-      .tab#C7
-        %h2.title Booking
-        %p.description Complete the form below to request a booking or a viewing for this venue.
-        = render 'bookings/form'
+    - if user_signed_in?    
+      %hr/
+      #moveDown
+        .tab#C7
+          %h2.title Booking
+          %p.description Complete the form below to request a booking or a viewing for this venue.
+          = render 'bookings/form'
 
   
   

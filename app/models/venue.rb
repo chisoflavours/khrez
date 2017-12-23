@@ -1,8 +1,8 @@
 class Venue < ActiveRecord::Base
     belongs_to :admin
-    has_many :comments
-    has_many :bookings
-    has_many :chats
+    has_many :comments, dependent: :destroy
+    has_many :bookings, dependent: :destroy
+    has_many :chats, dependent: :destroy
     
     def self.search(city, category)
         where("city like ?", "%#{city}%").where("category like ?", "%#{category}%")

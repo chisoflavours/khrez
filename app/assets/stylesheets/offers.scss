@@ -12,7 +12,7 @@ $secondcolour:#B0E0E6;
         border-radius:5px;
     }
     .main_area{
-        width:77%;
+        width:84%;
         border:1.5px solid #A9A9A9;
         border-radius:5px;
         background:#ffffff;
@@ -48,6 +48,7 @@ $secondcolour:#B0E0E6;
         border:0;
         color:$maincolour;
         font-size:1em;
+        background:#ffffff;
         &:focus{
           outline:none;
           color:$maincolour;
