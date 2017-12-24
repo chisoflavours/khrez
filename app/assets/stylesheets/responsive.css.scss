@@ -50,7 +50,7 @@ $secondcolour:#B0E0E6;
     position: fixed;
     height:100vh;
     i{
-      margin-top:36px;
+      margin-top:16px;
     }
 
   }
@@ -58,7 +58,7 @@ $secondcolour:#B0E0E6;
   .topnav.responsive .icon {
     position: absolute;
     right: 50px;
-    top: 15px;
+    top: 6px;
 
 
   }
@@ -67,7 +67,7 @@ $secondcolour:#B0E0E6;
     display: block;
     text-align: left;
     color: #424C5B;
-    margin-top: 20px;
+    margin-top: 45px;
     margin-left:20px;
     font-size:20px;
 
@@ -78,7 +78,7 @@ $secondcolour:#B0E0E6;
   }
  .list_venue{
     #hammenu{
-      color:#ffffff;
+      color:#A9A9A9;
     }
     .topnav.responsive{
       background:#ffffff;
@@ -93,6 +93,58 @@ $secondcolour:#B0E0E6;
 }
 
 @media only screen and (max-width: 600px) {
+
+
+
+.explore_text{
+  h1{
+    color:$maincolour;
+    position:absolute;
+    font-size:2em;
+    margin-left:5px;
+    top:118%;
+    left:40%;
+  }
+  #pins{
+    margin-top:1em;
+  }
+}
+
+#pins {
+  margin: 0 auto;
+  width: 100%;
+  margin-top:4em;
+  left:3.5%;
+  .box {
+	  margin: 0px;
+	  width: 92%;
+	  box-shadow: 0 8px 50px -1px lightgray;
+	  text-align: center;
+	  margin-top:5em;
+	  img {
+	  	max-width: 100%;
+	  	height: auto;
+	  }
+	  h2 {
+	  	font-size: 1.1em;
+	  	letter-spacing:0.3px;
+	  	a {
+				color: $maincolour;
+				text-decoration:none;
+	  	}
+	  }
+	  .user {
+	  	font-size: .9em;
+	  	border-top: 1px solid #EAEAEA;
+	    letter-spacing:0.3px;
+			margin: 0;
+			a{
+			  text-decoration:none;
+			  color:lightgray;
+			}
+	  }
+	}
+}
 
 .comment_input{
         width:60%;
@@ -316,11 +368,10 @@ $secondcolour:#B0E0E6;
 .topnav {
   overflow: hidden;
   background-color: #ffffff;
-  position: fixed; 
   top: 0; 
   width: 100%;
   z-index: 1;
-  padding-bottom:10px;
+  padding-bottom:20px;
   .searchico{
     margin-top:7px;
     float:right;
@@ -352,10 +403,13 @@ $secondcolour:#B0E0E6;
     text-decoration: none;
     margin-right:15px;
     font-size: 20px;
-    margin-top: 33px;
+
     &:hover{
       color:#A9A9A9;
     }
+  }
+  #logo{
+  margin-left: .4em;
   }
 }
 
@@ -811,15 +865,7 @@ $secondcolour:#B0E0E6;
   max-width:90%;
 }
 
-.explore_text{
-  h1{
-    color:#424C5B;
-    position:absolute;
-    left:10.5%;
-    font-size:35px;
-    top:115%;
-  }
-}
+
 
 .page_search{
   .wrap{

@@ -114,13 +114,13 @@
        
     .tab
       .field
-        %h3.colour External Catering
+        %h3.colour External Catering Allowed
         %br/
         %p
           = f.input :external_catering_allowed, label: false, input_html: { class: 'ib' }
         %br/
       .field
-        %h3.colour External Alcohol
+        %h3.colour External Alcohol Allowed
         %br/
         %p
           = f.input :external_alcahool_allowed, label: false, input_html: { class: 'ib' }
@@ -138,25 +138,25 @@
           = f.input :inhouse_alcahool_provided, label: false, input_html: { class: 'ib' } 
         %br/
       .field
-        %h3.colour Storage
+        %h3.colour Storage Provided
         %br/
         %p
           = f.input :storage, label: false, input_html: { class: 'ib' }
         %br/
       .field
-        %h3.colour Air Conditioning
+        %h3.colour Air Conditioning Provided
         %br/
         %p
           = f.input :air_conditionind, label: false, input_html: { class: 'ib' }
         %br/
       .field
-        %h3.colour Wifi
+        %h3.colour Wifi Provided
         %br/
         %p
           = f.input :wifi, label: false, input_html: { class: 'ib' }
         %br/
       .field
-        %h3.colour Projector
+        %h3.colour Projector Provided
         %br/
         %p
           = f.input :projector, label: false, input_html: { class: 'ib' } 
@@ -178,7 +178,7 @@
         %h3.colour Category
         %br/
         %p
-          = f.input :category, input_html: { class: 'in' }, prompt: " Venue Category", label: false, collection: [ "Hall", "Bar", "Meeting Room", "Reception", "Kids Party", "Party", "Exhibition", "Performance Venue", "Wedding Venue", "Private Room", "Conference Room", "Other"]
+          = f.input :category, input_html: { class: 'in'}, prompt: " Venue Category", label: false, collection: [ "Hall", "Bar", "Meeting Room", "Reception", "Kids Party", "Party", "Exhibition", "Performance Venue", "Wedding Venue", "Private Room", "Conference Room", "Other"]
         %br/
         %br/
       .avatarbtn

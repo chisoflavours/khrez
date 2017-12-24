@@ -220,7 +220,11 @@
           %h3.colour= comment.content
           %p.bottom= comment.user.name
           %hr
-        
+    - if admin_signed_in?
+      %br/
+      %br/
+      %br/
+      %br/
     - unless admin_signed_in?    
       %hr/
       #moveDown

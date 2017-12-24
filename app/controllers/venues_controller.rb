@@ -7,9 +7,9 @@ class VenuesController < ApplicationController
     def index
         
         if params[:city] && params[:category]
-          @venue = Venue.search(params[:city], params[:category])
+          @venue = Venue.search(params[:city], params[:category]).order("RANDOM()")
         else
-          @venue = Venue.where(admin_id: current_admin).order("created_at DESC")
+          @venue = Venue.where(admin_id: current_admin).order("RANDOM()")
         end
         
     end
