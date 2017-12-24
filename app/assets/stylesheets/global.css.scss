@@ -41,10 +41,10 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-right-radius: 100% 10%;
   width:100%;
   overflow:hidden;
-  height:290px;
+  height:170px;
   h1{
     color:#A9A9A9;
-    padding: 180px 0;
+    padding: 60px 0;
     font-size:1.5em;
     text-align: center;
   }
@@ -56,10 +56,10 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-right-radius: 100% 10%;
   width:100%;
   overflow:hidden;
-  height:380px;
+  height:270px;
   h1{
     color:#A9A9A9;
-    padding: 210px 0;
+    padding: 100px 0;
     text-align: center;
   }
 }
@@ -153,10 +153,10 @@ input:-webkit-autofill:active {
   outline: none;
 	text-decoration:none;
 	background:#ffffff;
-	border:1.5px solid #A9A9A9;
+	border:1px solid #A9A9A9;
   border-radius:5px;
-  width:35%;
-  padding:2.08em;
+  width:50%;
+  padding:2.1em;
   margin-left:.5em;
   transition:0.3s;
   &::placeholder {
@@ -176,11 +176,11 @@ input:-webkit-autofill:active {
   outline: none;
 	text-decoration:none;
 	background:#ffffff;
-	border:1.5px solid #A9A9A9;
+	border:1px solid #A9A9A9;
   border-radius:5px;
-  width:35%;
-  padding:30px;
-  padding-top:45px;
+  width:50%;
+  padding:40px;
+  padding-top:55px;
   transition:0.3s;
   &::placeholder {
     color: #A9A9A9;

@@ -27,6 +27,10 @@ $secondcolour:#B0E0E6;
     background:transparent;
     color:$maincolour;
   }
+  .button{
+    border-radius:5px;
+    padding: 1.5em 5em;
+  }
 }
 
 // Booking Requests - Admin Page

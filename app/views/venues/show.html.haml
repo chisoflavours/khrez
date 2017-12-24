@@ -221,7 +221,7 @@
           %p.bottom= comment.user.name
           %hr
         
-    - if user_signed_in?    
+    - unless admin_signed_in?    
       %hr/
       #moveDown
         .tab#C7

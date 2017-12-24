@@ -7,12 +7,12 @@ $secondcolour:#B0E0E6;
   h1{
     color:$maincolour;
     position:absolute;
-    left:15%;
-    font-size:2.6em;
-    top:85%;
+    font-size:2.5em;
+    top:80%;
+    left:37%;
   }
-  #posts{
-    margin-top:22.5em;
+  #pins{
+    margin-top:21em;
   }
 }
 
@@ -24,7 +24,7 @@ $secondcolour:#B0E0E6;
   top: 59%;
   left: 44.5%;
   border-radius:4px;
-  height:15.5vh;
+  height:15vh;
   transform: translate(-50%, -50%);
   background:#ffffff;
 }
@@ -124,7 +124,7 @@ $secondcolour:#B0E0E6;
     .topnav{
     background:transparent;
     position:static;
-    box-shadow: 0 0px 0px 0px $maincolour;
+    border:0;
       i{
     color:#A9A9A9;
     &:hover{
@@ -451,7 +451,7 @@ $secondcolour:#B0E0E6;
   .topnav{
     background:transparent;
     position:static;
-    box-shadow: 0 0px 0px 0px $maincolour;
+    border:0;
          i{
     color:#A9A9A9;
     &:hover{

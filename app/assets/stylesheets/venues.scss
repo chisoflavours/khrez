@@ -39,53 +39,41 @@ $secondcolour:#B0E0E6;
   margin-right:0px;
 }
 
-// Posts Content
-#posts {
-  width:86%;
-  float:right;
-  position:relative;
-  right:1%;
-  padding-top:3em;
-	.post {
-	  background: #ffffff;
-		box-shadow: 0 8px 50px -1px lightgray;
-		width: 23%;
-		float: left;
-		margin: 1rem 3%;
-		margin-bottom:5em;
 
-
-		.post_image {
-		  img {
-			  width: 100%;
-				border-radius: 2px 2px 0 0;
-		  }
-		}
-		.post_content {
-		  padding-top:3em;
-		  padding-left:2.3em;
-		  height:11vh;
-			.venuetext{
-        color:$maincolour;
-        text-decoration:none;
-        font-weight:500;
-        letter-spacing:.5px;
-        text-align:center;
-        font-size:1em;
-        text-decoration:none;
-      }
-      
-      .venuecity{
-        color:#A9A9A9;
-        font-size:.95em;
-        letter-spacing:.5px;
-        font-weight:100;
-        text-decoration:none;
-        position:relative;
-        top:.3em;
-      }
+#pins {
+  margin: 0 auto;
+  width: 100%;
+  margin-top:4em;
+  .box {
+	  margin: 15px;
+	  width: 350px;
+	  box-shadow: 0 8px 50px -1px lightgray;
+	  text-align: center;
+	  img {
+	  	max-width: 100%;
+	  	height: auto;
 	  }
-  }
+	  h2 {
+	  	font-size: 1.1em;
+	  	padding: 18px 0 ;
+	  	letter-spacing:0.3px;
+	  	a {
+				color: $maincolour;
+				text-decoration:none;
+	  	}
+	  }
+	  .user {
+	  	font-size: .9em;
+	  	border-top: 1px solid #EAEAEA;
+	    letter-spacing:0.3px;
+			padding: 15px;
+			margin: 0;
+			a{
+			  text-decoration:none;
+			  color:lightgray;
+			}
+	  }
+	}
 }
 
 
@@ -174,9 +162,9 @@ button:hover {
 
 
 .venue_wrapper{
-  width: 75%;
+  width: 70%;
 	margin: 0 auto;
-	margin-top:150px;
+	margin-top:3rem;
 	
 	#moveDown{
 	  padding-bottom:8em;
@@ -193,12 +181,12 @@ button:hover {
   }
   .venue_name{
     color:$maincolour;
-    font-size:1.8em;
-    font-weight:100;
+    font-size:1.9em;
+    font-weight:500;
     margin-top:1.5em;
   }
   #city{
-    color:lightgray;
+    color:#A9A9A9;
     margin-top:-10px;
     font-size:1.2em;
   }
@@ -208,22 +196,16 @@ button:hover {
     width:25%;
     i{
       font-size:27px;
-      color:$secondcolour;
+      color:#A9A9A9;
       position:absolute;
     }
     .secTwo{
       position:absolute;
-      right:13%;
-    }
-    .venue_category{
-      margin-top:0px;
-      color:$secondcolour;
-      font-size:20px;
-      padding-left:2em;
+      right:15%;
     }
     .venue_check{
       margin-top:1px;
-      color:$secondcolour;
+      color:#A9A9A9;
       font-size:20px;
       padding-left:2em;
     }
@@ -262,9 +244,9 @@ button:hover {
   .tab-frame{
     margin-top:3.5em;
     position:absolute;
-    width:75%;
+    width:70%;
     hr{
-      border:.5px solid lightgray;
+      border: .8px solid #E4E4E4;
     }
 
   .tab{ 
@@ -278,20 +260,10 @@ button:hover {
     white-space: nowrap;
   }
     
-    input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
-    input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
-    input:nth-of-type(3):checked ~ .tab:nth-of-type(3),
-    input:nth-of-type(4):checked ~ .tab:nth-of-type(4),
-    input:nth-of-type(5):checked ~ .tab:nth-of-type(5),
-    input:nth-of-type(6):checked ~ .tab:nth-of-type(6),
-    input:nth-of-type(7):checked ~ .tab:nth-of-type(7){ 
-      display:block;
-    }
-   
   }
   
   .tab{
-    padding:40px;
+    padding:3.8em;
     .title{
       color:$maincolour;
       margin-top:2em;
@@ -317,53 +289,29 @@ button:hover {
       text-decoration: line-through;
     }
   }
-  
-
-  
-  
-
-
 }
 
+// Venue Show Bottom bar that appears when the user is signed in
 .booking_action{
   width:100%;
   position:fixed;
   bottom:0;
-  border-top:1px solid lightgray;
+  box-shadow: 0 8px 50px -1px lightgray;
   z-index:1;
   background:#ffffff;
-  padding:25px;
-  img{
-    height:50px;
-    width:50px;
-    border-radius:50%;
-  }
-  .name{
-    padding-left:80px;
-    margin-top:-35px;
+  padding:35px;
+  .margin-link-left{
+    margin-left:2em;
     color:$maincolour;
     text-decoration:none;
-    transition: 0.3s;
-
-    a{
-      text-decoration:none;
-      color:$maincolour;
-      transition:0.3s;
-      &:hover{
-        color:$secondcolour;
-      }
+    font-weight:100;
+    transition:0.3s;
+    font-size:1.08em;
+    &:hover{
+      color:#A9A9A9;
     }
   }
-
 }
 
-.margin-link-left{
-  margin-left:2em;
-  text-decoration:none;
-  color:$maincolour;
-  &:hover{
-    color:$secondcolour;
-  }
-}
 
 

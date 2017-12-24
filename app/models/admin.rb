@@ -4,8 +4,8 @@ class Admin < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
-  has_many :venues
-  has_many :bookings
+  has_many :venues, dependent: :destroy
+  has_many :bookings, dependent: :destroy
   has_many :chats
   has_many :offers
   has_many :finals

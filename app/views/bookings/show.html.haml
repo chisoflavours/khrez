@@ -22,7 +22,7 @@
             %h3.name=chat.user.name
           %hr.hr_chat
 
-  
+
   .accordion_section
     - unless @offers.count == 0
       %button.accordion Deposit & Terms
@@ -58,7 +58,7 @@
             %p By signing up you accepting to the venues terms & conditions shown above
           .field
             - if user_signed_in?
-              = link_to 'Accept', root_path,:class => "button"
+              = link_to 'Accept', root_path,:class => "button", :id => "not_allowed"
             - elsif admin_signed_in?
               = link_to 'Accept', @booking,:class => "button", :id => "not_allowed"
             %br/
@@ -81,7 +81,7 @@
           %br/
           .field
             - if user_signed_in?
-              = link_to 'Pay', root_path,:class => "button"
+              = link_to 'Pay', @booking,:class => "button", :id => "not_allowed"
             - elsif admin_signed_in?
               = link_to 'Pay', @booking,:class => "button", :id => "not_allowed"
             %br/

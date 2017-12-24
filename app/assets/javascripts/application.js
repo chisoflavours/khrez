@@ -3,7 +3,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
+//= require masonry/jquery.masonry
+//= require masonry/jquery.infinitescroll.min
 
 
 // Main Nav bar
