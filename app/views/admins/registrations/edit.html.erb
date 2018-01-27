@@ -1,75 +1,99 @@
-<%= render 'page/nav' %>
-<div class="topheader">
-  <h1>Profile</h1>
-</div>
-<br>
-<br>
-<br>
+<body id="page_dash">
+  <div class="only_dash">
+    <%= render 'page/nav' %>
+    <div class="topheader">
+      <h1>Dashboard</h1>
+      <% if admin_signed_in? %>
+        <%= link_to "New Venue", new_venue_path, class: 'top_button' %>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <% unless current_admin.venues.count == 0 %>
+      <p id="move">
+        <%= link_to "My Venues", root_path, class: 'item' %>
+      </p>
+    <% end %>
+    <p id="sec">
+      <%= link_to "Booking Requests", venue_bookings_path(:venue_id => '1'), class: 'item' %>
+    </p>
+    <p id="sec">
+      <%= link_to "Edit Account",edit_admin_registration_path, class: 'item' %>
+    </p>
+
+  </div>
+</body>
+
 <br>
 <br>
 <br>
 
+<div id="formTab">
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
-
-    <div class="field">
-      <h3 class="colour">Email</h3>
+    <div class="CenterContent">
       <br>
-      <%= f.input :email,label: false, placeholder: "hi@gmail.com", input_html: { class: 'in' } %>
-    </div>
-    <br>
+      <br>
+      <div class="field2">
+        <h3 class="label">Email</h3>
+        <%= f.input :email,label: false, placeholder: "hi@gmail.com", input_html: { class: 'in' } %>
+      </div>
+      <br>
+      <div class="field2">
+      <h3 class="label">Name</h3>
+      <%= f.input :ownername,label: false, placeholder: "Venue Ltd", input_html: { class: 'in' } %>
+      </div>
+      <br>
+      <div class="field2">
+      <h3 class="label">Phone Number</h3>
+      <%= f.input :phone,label: false, placeholder: "123456789", input_html: { class: 'in' } %>
+      </div>
+      <br>
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+      <% end %>
+      <div class="field2">
+      <h3 class="label">Change Password</h3>
+      <%= f.input :password, autocomplete: "off",label: false, placeholder: "Password 123", input_html: { class: 'in' } %>
+      </div>
+      <br>
+      <div class="field2">
+      <h3 class="label">Password Confirmation</h3>
+      <%= f.input :password_confirmation, required: false ,label: false, placeholder: "Password 123", input_html: { class: 'in' }%>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="field2">
+      <h3 class="label">Current Password </h3>
+      <%= f.input :current_password,label: false, placeholder: "Password 123", input_html: { class: 'in' }, required: true %>
+      </div>
+      <br>
+  
+  <br>
+  <br>
     <div class="field">
-    <h3 class="colour">Name</h3>
-    <br>
-    <%= f.input :ownername,label: false, placeholder: "Venue Ltd", input_html: { class: 'in' } %>
+    <div class="form-actions">
+      <%= f.button :submit, "Save Changes", :class => 'button' %>
     </div>
-    <br>
-    <div class="field">
-    <h3 class="colour">Phone Number</h3>
-    <br>
-    <%= f.input :phone,label: false, placeholder: "123456789", input_html: { class: 'in' } %>
-    </div>
-    <br>
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
-    <% end %>
-    <div class="field">
-    <h3 class="colour">Change Password</h3>
-    <br>
-    <%= f.input :password, autocomplete: "off",label: false, placeholder: "Password 123", input_html: { class: 'in' } %>
-    </div>
-    <br>
-    <div class="field">
-    <h3 class="colour">Password Conformation</h3>
-    <br>
-    <%= f.input :password_confirmation, required: false ,label: false, placeholder: "Password 123", input_html: { class: 'in' }%>
     </div>
     <br>
     <br>
     <br>
-    <div class="field">
-    <h3 class="colour">Current Password </h3>
     <br>
-    <%= f.input :current_password,label: false, placeholder: "Password 123", input_html: { class: 'in' }, required: true %>
-    </div>
-    <br>
-
-<br>
-<br>
-  <div class="field">
-  <div class="form-actions">
-    <%= f.button :submit, "Update", :class => 'button' %>
-  </div>
   </div>
 <% end %>
+</div>
 <br>
 <br>
 <br>
 <br>
 <div class="field">
-<p><%= link_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?, you will loose everything" }, method: :delete , :class => 'link'%></p>
+<p><%= link_to "Delete account", registration_path(resource_name), data: { confirm: "Are you sure?, you will loose everything" }, method: :delete , :class => 'link'%></p>
 </div>
 <br>
 <br>
+<br>
+<br>
 
-<%= render "page/footer" %>
+

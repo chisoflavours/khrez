@@ -140,3 +140,35 @@ th{
       cursor: not-allowed;
     }
 }
+
+.bookingList{
+  width: 50%;
+  margin-left:11em;
+  #booking{
+    background:#ffffff;
+    box-shadow: 0 8px 50px -1px lightgray;
+    padding:2em;
+    border-radius:5px;
+    margin-bottom:1.5em;
+    &:hover{
+      box-shadow: 0 15px 60px -1px lightgray; 
+    }
+    a{
+      text-decoration:none;
+      color:#A9A9A9;
+      transition:0.3s;
+      &:hover{
+        color:$maincolour;
+        opacity:0.7;
+      }
+    }
+    p{
+      display:inline-block;
+    }
+    #right{
+      float:right;
+      color:#A9A9A9;
+      margin-right:12px;
+    }
+  }
+}

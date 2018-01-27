@@ -1,9 +1,5 @@
 = simple_form_for([@venue, @venue.bookings.build]) do |f|
   %br/
   .booking_form
-    %p.description Date
-    = f.input :date, label: false, placeholder: "Date", input_html: { class:'input' }
-    %br/
-    %br/
-    = f.button :button,"Send",class:'button'
+    = f.button :button,"Request to Book",class:'button'
 

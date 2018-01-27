@@ -16,6 +16,8 @@ $secondcolour:#B0E0E6;
   line-height:2.5em;
 }
 
+
+
 .search_banner{
   .title_banner{
 		position:absolute;
@@ -30,7 +32,7 @@ $secondcolour:#B0E0E6;
 			width:40px;
 			float:left;
 			margin-top:-10px;
-			border:2px solid $maincolour;
+			border:1px solid $maincolour;
 		}
 	}
 }
@@ -42,20 +44,23 @@ $secondcolour:#B0E0E6;
 
 #pins {
   margin: 0 auto;
-  width: 100%;
+  width:77%;
   margin-top:4em;
   .box {
 	  margin: 20px;
-	  width: 350px;
+	  width: 300px;
 	  box-shadow: 0 8px 50px -1px lightgray;
 	  text-align: center;
+	  background:#ffffff;
+	  border-radius:3px;
+	  display:inline-block;
 	  img {
 	  	max-width: 100%;
 	  	height: auto;
 	  }
 	  h2 {
 	  	font-size: 1.1em;
-	  	padding: 25px 0 ;
+	  	padding: 20px 0 ;
 	  	letter-spacing:0.3px;
 	  	a {
 				color: $maincolour;
@@ -85,17 +90,29 @@ $secondcolour:#B0E0E6;
 // Venue Form
 
 #venueForm{
+  overflow:hidden;
+    width: 70%;
+	position:relative;
+	left:50%;
+
+	transform: translate(-35%, -10%);
+	.progress{
+	  position:absolute;
+	  bottom:4%;
+	  left:35%;
+	  transform: translate(-50%, -50%);
+	}
 .width{
 	width:300px;
 }
-
-#venueForm {
-  background-color: #ffffff;
-  margin: 100px auto;
-  padding: 40px;
-  width: 50%;
-  min-width: 300px;
+#head{
+  color:$maincolour;
+  margin-left:2.6em;
+  font-size:1.6em;
+  font-weight:500;
+  margin-top:7em;
 }
+
 h1 {
   text-align: center;  
 }
@@ -106,37 +123,43 @@ h1 {
 /* Hide all steps by default: */
 .tab {
   display: none;
+  #num{
+    float:right;
+    padding:1em;
+    padding-top:1.7em;
+    padding-right:3.3em;
+    color:#A9A9A9;
+  }
 }
-
 
 
 button {
-  background-color:transparent;
-  outline: none;
-  color: $maincolour;
-  border:1px solid $maincolour;
-  letter-spacing:.8px;
-  font-weight:500;
-  padding: 1.8em 4.5em;
-  padding-right:95px;
-  padding-left:60px;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius:400px;
-  margin-left:10px;
-  text-align:center;
-  transition: 0.3s;
-  width:10vw;
+	outline: none;
+	background: $maincolour;
+	color:#ffffff;
+	text-decoration:none;
+	font-size:16px;
+	padding: 1.5em 5em;
+	border:0;
+	border-radius: 4px;
+	margin-right:-100px;
+	transition: 0.3s;
+	&:hover {
+		opacity:0.8;
+
+		color:#ffffff;
+	}
+	&:focus{
+    outline:none;
+  }
 }
-button:hover {
-  border-color:#A9A9A9;
-  color:#A9A9A9;
-}
+
 #prevBtn {
-  margin-right:40px;
-  padding: 1.8em 4.5em;
-  padding-right:120px;
-  padding-left:60px;
+
+padding: 1.5em 4em;
+
+
+
 }
 
 /* Make circles that indicate the steps of the form: */
@@ -314,3 +337,21 @@ button:hover {
 
 
 
+.Venueclose {
+    color: #A9A9A9;
+    transition: 0.3s;
+    float: right;
+    font-size: 2.5em;
+    font-weight: lighter;
+    position: absolute;
+    top: 8%;
+    right: 4%;
+    transform: translate(-50%, -50%);
+    &:hover{
+      color:$maincolour;
+    }
+}
+
+.avatarbtn{
+  width:60%;
+}

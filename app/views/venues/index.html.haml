@@ -9,13 +9,13 @@
       = @venue.count 
       reasults for
       #{params[:city]} #{params[:category]}
-    %hr.hr_short
-#pins.transitions-enabled
+
+#pins
   - @venue.each do |venue|
-    .box.panel-default
-      = link_to ( image_tag venue.thumbnail.url), venue
-      %h2= link_to venue.name, venue
-      %p.user= link_to venue.city, venue
+    .box
+      = link_to ( image_tag venue.thumbnail.url), venue, :target => "_blank"
+      %h2= link_to venue.name, venue, :target => "_blank"
+      %p.user= link_to venue.city, venue, :target => "_blank"
 
 %br/
 %br/

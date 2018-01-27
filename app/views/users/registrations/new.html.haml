@@ -1,0 +1,42 @@
+= link_to root_path do
+  %span.close_AdminForm ×
+
+.admin_form#formTop
+  %h1 Sign Up For Free!
+  %p Create your free account
+  %br
+  %br
+  .Main
+    #Form
+      = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        %h3.label Email address
+        .field
+          = f.input :email, required: true , input_html: { class: 'in' }, label: false, placeholder: "hi@gmail.com"
+        %br
+        %h3.label Password
+        .field
+          = f.input :password, required: true , input_html: { class: 'in' }, label: false, placeholder: "Password 123"
+        %br
+        %h3.label Password confirmation
+        .field
+          = f.input :password_confirmation, required: true , input_html: { class: 'in' }, label: false, placeholder: "Password 123"
+        %br
+        .field
+          = f.button :submit, "Sign Up" ,:class => 'button'
+        
+        %br
+        %br
+        .field
+          %p= render "users/shared/links"
+          %p 
+            |
+          %p= link_to "Venue sign up", new_admin_registration_path, class: 'link'
+
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+

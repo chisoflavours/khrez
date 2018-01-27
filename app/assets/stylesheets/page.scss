@@ -8,8 +8,9 @@ $secondcolour:#B0E0E6;
     color:$maincolour;
     position:absolute;
     font-size:2.5em;
-    top:80%;
-    left:37%;
+    top:85%;
+    transform: translate(-50%, -50%);
+    left:50%;
   }
   #pins{
     margin-top:21em;
@@ -127,9 +128,6 @@ $secondcolour:#B0E0E6;
     border:0;
       i{
     color:#A9A9A9;
-    &:hover{
-      color:$maincolour;
-    }
   }
       #overlay {
     position: fixed;
@@ -482,12 +480,12 @@ $secondcolour:#B0E0E6;
       left: 30%;
       transform: translate(-50%, -50%);
       color: $maincolour;
-      font-size:1.5vw;
+      font-size:1.3vw;
    
       h2{
         color:#A9A9A9;
         letter-spacing:1px;
-        font-size:1.8vw;
+        font-size:1.6vw;
         margin-top:-10px;
       }
   }
@@ -658,8 +656,9 @@ $secondcolour:#B0E0E6;
   color:$maincolour;
   text-decoration:none;
   a{
+    transition:0.3s;
     &:hover{
-      color:$secondcolour;
+      color:#A9A9A9;
     }
   }
 }

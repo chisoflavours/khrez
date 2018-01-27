@@ -95,15 +95,45 @@ $secondcolour:#B0E0E6;
 @media only screen and (max-width: 600px) {
 
 
+.admin_form{
+  padding-top:20em;
+  .Main{
+    #Form{
+      .label{
+        color:$maincolour;
+        margin-left:8.5em;
+        font-weight:500;
+      }
+      .button{
+        background:$maincolour;
+        color:#ffffff;
+        margin-left:.5em;
+        width:65%;
+        padding:1.6em;
+        border:0;
+        border-radius:5px;
+        margin-top:1em;
+      }
+    }
+  }
+}
+
+.topheader{
+  .top_button{
+    display:none;
+  }
+}
+.row{
+  display:none;
+}
 
 .explore_text{
   h1{
     color:$maincolour;
     position:absolute;
     font-size:2em;
-    margin-left:5px;
+    margin-left:3.7em;
     top:118%;
-    left:40%;
   }
   #pins{
     margin-top:1em;
@@ -312,7 +342,7 @@ $secondcolour:#B0E0E6;
   }
 }
 .searchTerm{
-  font-size:13px;
+  font-size:14px;
   position:relative;
   text-align:left;
   width:100%;
@@ -326,7 +356,7 @@ $secondcolour:#B0E0E6;
   border-bottom:.5px solid #d6dce0;
   height:7em;
   position:relative;
-  font-size:13px;
+  font-size:14px;
   text-indent:1.5em;
   left:0;
   outline:none;
@@ -402,6 +432,7 @@ $secondcolour:#B0E0E6;
     padding: 16px 9px;
     text-decoration: none;
     margin-right:15px;
+    margin-top:15px;
     font-size: 20px;
 
     &:hover{
@@ -724,15 +755,6 @@ $secondcolour:#B0E0E6;
 }
 
 
-
-.avatarbtn{
-.field{
-  .button{
-    width:50%;
-    margin:0 auto;
-  }
-}
-}
 
 
 
@@ -1085,9 +1107,6 @@ $secondcolour:#B0E0E6;
 
 
 
-.hr_login{
-  width:50%;
-}
 
 
 
@@ -1181,10 +1200,6 @@ $secondcolour:#B0E0E6;
   
  
 
-
-.hr_login{
-  width:70%;
-}
 
 }
 

@@ -20,8 +20,9 @@ Rails.application.routes.draw do
   
   # Root Paths
   authenticated :admin do
-     root :to => 'venues#dashboard', as: :authenticated_root
+     root :to => 'venues#dashboard', as: :authenticated_admin_root
   end
+  
   root :to => 'page#index'
  
   # Resources

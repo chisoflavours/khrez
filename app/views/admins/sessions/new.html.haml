@@ -1,0 +1,29 @@
+= link_to root_path do
+  %span.close_AdminForm ×
+  
+.admin_form
+  %h1 Welcome Back!
+  %p Sign into your venue dashboard
+  %br
+  %br
+  .Main
+    #Form
+      = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        %h3.label Email address
+        .field
+          = f.input :email, required: true , input_html: { class: 'in' }, label: false, placeholder: "hi@gmail.com"
+        %br
+        %h3.label Password
+        .field
+          = f.input :password, required: true , input_html: { class: 'in' }, label: false, placeholder: "Password 123"
+        %br
+        .field
+          = f.button :submit, "Log in" ,:class => 'button'
+        
+        %br
+        %br
+        %br
+        %br
+        
+        .field
+          = render "admins/shared/links"

@@ -5,12 +5,12 @@ $secondcolour:#B0E0E6;
 // Comments Form
 .comment_input{
         width:85%;
-        border:.8px solid $maincolour;
+        border:.7px solid #A9A9A9;
         border-radius:5px;
         padding:4em;
         padding-top:5em;
         &::placeholder {
-         color: $maincolour;
+         color: #A9A9A9;
          font-size:1em;
         }
     

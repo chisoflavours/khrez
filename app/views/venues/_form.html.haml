@@ -1,191 +1,140 @@
+= link_to :back do
+  %span.Venueclose ×
+
+
 = simple_form_for @venue, html: { multipart: true } do |f|
 
   #venueForm
     .tab
-      .field
-        %h3.colour Venue Name
+      .field2
+        %h3.label Venue Name
+        = f.input :name, input_html: { class: 'in' }, label: false, placeholder: "London hall", autofocus: true
         %br/
-        %p
-          = f.input :name, input_html: { class: 'in' }, label: false, placeholder: "Name"
-        %br/
-        %br/
-      .field
-        %h3.colour Description
-        %br/
-        %p
-        = f.input :description, input_html: { class: 'in2' }, label: false, placeholder: "Description", maxlength: 600
-    .tab
-      .field
-        %h3.colour Postcode
-        %br
-        %p
-          = f.input :postcode, input_html: { class: 'in' }, label: false, placeholder: "Postcode"
-        %br/
-        %br/
-      .field
-        %h3.colour County
-        %br/
-        %p
-          = f.input :county, input_html: { class: 'in' }, label: false, placeholder: "County"
-        %br/
-        %br/
-      .field
-        %h3.colour Street Line 1
-        %br/
-        %p
-          = f.input :street_line_one, input_html: { class: 'in' }, label: false, placeholder: "Street Line 1"
-        %br/
-        %br/
-      .field
-        %h3.colour Street Line 2
-        %br/
-        %p
-          = f.input :street_line_two, input_html: { class: 'in' }, label: false, placeholder: "Street Line 2"
-        %br/
-        %br/
-      .field
-        %h3.colour City
-        %br/
-        %p
-          = f.input :city, input_html: { class: 'in' }, label: false, placeholder: "City"
-        
-    .tab
-      .field
-        %h3.colour Capacity Standing
-        %br/
-        %p
-          = f.input :capacity_standing, input_html: { class: 'in' }, label: false, placeholder: "Capacity Standing"
-        %br/
-        %br/
-      .field
-        %h3.colour Capacity Sitting
-        %br/
-        %p
-          = f.input :capacity_sitting, input_html: { class: 'in' }, label: false, placeholder: "Capacity Sitting"
-        %br/
-        %br/
-      .field
-        %h3.colour Venue Size
-        %br/
-        %p
-          = f.input :size, input_html: { class: 'in' }, label: false, placeholder: "Size sqm"
+      .field2
+        %h3.label Description
+        = f.input :description, input_html: { class: 'in2' }, label: false, placeholder: "Write someting nice about your venue!", maxlength: 600
       
     .tab
-      .field
-        %h3.colour Parking Spaces
+      %br/
+      %br/
+      .field2
+        %h3.label Postcode
+        = f.input :postcode, input_html: { class: 'in' }, label: false, placeholder: "WD3 14R"
         %br/
-        %p
-          = f.input :parking_spaces, input_html: { class: 'in' }, label: false, placeholder: "Number Of Parking Spaces"
+      .field2
+        %h3.label County
+        = f.input :county, input_html: { class: 'in' }, label: false, placeholder: "City of London"
         %br/
+      .field2
+        %h3.label Street Line 1
+        = f.input :street_line_one, input_html: { class: 'in' }, label: false, placeholder: "13 Oak Lane"
         %br/
-      .field
-        %h3.colour Kitchens
+      .field2
+        %h3.label Street Line 2
+        = f.input :street_line_two, input_html: { class: 'in' }, label: false
         %br/
-        %p
-          = f.input :kitchens, input_html: { class: 'in' }, label: false, placeholder: "Number Of Kitchens"
+      .field2
+        %h3.label City
+        = f.input :city, input_html: { class: 'in' }, label: false, placeholder: "London"
+        
+        
+    .tab
+      .field2
+        %h3.label Capacity Standing
+        = f.input :capacity_standing, input_html: { class: 'in' }, label: false, placeholder: "250 people"
         %br/
+      .field2
+        %h3.label Capacity Sitting
+        = f.input :capacity_sitting, input_html: { class: 'in' }, label: false, placeholder: "100 people"
         %br/
-      .field
-        %h3.colour Toilets
+      .field2
+        %h3.label Venue Size
+        = f.input :size, input_html: { class: 'in' }, label: false, placeholder: "150 sqm"
+      
+    .tab
+      %br/
+      %br/
+      %br
+      .field2
+        %h3.label Number Of Parking Spaces
+        = f.input :parking_spaces, input_html: { class: 'in' }, label: false, placeholder: "26"
         %br/
-        %p
-          = f.input :toilets, input_html: { class: 'in' }, label: false, placeholder: "Number Of Toilets"
+      .field2
+        %h3.label Number Of Kitchens
+        = f.input :kitchens, input_html: { class: 'in' }, label: false, placeholder: "3"
         %br/
+      .field2
+        %h3.label Number Of Toilets
+        = f.input :toilets, input_html: { class: 'in' }, label: false, placeholder: "3"
         %br/
-      .field
-        %h3.colour Tables
+      .field2
+        %h3.label Number Of Tables
+        = f.input :tables, input_html: { class: 'in' }, label: false, placeholder: "17"
         %br/
-        %p
-          = f.input :tables, input_html: { class: 'in' }, label: false, placeholder: "Number Of Tables"
+      .field2
+        %h3.label Number Of Chairs
+        = f.input :chairs, input_html: { class: 'in' }, label: false, placeholder: "40"
         %br/
-        %br/
-      .field
-        %h3.colour Chairs
-        %br/
-        %p
-          = f.input :chairs, input_html: { class: 'in' }, label: false, placeholder: "Number Of Chairs"
-        %br/
-        %br/
-      .field
-        %h3.colour Extra Infomation
-        %br/
-        %p
-          = f.input :extra_info, input_html: { class: 'in2' }, label: false, placeholder: "Extra Infomation", maxlength: 200
+      .field2
+        %h3.label Extra Infomation
+        = f.input :extra_info, input_html: { class: 'in2' }, label: false, placeholder: "Is there any more info about your venue?", maxlength: 200
        
     .tab
-      .field
-        %h3.colour External Catering Allowed
+      %br/
+      %br/
+      %br
+      .field2
+        %h3.label2 External Catering Allowed
+        = f.input :external_catering_allowed, label: false, input_html: { class: 'ib' }
         %br/
-        %p
-          = f.input :external_catering_allowed, label: false, input_html: { class: 'ib' }
+      .field2
+        %h3.label2 External Alcohol Allowed
+        = f.input :external_alcahool_allowed, label: false, input_html: { class: 'ib' }
         %br/
-      .field
-        %h3.colour External Alcohol Allowed
+      .field2
+        %h3.label2 Catering Provided
+        = f.input :inhouse_catering_provided, label: false, input_html: { class: 'ib'} 
         %br/
-        %p
-          = f.input :external_alcahool_allowed, label: false, input_html: { class: 'ib' }
+      .field2
+        %h3.label2 Alcohol Provided
+        = f.input :inhouse_alcahool_provided, label: false, input_html: { class: 'ib' } 
         %br/
-      .field
-        %h3.colour Catering Provided
+      .field2
+        %h3.label2 Storage Provided
+        = f.input :storage, label: false, input_html: { class: 'ib' }
         %br/
-        %p
-          = f.input :inhouse_catering_provided, label: false, input_html: { class: 'ib'} 
+      .field2
+        %h3.label2 Air Conditioning Provided
+        = f.input :air_conditionind, label: false, input_html: { class: 'ib' }
         %br/
-      .field
-        %h3.colour Alcohol Provided
+      .field2
+        %h3.label2 Wifi Provided
+        = f.input :wifi, label: false, input_html: { class: 'ib' }
         %br/
-        %p
-          = f.input :inhouse_alcahool_provided, label: false, input_html: { class: 'ib' } 
+      .field2
+        %h3.label2 Projector Provided
+        = f.input :projector, label: false, input_html: { class: 'ib' } 
         %br/
-      .field
-        %h3.colour Storage Provided
+      .field2
+        %h3.label2 Disabled Acess
+        = f.input :disabled_acess , input_html: { class: 'ib' }, label: false
         %br/
-        %p
-          = f.input :storage, label: false, input_html: { class: 'ib' }
-        %br/
-      .field
-        %h3.colour Air Conditioning Provided
-        %br/
-        %p
-          = f.input :air_conditionind, label: false, input_html: { class: 'ib' }
-        %br/
-      .field
-        %h3.colour Wifi Provided
-        %br/
-        %p
-          = f.input :wifi, label: false, input_html: { class: 'ib' }
-        %br/
-      .field
-        %h3.colour Projector Provided
-        %br/
-        %p
-          = f.input :projector, label: false, input_html: { class: 'ib' } 
-        %br/
-      .field
-        %h3.colour Disabled Acess
-        %br/
-        %p
-          = f.input :disabled_acess , input_html: { class: 'ib' }, label: false
-        %br/
-      .field
-        %h3.colour Outside Spaces
-        %br/
-        %p
-          = f.input :outside_spaces , input_html: { class: 'ib' }, label: false
-        %br/
+      .field2
+        %h3.label2 Outside Spaces
+        = f.input :outside_spaces , input_html: { class: 'ib' }, label: false
+      
     .tab
-      .field
-        %h3.colour Category
-        %br/
-        %p
-          = f.input :category, input_html: { class: 'in'}, prompt: " Venue Category", label: false, collection: [ "Hall", "Bar", "Meeting Room", "Reception", "Kids Party", "Party", "Exhibition", "Performance Venue", "Wedding Venue", "Private Room", "Conference Room", "Other"]
+      %br/
+      %br/
+      %br
+      .field2
+        %h3.label Category
+        = f.input :category, input_html: { class: 'in'}, prompt: " Venue Category", label: false, collection: [ "Hall", "Bar", "Meeting Room", "Reception", "Kids Party", "Party", "Exhibition", "Performance Venue", "Wedding Venue", "Private Room", "Conference Room", "Other"]
         %br/
         %br/
       .avatarbtn
-        .field
-          %h3.colour Venue Image
-          %br/
-          %p
+        .field2
+          %h3.label Venue Image
           .button
             = f.input :thumbnail, as: :file, input_html: { hidden: true,id:'venimgbtn' }, label: 'Upload'
       .field
@@ -202,9 +151,26 @@
     %div{:style => "overflow:auto;"}
       %br/
       %br/
+      %br/
       .field
-        %button#prevBtn{:onclick => "nextPrev(-1)", :type => "button"} Previous
-        %button#nextBtn{:onclick => "nextPrev(1)", :type => "button"} Next
+        %button#nextBtn{:onclick => "nextPrev(1)", :type => "button"}Next
+        %br/
+        %br/
+        %button#prevBtn{:onclick => "nextPrev(-1)", :type => "button"}Previous
+      %br/
+      %br/
+      %br/
+      %br/
+      %br/
+      %br/
+      
+    .progress
+      %span.step
+      %span.step
+      %span.step
+      %span.step
+      %span.step
+      %span.step
 
 
 
@@ -227,6 +193,7 @@
     if (n == (x.length - 1)) {
       document.getElementById("nextBtn").style.display = "none";
       document.getElementById("prevBtn").style.display = "none";
+  
     } else {
       document.getElementById("nextBtn").innerHTML = "Next";
     }

@@ -1,75 +1,104 @@
-<%= render 'page/nav'%>
-<div class="topheader">
-  <h1>Profile</h1>
-</div>
+<body id="page_dash">
+  <div class="only_dash">
+    <%= render 'page/nav' %>
+    <div class="topheader">
+      <h1>Dashboard</h1>
+      <% if admin_signed_in? %>
+        <%= link_to "New Venue", new_venue_path, class: 'top_button' %>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <% if admin_signed_in? %>
+      <% unless current_admin.venues.count == 0 %>
+        <p id="move">
+          <%= link_to "My Venues", root_path, class: 'item' %>
+        </p>
+      <% end %>
+    <% end %>
+    <% if user_signed_in? %>
+      <% unless current_user.bookings.count == 0 %>
+        <p id="sec">
+          <%= link_to "Booking Requests", venue_bookings_path(:venue_id => '1'), class: 'item' %>
+        </p>
+      <% end %>
+    <% elsif admin_signed_in? %>
+      <% unless current_admin.venues.count == 0 %>
+        <p id="sec">
+          <%= link_to "Booking Requests", venue_bookings_path(:venue_id => '1'), class: 'item' %>
+        </p>
+      <% end %>
+    <% end %>
+    <% if user_signed_in? %>
+      <p id="sec">
+        <%= link_to "Edit Account",edit_user_registration_path, class: 'item' %>
+      </p>
+    <% elsif admin_signed_in? %>
+      <p id="sec">
+        <%= link_to "Edit Account",edit_admin_registration_path, class: 'item' %>
+      </p>
+    <% end %>
+  </div>
+</body>
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-
+<div id="formTab">
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <div class="field">
-      <h3 class="colour">Email</h3>
-      <br>
+    <br>
+    <br>
+    <br>
+    <div class="field2">
+      <h3 class="label">Email</h3>
       <%= f.input :email, required: true, input_html: { class: 'in' }, label: false, placeholder: "hi@gmail.com" %>
-      
     </div>
     <br>
-    <div class="field">
-      <h3 class="colour">Name</h3>
-      <br>
+    <div class="field2">
+      <h3 class="label">Name</h3>
       <%= f.input :name, autocomplete: "off", required: false , input_html: { class: 'in' }, label: false, placeholder: "Logan A"%>
     </div>
     <br>
-    <div class="field">
-      <h3 class="colour">Number</h3>
-      <br>
-      <%= f.input :number, autocomplete: "off", required: false , input_html: { class: 'in' }, label: false, placeholder: "123456789"%>
-    </div>
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
     <% end %>
     <br>
-    <div class="field">
-    <h3 class="colour">Change Password</h3>
-    <br>
+    <div class="field2">
+    <h3 class="label">Change Password</h3>
     <%= f.input :password, autocomplete: "off", required: false , input_html: { class: 'in' }, label: false, placeholder: "Password 123"%>
     </div>
     <br>
-    <div class="field">
-    <h3 class="colour">Password Confirmation</h3>
-    <br>
+    <div class="field2">
+    <h3 class="label">Password Confirmation</h3>
     <%= f.input :password_confirmation, required: false , input_html: { class: 'in' }, label: false, placeholder: "Password 123" %>
     </div>
     <br>
     <br>
     <br>
-    <br>
-    <div class="field">
-    <h3 class="colour">Current Password</h3>
-    <br>
+    <div class="field2">
+    <h3 class="label">Current Password</h3>
     <%= f.input :current_password, required: false , input_html: { class: 'in' }, label: false, placeholder: "Password 123" %>
     </div>
     
-  </div>
+<br>
 <br>
 <br>
   <div class="field">
-    <%= f.button :submit, "Update" ,:class => 'button'%>
+    <%= f.button :submit, "Save Changes" ,:class => 'button'%>
   </div>
+    <br>
+  <br>
+  <br>
+  <br>
 <% end %>
-
+</div>
 <br>
 <br>
-
+<br>
+<br>
 <div class="field">
 
-<p><%= link_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete,:class => 'link' %></p>
+<p><%= link_to "Delete account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete,:class => 'link' %></p>
 
 </div>
 
@@ -78,4 +107,3 @@
 <br>
 <br>
 
-<%= render 'page/footer' %>

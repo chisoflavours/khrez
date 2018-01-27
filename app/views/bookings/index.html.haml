@@ -1,23 +1,57 @@
-= render 'page/nav'
-.topheader
-  %h1 Booking Requests
+%body#page_dash
+  .only_dash
+    = render 'page/nav'
+    .topheader
+      %h1 Dashboard
+      - if admin_signed_in?
+        = link_to "New Venue", new_venue_path, class: 'top_button'
+     
+
   
-.wrapper
-  %div{:style => "overflow-x:auto;"}
-    %table
-      %tr
-        %th Name
-        %th Date
-        %th Sent Date
-      - @booking.each do |booking|
+  .row
+    - if admin_signed_in?
+      - unless current_admin.venues.count == 0
+        %p#move= link_to "My Venues", root_path, class: 'item'
+    %p#sec= link_to "Booking Requests", venue_bookings_path(:venue_id => '1'), class: 'item'
+    - if user_signed_in?
+      %p#sec= link_to "Edit Account",edit_user_registration_path, class: 'item'
+    - elsif admin_signed_in?
+      %p#sec= link_to "Edit Account",edit_admin_registration_path, class: 'item'
+  
+  %br/
+  %br/
+  %br/
+  .bookingList
+    - @booking.each do |booking|
+      #booking
+        - if admin_signed_in?
+          %p= link_to booking.user.name, venue_booking_path(@venue, booking)
+        - elsif user_signed_in?
+          %p= link_to booking.admin.ownername, venue_booking_path(@venue, booking)
+        %p#right
+          About
+          = time_ago_in_words(booking.created_at)
+          ago
+  %br/
+  %br/
+  %br/
+  %br/
+
+.hide
+  .wrapper
+    %div{:style => "overflow-x:auto;"}
+      %table
         %tr
-          - if admin_signed_in?
-            %td= link_to booking.user.name, venue_booking_path(@venue, booking)
-          - elsif user_signed_in?
-            %td= link_to booking.admin.ownername, venue_booking_path(@venue, booking)
-          %td= link_to booking.date.strftime("%d/%m/%y"), venue_booking_path(@venue, booking)
-          %td= link_to booking.created_at.strftime("%d/%m/%y"), venue_booking_path(@venue, booking)
+          %th Name
+          %th Date
+          %th Sent Date
+        - @booking.each do |booking|
+          %tr
+            - if admin_signed_in?
+              %td= link_to booking.user.name, venue_booking_path(@venue, booking)
+            - elsif user_signed_in?
+              %td= link_to booking.admin.ownername, venue_booking_path(@venue, booking)
+            %td= link_to booking.date.strftime("%d/%m/%y"), venue_booking_path(@venue, booking)
+            %td= link_to booking.created_at.strftime("%d/%m/%y"), venue_booking_path(@venue, booking)
 
           
-
-= render 'page/footer'
