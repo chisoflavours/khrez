@@ -49,21 +49,27 @@ $secondcolour:#B0E0E6;
   .box {
 	  margin: 20px;
 	  width: 300px;
-	  box-shadow: 0 8px 50px -1px lightgray;
+	  box-shadow:rgba(30, 59, 91, 0.1) 0px 4px 9px 0px;
 	  text-align: center;
 	  background:#ffffff;
 	  border-radius:3px;
+	  transition:0.3s;
 	  display:inline-block;
+	  &:hover{
+	    box-shadow:rgba(30, 59, 91, 0.1) 0px 10px 9px 0px;  
+	  }
 	  img {
 	  	max-width: 100%;
+	  	border-radius:3px 3px 0 0;
 	  	height: auto;
 	  }
 	  h2 {
-	  	font-size: 1.1em;
+	  	font-size: 1.05em;
+	  	font-weight:500;
 	  	padding: 20px 0 ;
 	  	letter-spacing:0.3px;
 	  	a {
-				color: $maincolour;
+				color: #36434d;
 				text-decoration:none;
 	  	}
 	  }
@@ -75,7 +81,11 @@ $secondcolour:#B0E0E6;
 			margin: 0;
 			a{
 			  text-decoration:none;
-			  color:lightgray;
+			  color:#aa94ee;
+			  transition:0.3s;
+			  &:hover{
+			    color:#8a6be8;
+			  }
 			}
 	  }
 	}

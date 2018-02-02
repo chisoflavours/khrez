@@ -4,7 +4,7 @@
   .wrap
     .search
       = form_tag(venues_path, :method => "get", :id => 'search_form') do
-        = select_tag((:category), options_for_select([["Hall","hall"],["Bar","bar"],["Meeting Room","meeting room"],["Reception","reception"],["Kids Party","kids party"],["Exhibition","exhibition"],["Performance Venue","Performance Venue"],["Wedding Venue","Wedding Venue"],["Private Room","private room"],["Conference Room","conference room"]],params[:category].to_i), prompt: "Occasion", class:"searchTerm2")
+        = select_tag((:category), options_for_select([["Hall","hall"],["Bar","bar"],["Meeting Room","meeting room"],["Reception","reception"],["Kids Party","kids party"],["Exhibition","exhibition"],["Performance Venue","Performance Venue"],["Wedding Venue","Wedding Venue"],["Private Room","private room"],["Conference Room","conference room"]],params[:category].to_i), prompt: "Venue Type", class:"searchTerm2")
         .searchline
         = text_field_tag (:city), params[:city], placeholder: "Location ", required: true, :class => 'searchTerm', autocomplete: 'off'
         = button_tag '<i class="fa fa-search"></i>'.html_safe, :type => "submit", :class => "searchButton"

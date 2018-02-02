@@ -4,15 +4,16 @@ $secondcolour:#B0E0E6;
 
 #logo{
   font-family: 'Josefin Sans', sans-serif;
-  color: $maincolour;
+  color: #aa94ee;
   float: left;
   text-align:center;
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   letter-spacing:0.3px;
+  font-weight:700;
   margin-left: 1.5em;
   margin-top:35px;
   &:hover{
-    opacity:0.7;
+    color:#8a6be8;
   }
 }
 
@@ -95,16 +96,16 @@ $secondcolour:#B0E0E6;
 .topnav a {
   float: right;
   display: block;
-  color: #708090;
+  color: #36434d;
   text-align: center;
-  padding: 0px 8px;
+  padding: 0px 6px;
   text-decoration: none;
-  font-size:18px;
-  font-weight:100;
+  font-size:17px;
+  font-weight:500;
   margin-top: 35px;
   transition: 0.3s;
   &:hover{
-    opacity:0.7;
+    opacity:0.8;
   }
   
 }

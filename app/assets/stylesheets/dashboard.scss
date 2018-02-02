@@ -212,10 +212,13 @@ $secondcolour:#B0E0E6;
 
 .only_dash{
 	.topnav{
+	  background:transparent;
 	  border:0;
 	}
 	.topheader{
 		background:#ffffff;
+		border-bottom:1px solid #e0e7ed;
+		height:275px;
 		.top_button{
 		  float:left;
 		  margin-top:-112px;
@@ -242,28 +245,36 @@ $secondcolour:#B0E0E6;
 }
 
 #page_dash{
-	background:#eff2f7;
+	background:#f7f8fc;
+	#pins{
+		margin-top:0em;
+		margin:0;
+		float:right;
+	}
 	.row{
-		margin-left:11em;
-		margin-top:5em;
+		margin-left:4em;
+        margin-top:4em;
+		position:fixed;
+		border-radius:3px;
 		p{
-			display:inline-block;
+			display:block;
 			a{
 				text-decoration:none;
-				color:#A9A9A9;
-				font-size:18.5px;
+				color:#8599a9;
+				font-size:19px;
+				font-weight:500;
 				transition:0.3s;
+				line-height:30px;
 				&:hover{
-					color:$maincolour;
-					opacity:0.7;
+					color:#708090;
 				}
 			}
 		}
 		#move{
-			margin-right:1.7em;
+			margin-right:1.5em;
 		}
 		#sec{
-			margin-right:1.7em;
+			margin-right:1.8em;
 		}
 	}
 }

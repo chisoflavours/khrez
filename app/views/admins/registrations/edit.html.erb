@@ -1,13 +1,11 @@
 <body id="page_dash">
   <div class="only_dash">
-    <%= render 'page/nav' %>
     <div class="topheader">
+      <%= render 'page/nav' %>
       <h1>Dashboard</h1>
-      <% if admin_signed_in? %>
-        <%= link_to "New Venue", new_venue_path, class: 'top_button' %>
-      <% end %>
     </div>
   </div>
+  <br>
   <div class="row">
     <% unless current_admin.venues.count == 0 %>
       <p id="move">
@@ -18,13 +16,12 @@
       <%= link_to "Booking Requests", venue_bookings_path(:venue_id => '1'), class: 'item' %>
     </p>
     <p id="sec">
-      <%= link_to "Edit Account",edit_admin_registration_path, class: 'item' %>
+      <%= link_to "New Venue", new_venue_path, class: 'item' %>
     </p>
 
   </div>
 </body>
 
-<br>
 <br>
 <br>
 
@@ -41,7 +38,7 @@
       <br>
       <div class="field2">
       <h3 class="label">Name</h3>
-      <%= f.input :ownername,label: false, placeholder: "Venue Ltd", input_html: { class: 'in' } %>
+      <%= f.input :ownername,label: false, placeholder: "Business Ltd", input_html: { class: 'in' } %>
       </div>
       <br>
       <div class="field2">
@@ -72,6 +69,7 @@
   
   <br>
   <br>
+  </div>
     <div class="field">
     <div class="form-actions">
       <%= f.button :submit, "Save Changes", :class => 'button' %>
@@ -81,7 +79,6 @@
     <br>
     <br>
     <br>
-  </div>
 <% end %>
 </div>
 <br>

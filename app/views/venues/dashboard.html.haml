@@ -1,36 +1,33 @@
 %body#page_dash
   .only_dash
-    = render 'page/nav'
     .topheader
+      = render 'page/nav'
       %h1 Dashboard
-      - if admin_signed_in?
-        = link_to "New Venue", new_venue_path, class: 'top_button'
 
-  
-  .row
-    %p#move= link_to "My Venues", root_path, class: 'item'
-    - unless current_admin.venues.count == 0
-      %p#sec= link_to "Booking Requests", venue_bookings_path(:venue_id => '1'), class: 'item'
-    %p#sec= link_to "Edit Account",edit_admin_registration_path, class: 'item'
-
+  %br/
+  %br/
   #pins
     - @venue.each do |venue|
       .box
         = link_to ( image_tag venue.thumbnail.url), venue, :target => "_blank"
         %h2= link_to venue.name, venue, :target => "_blank"
-        %p.user= link_to venue.city, venue, :target => "_blank"
+        %p.user= link_to "View Page", venue, :target => "_blank"
 
- 
+    %br/
+    %br/
+    %br/
+    %br/
+    %br/
   
-%br/
-%br/
-%br/
-%br/
-%br/
+  .row
+    - unless current_admin.venues.count == 0
+      %p#sec= link_to "Booking Requests", venue_bookings_path(:venue_id => '1'), class: 'item'
+    %p#sec= link_to "Edit Account",edit_admin_registration_path, class: 'item'
+    %p#sec= link_to "New Page", new_venue_path, class: 'item'
+        
 
 
-  
-  
+
   
   
 
